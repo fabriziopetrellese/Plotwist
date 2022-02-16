@@ -29,12 +29,12 @@ struct Storystarters: View {
                             if testo.isEmpty {
                                 Text("Type here...")
                                     .font(Font.custom("Quick Pencil", size: 30))
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(.darkGray)
                                     .position(x: 62, y: 20)
                             }
                             TextEditor(text: $testo)
                                 .font(Font.custom("Quick Pencil", size: 30))
-                                .foregroundColor(.gray)
+                                .foregroundColor(.darkGray)
                                 .background(.clear)
                         }
                         .padding(.horizontal)

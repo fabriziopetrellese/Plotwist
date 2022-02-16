@@ -39,10 +39,10 @@ struct ContentView: View {
                              help of starters
                              and dices
                         """)
-                            .fontWeight(.regular)
-                            .foregroundColor(.black)
+                            .foregroundColor(.darkGray)
                             .offset(x: -7, y: 32)
-                            .font(.system(size: 22))
+                            //.font(.system(size: 22))
+                            .font(Font.custom("Quick Pencil", size: 25))
                         //.font(Font.custom("Georude", size: 31))
                     }
                 }.offset(x: -7, y: 7)
