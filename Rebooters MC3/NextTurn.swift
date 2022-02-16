@@ -9,31 +9,30 @@ import SwiftUI
 
 struct NextTurn: View {
     var body: some View {
-        
-        ZStack {
-            Image("Background1")
-                .ignoresSafeArea()
+        VStack {
+            Text("It's Giovanni's turn, pass the phone")
+                .multilineTextAlignment(.center)
+                .font(Font.custom("Quick Pencil", size: 55))
+                .frame(width: 300, height: 200)
             
-            VStack {
-                Text("It's Giovanni's turn, pass the phone")
-                    .multilineTextAlignment(.center)
-                    .font(Font.custom("Quick Pencil", size: 55))
-                    .frame(width: 300, height: 200, alignment: .center)
-                    .offset(x: 0.0, y: 50.0)
-
+            
+            Button {
                 
-                Button {
-                    
-                } label: {
-                    Image("imhere")
+            } label: {
+                ZStack {
+                    ButtonsModel(label: "I'm here!")
+                    Image("OMINO1")
+                        .position(x: 155, y: 2)
                 }
-                .offset(x: 0.0, y: 195.0)
             }
+            .offset(x: 0.0, y: 195.0)
+            .frame(width: 100, height: 100)
         }
-        .ignoresSafeArea()
+        .background(
+            Image("BACK")
+                .ignoresSafeArea()
+        )
         .navigationBarBackButtonHidden(true)
-        
-
     }
 }
 

@@ -12,12 +12,11 @@ struct ButtonsModel: View {
     
     var body: some View {
         ZStack {
-            Image("READY")
+            Image("buttonback")
             
             Text(label)
                 .font(Font.custom("Quick Pencil", size: 50))
                 .foregroundColor(.black)
-                .padding(.bottom)
         }
     }
 }
