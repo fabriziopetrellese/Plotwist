@@ -19,7 +19,7 @@ struct ContentView: View {
                 Spacer()
                 
                 //GUIDED STORYTELLING
-                NavigationLink(destination: GuidedView(playerButtons: ["Add new player"])) {
+                NavigationLink(destination: GuidedView()) {
                     ZStack {
                         Image("CARD1")
                         Image("OMINO1")

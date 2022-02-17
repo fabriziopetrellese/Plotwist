@@ -14,6 +14,7 @@
 		49AC302327BAB75900629633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302227BAB75900629633 /* Assets.xcassets */; };
 		49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302527BAB75900629633 /* Preview Assets.xcassets */; };
 		49AC303027BABBB600629633 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302F27BABBB600629633 /* Quick Pencil.ttf */; };
+		49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */; };
 		49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E20D6D27BC5720002BAFA3 /* SettingsView.swift */; };
 		49E7C59B27BD32160043AD25 /* NextTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C59627BD32160043AD25 /* NextTurn.swift */; };
 		49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C59727BD32160043AD25 /* ThemeColors.swift */; };
@@ -35,6 +36,7 @@
 		49AC302527BAB75900629633 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49AC302E27BABB1300629633 /* Rebooters-MC3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rebooters-MC3-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49AC302F27BABBB600629633 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = "<group>"; };
+		49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboardButton.swift; sourceTree = "<group>"; };
 		49E20D6D27BC5720002BAFA3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		49E7C59627BD32160043AD25 /* NextTurn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextTurn.swift; sourceTree = "<group>"; };
 		49E7C59727BD32160043AD25 /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				490C98A427BDFD0900574E1B /* newPlayer.swift */,
+				49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */,
 				49E7C59927BD32160043AD25 /* CategoriesListModel.swift */,
 				49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */,
 				49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */,
@@ -212,6 +215,7 @@
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
 				490C98A527BDFD0900574E1B /* newPlayer.swift in Sources */,
+				49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */,
 				49E7C59E27BD32160043AD25 /* CategoriesListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
