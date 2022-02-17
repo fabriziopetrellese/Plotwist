@@ -19,7 +19,7 @@ struct ContentView: View {
                 Spacer()
                 
                 //GUIDED STORYTELLING
-                NavigationLink(destination: GuidedView()) {
+                NavigationLink(destination: GuidedView(playerButtons: ["Add new player"])) {
                     ZStack {
                         Image("CARD1")
                         Image("OMINO1")
@@ -40,10 +40,8 @@ struct ContentView: View {
                              and dices
                         """)
                             .foregroundColor(.darkGray)
-                            .offset(x: -7, y: 32)
-                            //.font(.system(size: 22))
-                            .font(Font.custom("Quick Pencil", size: 25))
-                        //.font(Font.custom("Georude", size: 31))
+                            .offset(x: -13, y: 32)
+                            .font(Font.custom("Quick Pencil", size: 29))
                     }
                 }.offset(x: -7, y: 7)
                 
@@ -70,10 +68,9 @@ struct ContentView: View {
                      with dices
                     """)
                             .fontWeight(.regular)
-                            .foregroundColor(.black)
-                            .offset(x: -1, y: 37)
-                            .font(.system(size: 22))
-                        //.font(Font.custom("Georude", size: 31))
+                            .foregroundColor(.darkGray)
+                            .offset(x: 2, y: 37)
+                            .font(Font.custom("Quick Pencil", size: 29))
                     }
                 }.offset(x: -8, y: -1)
                 
@@ -84,6 +81,8 @@ struct ContentView: View {
                     ZStack {
                         Image("MODES")
                             .offset(x: 0, y: 10)
+                        Image("rolldices")
+                            .offset(x: 95, y: 5)
                         Text("Random dice")
                             .font(Font.custom("Quick Pencil", size: 30))
                             .foregroundColor(.black)

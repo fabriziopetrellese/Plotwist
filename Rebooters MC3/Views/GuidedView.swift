@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct GuidedView: View {
-    @State private var newPlayer = 2
+    @State var playerName: String = ""
+    @State var players = 0
+    var playerButtons = ["Add a friend", "Add a friend", "Add one more"]
     
     var body: some View {
         VStack {
@@ -23,36 +25,28 @@ players
             
             Image("FALLIN")
                 .offset(x: -39, y: -44)
-            Button {
-                
-            } label: {
+//            Button {
+//                
+//            } label: {
                 ZStack {
                     Image("PLAYERS")
-                    Text("Player 1")
-                        .foregroundColor(.black)
+                    TextField("Player 1", text: $playerName)
                         .font(.system(size: 27))
+                        .offset(x: 160, y: 0)
                 }
+//            }
+
+            ZStack {
+                Image("PLAYERS")
+                TextField("Player 2", text: $playerName)
+                    .font(.system(size: 27))
+                    .padding(.horizontal, 160)
             }
-            Button {
-                
-            } label: {
-                ZStack {
-                    Image("PLAYERS")
-                    Text("Player 2")
-                        .foregroundColor(.black)
-                        .font(.system(size: 27))
+                ForEach(playerButtons[0..<players], id: \.self) { playerButton in
+                    newPlayer()
+
                 }
-            }
-            Button {
-                
-            } label: {
-                ZStack {
-                    Image("PLAYERS")
-                    Text("Add new player")
-                        .foregroundColor(.black)
-                        .font(.system(size: 27))
-                }
-            }
+            add
             Spacer()
             NavigationLink {
                 Storystarters()
@@ -65,6 +59,17 @@ players
             Image("BACK")
                 .ignoresSafeArea()
         )
+    }
+    var add: some View {
+        Button {
+            if players < 3 {
+                players += 1
+            }
+        } label: {
+            ZStack {
+                newPlayer()
+            }
+        }
     }
 }
 

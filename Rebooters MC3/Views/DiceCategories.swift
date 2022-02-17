@@ -12,8 +12,8 @@ struct DiceCategories: View {
     @Environment(\.dismiss) var back
     
     var body: some View {
-        VStack{
-            HStack{
+        VStack {
+            HStack {
                 Text("Select dice categories")
                     .font(Font.custom("Quick Pencil", size: 50))
                     .padding(.horizontal)
@@ -38,8 +38,7 @@ struct DiceCategories: View {
         )
         .navigationBarBackButtonHidden(true)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading)
-            {
+            ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     back()
                     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490C98A327BDF4E100574E1B /* creditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C98A227BDF4E100574E1B /* creditsView.swift */; };
+		490C98A527BDFD0900574E1B /* newPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C98A427BDFD0900574E1B /* newPlayer.swift */; };
 		49AC301F27BAB75900629633 /* Rebooters_MC3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AC301E27BAB75900629633 /* Rebooters_MC3App.swift */; };
 		49AC302127BAB75900629633 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AC302027BAB75900629633 /* ContentView.swift */; };
 		49AC302327BAB75900629633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302227BAB75900629633 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490C98A227BDF4E100574E1B /* creditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditsView.swift; sourceTree = "<group>"; };
+		490C98A427BDFD0900574E1B /* newPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newPlayer.swift; sourceTree = "<group>"; };
 		49AC301B27BAB75900629633 /* Rebooters MC3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rebooters MC3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AC301E27BAB75900629633 /* Rebooters_MC3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebooters_MC3App.swift; sourceTree = "<group>"; };
 		49AC302027BAB75900629633 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490C989C27BDDF8E00574E1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49F08C2127BB47100046D206 /* GuidedView.swift */,
+				49E7C59827BD32160043AD25 /* Storystarters.swift */,
+				49E7C59627BD32160043AD25 /* NextTurn.swift */,
+				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
+				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
+				490C98A227BDF4E100574E1B /* creditsView.swift */,
+				490C989F27BDE08D00574E1B /* Model */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		490C989F27BDE08D00574E1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				490C98A427BDFD0900574E1B /* newPlayer.swift */,
+				49E7C59927BD32160043AD25 /* CategoriesListModel.swift */,
+				49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */,
+				49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		49AC301227BAB75900629633 = {
 			isa = PBXGroup;
 			children = (
@@ -75,16 +104,9 @@
 				49AC302E27BABB1300629633 /* Rebooters-MC3-Info.plist */,
 				49AC301E27BAB75900629633 /* Rebooters_MC3App.swift */,
 				49AC302027BAB75900629633 /* ContentView.swift */,
-				49F08C2127BB47100046D206 /* GuidedView.swift */,
-				49E7C59827BD32160043AD25 /* Storystarters.swift */,
-				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
-				49E7C59627BD32160043AD25 /* NextTurn.swift */,
-				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
-				49E7C59927BD32160043AD25 /* CategoriesListModel.swift */,
-				49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */,
-				49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */,
+				490C989C27BDDF8E00574E1B /* Views */,
 				49E7C59727BD32160043AD25 /* ThemeColors.swift */,
-				49D0B17D27BB2BCC00F34BF5 /* Fonts */,
+				49D0B17D27BB2BCC00F34BF5 /* Font */,
 				49AC302227BAB75900629633 /* Assets.xcassets */,
 				49AC302427BAB75900629633 /* Preview Content */,
 			);
@@ -99,12 +121,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		49D0B17D27BB2BCC00F34BF5 /* Fonts */ = {
+		49D0B17D27BB2BCC00F34BF5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
 				49AC302F27BABBB600629633 /* Quick Pencil.ttf */,
 			);
-			path = Fonts;
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F08C2227BB47100046D206 /* GuidedView.swift in Sources */,
+				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
 				49AC302127BAB75900629633 /* ContentView.swift in Sources */,
@@ -188,6 +211,7 @@
 				49E7C59F27BD32160043AD25 /* DiceCategories.swift in Sources */,
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
+				490C98A527BDFD0900574E1B /* newPlayer.swift in Sources */,
 				49E7C59E27BD32160043AD25 /* CategoriesListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
