@@ -9,16 +9,13 @@ import SwiftUI
 
 struct CategoriesListModel: View {
     var body: some View {
-        
-        
-            
             ZStack {
                 Rectangle()
                     .frame(width: 334, height: 487, alignment: .center)
-                    .cornerRadius(33)
+                    .cornerRadius(20)
                     .foregroundColor(.listBackground)
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack {
                         Image("DiceCategoryButton")
                         Image("DiceCategoryButton")
@@ -26,15 +23,14 @@ struct CategoriesListModel: View {
                         Image("DiceCategoryButton")
                         Image("DiceCategoryButton")
                         Image("DiceCategoryButton")
+                        Image("DiceCategoryButton")
                     }
-                    .offset(x: 0.0, y: 25.0)
+                    .padding(.vertical, 14)
+
                 }
-
+                .frame(width: 334, height: 487, alignment: .center)
             }
-            
-
         .frame(width: 334, height: 487, alignment: .center)
-        .offset(x: 0.0, y: 30.0)
     }
 }
 

@@ -17,11 +17,10 @@ struct DiceCategories: View {
                 Text("Select dice categories")
                     .font(Font.custom("Quick Pencil", size: 50))
                     .padding(.horizontal)
-                    .frame(width: 400, height: 100, alignment: .center)
-                Spacer()
-                
+                    .frame(width: 250, height: 100, alignment: .center)
+//                Spacer()
             }
-            .offset(x: 10.0, y: 20.0)
+            .padding(.bottom, 32)
             
             CategoriesListModel()
             
@@ -30,7 +29,8 @@ struct DiceCategories: View {
             } label: {
                 RollDiceModel()
             }
-            .offset(x: -10.0, y: 50.0)
+            .padding(.vertical, 32)
+
         }
         .background(
             Image("Background")
@@ -41,7 +41,6 @@ struct DiceCategories: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     back()
-                    
                 } label: {
                     Image(systemName: "arrowshape.turn.up.backward.fill")
                         .foregroundColor(.black)

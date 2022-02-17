@@ -12,6 +12,7 @@ struct Storystarters: View {
         UITextView.appearance().backgroundColor = .clear
     }
     @State private var testo: String = ""
+    @Environment(\.dismiss) var back1
 
     var body: some View {
                 VStack{
@@ -37,12 +38,14 @@ struct Storystarters: View {
                                 .foregroundColor(.darkGray)
                                 .background(.clear)
                         }
+//                        .position(x: 207.0, y: 150.0)
                         .padding(.horizontal)
                         .frame(height: 100)
                         
                         Spacer()
                     }
-                    .position(x: 207.0, y: -20.0)
+//                    .position(x: 207.0, y: 150.0)
+
                     
                     NavigationLink {
                         NextTurn()
@@ -73,11 +76,16 @@ struct Storystarters: View {
                 ToolbarItem(placement: .navigationBarLeading)
                 {
                     Button {
-                        
+                        back1()
                     } label: {
                         Image(systemName: "arrowshape.turn.up.backward.fill")
                             .foregroundColor(.black)
                     }
+                }
+                
+                ToolbarItem(placement: .keyboard)
+                {
+                    hideKeyboardButton()
                 }
                     
                 
