@@ -11,11 +11,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Name of the Game")
-                    .font(Font.custom("Quick Pencil", size: 50))
-                    .font(.largeTitle)
-                    .bold()
-                    .offset(x: 0, y: -18)
+                Image("appname")
+                    .resizable()
+                    .frame(width: 162.09, height: 123)
+                    .padding(.bottom, 47)
                 Spacer()
                 
                 //GUIDED STORYTELLING
@@ -108,11 +107,12 @@ struct ContentView: View {
                 }.offset(x: -8, y: 6)
                 Spacer()
             }
+            .offset(x: 0, y: -39)
             .background(
                 Image("BACK")
                     .ignoresSafeArea()
             )
-        }
+        }.preferredColorScheme(.light)
     }
 }
 
