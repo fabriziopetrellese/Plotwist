@@ -18,7 +18,7 @@ struct DiceCategories: View {
                     .font(Font.custom("Quick Pencil", size: 50))
                     .padding(.horizontal)
                     .frame(width: 250, height: 100, alignment: .center)
-//                Spacer()
+                //                Spacer()
             }
             .padding(.bottom, 32)
             
@@ -30,7 +30,7 @@ struct DiceCategories: View {
                 RollDiceModel()
             }
             .padding(.vertical, 32)
-
+            
         }
         .background(
             Image("Background")

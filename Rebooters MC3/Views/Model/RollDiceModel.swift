@@ -19,11 +19,11 @@ struct RollDiceModel: View {
                 Image("rolldices")
                     .resizable()
                     .frame(width: 53.97, height: 43.03, alignment: .trailing)
-//                    .scaledToFit()
+                //                    .scaledToFit()
                 
             }
             
-
+            
         }
     }
 }

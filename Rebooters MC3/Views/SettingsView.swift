@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Environment(\.dismiss) var back
+    @Environment(\.dismiss) var back3
     
     var body: some View {
         VStack {
@@ -23,7 +23,7 @@ struct SettingsView: View {
                 
             } label: {
                 ZStack {
-                    Image("MODES")
+                    Image("settingsbutton")
                         .padding(.top, 30)
                     Text("""
 Story starters
@@ -31,25 +31,25 @@ creation
 """)
                         .font(Font.custom("Quick Pencil", size: 35))
                         .foregroundColor(.black)
-                        .padding(.top, 25)
+                        .padding(.top, 27)
                 }
             }
             Button {
                 
             } label: {
                 ZStack {
-                    Image("MODES")
+                    Image("settingsbutton")
                         .padding(.bottom, 90)
                     HStack (spacing: 75) {
                         Text("Language")
                             .font(Font.custom("Quick Pencil", size: 40))
                             .foregroundColor(.black)
                             .padding(.bottom, 93)
-                        //Image("AGGIUSTARE BORDI BANDIERA")
+                        //                        Image("BANDIERA QUI")
+                        //                            .offset(x: 0, y: -45)
                     }
                 }
             }
-            //if
             creditsView()
             Spacer()
         }
@@ -61,7 +61,7 @@ creation
             }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    back()
+                    back3()
                 } label: {
                     Image(systemName: "arrowshape.turn.up.backward.fill")
                         .foregroundColor(.black)

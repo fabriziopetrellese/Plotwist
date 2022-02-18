@@ -64,8 +64,8 @@ struct ContentView: View {
                             .font(Font.custom("Quick Pencil", size: 31))
                             .foregroundColor(.black)
                         Text("""
-                    Create a story only
-                     with dices
+                    Create a story with
+                     only dices
                     """)
                             .fontWeight(.regular)
                             .foregroundColor(.darkGray)

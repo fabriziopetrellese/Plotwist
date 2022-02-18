@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct CategoriesListModel: View {
+    @State var categoriesNumber = 7
+    var categories = ["Fantasy", "Videogames", "Mistery", "Animals", "Elements", "Sport", "Cooking"]
+    
     var body: some View {
-            ZStack {
-                Rectangle()
-                    .frame(width: 334, height: 487, alignment: .center)
-                    .cornerRadius(20)
-                    .foregroundColor(.listBackground)
-                
-                ScrollView(showsIndicators: false) {
-                    VStack {
-                        Image("DiceCategoryButton")
-                        Image("DiceCategoryButton")
-                        Image("DiceCategoryButton")
-                        Image("DiceCategoryButton")
-                        Image("DiceCategoryButton")
-                        Image("DiceCategoryButton")
-                        Image("DiceCategoryButton")
-                    }
-                    .padding(.vertical, 14)
-
-                }
+        ZStack {
+            Rectangle()
                 .frame(width: 334, height: 487, alignment: .center)
+                .cornerRadius(20)
+                .foregroundColor(.listBackground)
+            
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    ForEach(categories[0..<categoriesNumber], id: \.self) { category in
+                        CategoriesButtonModel(content: category)
+                    }
+                }
+                .padding(.vertical, 14)
+                
             }
+            .frame(width: 334, height: 487, alignment: .center)
+        }
         .frame(width: 334, height: 487, alignment: .center)
     }
 }

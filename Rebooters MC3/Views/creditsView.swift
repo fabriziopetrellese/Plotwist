@@ -32,7 +32,7 @@ Valerio Domenico Conte
                         .padding(.bottom, 30)
                 }
             } else {
-                Image("MODES")
+                Image("settingsbutton")
                 Text("Credits")
                     .font(Font.custom("Quick Pencil", size: 50))
                 Image("ominicredits")

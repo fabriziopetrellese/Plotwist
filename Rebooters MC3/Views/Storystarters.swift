@@ -13,84 +13,76 @@ struct Storystarters: View {
     }
     @State private var testo: String = ""
     @Environment(\.dismiss) var back1
-
+    
     var body: some View {
-                VStack{
-                    HStack{
-                        Text("Once upon a time...")
-                            .font(Font.custom("Quick Pencil", size: 50))
+        VStack {
+            HStack {
+                Text("Once upon a time...")
+                    .font(Font.custom("Quick Pencil", size: 50))
+                    .padding(.horizontal)
+                    .frame(width: 300, height: 100, alignment: .leading)
+                Spacer()
+            }
+            .position(x: 207.0, y: 50)
+            .frame(width: 414, height: 97)
+            
+            HStack {
+                ZStack(alignment: .leading) {
+                    if testo.isEmpty {
+                        Text("Type here...")
+                            .font(Font.custom("Quick Pencil", size: 30))
+                            .foregroundColor(.darkGray)
                             .padding(.horizontal)
-                            .frame(width: 300, height: 100, alignment: .leading)
-                        Spacer()
+                            .position(x: 78, y: 20)
                     }
-                    .position(x: 207.0, y: 150.0)
-                    
-                    HStack{
-                        ZStack(alignment: .leading) {
-                            if testo.isEmpty {
-                                Text("Type here...")
-                                    .font(Font.custom("Quick Pencil", size: 30))
-                                    .foregroundColor(.darkGray)
-                                    .position(x: 62, y: 20)
-                            }
-                            TextEditor(text: $testo)
-                                .font(Font.custom("Quick Pencil", size: 30))
-                                .foregroundColor(.darkGray)
-                                .background(.clear)
-                        }
-//                        .position(x: 207.0, y: 150.0)
+                    TextEditor(text: $testo)
+                        .font(Font.custom("Quick Pencil", size: 30))
+                        .foregroundColor(.darkGray)
+                        .background(.clear)
                         .padding(.horizontal)
-                        .frame(height: 100)
-                        
-                        Spacer()
-                    }
-//                    .position(x: 207.0, y: 150.0)
-
-                    
-                    NavigationLink {
-                        NextTurn()
-                    } label: {
-                        ButtonsModel(label: "Done")
-                    }
-                    .position(x: 207, y: 210.0)
                 }
-            .background(
-                Image("Background")
-                    .ignoresSafeArea()
-            )
-            .navigationBarBackButtonHidden(true)
-            .toolbar
-            {
-                ToolbarItem(placement: .navigationBarTrailing)
-                {
-                    NavigationLink {
-                        DiceCategories()
-                        
-                    } label: {
-                        Image(systemName: "dice.fill")
-                            .foregroundColor(.black)
-                    }
-
+            }
+            .frame(height: 400)
+            .position(x: 207, y: 195)
+//            Spacer()
+            NavigationLink {
+                NextTurn()
+            } label: {
+                ButtonsModel(label: "Done")
+            }
+            .position(x: 207, y: 260.0)
+            Spacer()
+        }
+        .background(
+            Image("Background")
+                .ignoresSafeArea()
+                .position(x: 207, y: 400)
+        )
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink {
+                    DiceCategories()
+                } label: {
+                    Image(systemName: "dice.fill")
+                        .foregroundColor(.black)
                 }
-                
-                ToolbarItem(placement: .navigationBarLeading)
-                {
-                    Button {
-                        back1()
-                    } label: {
-                        Image(systemName: "arrowshape.turn.up.backward.fill")
-                            .foregroundColor(.black)
-                    }
-                }
-                
-                ToolbarItem(placement: .keyboard)
-                {
-                    hideKeyboardButton()
-                }
-                    
                 
             }
-        
+            
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    back1()
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.backward.fill")
+                        .foregroundColor(.black)
+                }
+            }
+            
+            ToolbarItem(placement: .keyboard) {
+                hideKeyboardButton()
+            }
+        }
     }
 }
 
