@@ -45,8 +45,8 @@ creation
                             .font(Font.custom("Quick Pencil", size: 40))
                             .foregroundColor(.black)
                             .padding(.bottom, 93)
-                        //                        Image("BANDIERA QUI")
-                        //                            .offset(x: 0, y: -45)
+                        Image("english")
+                            .offset(x: 0, y: -47)
                     }
                 }
             }

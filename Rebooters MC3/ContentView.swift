@@ -46,8 +46,7 @@ struct ContentView: View {
                 }.offset(x: -7, y: 7)
                 
                 //DICE STORYTELLING
-                Button {
-                } label: {
+                NavigationLink(destination: DiceStorytelling()) {
                     ZStack {
                         Image("CARD1")
                             .offset(x: 0, y: 7)
@@ -75,9 +74,7 @@ struct ContentView: View {
                 }.offset(x: -8, y: -1)
                 
                 //RANDOM DICE THROW
-                Button {
-                    
-                } label: {
+                NavigationLink(destination: RandomDiceThrow()) {
                     ZStack {
                         Image("MODES")
                             .offset(x: 0, y: 10)
