@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.dismiss) var back3
+    @State private var languageModal = false
     
     var body: some View {
         VStack {
@@ -34,8 +35,10 @@ creation
                         .padding(.top, 27)
                 }
             }
+            
+            
             Button {
-                
+                languageModal.toggle()
             } label: {
                 ZStack {
                     Image("settingsbutton")
@@ -49,6 +52,9 @@ creation
                             .offset(x: 0, y: -47)
                     }
                 }
+            }
+            .fullScreenCover(isPresented: $languageModal) {
+                LanguageView()
             }
             creditsView()
             Spacer()

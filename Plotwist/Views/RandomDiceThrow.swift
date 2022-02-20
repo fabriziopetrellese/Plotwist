@@ -1,5 +1,5 @@
 //
-//  DiceStorytelling.swift
+//  RandomDiceThrow.swift
 //  Rebooters MC3
 //
 //  Created by Fabrizio Petrellese on 18/02/22.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct DiceStorytelling: View {
-    @Environment(\.dismiss) var back4
+struct RandomDiceThrow: View {
+    @Environment(\.dismiss) var back5
     
     var body: some View {
-        ZStack {
+        VStack {
             Text("Work in progress")
                 .font(.title3)
         }
@@ -19,7 +19,7 @@ struct DiceStorytelling: View {
         .toolbar {
     ToolbarItem(placement: .navigationBarLeading) {
         Button {
-            back4()
+            back5()
         } label: {
             Image(systemName: "arrowshape.turn.up.backward.fill")
                 .foregroundColor(.black)
@@ -29,8 +29,8 @@ struct DiceStorytelling: View {
     }
 }
 
-struct DiceStorytelling_Previews: PreviewProvider {
+struct RandomDiceThrow_Previews: PreviewProvider {
     static var previews: some View {
-        DiceStorytelling()
+        RandomDiceThrow()
     }
 }

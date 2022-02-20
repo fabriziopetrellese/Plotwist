@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Rebooters_MC3App: App {
+struct PlotwistApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

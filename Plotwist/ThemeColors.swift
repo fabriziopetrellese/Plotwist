@@ -11,4 +11,5 @@ import SwiftUI
 extension Color {
     static let listBackground = Color("listbackground")
     static let darkGray = Color("darkgray")
+    static let yellowSelection = Color("yellowselection")
 }

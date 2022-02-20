@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CategoriesListModel: View {
+
     @State var categoriesNumber = 7
     var categories = ["Fantasy", "Videogames", "Mistery", "Animals", "Elements", "Sport", "Cooking"]
     
@@ -24,8 +25,7 @@ struct CategoriesListModel: View {
                         CategoriesButtonModel(content: category)
                     }
                 }
-                .padding(.vertical, 14)
-                
+                .padding(.vertical, 17)
             }
             .frame(width: 334, height: 487, alignment: .center)
         }
