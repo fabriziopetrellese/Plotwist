@@ -10,15 +10,23 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.dismiss) var back3
     @State private var languageModal = false
+    @State private var music = MusicClass.shared.isPlaying
     
     var body: some View {
         VStack {
             Image("ominomusic")
                 .offset(x: 110, y: 10)
-            Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
+            Toggle(isOn: $music) {
                 Text("Music")
                     .font(Font.custom("Quick Pencil", size: 40))
-            }.tint(.blue)
+            }.onChange(of: music) { newValue in
+                if newValue == true {
+                    MusicClass.shared.play()
+                } else {
+                    MusicClass.shared.stop()
+                }
+            }
+            .tint(.blue)
                 .padding(.horizontal, 60)
             Button {
                 

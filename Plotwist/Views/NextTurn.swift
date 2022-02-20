@@ -16,8 +16,8 @@ struct NextTurn: View {
                 .frame(width: 300, height: 200)
             
             
-            Button {
-                
+            NavigationLink {
+                SiriView()
             } label: {
                 ZStack {
                     ButtonsModel(label: "I'm here!")

@@ -113,6 +113,10 @@ struct ContentView: View {
                     .ignoresSafeArea()
             )
         }.preferredColorScheme(.light)
+            .onAppear(){
+                MusicClass.shared.setup()
+                MusicClass.shared.play()
+            }
     }
 }
 
