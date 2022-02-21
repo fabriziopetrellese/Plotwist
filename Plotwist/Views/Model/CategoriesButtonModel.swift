@@ -20,7 +20,7 @@ struct CategoriesButtonModel: View {
                 .shadow(color: .black, radius: 5, x: -1.5, y: 2)
             
             let categoryButtonSelected = RoundedRectangle(cornerRadius: 19)
-                .strokeBorder(Color.yellowSelection, lineWidth: 5)
+                .strokeBorder(Color.yellowSelection, lineWidth: 4)
                 .frame(width: 300, height: 75)
                 .foregroundColor(.white)
             

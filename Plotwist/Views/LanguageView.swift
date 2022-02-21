@@ -8,22 +8,39 @@
 import SwiftUI
 
 struct LanguageView: View {
-    @Environment(\.dismiss) var cancel
+    @Environment(\.dismiss) var back6
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("Language view")
-                    .font(.title)
+                    SettingsButtonModel(languageSelected: false, languages: "Language", flag: "english")
+                
+                SettingsButtonModel(languageSelected: false, languages: "Lingua", flag: "italian")
+                
+                SettingsButtonModel(languageSelected: false, languages: "Langue", flag: "french")
+                
+                SettingsButtonModel(languageSelected: false, languages: "Idioma", flag: "spanish")
             }
+            .background(
+                Image("BACK")
+                    .ignoresSafeArea()
+            )
             .navigationTitle("Language")
-                .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.inline)
             
             .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Language")
+                        .font(Font.custom("Quick Pencil", size: 39))
+                }
+                
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Cancel") {
-                        cancel()
-                    }.foregroundColor(.blue)
+                    Button {
+                        back6()
+                    } label: {
+                        Image(systemName: "arrowshape.turn.up.backward.fill")
+                            .foregroundColor(.black)
+                    }
                 }
             }
         }
