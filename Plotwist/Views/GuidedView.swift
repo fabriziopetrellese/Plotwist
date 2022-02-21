@@ -32,7 +32,7 @@ struct GuidedView: View {
                     .offset(x: -40, y: 60)
             }
             .padding(.bottom, 56)
-            .position(x: 207, y: 46)
+            .position(x: 207, y: 37)
             
             
             ScrollView {
@@ -41,52 +41,58 @@ struct GuidedView: View {
                     Image("PLAYERS")
                     TextField("Player 1", text: $playerName1)
                         .font(.system(size: 26))
-                        .padding(.leading)
+                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 300, height: 72, alignment: .center)
+                .frame(width: 300, height: 75, alignment: .center)
                 
                 ZStack {
                     Image("PLAYERS")
                     TextField("Player 2", text: $playerName2)
                         .font(.system(size: 26))
-                        .padding(.leading)
+                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 300, height: 72, alignment: .center)
+                .frame(width: 300, height: 75, alignment: .center)
                 
                 ZStack {
                     Image("PLAYERS")
                     TextField("Player 3", text: $playerName3)
                         .font(.system(size: 26))
-                        .padding(.leading)
+                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 300, height: 72, alignment: .center)
+                .frame(width: 300, height: 75, alignment: .center)
                 
                 ZStack {
                     Image("PLAYERS")
                     TextField("Player 4", text: $playerName4)
                         .font(.system(size: 26))
-                        .padding(.leading)
+                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 300, height: 72, alignment: .center)
+                .frame(width: 300, height: 75, alignment: .center)
                 
                 ZStack {
                     Image("PLAYERS")
                     TextField("Player 5", text: $playerName5)
                         .font(.system(size: 26))
-                        .padding(.leading)
+                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 300, height: 72, alignment: .center)
+                .frame(width: 300, height: 75, alignment: .center)
                 
                 ZStack {
                     Image("PLAYERS")
                     TextField("Player 6", text: $playerName6)
                         .font(.system(size: 26))
-                        .padding(.leading)
+                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 300, height: 72, alignment: .center)
+                .frame(width: 300, height: 75, alignment: .center)
             }
             .frame(width: 300, height: 500)
-            .position(x: 207, y: 140)
+            .position(x: 207, y: 127)
             
             NavigationLink {
                 Storystarters()
@@ -94,14 +100,13 @@ struct GuidedView: View {
                 ButtonsModel(label: "Ready")
             }
             .padding(36)
-            .position(x: 207, y: 190)
+            .position(x: 202, y: 195)
         }
         .background(
             Image("BACK")
                 .ignoresSafeArea()
                 .position(x: 207, y: 400)
         )
-        //        }
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .keyboard) {
@@ -125,6 +130,3 @@ struct GuidedView_Previews: PreviewProvider {
         GuidedView()
     }
 }
-
-
-//.position(x: 207, y: 400)

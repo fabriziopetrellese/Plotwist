@@ -77,7 +77,7 @@ struct ContentView: View {
                     ZStack {
                         Image("MODES")
                             .offset(x: 0, y: 10)
-                        Image("rolldices")
+                        Image("rolldice")
                             .offset(x: 95, y: 5)
                         Text("Random dice")
                             .font(Font.custom("Quick Pencil", size: 30))

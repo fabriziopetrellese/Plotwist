@@ -11,19 +11,14 @@ struct RollDiceModel: View {
     var body: some View {
         ZStack {
             Image("rollbutton")
-            
             HStack {
-                Text("Roll Dices")
+                Text("Roll Dice")
                     .font(Font.custom("Quick Pencil", size: 46))
                     .foregroundColor(.black)
-                Image("rolldices")
+                Image("rolldice")
                     .resizable()
                     .frame(width: 53.97, height: 43.03, alignment: .trailing)
-                //                    .scaledToFit()
-                
             }
-            
-            
         }
     }
 }

@@ -17,15 +17,15 @@ struct DiceStorytelling: View {
         }
         .navigationBarBackButtonHidden(true)
         .toolbar {
-    ToolbarItem(placement: .navigationBarLeading) {
-        Button {
-            back4()
-        } label: {
-            Image(systemName: "arrowshape.turn.up.backward.fill")
-                .foregroundColor(.black)
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    back4()
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.backward.fill")
+                        .foregroundColor(.black)
+                }
+            }
         }
-    }
-}
     }
 }
 

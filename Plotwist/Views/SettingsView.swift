@@ -27,7 +27,7 @@ struct SettingsView: View {
                 }
             }
             .tint(.blue)
-                .padding(.horizontal, 60)
+            .padding(.horizontal, 60)
             Button {
                 
             } label: {

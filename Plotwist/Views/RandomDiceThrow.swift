@@ -17,15 +17,15 @@ struct RandomDiceThrow: View {
         }
         .navigationBarBackButtonHidden(true)
         .toolbar {
-    ToolbarItem(placement: .navigationBarLeading) {
-        Button {
-            back5()
-        } label: {
-            Image(systemName: "arrowshape.turn.up.backward.fill")
-                .foregroundColor(.black)
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    back5()
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.backward.fill")
+                        .foregroundColor(.black)
+                }
+            }
         }
-    }
-}
     }
 }
 
