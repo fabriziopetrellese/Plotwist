@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct GuidedView: View {
+    @EnvironmentObject var playersModel: PlayersModel
+    
     @State var name1: String = ""
-//    @State var name2: String = ""
-    @StateObject var name2 = PlayerName()
+    @State var name2: String = ""
     @State var name3: String = ""
     @State var name4: String = ""
     @State var name5: String = ""
     @State var name6: String = ""
+        
     @Environment(\.dismiss) var back2
     
+
     var body: some View {
         
         VStack {
@@ -40,7 +43,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 1", text: $name1)
+                    TextField("Player 1", text: $playersModel.name1)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -49,7 +52,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 2", text: $name2.nameDue)
+                    TextField("Player 2", text: $playersModel.name2)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -97,12 +100,14 @@ struct GuidedView: View {
             
             NavigationLink {
                 Storystarters()
+
             } label: {
                 ButtonsModel(label: "Ready")
             }
             .padding(36)
             .position(x: 202, y: 195)
         }
+//        .environmentObject(playersModel)
         .background(
             Image("BACK")
                 .ignoresSafeArea()
@@ -116,6 +121,8 @@ struct GuidedView: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     back2()
+                    print("the second name is: ")
+                    print(playersModel.name1)
                 } label: {
                     Image(systemName: "arrowshape.turn.up.backward.fill")
                         .foregroundColor(.black)

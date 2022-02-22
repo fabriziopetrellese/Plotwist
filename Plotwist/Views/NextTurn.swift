@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct NextTurn: View {
-    @EnvironmentObject var name2: PlayerName
+    @EnvironmentObject var playersModel: PlayersModel
     
     var body: some View {
         VStack {
-            Text("It's \(name2.nameDue)'s turn, pass the phone")
+            Text("It's \(playersModel.name2)'s turn, pass the phone")
                 .multilineTextAlignment(.center)
                 .font(Font.custom("Quick Pencil", size: 55))
                 .frame(width: 300, height: 200)

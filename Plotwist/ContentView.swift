@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var playersModel: PlayersModel
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -112,7 +114,8 @@ struct ContentView: View {
                 Image("BACK")
                     .ignoresSafeArea()
             )
-        }.environmentObject(PlayerName())
+        }
+        .environmentObject(PlayersModel())
         .preferredColorScheme(.light)
             .onAppear(){
                 MusicClass.shared.setup()

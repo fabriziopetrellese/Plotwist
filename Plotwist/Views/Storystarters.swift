@@ -14,6 +14,10 @@ struct Storystarters: View {
     @State private var testo: String = ""
     @Environment(\.dismiss) var back1
     
+//    @EnvironmentObject var playersModel: PlayersModel
+    
+
+    
     var body: some View {
         VStack {
             HStack {

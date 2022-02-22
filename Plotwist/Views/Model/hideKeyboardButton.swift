@@ -13,7 +13,7 @@ struct hideKeyboardButton: View {
         Button {
             hideKeyboard()
         } label: {
-            Image(systemName: "keyboard")
+            Image(systemName: "keyboard.chevron.compact.down")
         }
     }
 }
