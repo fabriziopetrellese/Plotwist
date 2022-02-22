@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct GuidedView: View {
-    @State var playerName1: String = ""
-    @State var playerName2: String = ""
-    @State var playerName3: String = ""
-    @State var playerName4: String = ""
-    @State var playerName5: String = ""
-    @State var playerName6: String = ""
+    @State var name1: String = ""
+//    @State var name2: String = ""
+    @StateObject var name2 = PlayerName()
+    @State var name3: String = ""
+    @State var name4: String = ""
+    @State var name5: String = ""
+    @State var name6: String = ""
     @Environment(\.dismiss) var back2
     
     var body: some View {
@@ -39,7 +40,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 1", text: $playerName1)
+                    TextField("Player 1", text: $name1)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -48,7 +49,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 2", text: $playerName2)
+                    TextField("Player 2", text: $name2.nameDue)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -57,7 +58,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 3", text: $playerName3)
+                    TextField("Player 3", text: $name3)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -66,7 +67,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 4", text: $playerName4)
+                    TextField("Player 4", text: $name4)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -75,7 +76,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 5", text: $playerName5)
+                    TextField("Player 5", text: $name5)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -84,7 +85,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 6", text: $playerName6)
+                    TextField("Player 6", text: $name6)
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)

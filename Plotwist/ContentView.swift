@@ -112,7 +112,8 @@ struct ContentView: View {
                 Image("BACK")
                     .ignoresSafeArea()
             )
-        }.preferredColorScheme(.light)
+        }.environmentObject(PlayerName())
+        .preferredColorScheme(.light)
             .onAppear(){
                 MusicClass.shared.setup()
                 MusicClass.shared.play()

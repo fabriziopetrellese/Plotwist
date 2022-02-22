@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		490C98A327BDF4E100574E1B /* creditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C98A227BDF4E100574E1B /* creditsView.swift */; };
 		49124DB027C1E22200CCECAF /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49124DAF27C1E22200CCECAF /* SiriView.swift */; };
+		4912986B27C4738600912339 /* PlayerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayerName.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
 		491E707C27BFDDFE0039FBB1 /* RandomDiceThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */; };
 		49771D6727C3DCA700A99F28 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49771D6627C3DCA700A99F28 /* Quick Pencil.ttf */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		490C98A227BDF4E100574E1B /* creditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditsView.swift; sourceTree = "<group>"; };
 		49124DAF27C1E22200CCECAF /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
+		4912986A27C4738600912339 /* PlayerName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerName.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
 		491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDiceThrow.swift; sourceTree = "<group>"; };
 		49771D6627C3DCA700A99F28 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = SOURCE_ROOT; };
@@ -128,6 +130,7 @@
 				49AC302027BAB75900629633 /* ContentView.swift */,
 				490C989C27BDDF8E00574E1B /* Views */,
 				49E7C59727BD32160043AD25 /* ThemeColors.swift */,
+				4912986A27C4738600912339 /* PlayerName.swift */,
 				4981954C27C1F6BA0037E81E /* MusicClass.swift */,
 				4981954E27C1F8290037E81E /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F08C2227BB47100046D206 /* GuidedView.swift in Sources */,
+				4912986B27C4738600912339 /* PlayerName.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* SettingsButtonModel.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
