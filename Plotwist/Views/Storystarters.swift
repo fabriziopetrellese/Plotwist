@@ -14,14 +14,13 @@ struct Storystarters: View {
     @State private var testo: String = ""
     @Environment(\.dismiss) var back1
     
-//    @EnvironmentObject var playersModel: PlayersModel
-    
-
+    @EnvironmentObject var playersModel: PlayersModel
+    @EnvironmentObject var incipitsModel: IncipitsModel
     
     var body: some View {
         VStack {
             HStack {
-                Text("Once upon a time...")
+                Text(incipitsModel.currentIncipit)
                     .font(Font.custom("Quick Pencil", size: 50))
                     .padding(.horizontal)
                     .frame(width: 300, height: 100, alignment: .leading)
@@ -57,6 +56,9 @@ struct Storystarters: View {
             .position(x: 207, y: 260.0)
             Spacer()
         }
+        .simultaneousGesture(TapGesture().onEnded{
+            playersModel.nextPlayer()
+        })
         .background(
             Image("Background")
                 .ignoresSafeArea()

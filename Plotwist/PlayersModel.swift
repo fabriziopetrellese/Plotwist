@@ -7,25 +7,16 @@
 
 import Foundation
 import SwiftUI
-import Combine
 
 class PlayersModel: ObservableObject {
+    @Published var players: [String] = ["","","","","",""]
+    @Published var activePlayer: String = ""
+    @Published var i: Int = 1
     
-    private static let userDefaultName1 = "name1"
-    private static let userDefaultName2 = "name2"
-
-    @Published var name1 = UserDefaults.standard.string(forKey: PlayersModel.userDefaultName1) ?? "" {
-        didSet {
-          UserDefaults.standard.set(self.name1, forKey: PlayersModel.userDefaultName1)
-        }
+    func nextPlayer() {
+        activePlayer = players[i]
+        i += 1
     }
-    @Published var name2 = UserDefaults.standard.string(forKey: PlayersModel.userDefaultName2) ?? "" {
-        didSet {
-          UserDefaults.standard.set(self.name2, forKey: PlayersModel.userDefaultName2)
-        }
-    }
-
-    private var canc: AnyCancellable!
 }
 
 

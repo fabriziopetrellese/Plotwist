@@ -9,14 +9,7 @@ import SwiftUI
 
 struct GuidedView: View {
     @EnvironmentObject var playersModel: PlayersModel
-    
-    @State var name1: String = ""
-    @State var name2: String = ""
-    @State var name3: String = ""
-    @State var name4: String = ""
-    @State var name5: String = ""
-    @State var name6: String = ""
-        
+    @EnvironmentObject var incipitsModel: IncipitsModel
     @Environment(\.dismiss) var back2
     
 
@@ -43,7 +36,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 1", text: $playersModel.name1)
+                    TextField("Player 1", text: $playersModel.players[0])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -52,7 +45,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 2", text: $playersModel.name2)
+                    TextField("Player 2", text: $playersModel.players[1])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -61,7 +54,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 3", text: $name3)
+                    TextField("Player 3", text: $playersModel.players[2])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -70,7 +63,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 4", text: $name4)
+                    TextField("Player 4", text: $playersModel.players[3])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -79,7 +72,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 5", text: $name5)
+                    TextField("Player 5", text: $playersModel.players[4])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -88,7 +81,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 6", text: $name6)
+                    TextField("Player 6", text: $playersModel.players[5])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -100,10 +93,12 @@ struct GuidedView: View {
             
             NavigationLink {
                 Storystarters()
-
             } label: {
                 ButtonsModel(label: "Ready")
             }
+            .simultaneousGesture(TapGesture().onEnded{
+                incipitsModel.nextIncipit()
+            })
             .padding(36)
             .position(x: 202, y: 195)
         }
@@ -121,8 +116,6 @@ struct GuidedView: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     back2()
-                    print("the second name is: ")
-                    print(playersModel.name1)
                 } label: {
                     Image(systemName: "arrowshape.turn.up.backward.fill")
                         .foregroundColor(.black)

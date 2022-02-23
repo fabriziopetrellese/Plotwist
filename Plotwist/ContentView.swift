@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var playersModel: PlayersModel
     
     var body: some View {
         NavigationView {
@@ -116,6 +115,7 @@ struct ContentView: View {
             )
         }
         .environmentObject(PlayersModel())
+        .environmentObject(IncipitsModel())
         .preferredColorScheme(.light)
             .onAppear(){
                 MusicClass.shared.setup()

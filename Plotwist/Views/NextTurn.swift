@@ -9,17 +9,20 @@ import SwiftUI
 
 struct NextTurn: View {
     @EnvironmentObject var playersModel: PlayersModel
+    @EnvironmentObject var incipitsModel: IncipitsModel
+    
+
     
     var body: some View {
         VStack {
-            Text("It's \(playersModel.name2)'s turn, pass the phone")
+            Text("It's \(playersModel.activePlayer)'s turn, pass the phone")
                 .multilineTextAlignment(.center)
                 .font(Font.custom("Quick Pencil", size: 55))
                 .frame(width: 300, height: 200)
             
             
             NavigationLink {
-                SiriView()
+                Storystarters()
             } label: {
                 ZStack {
                     ButtonsModel(label: "I'm here!")
@@ -27,6 +30,9 @@ struct NextTurn: View {
                         .position(x: 155, y: 2)
                 }
             }
+            .simultaneousGesture(TapGesture().onEnded{
+                incipitsModel.nextIncipit()
+            })
             .offset(x: 0.0, y: 195.0)
             .frame(width: 100, height: 100)
         }

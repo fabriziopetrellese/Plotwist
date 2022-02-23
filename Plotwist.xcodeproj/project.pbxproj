@@ -32,6 +32,7 @@
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
 		B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */; };
 		B9EE518727C51DFA00CFA313 /* backgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9EE518627C51DFA00CFA313 /* backgroundmusic.mp3 */; };
+		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
 		B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = "<group>"; };
 		B9EE518627C51DFA00CFA313 /* backgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundmusic.mp3; sourceTree = "<group>"; };
+		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				490C989C27BDDF8E00574E1B /* Views */,
 				49E7C59727BD32160043AD25 /* ThemeColors.swift */,
 				4912986A27C4738600912339 /* PlayersModel.swift */,
+				B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */,
 				4981954C27C1F6BA0037E81E /* MusicClass.swift */,
 				B9EE518627C51DFA00CFA313 /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F08C2227BB47100046D206 /* GuidedView.swift in Sources */,
+				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* SettingsButtonModel.swift in Sources */,
