@@ -6,25 +6,28 @@
 //
 
 import Foundation
-import SwiftUI
+//import SwiftUI
 
 class PlayersModel: ObservableObject {
-    @Published var players = ["","","","","",""]
+    @Published var playersNames = ["","","","","",""]
+    @Published var activePlayers = [String]()
     @Published var activePlayer = ""
     @Published var i = 1
     @Published var j = 0
     //@Published var prova = 0
     
-    func nextPlayer() {
-        activePlayer = players[i]
-        i += 1
-        if activePlayer.isEmpty {
-            activePlayer = players[j]
-            j += 1
-            if j > 1 {
-                j = 0
+    func setUpPlayers() {
+        playersNames.forEach { playerName in
+            if !playerName.isEmpty {
+                activePlayers.append(playerName)
             }
         }
+    }
+    
+    func nextPlayer() {
+        activePlayer = activePlayers[i]
+        i += 1
+        i = i % activePlayers.count
         //prova += 1
         //print(prova)
     }

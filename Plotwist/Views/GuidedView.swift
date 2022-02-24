@@ -36,7 +36,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 1", text: $playersModel.players[0])
+                    TextField("Player 1", text: $playersModel.playersNames[0])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -45,7 +45,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 2", text: $playersModel.players[1])
+                    TextField("Player 2", text: $playersModel.playersNames[1])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -54,7 +54,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 3", text: $playersModel.players[2])
+                    TextField("Player 3", text: $playersModel.playersNames[2])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -63,7 +63,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 4", text: $playersModel.players[3])
+                    TextField("Player 4", text: $playersModel.playersNames[3])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -72,7 +72,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 5", text: $playersModel.players[4])
+                    TextField("Player 5", text: $playersModel.playersNames[4])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -81,7 +81,7 @@ struct GuidedView: View {
                 
                 ZStack {
                     Image("PLAYERS")
-                    TextField("Player 6", text: $playersModel.players[5])
+                    TextField("Player 6", text: $playersModel.playersNames[5])
                         .font(.system(size: 26))
                         .padding(.horizontal, 20)
                         .multilineTextAlignment(.center)
@@ -96,7 +96,8 @@ struct GuidedView: View {
             } label: {
                 ButtonsModel(label: "Ready")
             }
-            .simultaneousGesture(TapGesture().onEnded{
+            .simultaneousGesture(TapGesture().onEnded {
+                playersModel.setUpPlayers()
                 incipitsModel.nextIncipit()
             })
             .padding(36)

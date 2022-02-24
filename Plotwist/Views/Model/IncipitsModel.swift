@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SwiftUI
+//import SwiftUI
 
 class IncipitsModel: ObservableObject {
     @Published var incipits = ["Once upon a time...",
@@ -22,8 +22,7 @@ class IncipitsModel: ObservableObject {
     @Published var j = 5
     
     
-    func nextIncipit() {
-        
+    func nextIncipit() {        
         i = Int.random(in: 0...j)
         currentIncipit = incipits[i]
         incipits.remove(at: i)
