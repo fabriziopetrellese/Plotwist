@@ -47,5 +47,7 @@ struct NextTurn: View {
 struct NextTurn_Previews: PreviewProvider {
     static var previews: some View {
         NextTurn()
+            .environmentObject(PlayersModel())
+            .environmentObject(IncipitsModel())
     }
 }

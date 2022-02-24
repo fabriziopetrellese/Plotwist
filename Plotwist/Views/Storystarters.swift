@@ -48,17 +48,17 @@ struct Storystarters: View {
             .frame(height: 400)
             .position(x: 207, y: 195)
 //            Spacer()
-            NavigationLink {
-                NextTurn()
-            } label: {
-                ButtonsModel(label: "Done")
-            }
-            .position(x: 207, y: 260.0)
+                NavigationLink {
+                    NextTurn()
+                } label: {
+                    ButtonsModel(label: "Done")
+                }
+                .simultaneousGesture(TapGesture().onEnded{
+                    playersModel.nextPlayer()
+                })
+                .position(x: 207, y: 260.0)
             Spacer()
         }
-        .simultaneousGesture(TapGesture().onEnded{
-            playersModel.nextPlayer()
-        })
         .background(
             Image("Background")
                 .ignoresSafeArea()
@@ -89,11 +89,20 @@ struct Storystarters: View {
                 hideKeyboardButton()
             }
         }
+        //if playersModel.prova == 5 {
+            //NavigationLink {
+              //  ProvaView()
+            //} label: {
+                
+          //  }
+        //}
     }
 }
 
 struct Storystarters_Previews: PreviewProvider {
     static var previews: some View {
         Storystarters()
+            .environmentObject(PlayersModel())
+            .environmentObject(IncipitsModel())
     }
 }

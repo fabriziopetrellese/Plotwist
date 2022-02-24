@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ButtonsModel: View {
-    @State var label: String = "test"
+    @State var label = "test"
     
     var body: some View {
         ZStack {
