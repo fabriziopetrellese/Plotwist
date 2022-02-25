@@ -14,26 +14,38 @@ struct SiriView: View {
     var body: some View {
         VStack {
             Text(storiesModel.fullStory)
+                .frame(width: 310, height: 444, alignment: .center)
                 .padding()
                 .font(.system(size: 25))
                 .multilineTextAlignment(.center)
-            
-            Button("Speak") {
+
+            Button {
                 let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
                 utterance.voice = AVSpeechSynthesisVoice(language: "it-IT")
 //                utterance.rate = 0.53
                 let synthesizer = AVSpeechSynthesizer()
                 synthesizer.speak(utterance)
+            } label: {
+                ButtonsIconModel(label: "Speech", icon: "person.wave.2.fill")
             }
-            .font(.system(size: 25))
             .padding()
-            .foregroundColor(.blue)
+            
+            NavigationLink {
+                ContentView()
+            } label: {
+                ButtonsIconModel(label: "Menu", icon: "house.fill")
+            }
         }
-        
+        .background(
+            Image("Background")
+                .ignoresSafeArea()
+        )
+        .navigationBarBackButtonHidden(true)
     }
 }
 struct SiriView_Previews: PreviewProvider {
     static var previews: some View {
         SiriView()
+            .environmentObject(StoriesModel())
     }
 }

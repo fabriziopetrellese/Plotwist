@@ -21,7 +21,6 @@
 		49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302527BAB75900629633 /* Preview Assets.xcassets */; };
 		49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */; };
 		49D07AAE27C6D35F00C6F332 /* backgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */; };
-		49D07AB027C70D9700C6F332 /* ProvaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D07AAF27C70D9700C6F332 /* ProvaView.swift */; };
 		49D48C1727C1D3CC00F1E935 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D48C1627C1D3CC00F1E935 /* LanguageView.swift */; };
 		49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E20D6D27BC5720002BAFA3 /* SettingsView.swift */; };
 		49E7C59B27BD32160043AD25 /* NextTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C59627BD32160043AD25 /* NextTurn.swift */; };
@@ -35,6 +34,7 @@
 		B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
+		B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,6 @@
 		49AC302E27BABB1300629633 /* Plotwist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Plotwist-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboardButton.swift; sourceTree = "<group>"; };
 		49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backgroundmusic.mp3; path = ../../backgroundmusic.mp3; sourceTree = "<group>"; };
-		49D07AAF27C70D9700C6F332 /* ProvaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaView.swift; sourceTree = "<group>"; };
 		49D48C1627C1D3CC00F1E935 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		49E20D6D27BC5720002BAFA3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		49E7C59627BD32160043AD25 /* NextTurn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextTurn.swift; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
+		B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsIconModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,6 @@
 				49D48C1627C1D3CC00F1E935 /* LanguageView.swift */,
 				490C98A227BDF4E100574E1B /* creditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
-				49D07AAF27C70D9700C6F332 /* ProvaView.swift */,
 				490C989F27BDE08D00574E1B /* Model */,
 			);
 			path = Views;
@@ -109,6 +108,7 @@
 				49771D6827C3E2BC00A99F28 /* SettingsButtonModel.swift */,
 				49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */,
 				49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */,
+				B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */,
 				4912986A27C4738600912339 /* PlayersModel.swift */,
 				B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */,
 				B9EE518C27C90EE400CFA313 /* StoriesModel.swift */,
@@ -242,7 +242,7 @@
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* SettingsButtonModel.swift in Sources */,
-				49D07AB027C70D9700C6F332 /* ProvaView.swift in Sources */,
+				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
 				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
