@@ -9,23 +9,17 @@ import SwiftUI
 import AVFoundation
 
 struct SiriView: View {
+    @EnvironmentObject var storiesModel: StoriesModel
+        
     var body: some View {
-        
-        
-        
         VStack {
-            Text("""
-Ciao ragazzi, questo è un test
-per capire se funziona Siri, se
-state ascoltando significa che
-funziona porca puttana😁
-""")
+            Text(storiesModel.fullStory)
                 .padding()
                 .font(.system(size: 25))
                 .multilineTextAlignment(.center)
             
             Button("Speak") {
-                let utterance = AVSpeechUtterance(string: "Ciao ragazzi, questo è un test per capire se funziona Siri, se state ascoltando significa che funziona porca puttana😁")
+                let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
                 utterance.voice = AVSpeechSynthesisVoice(language: "it-IT")
 //                utterance.rate = 0.53
                 let synthesizer = AVSpeechSynthesizer()

@@ -116,6 +116,7 @@ struct ContentView: View {
         }
         .environmentObject(PlayersModel())
         .environmentObject(IncipitsModel())
+        .environmentObject(StoriesModel())
         .preferredColorScheme(.light)
             .onAppear(){
                 MusicClass.shared.setup()

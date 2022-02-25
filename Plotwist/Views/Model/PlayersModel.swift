@@ -6,7 +6,6 @@
 //
 
 import Foundation
-//import SwiftUI
 
 class PlayersModel: ObservableObject {
     @Published var playersNames = ["","","","","",""]
@@ -14,7 +13,6 @@ class PlayersModel: ObservableObject {
     @Published var activePlayer = ""
     @Published var i = 1
     @Published var j = 0
-    //@Published var prova = 0
     
     func setUpPlayers() {
         playersNames.forEach { playerName in
@@ -28,7 +26,5 @@ class PlayersModel: ObservableObject {
         activePlayer = activePlayers[i]
         i += 1
         i = i % activePlayers.count
-        //prova += 1
-        //print(prova)
     }
 }

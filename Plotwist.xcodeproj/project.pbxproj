@@ -34,6 +34,7 @@
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
 		B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
+		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
 		B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
+		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */,
 				4912986A27C4738600912339 /* PlayersModel.swift */,
 				B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */,
+				B9EE518C27C90EE400CFA313 /* StoriesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				49771D6927C3E2BC00A99F28 /* SettingsButtonModel.swift in Sources */,
 				49D07AB027C70D9700C6F332 /* ProvaView.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
+				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
 				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
 				49D48C1727C1D3CC00F1E935 /* LanguageView.swift in Sources */,
 				49AC302127BAB75900629633 /* ContentView.swift in Sources */,

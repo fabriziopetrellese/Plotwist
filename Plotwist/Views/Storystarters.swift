@@ -11,11 +11,17 @@ struct Storystarters: View {
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
-    @State private var testo: String = ""
     @Environment(\.dismiss) var back1
     
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
+    @EnvironmentObject var storiesModel: StoriesModel
+    @State var story = ""
+    
+    func saveStory(story: String, index: Int) {
+        storiesModel.stories[index] = story
+        storiesModel.fullStory += story + " "
+    }
     
     var body: some View {
         VStack {
@@ -31,14 +37,14 @@ struct Storystarters: View {
             
             HStack {
                 ZStack(alignment: .leading) {
-                    if testo.isEmpty {
+                    if story.isEmpty {
                         Text("Type here...")
                             .font(Font.custom("Quick Pencil", size: 30))
                             .foregroundColor(.darkGray)
                             .padding(.horizontal)
                             .position(x: 78, y: 20)
                     }
-                    TextEditor(text: $testo)
+                    TextEditor(text: $story)
                         .font(Font.custom("Quick Pencil", size: 30))
                         .foregroundColor(.darkGray)
                         .background(.clear)
@@ -49,12 +55,21 @@ struct Storystarters: View {
             .position(x: 207, y: 195)
 //            Spacer()
                 NavigationLink {
-                    NextTurn()
+                    if storiesModel.index < 6 {
+                        NextTurn()
+                    } else {
+                        SiriView()
+                    }
                 } label: {
                     ButtonsModel(label: "Done")
                 }
                 .simultaneousGesture(TapGesture().onEnded{
-                    playersModel.nextPlayer()
+                    if storiesModel.index < 6 {
+                        playersModel.nextPlayer()
+                    }
+                    saveStory(story: story, index: storiesModel.index)
+                    storiesModel.index += 1
+                    print(storiesModel.index)
                 })
                 .position(x: 207, y: 260.0)
             Spacer()
@@ -89,13 +104,6 @@ struct Storystarters: View {
                 hideKeyboardButton()
             }
         }
-        //if playersModel.prova == 5 {
-            //NavigationLink {
-              //  ProvaView()
-            //} label: {
-                
-          //  }
-        //}
     }
 }
 
@@ -106,3 +114,6 @@ struct Storystarters_Previews: PreviewProvider {
             .environmentObject(IncipitsModel())
     }
 }
+
+
+
