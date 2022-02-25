@@ -13,13 +13,13 @@ struct LanguageView: View {
     var body: some View {
         NavigationView {
             VStack {
-                    SettingsButtonModel(languageSelected: false, languages: "Language", flag: "english")
+                    LanguageButtonModel(languageSelected: false, languages: "Language", flag: "english")
                 
-                SettingsButtonModel(languageSelected: false, languages: "Lingua", flag: "italian")
+                LanguageButtonModel(languageSelected: false, languages: "Lingua", flag: "italian")
                 
-                SettingsButtonModel(languageSelected: false, languages: "Langue", flag: "french")
+                LanguageButtonModel(languageSelected: false, languages: "Langue", flag: "french")
                 
-                SettingsButtonModel(languageSelected: false, languages: "Idioma", flag: "spanish")
+                LanguageButtonModel(languageSelected: false, languages: "Idioma", flag: "spanish")
             }
             .background(
                 Image("BACK")

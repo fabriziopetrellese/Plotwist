@@ -12,7 +12,7 @@
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
 		491E707C27BFDDFE0039FBB1 /* RandomDiceThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */; };
-		49771D6927C3E2BC00A99F28 /* SettingsButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771D6827C3E2BC00A99F28 /* SettingsButtonModel.swift */; };
+		49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */; };
 		4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981954C27C1F6BA0037E81E /* MusicClass.swift */; };
 		4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */; };
 		49AC301F27BAB75900629633 /* PlotwistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AC301E27BAB75900629633 /* PlotwistApp.swift */; };
@@ -43,7 +43,7 @@
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
 		491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDiceThrow.swift; sourceTree = "<group>"; };
-		49771D6827C3E2BC00A99F28 /* SettingsButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonModel.swift; sourceTree = "<group>"; };
+		49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButtonModel.swift; sourceTree = "<group>"; };
 		4981954C27C1F6BA0037E81E /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonModel.swift; sourceTree = "<group>"; };
 		49AC301B27BAB75900629633 /* Plotwist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plotwist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +105,7 @@
 				49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */,
 				49E7C59927BD32160043AD25 /* CategoriesListModel.swift */,
 				4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */,
-				49771D6827C3E2BC00A99F28 /* SettingsButtonModel.swift */,
+				49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */,
 				49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */,
 				49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */,
 				B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */,
@@ -241,7 +241,7 @@
 				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
-				49771D6927C3E2BC00A99F28 /* SettingsButtonModel.swift in Sources */,
+				49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
@@ -400,7 +400,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,7 +431,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

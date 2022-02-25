@@ -7,13 +7,10 @@
 
 import SwiftUI
 
-struct SettingsButtonModel: View {
+struct LanguageButtonModel: View {
     @State var languageSelected = false
     var languages: String
     var flag = ""
-    var flag2 = ""
-    var flag3 = ""
-    var flag4 = ""
     
     var body: some View {
         ZStack {
@@ -61,6 +58,6 @@ struct SettingsButtonModel: View {
 
 struct SettingsButtonModel_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsButtonModel(languages: "")
+        LanguageButtonModel(languages: "")
     }
 }

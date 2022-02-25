@@ -19,13 +19,13 @@ struct SettingsView: View {
             Toggle(isOn: $music) {
                 Text("Music")
                     .font(Font.custom("Quick Pencil", size: 40))
-            }.onChange(of: music) { newValue in
-                if newValue == true {
-                    MusicClass.shared.play()
-                } else {
-                    MusicClass.shared.stop()
-                }
-            }
+            }//.onChange(of: music) { newValue in
+//                if newValue == true {
+//                    MusicClass.shared.play()
+//                } else {
+//                    MusicClass.shared.pause()
+//                }
+//            }
             .tint(.blue)
             .padding(.horizontal, 60)
             Button {

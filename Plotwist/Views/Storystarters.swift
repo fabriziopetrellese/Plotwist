@@ -70,7 +70,6 @@ struct Storystarters: View {
                     }
                     saveStory(story: story, index: storiesModel.index)
                     storiesModel.index += 1
-                    print(storiesModel.index)
                 })
                 .position(x: 207, y: 260.0)
             Spacer()
@@ -113,6 +112,7 @@ struct Storystarters_Previews: PreviewProvider {
         Storystarters()
             .environmentObject(PlayersModel())
             .environmentObject(IncipitsModel())
+            .environmentObject(StoriesModel())
     }
 }
 
