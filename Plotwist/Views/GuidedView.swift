@@ -12,6 +12,7 @@ struct GuidedView: View {
     @EnvironmentObject var incipitsModel: IncipitsModel
     @Environment(\.dismiss) var back2
     
+    
 
     var body: some View {
         
@@ -91,19 +92,27 @@ struct GuidedView: View {
             .frame(width: 300, height: 500)
             .position(x: 207, y: 127)
             
-            NavigationLink {
-                Storystarters()
-            } label: {
-                ButtonsModel(label: "Ready")
+            if playersModel.playersNames[0] != "" && playersModel.playersNames[1] != "" {
+                NavigationLink {
+                    Storystarters()
+                } label: {
+                    ButtonsModel(label: "Ready")
+                }
+                .simultaneousGesture(TapGesture().onEnded {
+                    playersModel.setUpPlayers()
+                    incipitsModel.nextIncipit()
+                })
+                .padding(36)
+                .position(x: 202, y: 195)
+            } else {
+                ZStack {
+                    
+                }
+                .frame(width: 218, height: 80)
+                .padding(36)
+                .position(x: 202, y: 195)
             }
-            .simultaneousGesture(TapGesture().onEnded {
-                playersModel.setUpPlayers()
-                incipitsModel.nextIncipit()
-            })
-            .padding(36)
-            .position(x: 202, y: 195)
         }
-//        .environmentObject(playersModel)
         .background(
             Image("BACK")
                 .ignoresSafeArea()
@@ -130,5 +139,7 @@ struct GuidedView: View {
 struct GuidedView_Previews: PreviewProvider {
     static var previews: some View {
         GuidedView()
+            .environmentObject(PlayersModel())
+            .environmentObject(IncipitsModel())
     }
 }

@@ -18,6 +18,7 @@ struct Storystarters: View {
     @EnvironmentObject var storiesModel: StoriesModel
     @State var story = ""
     
+    
     func saveStory(story: String, index: Int) {
         storiesModel.stories[index] = story
         storiesModel.fullStory += story + " "

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View { 
     
     var body: some View {
         NavigationView {
@@ -43,7 +43,9 @@ struct ContentView: View {
                             .offset(x: -13, y: 32)
                             .font(Font.custom("Quick Pencil", size: 29))
                     }
-                }.offset(x: -7, y: 7)
+                }
+                .isDetailLink(false)
+                .offset(x: -7, y: 7)
                 
                 //DICE STORYTELLING
                 NavigationLink(destination: DiceStorytelling()) {
@@ -130,3 +132,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

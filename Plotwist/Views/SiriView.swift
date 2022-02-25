@@ -32,7 +32,7 @@ struct SiriView: View {
             .padding()
             
             Button {
-                
+
             } label: {
                 ButtonsIconModel(label: "Menu", icon: "house.fill")
             }
@@ -51,9 +51,3 @@ struct SiriView_Previews: PreviewProvider {
     }
 }
 
-@ViewBuilder
-func mainMenu(home: Bool) -> some View {
-    if home {
-        ContentView()
-    }
-}
