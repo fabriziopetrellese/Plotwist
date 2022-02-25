@@ -16,7 +16,8 @@ struct SiriView: View {
             Text(storiesModel.fullStory)
                 .frame(width: 310, height: 444, alignment: .center)
                 .padding()
-                .font(.system(size: 25))
+                .foregroundColor(.darkGray)
+                .font(Font.custom("Quick Pencil", size: 27))
                 .multilineTextAlignment(.center)
 
             Button {
@@ -30,8 +31,8 @@ struct SiriView: View {
             }
             .padding()
             
-            NavigationLink {
-                ContentView()
+            Button {
+                
             } label: {
                 ButtonsIconModel(label: "Menu", icon: "house.fill")
             }
@@ -47,5 +48,12 @@ struct SiriView_Previews: PreviewProvider {
     static var previews: some View {
         SiriView()
             .environmentObject(StoriesModel())
+    }
+}
+
+@ViewBuilder
+func mainMenu(home: Bool) -> some View {
+    if home {
+        ContentView()
     }
 }
