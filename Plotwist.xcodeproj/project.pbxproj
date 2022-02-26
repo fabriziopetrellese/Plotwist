@@ -97,12 +97,12 @@
 				490C98A227BDF4E100574E1B /* creditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				492C30C327C9D5C400AD21DA /* AlertView.swift */,
-				490C989F27BDE08D00574E1B /* Model */,
+				490C989F27BDE08D00574E1B /* Models */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		490C989F27BDE08D00574E1B /* Model */ = {
+		490C989F27BDE08D00574E1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */,
@@ -116,7 +116,7 @@
 				B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */,
 				B9EE518C27C90EE400CFA313 /* StoriesModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		49AC301227BAB75900629633 = {

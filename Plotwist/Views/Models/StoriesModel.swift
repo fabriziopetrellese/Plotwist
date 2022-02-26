@@ -11,4 +11,5 @@ class StoriesModel: ObservableObject {
     @Published var stories: [String] = ["","","","","",""]
     @Published var index: Int = 0
     @Published var fullStory: String = ""
+    @Published var turnNumber = 0
 }

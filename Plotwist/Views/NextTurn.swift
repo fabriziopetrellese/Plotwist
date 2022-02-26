@@ -10,16 +10,24 @@ import SwiftUI
 struct NextTurn: View {
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
-    
-
+    @EnvironmentObject var storiesModel: StoriesModel
     
     var body: some View {
         VStack {
-            Text("It's \(playersModel.activePlayer)'s turn, pass the phone")
-                .multilineTextAlignment(.center)
-                .font(Font.custom("Quick Pencil", size: 55))
-                .frame(width: 300, height: 200)
-            
+            if storiesModel.turnNumber < 5 {
+                Text("It's \(playersModel.activePlayer)'s turn, pass the phone")
+                    .multilineTextAlignment(.center)
+                    .font(Font.custom("Quick Pencil", size: 55))
+                    .frame(width: 300, height: 200)
+            } else {
+                Text("""
+Last turn -
+\(playersModel.activePlayer), you are the last one writing!
+""")
+                    .multilineTextAlignment(.center)
+                    .font(Font.custom("Quick Pencil", size: 55))
+                    .frame(width: 300, height: 200)
+            }
             
             NavigationLink {
                 Storystarters()
