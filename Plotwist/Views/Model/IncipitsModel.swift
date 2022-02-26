@@ -18,14 +18,16 @@ class IncipitsModel: ObservableObject {
     
     
     @Published var currentIncipit = ""
-    @Published var i = 0
+    @Published var incipitIndex = 0
     @Published var j = 5
+//    @Published var incipitNumber = 0
     
     
     func nextIncipit() {        
-        i = Int.random(in: 0...j)
-        currentIncipit = incipits[i]
-        incipits.remove(at: i)
+        incipitIndex = Int.random(in: 0...j)
+        currentIncipit = incipits[incipitIndex]
+        incipits.remove(at: incipitIndex)
         j -= 1
+//        incipitNumber += 1
     }
 }

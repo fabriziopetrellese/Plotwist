@@ -32,7 +32,6 @@ struct SiriView: View {
             .padding()
             
             Button {
-
             } label: {
                 ButtonsIconModel(label: "Menu", icon: "house.fill")
             }

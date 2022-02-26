@@ -92,7 +92,7 @@ struct GuidedView: View {
             .frame(width: 300, height: 500)
             .position(x: 207, y: 127)
             
-            if playersModel.playersNames[0] != "" && playersModel.playersNames[1] != "" {
+            if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {
                     Storystarters()
                 } label: {

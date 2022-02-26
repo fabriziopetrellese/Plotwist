@@ -11,7 +11,7 @@ class PlayersModel: ObservableObject {
     @Published var playersNames = ["","","","","",""]
     @Published var activePlayers = [String]()
     @Published var activePlayer = ""
-    @Published var i = 1
+    @Published var indexNumber = 1
     @Published var j = 0
     
     func setUpPlayers() {
@@ -23,8 +23,8 @@ class PlayersModel: ObservableObject {
     }
     
     func nextPlayer() {
-        activePlayer = activePlayers[i]
-        i += 1
-        i = i % activePlayers.count
+        activePlayer = activePlayers[indexNumber]
+        indexNumber += 1
+        indexNumber = indexNumber % activePlayers.count
     }
 }
