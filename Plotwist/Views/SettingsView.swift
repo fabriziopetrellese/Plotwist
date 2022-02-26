@@ -11,23 +11,34 @@ struct SettingsView: View {
     @Environment(\.dismiss) var back3
     @State private var languageModal = false
     @State private var music = MusicClass.shared.isPlaying
+    @State var musicIsAllowed = true
     
     var body: some View {
         VStack {
+            if musicIsAllowed {
             Image("ominomusic")
                 .offset(x: 110, y: 10)
+            } else {
+                Image("ominomusicOff")
+                    .offset(x: 110, y: 10)
+            }
+            
             Toggle(isOn: $music) {
                 Text("Music")
                     .font(Font.custom("Quick Pencil", size: 40))
-            }//.onChange(of: music) { newValue in
-//                if newValue == true {
-//                    MusicClass.shared.play()
-//                } else {
-//                    MusicClass.shared.pause()
-//                }
-//            }
+            }
             .tint(.blue)
             .padding(.horizontal, 60)
+            .onChange(of: music) { newValue in
+                if newValue == true {
+                    musicIsAllowed.toggle()
+                    MusicClass.shared.play()
+                } else {
+                    musicIsAllowed.toggle()
+                    MusicClass.shared.pause()
+                }
+            }
+                
             Button {
                 
             } label: {
@@ -67,6 +78,7 @@ creation
             creditsView()
             Spacer()
         }
+        .offset(x: 0, y: -10)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .principal) {
