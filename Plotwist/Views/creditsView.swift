@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct creditsView: View {
-    @State var showCredits = false
+    @State private var showCredits = false
     
     var body: some View {
         ZStack {

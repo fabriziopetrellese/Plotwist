@@ -12,6 +12,7 @@
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
 		491E707C27BFDDFE0039FBB1 /* RandomDiceThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */; };
+		492C30C427C9D5C400AD21DA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C30C327C9D5C400AD21DA /* AlertView.swift */; };
 		49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */; };
 		4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981954C27C1F6BA0037E81E /* MusicClass.swift */; };
 		4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */; };
@@ -43,6 +44,7 @@
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
 		491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDiceThrow.swift; sourceTree = "<group>"; };
+		492C30C327C9D5C400AD21DA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButtonModel.swift; sourceTree = "<group>"; };
 		4981954C27C1F6BA0037E81E /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonModel.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				49D48C1627C1D3CC00F1E935 /* LanguageView.swift */,
 				490C98A227BDF4E100574E1B /* creditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
+				492C30C327C9D5C400AD21DA /* AlertView.swift */,
 				490C989F27BDE08D00574E1B /* Model */,
 			);
 			path = Views;
@@ -242,6 +245,7 @@
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */,
+				492C30C427C9D5C400AD21DA /* AlertView.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,

@@ -11,7 +11,7 @@ struct SettingsView: View {
     @Environment(\.dismiss) var back3
     @State private var languageModal = false
     @State private var music = MusicClass.shared.isPlaying
-    @State var musicIsAllowed = true
+    @State private var musicIsAllowed = true
     
     var body: some View {
         VStack {

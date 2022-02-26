@@ -11,12 +11,12 @@ struct Storystarters: View {
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
-    @Environment(\.dismiss) var back1
     
+    @State private var showingAlert = false
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var storiesModel: StoriesModel
-    @State var story = ""
+    @State private var story = ""
     
     
     func saveStory(story: String, index: Int) {
@@ -54,24 +54,30 @@ struct Storystarters: View {
             }
             .frame(height: 400)
             .position(x: 207, y: 195)
-//            Spacer()
-                NavigationLink {
-                    if storiesModel.index < 6 {
-                        NextTurn()
-                    } else {
-                        SiriView()
-                    }
-                } label: {
-                    ButtonsModel(label: "Done")
+            
+            NavigationLink {
+                if storiesModel.index < 6 {
+                    NextTurn()
+                } else {
+                    SiriView()
                 }
-                .simultaneousGesture(TapGesture().onEnded{
-                    if storiesModel.index < 6 {
-                        playersModel.nextPlayer()
+            } label: {
+                if story != "" {
+                ButtonsModel(label: "Done")
+                } else {
+                    ZStack {
                     }
-                    saveStory(story: story, index: storiesModel.index)
-                    storiesModel.index += 1
-                })
-                .position(x: 207, y: 260.0)
+                }
+            }
+            .simultaneousGesture(TapGesture().onEnded{
+                if storiesModel.index < 6 {
+                    playersModel.nextPlayer()
+                }
+                saveStory(story: story, index: storiesModel.index)
+                storiesModel.index += 1
+            })
+            .position(x: 207, y: 260.0)
+                
             Spacer()
         }
         .background(
@@ -93,10 +99,16 @@ struct Storystarters: View {
             
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    back1()
+                    showingAlert = true
                 } label: {
-                    Image(systemName: "arrowshape.turn.up.backward.fill")
+                    Image(systemName: "house.fill")
                         .foregroundColor(.black)
+                }
+                .alert("Do you want to leave the game?", isPresented: $showingAlert) {
+                    Button ("Yes", role: .destructive) {}
+                    Button ("No", role: .cancel) {}
+                } message: {
+                    Text("You will go back to the main menu")
                 }
             }
             

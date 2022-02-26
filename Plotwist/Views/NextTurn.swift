@@ -33,7 +33,7 @@ struct NextTurn: View {
             .simultaneousGesture(TapGesture().onEnded{
                 incipitsModel.nextIncipit()
             })
-            .offset(x: 0.0, y: 195.0)
+            .offset(x: 0.0, y: 205.0)
             .frame(width: 100, height: 100)
         }
         .background(

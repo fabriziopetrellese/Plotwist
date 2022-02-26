@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoriesListModel: View {
 
-    @State var categoriesNumber = 7
+    @State private var categoriesNumber = 7
     var categories = ["Fantasy", "Videogames", "Mistery", "Animals", "Elements", "Sport", "Cooking"]
     
     var body: some View {

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CategoriesButtonModel: View {
-    @State var isSelected = false
-    @State var selectedButtons = 0
+    @State private var isSelected = false
+    @State private var selectedButtons = 0
     var content: String
     
     var body: some View {
