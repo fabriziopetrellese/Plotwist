@@ -93,7 +93,7 @@ struct Storystarters: View {
                 NavigationLink {
                     DiceCategories()
                 } label: {
-                    Image(systemName: "dice.fill")
+                    Image("rolldice")
                         .foregroundColor(.black)
                 }
                 
