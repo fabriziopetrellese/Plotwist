@@ -21,7 +21,6 @@ struct GuidedView: View {
                 Text("Select players")
                     .font(Font.custom("Quick Pencil", size: 70))
                     .font(.largeTitle)
-                    .bold()
                     .frame(width: 300, height: 110)
                     .multilineTextAlignment(.center)
                 

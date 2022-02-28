@@ -28,7 +28,7 @@ struct Storystarters: View {
         VStack {
             HStack {
                 Text(incipitsModel.currentIncipit)
-                    .font(Font.custom("Quick Pencil", size: 50))
+                    .font(Font.custom("Quick Pencil", size: 52))
                     .padding(.horizontal)
                     .frame(width: 300, height: 100, alignment: .leading)
                 Spacer()
@@ -40,13 +40,13 @@ struct Storystarters: View {
                 ZStack(alignment: .leading) {
                     if story.isEmpty {
                         Text("Type here...")
-                            .font(Font.custom("Quick Pencil", size: 30))
+                            .font(Font.custom("Quick Pencil", size: 32))
                             .foregroundColor(.darkGray)
                             .padding(.horizontal)
                             .position(x: 78, y: 20)
                     }
                     TextEditor(text: $story)
-                        .font(Font.custom("Quick Pencil", size: 30))
+                        .font(Font.custom("Quick Pencil", size: 33))
                         .foregroundColor(.darkGray)
                         .background(.clear)
                         .padding(.horizontal)

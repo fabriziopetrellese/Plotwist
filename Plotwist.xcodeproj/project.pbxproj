@@ -13,6 +13,7 @@
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
 		491E707C27BFDDFE0039FBB1 /* RandomDiceThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */; };
 		492C30C427C9D5C400AD21DA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C30C327C9D5C400AD21DA /* AlertView.swift */; };
+		493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493AB1B627CC548F00224AF8 /* SplashScreenView.swift */; };
 		49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */; };
 		4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981954C27C1F6BA0037E81E /* MusicClass.swift */; };
 		4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */; };
@@ -45,6 +46,7 @@
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
 		491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDiceThrow.swift; sourceTree = "<group>"; };
 		492C30C327C9D5C400AD21DA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		493AB1B627CC548F00224AF8 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButtonModel.swift; sourceTree = "<group>"; };
 		4981954C27C1F6BA0037E81E /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonModel.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				490C98A227BDF4E100574E1B /* creditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				492C30C327C9D5C400AD21DA /* AlertView.swift */,
+				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
 				490C989F27BDE08D00574E1B /* Models */,
 			);
 			path = Views;
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F08C2227BB47100046D206 /* GuidedView.swift in Sources */,
+				493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */,
 				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
