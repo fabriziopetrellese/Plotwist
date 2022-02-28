@@ -32,65 +32,63 @@ struct GuidedView: View {
             .padding(.bottom, 56)
             .position(x: 207, y: 37)
             
-            
-            ScrollView {
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 1", text: $playersModel.playersNames[0])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
+                ScrollView {
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 1", text: $playersModel.playersNames[0])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 2", text: $playersModel.playersNames[1])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 3", text: $playersModel.playersNames[2])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 4", text: $playersModel.playersNames[3])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 5", text: $playersModel.playersNames[4])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 6", text: $playersModel.playersNames[5])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
                 }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 2", text: $playersModel.playersNames[1])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 3", text: $playersModel.playersNames[2])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 4", text: $playersModel.playersNames[3])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 5", text: $playersModel.playersNames[4])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 6", text: $playersModel.playersNames[5])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-            }
-            .frame(width: 300, height: 500)
-            .position(x: 207, y: 127)
+                .frame(width: 300, height: 500)
+                .position(x: 207, y: 127)
             
             if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {

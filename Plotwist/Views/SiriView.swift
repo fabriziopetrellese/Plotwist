@@ -10,32 +10,44 @@ import AVFoundation
 
 struct SiriView: View {
     @EnvironmentObject var storiesModel: StoriesModel
-        
+    
     var body: some View {
         VStack {
-            Text(storiesModel.fullStory)
-                .frame(width: 310, height: 444, alignment: .center)
-                .padding()
-                .foregroundColor(.darkGray)
-                .font(Font.custom("Quick Pencil", size: 27))
-                .multilineTextAlignment(.center)
-
+            Text("Final story:")
+                .font(Font.custom("Quick Pencil", size: 45))
+                .padding(.bottom, 27)
+            
+            GeometryReader { geometry in
+            ScrollView(showsIndicators: false) {
+                Text(storiesModel.fullStory)
+                    .padding()
+                    .foregroundColor(.darkGray)
+                    .font(Font.custom("Quick Pencil", size: 34))
+                    .multilineTextAlignment(.center)
+                    .frame(width: geometry.size.width)
+                    .frame(minHeight: geometry.size.height)
+            }
+        }
+            .padding(.bottom, 15)
+            .frame(width: 360, height: 404, alignment: .center)
+            
+            Spacer()
             Button {
                 let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
                 utterance.voice = AVSpeechSynthesisVoice(language: "it-IT")
-//                utterance.rate = 0.53
+                // utterance.rate = 0.53
                 let synthesizer = AVSpeechSynthesizer()
                 synthesizer.speak(utterance)
             } label: {
                 ButtonsIconModel(label: "Speech", icon: "person.wave.2.fill")
             }
-            .padding()
             
             Button {
             } label: {
                 ButtonsIconModel(label: "Menu", icon: "house.fill")
             }
         }
+        .padding(.bottom, 10)
         .background(
             Image("Background")
                 .ignoresSafeArea()

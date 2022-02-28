@@ -76,7 +76,6 @@ struct Storystarters: View {
                 saveStory(story: story, index: storiesModel.index)
                 storiesModel.index += 1
                 storiesModel.turnNumber += 1
-                print(storiesModel.turnNumber)
             })
             .position(x: 207, y: 260.0)
                 
