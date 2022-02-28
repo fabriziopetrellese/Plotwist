@@ -9,11 +9,11 @@ import Foundation
 
 class IncipitsModel: ObservableObject {
     @Published var incipits = ["Once upon a time...",
-                               "At a certain point...",
-                               "Then...",
-                               "But suddenly...",
-                               "So...",
-                               "Finally"]
+                               "Every day...",
+                               "But one day...",
+                               "Because of that...",
+                               "Until finally...",
+                               "And ever since then"]
     
     
     @Published var currentIncipit = ""
