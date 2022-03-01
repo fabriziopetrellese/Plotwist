@@ -33,6 +33,7 @@
 		49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */; };
 		49E7C5A327BD491F0043AD25 /* RollDiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */; };
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
+		B9B7F67327CE6F930064A8B3 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7F67227CE6F930064A8B3 /* Delegate.swift */; };
 		B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
@@ -68,6 +69,7 @@
 		49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsModel.swift; sourceTree = "<group>"; };
 		49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceModel.swift; sourceTree = "<group>"; };
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
+		B9B7F67227CE6F930064A8B3 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
@@ -90,9 +92,9 @@
 			children = (
 				49F08C2127BB47100046D206 /* GuidedView.swift */,
 				49E7C59827BD32160043AD25 /* Storystarters.swift */,
+				49E7C59627BD32160043AD25 /* NextTurn.swift */,
 				491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */,
 				491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */,
-				49E7C59627BD32160043AD25 /* NextTurn.swift */,
 				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
 				49D48C1627C1D3CC00F1E935 /* LanguageView.swift */,
@@ -146,6 +148,7 @@
 				49AC302027BAB75900629633 /* ContentView.swift */,
 				490C989C27BDDF8E00574E1B /* Views */,
 				49E7C59727BD32160043AD25 /* ThemeColors.swift */,
+				B9B7F67227CE6F930064A8B3 /* Delegate.swift */,
 				4981954C27C1F6BA0037E81E /* MusicClass.swift */,
 				49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
@@ -255,6 +258,7 @@
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
 				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
 				49D48C1727C1D3CC00F1E935 /* LanguageView.swift in Sources */,
+				B9B7F67327CE6F930064A8B3 /* Delegate.swift in Sources */,
 				49AC302127BAB75900629633 /* ContentView.swift in Sources */,
 				491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */,
 				49E7C5A327BD491F0043AD25 /* RollDiceModel.swift in Sources */,
@@ -397,9 +401,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -428,9 +432,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";

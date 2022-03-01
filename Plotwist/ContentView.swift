@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View { 
-    
+struct ContentView: View {
+    @ObservedObject var navigationRoot = NavigationRoot()
+    @State var isView1Active: Bool = false
+
+
     var body: some View {
         NavigationView {
             VStack {
@@ -19,7 +22,7 @@ struct ContentView: View {
                 Spacer()
                 
                 //GUIDED STORYTELLING
-                NavigationLink(destination: GuidedView()) {
+                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     ZStack {
                         Image("CARD1")
                         Image("OMINO1")
@@ -45,10 +48,13 @@ struct ContentView: View {
                     }
                 }
                 .isDetailLink(false)
+                .simultaneousGesture(TapGesture().onEnded {
+                    navigationRoot.mode1 = true
+                })
                 .offset(x: -7, y: 7)
                 
                 //DICE STORYTELLING
-                NavigationLink(destination: DiceStorytelling()) {
+                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     ZStack {
                         Image("CARD1")
                             .offset(x: 0, y: 7)
@@ -73,7 +79,12 @@ struct ContentView: View {
                             .offset(x: 2, y: 37)
                             .font(Font.custom("Quick Pencil", size: 29))
                     }
-                }.offset(x: -8, y: -1)
+                }
+                .isDetailLink(false)
+                .simultaneousGesture(TapGesture().onEnded {
+                    navigationRoot.mode2 = true
+                })
+                .offset(x: -8, y: -1)
                 
                 //RANDOM DICE THROW
                 NavigationLink(destination: RandomDiceThrow()) {
@@ -116,9 +127,16 @@ struct ContentView: View {
                     .ignoresSafeArea()
             )
         }
+        .onReceive(navigationRoot.$backToRoot) { moveToDashboard in
+                        if moveToDashboard {
+                            isView1Active = false
+                            navigationRoot.backToRoot = false
+                        }
+                    }
         .environmentObject(PlayersModel())
         .environmentObject(IncipitsModel())
         .environmentObject(StoriesModel())
+        .environmentObject(navigationRoot)
         .preferredColorScheme(.light)
             .onAppear(){
 //                MusicClass.shared.setup()

@@ -10,6 +10,7 @@ import AVFoundation
 
 struct SiriView: View {
     @EnvironmentObject var storiesModel: StoriesModel
+    @EnvironmentObject var navigationRoot: NavigationRoot
     
     var body: some View {
         VStack {
@@ -43,6 +44,8 @@ struct SiriView: View {
             }
             
             Button {
+                navigationRoot.mode1 = false
+                navigationRoot.backToRoot = true
             } label: {
                 ButtonsIconModel(label: "Menu", icon: "house.fill")
             }

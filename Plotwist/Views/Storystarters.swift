@@ -16,6 +16,7 @@ struct Storystarters: View {
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var storiesModel: StoriesModel
+    @EnvironmentObject var navigationRoot: NavigationRoot
     @State private var story = ""
     
     
@@ -23,6 +24,7 @@ struct Storystarters: View {
         storiesModel.stories[index] = story
         storiesModel.fullStory += story + " "
     }
+    
     
     var body: some View {
         VStack {
@@ -106,7 +108,10 @@ struct Storystarters: View {
                         .foregroundColor(.black)
                 }
                 .alert("Do you want to leave the game?", isPresented: $showingAlert) {
-                    Button ("Yes", role: .destructive) {}
+                    Button ("Yes", role: .destructive) {
+                        navigationRoot.mode1 = false
+                        navigationRoot.backToRoot = true
+                    }
                     Button ("No", role: .cancel) {}
                 } message: {
                     Text("You will go back to the main menu")

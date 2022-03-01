@@ -10,6 +10,7 @@ import SwiftUI
 struct GuidedView: View {
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
+    @EnvironmentObject var modeSelection: NavigationRoot
     @Environment(\.dismiss) var back2
     
     
@@ -91,7 +92,12 @@ struct GuidedView: View {
             
             if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {
-                    Storystarters()
+                    if modeSelection.mode1 == true {
+                        Storystarters()
+                    }
+                    if modeSelection.mode2 == true {
+                        DiceStorytelling()
+                    }
                 } label: {
                     ButtonsModel(label: "Ready")
                 }
