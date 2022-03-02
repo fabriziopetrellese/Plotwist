@@ -57,5 +57,6 @@ struct NextTurn_Previews: PreviewProvider {
         NextTurn()
             .environmentObject(PlayersModel())
             .environmentObject(IncipitsModel())
+            .environmentObject(StoriesModel())
     }
 }

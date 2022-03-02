@@ -13,7 +13,7 @@ struct DiceStorytelling: View {
     
     var body: some View {
         VStack {
-
+            
             Text("Select dice, get inspired and start writing")
                 .multilineTextAlignment(.center)
                 .font(Font.custom("Quick Pencil", size: 55))
@@ -26,7 +26,6 @@ struct DiceStorytelling: View {
             } label: {
                 ButtonsModel(label: "Select Dice")
             }
-
         }
         .background(
             Image("Background")
@@ -61,6 +60,7 @@ struct DiceStorytelling: View {
 struct DiceStorytelling_Previews: PreviewProvider {
     static var previews: some View {
         DiceStorytelling()
+            .environmentObject(NavigationRoot())
     }
 }
 

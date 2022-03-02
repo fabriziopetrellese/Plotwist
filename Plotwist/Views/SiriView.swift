@@ -36,7 +36,7 @@ struct SiriView: View {
             Button {
                 let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
                 utterance.voice = AVSpeechSynthesisVoice(language: "it-IT")
-                // utterance.rate = 0.53
+                 utterance.rate = 0.42
                 let synthesizer = AVSpeechSynthesizer()
                 synthesizer.speak(utterance)
             } label: {

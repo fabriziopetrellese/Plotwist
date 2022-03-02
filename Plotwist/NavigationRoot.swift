@@ -1,12 +1,12 @@
 //
-//  Delegate.swift
+//  NavigationRoot.swift
 //  Plotwist
 //
 //  Created by Valerio Domenico Conte on 01/03/22.
 //
 
 import Foundation
-import SwiftUI
+//import SwiftUI
 
 class NavigationRoot: ObservableObject {
     @Published var backToRoot = false
