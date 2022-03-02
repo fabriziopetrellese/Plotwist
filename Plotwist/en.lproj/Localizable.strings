@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Plotwist
+
+  Created by Valerio Domenico Conte on 02/03/22.
+  
+*/
+
+"text1" = "Guided Storytelling";
+
+"text2" = "Dice Storytelling";
+
+"text3" = "Settings";
+
+"text4" = "Create a story with the help of story starters and dice";
+
+"text5" = "Create a story with only dice";

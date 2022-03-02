@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Plotwist
+
+  Created by Valerio Domenico Conte on 02/03/22.
+  
+*/
+
+"text1" = "Storytelling guidato";
+
+"text2" = "Storytelling con dadi";
+
+"text3" = "Impostazioni";
+
+"text4" = "Crea una storia con l'aiuto di frasi iniziali e dadi";
+
+"text5" = "Crea una storia con l'aiuto esclusivo dei dadi";

@@ -1,5 +1,5 @@
 //
-//  SettingsButtonModel.swift
+//  LanguageButtonModel.swift
 //  Plotwist
 //
 //  Created by Fabrizio Petrellese on 21/02/22.
@@ -56,7 +56,7 @@ struct LanguageButtonModel: View {
     
 }
 
-struct SettingsButtonModel_Previews: PreviewProvider {
+struct LanguageButtonModel_Previews: PreviewProvider {
     static var previews: some View {
         LanguageButtonModel(languages: "")
     }
