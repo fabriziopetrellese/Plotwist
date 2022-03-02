@@ -6,17 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 class IncipitsModel: ObservableObject {
-    @Published var incipits = ["Once upon a time...",
-                               "Every day...",
-                               "But one day...",
-                               "Because of that...",
-                               "Until finally...",
-                               "And ever since then"]
+    @Published var incipits: [LocalizedStringKey] = ["incipit1", "incipit2", "incipit3", "incipit4", "incipit5", "incipit6"]
     
     
-    @Published var currentIncipit = ""
+    @Published var currentIncipit: LocalizedStringKey = ""
     @Published var incipitIndex = 0
     @Published var j = 5
     

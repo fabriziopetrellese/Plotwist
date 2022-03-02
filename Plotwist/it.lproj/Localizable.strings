@@ -6,6 +6,8 @@
   
 */
 
+// CONTENT VIEW
+
 "text1" = "Storytelling guidato";
 
 "text2" = "Storytelling con dadi";
@@ -15,3 +17,17 @@
 "text4" = "Crea una storia con l'aiuto di frasi iniziali e dadi";
 
 "text5" = "Crea una storia con l'aiuto esclusivo dei dadi";
+
+//INCIPITS
+
+"incipit1" = "C'era una volta...";
+
+"incipit2" = "Ogni giorno...";
+
+"incipit3" = "Tuttavia un giorno...";
+
+"incipit4" = "A causa di questo...";
+
+"incipit5" = "Alla fine...";
+
+"incipit6" = "E da quel momento in poi...";

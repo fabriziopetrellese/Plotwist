@@ -32,63 +32,92 @@ struct GuidedView: View {
             .padding(.bottom, 56)
             .position(x: 207, y: 37)
             
-            ScrollView {
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 1", text: $playersModel.playersNames[0])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 1", text: $playersModel.playersNames[0])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("Player 2", text: $playersModel.playersNames[1])
+                            .font(.system(size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    if modeSelection.playerButton > 0 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("Player 3", text: $playersModel.playersNames[2])
+                                .font(.system(size: 26))
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
+                        }
+                        .frame(width: 300, height: 75, alignment: .center)
+                    }
+                    
+                    if modeSelection.playerButton > 1 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("Player 4", text: $playersModel.playersNames[3])
+                                .font(.system(size: 26))
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
+                        }
+                        .frame(width: 300, height: 75, alignment: .center)
+                    }
+                    
+                    if modeSelection.playerButton > 2 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("Player 5", text: $playersModel.playersNames[4])
+                                .font(.system(size: 26))
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
+                        }
+                        .frame(width: 300, height: 75, alignment: .center)
+                    }
+                    
+                    if modeSelection.playerButton > 3 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("Player 6", text: $playersModel.playersNames[5])
+                                .font(.system(size: 26))
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
+                        }
+                        .frame(width: 300, height: 75, alignment: .center)
+                    }
+                    
+                    if modeSelection.playerButton < 4 {
+                        Button {
+                            modeSelection.playerButton += 1
+                        } label: {
+                            ZStack {
+                                Image("PLAYERS")
+                                Text("Add new player")
+                                    .font(.system(size: 26))
+                                    .padding(.horizontal, 20)
+                                    .multilineTextAlignment(.center)
+                            }
+                            .frame(width: 300, height: 75, alignment: .center)
+                        }
+                    }
                 }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 2", text: $playersModel.playersNames[1])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 3", text: $playersModel.playersNames[2])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 4", text: $playersModel.playersNames[3])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 5", text: $playersModel.playersNames[4])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("Player 6", text: $playersModel.playersNames[5])
-                        .font(.system(size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
             }
             .frame(width: 300, height: 500)
             .position(x: 207, y: 127)
+     
+
+            
+
             
             if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {
@@ -104,6 +133,7 @@ struct GuidedView: View {
                 .simultaneousGesture(TapGesture().onEnded {
                     playersModel.setUpPlayers()
                     incipitsModel.nextIncipit()
+                    modeSelection.playerButton = 0
                 })
                 .padding(36)
                 .position(x: 202, y: 195)
@@ -128,6 +158,7 @@ struct GuidedView: View {
             }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
+                    modeSelection.playerButton = 0
                     back2()
                 } label: {
                     Image(systemName: "arrowshape.turn.up.backward.fill")
@@ -144,5 +175,6 @@ struct GuidedView_Previews: PreviewProvider {
         GuidedView()
             .environmentObject(PlayersModel())
             .environmentObject(IncipitsModel())
+            .environmentObject(NavigationRoot())
     }
 }

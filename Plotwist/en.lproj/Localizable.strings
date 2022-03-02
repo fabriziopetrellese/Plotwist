@@ -6,6 +6,8 @@
   
 */
 
+// CONTENT VIEW
+
 "text1" = "Guided Storytelling";
 
 "text2" = "Dice Storytelling";
@@ -15,3 +17,17 @@
 "text4" = "Create a story with the help of story starters and dice";
 
 "text5" = "Create a story with only dice";
+
+//INCIPITS
+
+"incipit1" = "Once upon a time...";
+
+"incipit2" = "Every day...";
+
+"incipit3" = "But one day...";
+
+"incipit4" = "Because of that...";
+
+"incipit5" = "Until finally...";
+
+"incipit6" = "And ever since then";

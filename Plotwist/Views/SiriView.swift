@@ -12,6 +12,8 @@ struct SiriView: View {
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
     
+    @State private var showingAlert = false
+    
     var body: some View {
         VStack {
             Text("Final story:")
@@ -44,10 +46,18 @@ struct SiriView: View {
             }
             
             Button {
-                navigationRoot.mode1 = false
-                navigationRoot.backToRoot = true
+                showingAlert = true
             } label: {
                 ButtonsIconModel(label: "Menu", icon: "house.fill")
+            }
+            .alert("Do you want to end the game?", isPresented: $showingAlert) {
+                Button ("Yes", role: .destructive) {
+                    navigationRoot.mode1 = false
+                    navigationRoot.backToRoot = true
+                }
+                Button ("No", role: .cancel) {}
+            } message: {
+                Text("You will go back to the main menu")
             }
         }
         .padding(.bottom, 10)
