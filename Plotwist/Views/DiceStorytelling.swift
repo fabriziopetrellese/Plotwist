@@ -8,27 +8,29 @@
 import SwiftUI
 
 struct DiceStorytelling: View {
-    @StateObject var placementSettings = PlacementSettings()
-    @StateObject var sessionSettings = SessionSettings()
+//    @StateObject var placementSettings = PlacementSettings()
+//    @StateObject var sessionSettings = SessionSettings()
     @EnvironmentObject var navigationRoot: NavigationRoot
     @State private var showingAlert = false
+    let diceTitle: LocalizedStringKey = "diceTitle"
+    let selectDice: LocalizedStringKey = "selectDice"
     
     var body: some View {
         VStack {
             
-            Text("Select dice, get inspired and start writing")
+            Text(diceTitle)
                 .multilineTextAlignment(.center)
                 .font(Font.custom("Quick Pencil", size: 55))
-                .frame(width: 300, height: 200)
+                .frame(width: 300, height: 220)
             
             Spacer()
             
             NavigationLink {
-                RealityView()
-                    .environmentObject(placementSettings)
-                    .environmentObject(sessionSettings)
+                DiceView()
+                //                    .environmentObject(placementSettings)
+                //                    .environmentObject(sessionSettings)
             } label: {
-                ButtonsModel(label: "Select Dice")
+                ButtonsModel(label: selectDice)
             }
         }
         .background(

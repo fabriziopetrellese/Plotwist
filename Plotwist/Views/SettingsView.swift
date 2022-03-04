@@ -13,6 +13,11 @@ struct SettingsView: View {
     @State private var music = MusicClass.shared.isPlaying
     @State private var musicIsAllowed = true
     
+    let musicTranslation: LocalizedStringKey = "musicTranslation"
+    let startersCreation: LocalizedStringKey = "startersCreation"
+    let language: LocalizedStringKey = "language"
+    let settings: LocalizedStringKey = "settings"
+    
     var body: some View {
         VStack {
             if musicIsAllowed {
@@ -24,7 +29,7 @@ struct SettingsView: View {
             }
             
             Toggle(isOn: $music) {
-                Text("Music")
+                Text(musicTranslation)
                     .font(Font.custom("Quick Pencil", size: 40))
             }
             .tint(.blue)
@@ -45,16 +50,14 @@ struct SettingsView: View {
                 ZStack {
                     Image("settingsbutton")
                         .padding(.top, 30)
-                    Text("""
-Story starters
-creation
-""")
-                        .font(Font.custom("Quick Pencil", size: 35))
-                        .foregroundColor(.black)
-                        .padding(.top, 27)
+                    HStack {
+                        Text(startersCreation)
+                            .font(Font.custom("Quick Pencil", size: 35))
+                            .foregroundColor(.black)
+                            .padding(.top, 27)
+                    }.padding(.horizontal, 50)
                 }
             }
-            
             
             Button {
                 languageModal.toggle()
@@ -63,7 +66,7 @@ creation
                     Image("settingsbutton")
                         .padding(.bottom, 90)
                     HStack (spacing: 75) {
-                        Text("Language")
+                        Text(language)
                             .font(Font.custom("Quick Pencil", size: 40))
                             .foregroundColor(.black)
                             .padding(.bottom, 93)
@@ -82,7 +85,7 @@ creation
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Settings")
+                Text(settings)
                     .font(Font.custom("Quick Pencil", size: 45))
             }
             ToolbarItem(placement: .navigationBarLeading) {

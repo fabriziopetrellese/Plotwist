@@ -13,9 +13,11 @@ struct ButtonsModel: View {
     var body: some View {
         ZStack {
             Image("buttonback")
-            Text(label)
-                .font(Font.custom("Quick Pencil", size: 50))
-                .foregroundColor(.black)
+            HStack {
+                Text(label)
+                    .font(Font.custom("Quick Pencil", size: 47))
+                    .foregroundColor(.black)
+            }.padding(.horizontal, 30)
         }
         
     }

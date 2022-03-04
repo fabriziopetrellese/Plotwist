@@ -74,6 +74,23 @@
 
 "finalTitle" = "Final story:";
 
-"speech" = "Speech";
+"speech" = "Read";
 
 "menu" = "Menu";
+
+// SETTINGS VIEW
+
+"musicTranslation" = "Music";
+
+"startersCreation" = "Storystarters creation";
+
+"language" = "Language";
+
+"credits" = "Credits";
+
+"settings" = "Settings";
+
+// DICE STORYTELLING
+
+"diceTitle" = "Select dice, get inspired and start writing";
+"selectDice" = "Roll dice";

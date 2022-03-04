@@ -74,6 +74,24 @@
 
 "finalTitle" = "Storia completa:";
 
-"speech" = "Senti";
+"speech" = "Leggi";
 
 "menu" = "Menu";
+
+// SETTINGS VIEW
+
+"musicTranslation" = "Musica";
+
+"startersCreation" = "Personalizzazione starters";
+
+"language" = "Lingua";
+
+"credits" = "Crediti";
+
+"settings" = "Impostazioni";
+
+// DICE STORYTELLING
+
+"diceTitle" = "Seleziona i dadi, trova ispirazione e comincia a scrivere";
+
+"selectDice" = "Lancia i dadi";

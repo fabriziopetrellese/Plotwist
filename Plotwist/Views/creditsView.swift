@@ -9,6 +9,7 @@ import SwiftUI
 
 struct creditsView: View {
     @State private var showCredits = false
+    let credits: LocalizedStringKey = "credits"
     
     var body: some View {
         ZStack {
@@ -17,7 +18,7 @@ struct creditsView: View {
                 Image("ominicredits")
                     .offset(x: -80, y: -162)
                 VStack {
-                    Text("Credits")
+                    Text(credits)
                         .padding(.vertical, 12)
                         .font(Font.custom("Quick Pencil", size: 50))
                     Text("""
@@ -33,7 +34,7 @@ Valerio Domenico Conte
                 }
             } else {
                 Image("settingsbutton")
-                Text("Credits")
+                Text(credits)
                     .font(Font.custom("Quick Pencil", size: 50))
                 Image("ominicredits")
                     .offset(x: -80, y: -70)

@@ -17,8 +17,8 @@ struct Storystarters: View {
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
-    @StateObject var placementSettings = PlacementSettings()
-    @StateObject var sessionSettings = SessionSettings()
+//    @StateObject var placementSettings = PlacementSettings()
+//    @StateObject var sessionSettings = SessionSettings()
     @State private var story = ""
     
     let placeholder: LocalizedStringKey = "placeholder"
@@ -96,9 +96,9 @@ struct Storystarters: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-                    RealityView()
-                        .environmentObject(placementSettings)
-                        .environmentObject(sessionSettings)
+//                    RealityView()
+//                        .environmentObject(placementSettings)
+//                        .environmentObject(sessionSettings)
                 } label: {
                     Image("rolldice")
                         .foregroundColor(.black)
