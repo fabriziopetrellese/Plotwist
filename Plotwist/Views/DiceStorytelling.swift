@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DiceStorytelling: View {
+    @StateObject var placementSettings = PlacementSettings()
+    @StateObject var sessionSettings = SessionSettings()
     @EnvironmentObject var navigationRoot: NavigationRoot
     @State private var showingAlert = false
     
@@ -22,7 +24,9 @@ struct DiceStorytelling: View {
             Spacer()
             
             NavigationLink {
-                
+                RealityView()
+                    .environmentObject(placementSettings)
+                    .environmentObject(sessionSettings)
             } label: {
                 ButtonsModel(label: "Select Dice")
             }
@@ -47,6 +51,7 @@ struct DiceStorytelling: View {
                     Button ("Yes", role: .destructive) {
                         navigationRoot.mode2 = false
                         navigationRoot.backToRoot = true
+                        navigationRoot.playerButton = 0
                     }
                     Button ("No", role: .cancel) {}
                 } message: {

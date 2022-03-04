@@ -12,18 +12,28 @@ struct NextTurn: View {
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var storiesModel: StoriesModel
     
+    let button3: LocalizedStringKey = "button3"
+    let firstPart: LocalizedStringKey = "firstPart"
+    let secondPart: LocalizedStringKey = "secondPart"
+    let thirdPart: LocalizedStringKey = "thirdPart"
+    let fourthPart: LocalizedStringKey = "fourthPart"
+    
+
+    
+    
     var body: some View {
         VStack {
             if storiesModel.turnNumber < 5 {
-                Text("It's \(playersModel.activePlayer)'s turn, pass the phone")
+                let primaParte = String(format: NSLocalizedString("firstPart", comment: ""), arguments: [playersModel.activePlayer])
+                let secondaParte = String(format: NSLocalizedString("secondPart", comment: ""))
+                Text(primaParte + secondaParte)
                     .multilineTextAlignment(.center)
                     .font(Font.custom("Quick Pencil", size: 55))
                     .frame(width: 300, height: 200)
             } else {
-                Text("""
-Last turn -
-\(playersModel.activePlayer), you are the last one writing!
-""")
+                let terzaParte = String(format: NSLocalizedString("thirdPart", comment: ""), arguments: [playersModel.activePlayer])
+                let quartaParte = String(format: NSLocalizedString("fourthPart", comment: ""))
+                Text(terzaParte + quartaParte)
                     .multilineTextAlignment(.center)
                     .font(Font.custom("Quick Pencil", size: 55))
                     .frame(width: 300, height: 200)
@@ -33,7 +43,7 @@ Last turn -
                 Storystarters()
             } label: {
                 ZStack {
-                    ButtonsModel(label: "I'm here!")
+                    ButtonsModel(label: button3)
                     Image("OMINO1")
                         .position(x: 155, y: 2)
                 }

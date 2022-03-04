@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct hideKeyboardButton: View {
     var body: some View {
         Button {
@@ -29,3 +28,4 @@ struct hideKeyboardButton_Previews: PreviewProvider {
         hideKeyboardButton()
     }
 }
+

@@ -17,8 +17,12 @@ struct Storystarters: View {
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
+    @StateObject var placementSettings = PlacementSettings()
+    @StateObject var sessionSettings = SessionSettings()
     @State private var story = ""
     
+    let placeholder: LocalizedStringKey = "placeholder"
+    let button2: LocalizedStringKey = "button2"
     
     func saveStory(story: String, index: Int) {
         storiesModel.stories[index] = story
@@ -41,7 +45,7 @@ struct Storystarters: View {
             HStack {
                 ZStack(alignment: .leading) {
                     if story.isEmpty {
-                        Text("Type here...")
+                        Text(placeholder)
                             .font(Font.custom("Quick Pencil", size: 32))
                             .foregroundColor(.darkGray)
                             .padding(.horizontal)
@@ -65,7 +69,7 @@ struct Storystarters: View {
                 }
             } label: {
                 if story != "" {
-                ButtonsModel(label: "Done")
+                ButtonsModel(label: button2)
                 } else {
                     ZStack {
                     }
@@ -92,7 +96,9 @@ struct Storystarters: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-                    DiceCategories()
+                    RealityView()
+                        .environmentObject(placementSettings)
+                        .environmentObject(sessionSettings)
                 } label: {
                     Image("rolldice")
                         .foregroundColor(.black)

@@ -6,7 +6,7 @@
   
 */
 
-// CONTENT VIEW
+//CONTENT VIEW
 
 "text1" = "Storytelling guidato";
 
@@ -18,7 +18,9 @@
 
 "text5" = "Crea una storia con l'aiuto esclusivo dei dadi";
 
-//INCIPITS
+//STORYSTARTERS
+
+"placeholder" = "Scrivi qui...";
 
 "incipit1" = "C'era una volta...";
 
@@ -31,3 +33,37 @@
 "incipit5" = "Alla fine...";
 
 "incipit6" = "E da quel momento in poi...";
+
+"button2" = "Avanti";
+
+//GUIDED VIEW
+
+"title1" = "Seleziona giocatori";
+
+"player1" = "Giocatore 1";
+
+"player2" = "Giocatore 2";
+
+"player3" = "Giocatore 3";
+
+"player4" = "Giocatore 4";
+
+"player5" = "Giocatore 5";
+
+"player6" = "Giocatore 6";
+
+"button1" = "Avvia";
+
+"addButton" = "Aggiungi giocatore";
+
+//NEXT TURN
+
+"button3" = "Eccomi!";
+
+"firstPart" = "Inizia il turno di %@";
+
+"secondPart" = ", passa il telefono";
+
+"thirdPart" = "Ultimo turno - %@";
+
+"fourthPart" = ", manchi solo tu!";

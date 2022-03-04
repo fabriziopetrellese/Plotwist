@@ -11,7 +11,6 @@
 		49124DB027C1E22200CCECAF /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49124DAF27C1E22200CCECAF /* SiriView.swift */; };
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
-		491E707C27BFDDFE0039FBB1 /* RandomDiceThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */; };
 		492C30C427C9D5C400AD21DA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C30C327C9D5C400AD21DA /* AlertView.swift */; };
 		493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493AB1B627CC548F00224AF8 /* SplashScreenView.swift */; };
 		49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */; };
@@ -33,6 +32,20 @@
 		49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */; };
 		49E7C5A327BD491F0043AD25 /* RollDiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */; };
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
+		B996125D27D0CCCF00D7545B /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996125C27D0CCCF00D7545B /* RealityView.swift */; };
+		B996126027D0CCF700D7545B /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B996125F27D0CCF700D7545B /* FocusEntity */; };
+		B996126227D0CDF600D7545B /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126127D0CDF600D7545B /* PlacementSettings.swift */; };
+		B996126427D0CE1E00D7545B /* SessionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126327D0CE1E00D7545B /* SessionSettings.swift */; };
+		B996126627D0CEBD00D7545B /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126527D0CEBD00D7545B /* CustomARView.swift */; };
+		B996126827D0CEF100D7545B /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126727D0CEF100D7545B /* ControlView.swift */; };
+		B996126A27D0CF3D00D7545B /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126927D0CF3D00D7545B /* BrowseView.swift */; };
+		B996126C27D0CF6200D7545B /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126B27D0CF6200D7545B /* PlacementView.swift */; };
+		B996126E27D0CF8A00D7545B /* RealitySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126D27D0CF8A00D7545B /* RealitySettingsView.swift */; };
+		B996127027D0CFC500D7545B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996126F27D0CFC500D7545B /* Model.swift */; };
+		B996127227D0CFF500D7545B /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996127127D0CFF500D7545B /* View+Extensions.swift */; };
+		B996127527D0D0F100D7545B /* foodDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B996127427D0D0F100D7545B /* foodDice.usdz */; };
+		B996127827D0D9DB00D7545B /* Dado.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B996127627D0D9DA00D7545B /* Dado.usdz */; };
+		B996127927D0D9DB00D7545B /* Pegasus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B996127727D0D9DA00D7545B /* Pegasus.usdz */; };
 		B9B7F67327CE6F930064A8B3 /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */; };
 		B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D78E7A27CFA7370083BB3C /* Localizable.strings */; };
 		B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78E8127CFAE330083BB3C /* CardModel1.swift */; };
@@ -49,7 +62,6 @@
 		49124DAF27C1E22200CCECAF /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
-		491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDiceThrow.swift; sourceTree = "<group>"; };
 		492C30C327C9D5C400AD21DA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		493AB1B627CC548F00224AF8 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButtonModel.swift; sourceTree = "<group>"; };
@@ -73,6 +85,19 @@
 		49E7C5A027BD44A00043AD25 /* ButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsModel.swift; sourceTree = "<group>"; };
 		49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceModel.swift; sourceTree = "<group>"; };
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
+		B996125C27D0CCCF00D7545B /* RealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityView.swift; sourceTree = "<group>"; };
+		B996126127D0CDF600D7545B /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		B996126327D0CE1E00D7545B /* SessionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettings.swift; sourceTree = "<group>"; };
+		B996126527D0CEBD00D7545B /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		B996126727D0CEF100D7545B /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		B996126927D0CF3D00D7545B /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		B996126B27D0CF6200D7545B /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		B996126D27D0CF8A00D7545B /* RealitySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealitySettingsView.swift; sourceTree = "<group>"; };
+		B996126F27D0CFC500D7545B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B996127127D0CFF500D7545B /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		B996127427D0D0F100D7545B /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = foodDice.usdz; sourceTree = "<group>"; };
+		B996127627D0D9DA00D7545B /* Dado.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Dado.usdz; sourceTree = "<group>"; };
+		B996127727D0D9DA00D7545B /* Pegasus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Pegasus.usdz; sourceTree = "<group>"; };
 		B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
 		B9D78E7927CFA7370083BB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9D78E7C27CFA75A0083BB3C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -92,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B996126027D0CCF700D7545B /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +127,11 @@
 		490C989C27BDDF8E00574E1B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49AC302027BAB75900629633 /* ContentView.swift */,
 				49F08C2127BB47100046D206 /* GuidedView.swift */,
 				49E7C59827BD32160043AD25 /* Storystarters.swift */,
 				49E7C59627BD32160043AD25 /* NextTurn.swift */,
 				491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */,
-				491E707B27BFDDFD0039FBB1 /* RandomDiceThrow.swift */,
 				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
 				49D48C1627C1D3CC00F1E935 /* LanguageView.swift */,
@@ -113,7 +139,6 @@
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				492C30C327C9D5C400AD21DA /* AlertView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
-				490C989F27BDE08D00574E1B /* Models */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,10 +183,11 @@
 			children = (
 				49AC302E27BABB1300629633 /* Plotwist-Info.plist */,
 				49AC301E27BAB75900629633 /* PlotwistApp.swift */,
-				49AC302027BAB75900629633 /* ContentView.swift */,
+				490C989F27BDE08D00574E1B /* Models */,
+				B996125B27D0CCB400D7545B /* 3D */,
 				490C989C27BDDF8E00574E1B /* Views */,
-				B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */,
 				B9D78E7A27CFA7370083BB3C /* Localizable.strings */,
+				B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */,
 				49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */,
 				49E7C59727BD32160043AD25 /* ThemeColors.swift */,
 				4981954C27C1F6BA0037E81E /* MusicClass.swift */,
@@ -189,6 +215,34 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		B996125B27D0CCB400D7545B /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				B996125C27D0CCCF00D7545B /* RealityView.swift */,
+				B996126127D0CDF600D7545B /* PlacementSettings.swift */,
+				B996126327D0CE1E00D7545B /* SessionSettings.swift */,
+				B996126527D0CEBD00D7545B /* CustomARView.swift */,
+				B996126727D0CEF100D7545B /* ControlView.swift */,
+				B996126927D0CF3D00D7545B /* BrowseView.swift */,
+				B996126B27D0CF6200D7545B /* PlacementView.swift */,
+				B996126D27D0CF8A00D7545B /* RealitySettingsView.swift */,
+				B996126F27D0CFC500D7545B /* Model.swift */,
+				B996127127D0CFF500D7545B /* View+Extensions.swift */,
+				B996127327D0D0AB00D7545B /* 3DModels */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
+		B996127327D0D0AB00D7545B /* 3DModels */ = {
+			isa = PBXGroup;
+			children = (
+				B996127427D0D0F100D7545B /* foodDice.usdz */,
+				B996127627D0D9DA00D7545B /* Dado.usdz */,
+				B996127727D0D9DA00D7545B /* Pegasus.usdz */,
+			);
+			path = 3DModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,6 +259,9 @@
 			dependencies = (
 			);
 			name = Plotwist;
+			packageProductDependencies = (
+				B996125F27D0CCF700D7545B /* FocusEntity */,
+			);
 			productName = "Rebooters MC3";
 			productReference = 49AC301B27BAB75900629633 /* Plotwist.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +293,9 @@
 				es,
 			);
 			mainGroup = 49AC301227BAB75900629633;
+			packageReferences = (
+				B996125E27D0CCF700D7545B /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 49AC301C27BAB75900629633 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,10 +310,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B996127927D0D9DB00D7545B /* Pegasus.usdz in Resources */,
+				B996127527D0D0F100D7545B /* foodDice.usdz in Resources */,
 				B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */,
 				B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */,
 				49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */,
 				49D07AAE27C6D35F00C6F332 /* backgroundmusic.mp3 in Resources */,
+				B996127827D0D9DB00D7545B /* Dado.usdz in Resources */,
 				49AC302327BAB75900629633 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +330,14 @@
 			files = (
 				49F08C2227BB47100046D206 /* GuidedView.swift in Sources */,
 				493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */,
+				B996126E27D0CF8A00D7545B /* RealitySettingsView.swift in Sources */,
+				B996126427D0CE1E00D7545B /* SessionSettings.swift in Sources */,
 				B9D78E8427CFB1000083BB3C /* CardModel2.swift in Sources */,
 				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
+				B996127027D0CFC500D7545B /* Model.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
+				B996125D27D0CCCF00D7545B /* RealityView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */,
 				492C30C427C9D5C400AD21DA /* AlertView.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
@@ -280,20 +347,25 @@
 				B9D78E8627CFB6A10083BB3C /* SettingsButtonModel.swift in Sources */,
 				49D48C1727C1D3CC00F1E935 /* LanguageView.swift in Sources */,
 				B9B7F67327CE6F930064A8B3 /* NavigationRoot.swift in Sources */,
+				B996126C27D0CF6200D7545B /* PlacementView.swift in Sources */,
 				49AC302127BAB75900629633 /* ContentView.swift in Sources */,
 				491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */,
+				B996126827D0CEF100D7545B /* ControlView.swift in Sources */,
 				49E7C5A327BD491F0043AD25 /* RollDiceModel.swift in Sources */,
 				4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */,
 				49AC301F27BAB75900629633 /* PlotwistApp.swift in Sources */,
 				49E7C59B27BD32160043AD25 /* NextTurn.swift in Sources */,
 				49E7C59F27BD32160043AD25 /* DiceCategories.swift in Sources */,
-				491E707C27BFDDFE0039FBB1 /* RandomDiceThrow.swift in Sources */,
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
+				B996126627D0CEBD00D7545B /* CustomARView.swift in Sources */,
+				B996126A27D0CF3D00D7545B /* BrowseView.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
 				B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */,
 				4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */,
+				B996126227D0CDF600D7545B /* PlacementSettings.swift in Sources */,
 				49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */,
 				49E7C59E27BD32160043AD25 /* CategoriesListModel.swift in Sources */,
+				B996127227D0CFF500D7545B /* View+Extensions.swift in Sources */,
 				49124DB027C1E22200CCECAF /* SiriView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,9 +516,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Plotwist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs your camera to use Augmented Reality to throw dice ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,9 +549,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Plotwist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs your camera to use Augmented Reality to throw dice ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -515,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B996125E27D0CCF700D7545B /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B996125F27D0CCF700D7545B /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B996125E27D0CCF700D7545B /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49AC301327BAB75900629633 /* Project object */;
 }

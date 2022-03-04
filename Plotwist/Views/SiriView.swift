@@ -54,6 +54,7 @@ struct SiriView: View {
                 Button ("Yes", role: .destructive) {
                     navigationRoot.mode1 = false
                     navigationRoot.backToRoot = true
+                    navigationRoot.playerButton = 0
                 }
                 Button ("No", role: .cancel) {}
             } message: {
