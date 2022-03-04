@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ButtonsIconModel: View {
-        @State var label = "test"
+    @State var label: LocalizedStringKey = "test"
         @State var icon = "star"
         
         var body: some View {

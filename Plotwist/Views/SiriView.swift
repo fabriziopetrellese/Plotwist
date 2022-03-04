@@ -14,9 +14,14 @@ struct SiriView: View {
     
     @State private var showingAlert = false
     
+    let finalTitle: LocalizedStringKey = "finalTitle"
+    let language: LocalizedStringKey = "language"
+    let speech: LocalizedStringKey = "speech"
+    let menu: LocalizedStringKey = "menu"
+    
     var body: some View {
         VStack {
-            Text("Final story:")
+            Text(finalTitle)
                 .font(Font.custom("Quick Pencil", size: 45))
                 .padding(.bottom, 27)
             
@@ -36,19 +41,20 @@ struct SiriView: View {
             
             Spacer()
             Button {
+                let lang = String(format: NSLocalizedString("language", comment: ""))
                 let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
-                utterance.voice = AVSpeechSynthesisVoice(language: "it-IT")
+                utterance.voice = AVSpeechSynthesisVoice(language: lang)
                 utterance.rate = 0.42
                 let synthesizer = AVSpeechSynthesizer()
                 synthesizer.speak(utterance)
             } label: {
-                ButtonsIconModel(label: "Speech", icon: "person.wave.2.fill")
+                ButtonsIconModel(label: speech, icon: "person.wave.2.fill")
             }
             
             Button {
                 showingAlert = true
             } label: {
-                ButtonsIconModel(label: "Menu", icon: "house.fill")
+                ButtonsIconModel(label: menu, icon: "house.fill")
             }
             .alert("Do you want to end the game?", isPresented: $showingAlert) {
                 Button ("Yes", role: .destructive) {

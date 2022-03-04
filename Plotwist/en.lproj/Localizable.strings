@@ -67,3 +67,13 @@
 "thirdPart" = "Last turn - %@";
 
 "fourthPart" = ", you are the last one writing!";
+
+//SIRI VIEW
+
+"language" = "en-US";
+
+"finalTitle" = "Final story:";
+
+"speech" = "Speech";
+
+"menu" = "Menu";

@@ -67,3 +67,13 @@
 "thirdPart" = "Ultimo turno - %@";
 
 "fourthPart" = ", manchi solo tu!";
+
+//SIRI VIEW
+
+"language" = "it-IT";
+
+"finalTitle" = "Storia completa:";
+
+"speech" = "Senti";
+
+"menu" = "Menu";
