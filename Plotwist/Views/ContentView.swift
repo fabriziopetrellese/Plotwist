@@ -72,6 +72,7 @@ struct ContentView: View {
         .environmentObject(IncipitsModel())
         .environmentObject(StoriesModel())
         .environmentObject(navigationRoot)
+        .environmentObject(AlertClass())
         .preferredColorScheme(.light)
             .onAppear(){
 //                MusicClass.shared.setup()

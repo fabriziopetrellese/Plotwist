@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct AlertView: View {
-    @Binding var showingAlert: Bool
+//    @Binding var showingAlert: Bool
+    @EnvironmentObject var alertClass: AlertClass
     @EnvironmentObject var navigationRoot: NavigationRoot
     
     var body: some View {
@@ -39,7 +40,8 @@ struct AlertView: View {
             }
             .offset(x: 77, y: 59)
             Button {
-                showingAlert.toggle()
+                alertClass.showingAlert = false
+//                showingAlert.toggle()
             } label: {
                 ZStack {
                     Image("yesAlert")
@@ -56,6 +58,7 @@ struct AlertView: View {
 
 struct AlertView_Previews: PreviewProvider {
     static var previews: some View {
-        AlertView(showingAlert: .constant(false))
+        AlertView()
+            .environmentObject(AlertClass())
     }
 }
