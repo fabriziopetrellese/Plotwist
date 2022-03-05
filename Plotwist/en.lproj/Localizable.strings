@@ -95,3 +95,13 @@
 "diceTitle" = "Select dice, get inspired and start writing";
 
 "rollDice" = "Roll dice";
+
+// ALERT VIEW
+
+"mainMenu" = "Main menu";
+
+"quit" = "Do you want to leave the game?";
+
+"yesAlert" = "Yes";
+
+"noAlert" = "No";

@@ -55,7 +55,7 @@ struct SettingsView: View {
                             .font(Font.custom("Quick Pencil", size: 35))
                             .foregroundColor(.black)
                             .padding(.top, 27)
-                    }.padding(.horizontal, 50)
+                    }.padding(.horizontal, 68)
                 }
             }
             

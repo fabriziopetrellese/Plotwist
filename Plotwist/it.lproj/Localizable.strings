@@ -95,3 +95,13 @@
 "diceTitle" = "Seleziona i dadi, trova ispirazione e comincia a scrivere";
 
 "rollDice" = "Lancia i dadi";
+
+// ALERT VIEW
+
+"mainMenu" = "Menu";
+
+"quit" = "Vuoi abbandonare la partita?";
+
+"yesAlert" = "Si";
+
+"noAlert" = "No";

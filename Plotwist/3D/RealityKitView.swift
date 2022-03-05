@@ -73,7 +73,7 @@ struct RealityKitView: UIViewRepresentable {
 
                 let diceEntity = try! Entity.loadModel(named: "foodDice")
                 diceEntity.scale = [0.1, 0.1, 0.1]
-//                diceEntity.position = focusEntity.position
+                diceEntity.position = focusEntity.position
 
                 let extent = diceEntity.visualBounds(relativeTo: diceEntity).extents.y
                 let boxShape = ShapeResource.generateBox(size: [extent, extent, extent])
@@ -89,7 +89,7 @@ struct RealityKitView: UIViewRepresentable {
                 
                 let diceEntity2 = try! Entity.loadModel(named: "foodDice")
                 diceEntity2.scale = [0.1, 0.1, 0.1]
-//                diceEntity2.position = focusEntity.position
+                diceEntity2.position = focusEntity.position
                 
                 let extent2 = diceEntity2.visualBounds(relativeTo: diceEntity2).extents.y
                 let boxShapeB = ShapeResource.generateBox(size: [extent2, extent2, extent2])
@@ -105,7 +105,7 @@ struct RealityKitView: UIViewRepresentable {
                 
                 let diceEntity3 = try! Entity.loadModel(named: "foodDice")
                 diceEntity3.scale = [0.1, 0.1, 0.1]
-//                diceEntity3.position = focusEntity.position
+                diceEntity3.position = focusEntity.position
                 
                 let extent3 = diceEntity3.visualBounds(relativeTo: diceEntity3).extents.y
                 let boxShapeC = ShapeResource.generateBox(size: [extent3, extent3, extent3])
@@ -123,10 +123,10 @@ struct RealityKitView: UIViewRepresentable {
                 let planeMesh = MeshResource.generatePlane(width: 2, depth: 2)
                 let material = SimpleMaterial(color: .init(white: 1.0, alpha: 0.1), isMetallic: false)
                 let planeEntity = ModelEntity(mesh: planeMesh, materials: [material])
-//                planeEntity.position = focusEntity.position
+                planeEntity.position = focusEntity.position
                 planeEntity.physicsBody = PhysicsBodyComponent(massProperties: .default, material: nil, mode: .static)
                 planeEntity.collision = CollisionComponent(shapes: [.generateBox(width: 2, height: 0.001, depth: 2)])
-//                planeEntity.position = focusEntity.position
+                planeEntity.position = focusEntity.position
                 anchor.addChild(planeEntity)
             }
             if let diceEntity2 = self.diceEntity2 {

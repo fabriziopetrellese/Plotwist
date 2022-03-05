@@ -8,24 +8,28 @@
 import SwiftUI
 
 struct AlertView: View {
-//    @Binding var showingAlert: Bool
     @EnvironmentObject var alertClass: AlertClass
     @EnvironmentObject var navigationRoot: NavigationRoot
+    
+    let mainMenu: LocalizedStringKey = "mainMenu"
+    let quit: LocalizedStringKey = "quit"
+    let yesAlert: LocalizedStringKey = "yesAlert"
+    let noAlert: LocalizedStringKey = "noAlert"
     
     var body: some View {
         ZStack {
             Image("ominoAlert")
                 .offset(x: 0, y: -122)
             Image("customAlertPNG")
-            Text("Main menu")
+            Text(mainMenu)
                 .font(Font.custom("Quick Pencil", size: 27))
                 .offset(x: 0, y: -96)
             Image("ominoAlertMani")
                 .offset(x: 0, y: -116)
-            Text("Do you want to leave the game?")
+            Text(quit)
                 .font(Font.custom("Quick Pencil", size: 35))
                 .multilineTextAlignment(.center)
-                .frame(width: 200, height: 60)
+                .frame(width: 211, height: 60)
                 .foregroundColor(.black)
                 .offset(x: 0, y: -23)
             Button {
@@ -34,18 +38,17 @@ struct AlertView: View {
             } label: {
                 ZStack {
                     Image("yesAlert")
-                    Text("Yes")
+                    Text(yesAlert)
                         .font(Font.custom("Quick Pencil", size: 35))
                 }
             }
             .offset(x: 77, y: 59)
             Button {
                 alertClass.showingAlert = false
-//                showingAlert.toggle()
             } label: {
                 ZStack {
                     Image("yesAlert")
-                    Text("No")
+                    Text(noAlert)
                         .font(Font.custom("Quick Pencil", size: 35))
                 }
             }

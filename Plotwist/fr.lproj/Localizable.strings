@@ -5,3 +5,103 @@
   Created by Valerio Domenico Conte on 02/03/22.
   
 */
+
+//CONTENT VIEW
+
+"text1" = "Storytelling guidee";
+
+"text2" = "Storytelling avec des";
+
+"text3" = "Parametres";
+
+"text4" = "Creer une histoire a l’aide de phrases initiales et des";
+
+"text5" = "Creer une histoire avec l’aide exclusive des des";
+
+//STORYSTARTERS
+
+"placeholder" = "Ecris ici...";
+
+"incipit1" = "Il etait une fois...";
+
+"incipit2" = "Chaque jour...";
+
+"incipit3" = "Mais un jour...";
+
+"incipit4" = "A cause de ca...";
+
+"incipit5" = "Jusqu'a ce que finalement...";
+
+"incipit6" = "Et depuis lors";
+
+"button2" = "Fini";
+
+//GUIDED VIEW
+
+"title1" = "Selectionner les joueurs";
+
+"player1" = "Joueur 1";
+
+"player2" = "Joueur 2";
+
+"player3" = "Joueur 3";
+
+"player4" = "Joueur 4";
+
+"player5" = "Joueur 5";
+
+"player6" = "Joueur 6";
+
+"button1" = "Pret";
+
+"addButton" = "Ajouter nouveau joueur";
+
+//NEXT TURN
+
+"button3" = "Suis ici!";
+
+"firstPart" = "Le tour de %@ commence";
+
+"secondPart" = ", passe le telephone";
+
+"thirdPart" = "Dernier tour - %@";
+
+"fourthPart" = ", ne reste plus que toi!";
+
+//SIRI VIEW
+
+"language" = "fr-FR";
+
+"finalTitle" = "Histoire complete:";
+
+"speech" = "Lis";
+
+"menu" = "Menu";
+
+// SETTINGS VIEW
+
+"musicTranslation" = "Musique";
+
+"startersCreation" = "Personnalisation phrases";
+
+"language" = "Langue";
+
+"credits" = "Credits";
+
+"settings" = "Parametres";
+
+// DICE STORYTELLING
+
+"diceTitle" = "Selectionner des, inspirez-vous et commencez a ecrire";
+
+"rollDice" = "Lancer des";
+
+// ALERT VIEW
+
+"mainMenu" = "Menu";
+
+"quit" = "Tu veux quitter le jeu?";
+
+"yesAlert" = "Oui";
+
+"noAlert" = "No";
