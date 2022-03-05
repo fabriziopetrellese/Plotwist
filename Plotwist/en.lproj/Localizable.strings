@@ -93,4 +93,5 @@
 // DICE STORYTELLING
 
 "diceTitle" = "Select dice, get inspired and start writing";
-"selectDice" = "Roll dice";
+
+"rollDice" = "Roll dice";

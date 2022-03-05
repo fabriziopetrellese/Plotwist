@@ -12,13 +12,11 @@ struct Storystarters: View {
         UITextView.appearance().backgroundColor = .clear
     }
     
-    @State private var showingAlert = false
+    @State var showingAlert = false
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
-//    @StateObject var placementSettings = PlacementSettings()
-//    @StateObject var sessionSettings = SessionSettings()
     @State private var story = ""
     
     let placeholder: LocalizedStringKey = "placeholder"
@@ -69,7 +67,7 @@ struct Storystarters: View {
                 }
             } label: {
                 if story != "" {
-                ButtonsModel(label: button2)
+                    ButtonsModel(label: button2)
                 } else {
                     ZStack {
                     }
@@ -84,7 +82,7 @@ struct Storystarters: View {
                 storiesModel.turnNumber += 1
             })
             .position(x: 207, y: 260.0)
-                
+            
             Spacer()
         }
         .background(
@@ -93,12 +91,11 @@ struct Storystarters: View {
                 .position(x: 207, y: 400)
         )
         .navigationBarBackButtonHidden(true)
+        .blur(radius: showingAlert ? 9 : 0)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-//                    RealityView()
-//                        .environmentObject(placementSettings)
-//                        .environmentObject(sessionSettings)
+                    DiceView()
                 } label: {
                     Image("rolldice")
                         .foregroundColor(.black)
@@ -108,25 +105,19 @@ struct Storystarters: View {
             
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    showingAlert = true
+                    showingAlert.toggle()
                 } label: {
                     Image(systemName: "house.fill")
                         .foregroundColor(.black)
-                }
-                .alert("Do you want to leave the game?", isPresented: $showingAlert) {
-                    Button ("Yes", role: .destructive) {
-                        navigationRoot.mode1 = false
-                        navigationRoot.backToRoot = true
-                    }
-                    Button ("No", role: .cancel) {}
-                } message: {
-                    Text("You will go back to the main menu")
                 }
             }
             
             ToolbarItem(placement: .keyboard) {
                 hideKeyboardButton()
             }
+        }
+        if showingAlert {
+            AlertView(showingAlert: $showingAlert)
         }
     }
 }
@@ -142,3 +133,12 @@ struct Storystarters_Previews: PreviewProvider {
 
 
 
+//                .alert("Do you want to leave the game?", isPresented: $showingAlert) {
+//                    Button ("Yes", role: .destructive) {
+//                        navigationRoot.mode1 = false
+//                        navigationRoot.backToRoot = true
+//                    }
+//                    Button ("No", role: .cancel) {}
+//                } message: {
+//                    Text("You will go back to the main menu")
+//                }

@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct DiceStorytelling: View {
-//    @StateObject var placementSettings = PlacementSettings()
-//    @StateObject var sessionSettings = SessionSettings()
     @EnvironmentObject var navigationRoot: NavigationRoot
     @State private var showingAlert = false
     let diceTitle: LocalizedStringKey = "diceTitle"
-    let selectDice: LocalizedStringKey = "selectDice"
+    let rollDice: LocalizedStringKey = "rollDice"
     
     var body: some View {
         VStack {
@@ -27,10 +25,8 @@ struct DiceStorytelling: View {
             
             NavigationLink {
                 DiceView()
-                //                    .environmentObject(placementSettings)
-                //                    .environmentObject(sessionSettings)
             } label: {
-                ButtonsModel(label: selectDice)
+                ButtonsModel(label: rollDice)
             }
         }
         .background(
