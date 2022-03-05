@@ -15,7 +15,7 @@ struct ButtonsModel: View {
             Image("buttonback")
             HStack {
                 Text(label)
-                    .font(Font.custom("Quick Pencil", size: 47))
+                    .font(Font.custom("Quick Pencil", size: 45.5))
                     .foregroundColor(.black)
             }.padding(.horizontal, 30)
         }

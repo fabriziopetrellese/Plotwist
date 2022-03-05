@@ -6,4 +6,102 @@
   
 */
 
+// CONTENT VIEW
 
+"text1" = "Storytelling guiado";
+
+"text2" = "Storytelling con dados";
+
+"text3" = "Ajustes";
+
+"text4" = "Crear una historia con la ayuda de frases iniciales y dados";
+
+"text5" = "Crear una historia con la ayuda exclusiva de los dados";
+
+//STORYSTARTERS
+
+"placeholder" = "Escribe aqui...";
+
+"incipit1" = "Erase una vez...";
+
+"incipit2" = "Todos los dias...";
+
+"incipit3" = "Pero un dia...";
+
+"incipit4" = "Y por eso...";
+
+"incipit5" = "Hasta que...";
+
+"incipit6" = "Y desde entonces";
+
+"button2" = "Hecho";
+
+//GUIDED VIEW
+
+"title1" = "Selecciona jugadores";
+
+"player1" = "Jugador 1";
+
+"player2" = "Jugador 2";
+
+"player3" = "Jugador 3";
+
+"player4" = "Jugador 4";
+
+"player5" = "Jugador 5";
+
+"player6" = "Jugador 6";
+
+"button1" = "Listo";
+
+"addButton" = "Anadir nuevo jugador";
+
+//NEXT TURN
+
+"button3" = "Aqui!";
+
+"firstPart" = "Es el turno de %@";
+
+"secondPart" = ", pasa el telefono";
+
+"thirdPart" = "Ultima vuelta - %@";
+
+"fourthPart" = ", eres el ultimo que escribe!";
+
+//SIRI VIEW
+
+"language" = "es-ES";
+
+"finalTitle" = "Historia completa:";
+
+"speech" = "Lees";
+
+"menu" = "Menu";
+
+// SETTINGS VIEW
+
+"musicTranslation" = "Musica";
+
+"startersCreation" = "Personalizacion frases iniciales";
+
+"language" = "Idioma";
+
+"credits" = "Creditos";
+
+"settings" = "Ajustes";
+
+// DICE STORYTELLING
+
+"diceTitle" = "Selecciona dados, inspirate y empieza a escribir";
+
+"rollDice" = "Lanzar dados";
+
+// ALERT VIEW
+
+"mainMenu" = "Menu";
+
+"quit" = "Quieres dejar el juego?";
+
+"yesAlert" = "Si";
+
+"noAlert" = "No";
