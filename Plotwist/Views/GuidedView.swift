@@ -23,9 +23,8 @@ struct GuidedView: View {
     let button1: LocalizedStringKey = "button1"
     let addButton: LocalizedStringKey = "addButton"
     
-
     var body: some View {
-        
+
         VStack {
             ZStack {
                 Text(title1)
@@ -33,7 +32,6 @@ struct GuidedView: View {
                     .font(.largeTitle)
                     .frame(width: 300, height: 110)
                     .multilineTextAlignment(.center)
-                
                 
                 Image("FALLIN")
                     .offset(x: -40, y: 60)
@@ -123,11 +121,7 @@ struct GuidedView: View {
             }
             .frame(width: 300, height: 500)
             .position(x: 207, y: 127)
-     
-
-            
-
-            
+    
             if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {
                     if modeSelection.mode1 == true {
@@ -188,10 +182,3 @@ struct GuidedView_Previews: PreviewProvider {
             .environmentObject(NavigationRoot())
     }
 }
-
-
-
-
-
-
-

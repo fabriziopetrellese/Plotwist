@@ -11,7 +11,8 @@
 		49124DB027C1E22200CCECAF /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49124DAF27C1E22200CCECAF /* SiriView.swift */; };
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
-		492C30C427C9D5C400AD21DA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C30C327C9D5C400AD21DA /* AlertView.swift */; };
+		492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC727D296C700F3BD65 /* AlertView.swift */; };
+		492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC927D35D8000F3BD65 /* AlertClass.swift */; };
 		493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493AB1B627CC548F00224AF8 /* SplashScreenView.swift */; };
 		49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */; };
 		4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981954C27C1F6BA0037E81E /* MusicClass.swift */; };
@@ -52,7 +53,8 @@
 		49124DAF27C1E22200CCECAF /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
-		492C30C327C9D5C400AD21DA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		492D3BC727D296C700F3BD65 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		492D3BC927D35D8000F3BD65 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		493AB1B627CC548F00224AF8 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButtonModel.swift; sourceTree = "<group>"; };
 		4981954C27C1F6BA0037E81E /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
@@ -118,7 +120,7 @@
 				49D48C1627C1D3CC00F1E935 /* LanguageView.swift */,
 				490C98A227BDF4E100574E1B /* creditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
-				492C30C327C9D5C400AD21DA /* AlertView.swift */,
+				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
 			);
 			path = Views;
@@ -173,14 +175,15 @@
 			children = (
 				49AC302E27BABB1300629633 /* Plotwist-Info.plist */,
 				49AC301E27BAB75900629633 /* PlotwistApp.swift */,
-				4953C73D27D2594500D1B878 /* 3D */,
-				490C989F27BDE08D00574E1B /* Models */,
 				490C989C27BDDF8E00574E1B /* Views */,
-				B9D78E7A27CFA7370083BB3C /* Localizable.strings */,
+				490C989F27BDE08D00574E1B /* Models */,
+				4953C73D27D2594500D1B878 /* 3D */,
 				B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */,
+				492D3BC927D35D8000F3BD65 /* AlertClass.swift */,
 				49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */,
 				49E7C59727BD32160043AD25 /* ThemeColors.swift */,
 				4981954C27C1F6BA0037E81E /* MusicClass.swift */,
+				B9D78E7A27CFA7370083BB3C /* Localizable.strings */,
 				49AC302227BAB75900629633 /* Assets.xcassets */,
 				49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
@@ -294,11 +297,11 @@
 				49EB564627D2548C00E23086 /* DiceView.swift in Sources */,
 				493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */,
 				B9D78E8427CFB1000083BB3C /* CardModel2.swift in Sources */,
+				492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */,
 				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */,
-				492C30C427C9D5C400AD21DA /* AlertView.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
@@ -320,6 +323,7 @@
 				4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */,
 				49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */,
 				49E7C59E27BD32160043AD25 /* CategoriesListModel.swift in Sources */,
+				492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */,
 				49124DB027C1E22200CCECAF /* SiriView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

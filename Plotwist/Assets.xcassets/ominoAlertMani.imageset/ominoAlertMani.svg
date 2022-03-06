@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="10px" viewBox="0 0 95 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="AlertTest" transform="translate(-117.000000, -35.000000)" fill="#FFFFFF" stroke="#3A3939" stroke-width="2">
+            <g id="Group-9" transform="translate(118.000000, 36.602562)">
+                <path d="M79,1.4584888 C81.0967953,5.33490597 83.3051153,7.27311456 85.6249601,7.27311456 C87.9448048,7.27311456 90.3390075,5.33490597 92.8075681,1.4584888 C90.5712399,0.486162934 88.2699786,4.54747351e-13 85.903784,4.54747351e-13 C83.5375895,4.54747351e-13 81.2363281,0.486162934 79,1.4584888 Z" id="mano-destra"></path>
+                <path d="M0,1.4584888 C2.09679529,5.33490597 4.30511531,7.27311456 6.62496007,7.27311456 C8.94480483,7.27311456 11.3390075,5.33490597 13.8075681,1.4584888 C11.4683844,0.486162934 9.07418175,0 6.62496007,0 C4.17573839,0 1.96741837,0.486162934 0,1.4584888 Z" id="mano-sinistra"></path>
+            </g>
+        </g>
+    </g>
+</svg>

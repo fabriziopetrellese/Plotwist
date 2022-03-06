@@ -8,58 +8,48 @@
 import SwiftUI
 
 struct DiceStorytelling: View {
-//    @StateObject var placementSettings = PlacementSettings()
-//    @StateObject var sessionSettings = SessionSettings()
+    @EnvironmentObject var alertClass: AlertClass
     @EnvironmentObject var navigationRoot: NavigationRoot
-    @State private var showingAlert = false
     let diceTitle: LocalizedStringKey = "diceTitle"
-    let selectDice: LocalizedStringKey = "selectDice"
+    let rollDice: LocalizedStringKey = "rollDice"
     
     var body: some View {
         VStack {
-            
             Text(diceTitle)
                 .multilineTextAlignment(.center)
                 .font(Font.custom("Quick Pencil", size: 55))
                 .frame(width: 300, height: 220)
+                .position(x: 207, y: 50)
             
             Spacer()
             
             NavigationLink {
                 DiceView()
-                //                    .environmentObject(placementSettings)
-                //                    .environmentObject(sessionSettings)
             } label: {
-                ButtonsModel(label: selectDice)
-            }
+                ButtonsModel(label: rollDice)
+            }.position(x: 207, y: 270)
         }
         .background(
             Image("Background")
                 .ignoresSafeArea()
-        )
-        .navigationBarBackButtonHidden(true)
-        .onAppear(perform: {
-            navigationRoot.mode2 = false
-        })
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    showingAlert = true
-                } label: {
-                    Image(systemName: "house.fill")
-                        .foregroundColor(.black)
-                }
-                .alert("Do you want to leave the game?", isPresented: $showingAlert) {
-                    Button ("Yes", role: .destructive) {
-                        navigationRoot.mode2 = false
-                        navigationRoot.backToRoot = true
-                        navigationRoot.playerButton = 0
+        ).position(x: 207, y: 400)
+            .blur(radius: alertClass.showingAlert ? 9 : 0)
+            .navigationBarBackButtonHidden(true)
+            .onAppear(perform: {
+                navigationRoot.mode2 = false
+            })
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        alertClass.showingAlert = true
+                    } label: {
+                        Image(systemName: "house.fill")
+                            .foregroundColor(.black)
                     }
-                    Button ("No", role: .cancel) {}
-                } message: {
-                    Text("You will go back to the main menu")
                 }
             }
+        if alertClass.showingAlert == true {
+            AlertView()
         }
     }
 }
@@ -68,6 +58,7 @@ struct DiceStorytelling_Previews: PreviewProvider {
     static var previews: some View {
         DiceStorytelling()
             .environmentObject(NavigationRoot())
+            .environmentObject(AlertClass())
     }
 }
 
