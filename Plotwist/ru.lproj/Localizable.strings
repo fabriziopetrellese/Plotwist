@@ -1,0 +1,107 @@
+/* 
+  Localizable.strings
+  Plotwist
+
+  Created by Fabrizio Petrellese on 06/03/22.
+  
+*/
+
+//CONTENT VIEW
+
+"text1" = "Guided Storytelling";
+
+"text2" = "Dice Storytelling";
+
+"text3" = "Settings";
+
+"text4" = "Create a story with the help of story starters and dice";
+
+"text5" = "Create a story with only dice";
+
+//STORYSTARTERS
+
+"placeholder" = "Type here...";
+
+"incipit1" = "Once upon a time...";
+
+"incipit2" = "Every day...";
+
+"incipit3" = "But one day...";
+
+"incipit4" = "Because of that...";
+
+"incipit5" = "Until finally...";
+
+"incipit6" = "And ever since then";
+
+"button2" = "Done";
+
+//GUIDED VIEW
+
+"title1" = "Select players";
+
+"player1" = "Player 1";
+
+"player2" = "Player 2";
+
+"player3" = "Player 3";
+
+"player4" = "Player 4";
+
+"player5" = "Player 5";
+
+"player6" = "Player 6";
+
+"button1" = "Ready";
+
+"addButton" = "Add new player";
+
+//NEXT TURN
+
+"button3" = "I'm here!";
+
+"firstPart" = "It's %@";
+
+"secondPart" = "'s turn, pass the phone";
+
+"thirdPart" = "Last turn - %@";
+
+"fourthPart" = ", you are the last one writing!";
+
+//SIRI VIEW
+
+"language" = "en-US";
+
+"finalTitle" = "Final story:";
+
+"speech" = "Read";
+
+"menu" = "Menu";
+
+// SETTINGS VIEW
+
+"musicTranslation" = "Music";
+
+"startersCreation" = "Storystarters creation";
+
+"language" = "Language";
+
+"credits" = "Credits";
+
+"settings" = "Settings";
+
+// DICE STORYTELLING
+
+"diceTitle" = "Select dice, get inspired and start writing";
+
+"rollDice" = "Roll dice";
+
+// ALERT VIEW
+
+"mainMenu" = "Main menu";
+
+"quit" = "Do you want to leave the game?";
+
+"yesAlert" = "Yes";
+
+"noAlert" = "No";

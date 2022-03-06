@@ -27,7 +27,6 @@ struct Storystarters: View {
         storiesModel.fullStory += story + " "
     }
     
-    
     var body: some View {
         VStack {
             HStack {
