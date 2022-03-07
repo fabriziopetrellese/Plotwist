@@ -37,6 +37,7 @@
 		49EB564B27D2556600E23086 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 49EB564A27D2556600E23086 /* FocusEntity */; };
 		49EB564D27D2560400E23086 /* foodDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49EB564C27D2560400E23086 /* foodDice.usdz */; };
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
+		B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302E27BABB1300629633 /* Plotwist-Info.plist */; };
 		B9B7F67327CE6F930064A8B3 /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */; };
 		B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D78E7A27CFA7370083BB3C /* Localizable.strings */; };
 		B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78E8127CFAE330083BB3C /* CardModel1.swift */; };
@@ -277,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */,
 				49EB564D27D2560400E23086 /* foodDice.usdz in Resources */,
 				B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */,
 				B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */,
