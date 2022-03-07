@@ -261,12 +261,12 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				it,
 				fr,
 				es,
 				de,
 				ru,
+				Base,
 			);
 			mainGroup = 49AC301227BAB75900629633;
 			packageReferences = (
