@@ -60,6 +60,8 @@
 		49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButtonModel.swift; sourceTree = "<group>"; };
 		4981954C27C1F6BA0037E81E /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonModel.swift; sourceTree = "<group>"; };
+		499C53EA27D522B90068BE17 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		499C53EB27D523E80068BE17 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		49AC301B27BAB75900629633 /* Plotwist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plotwist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AC301E27BAB75900629633 /* PlotwistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotwistApp.swift; sourceTree = "<group>"; };
 		49AC302027BAB75900629633 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				4981954C27C1F6BA0037E81E /* MusicClass.swift */,
 				B9D78E7A27CFA7370083BB3C /* Localizable.strings */,
 				49AC302227BAB75900629633 /* Assets.xcassets */,
+				49AC302427BAB75900629633 /* Preview Content */,
 				49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
 				49EB564E27D2560800E23086 /* foodDice.usdz */,
@@ -199,13 +202,13 @@
 				49EB564C27D2560400E23086 /* foodDice.usdz */,
 				49AC302527BAB75900629633 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			name = "Preview Content";
+			path = "Font/Preview Content";
 			sourceTree = "<group>";
 		};
 		49D0B17D27BB2BCC00F34BF5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				49AC302427BAB75900629633 /* Preview Content */,
 				B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */,
 			);
 			path = Font;
@@ -259,6 +262,8 @@
 				it,
 				fr,
 				es,
+				de,
+				ru,
 			);
 			mainGroup = 49AC301227BAB75900629633;
 			packageReferences = (
@@ -340,6 +345,8 @@
 				B9D78E7C27CFA75A0083BB3C /* it */,
 				B9D78E7D27CFA75B0083BB3C /* es */,
 				B9D78E8027CFAD260083BB3C /* fr */,
+				499C53EA27D522B90068BE17 /* de */,
+				499C53EB27D523E80068BE17 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -469,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
 				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
@@ -502,7 +509,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
 				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;

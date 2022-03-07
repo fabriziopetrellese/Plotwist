@@ -1,0 +1,107 @@
+/* 
+  Localizable.strings
+  Plotwist
+
+  Created by Fabrizio Petrellese on 06/03/22.
+  
+*/
+
+//CONTENT VIEW
+
+"text1" = "Gefuhrte Storytelling";
+
+"text2" = "Wurfel Storytelling";
+
+"text3" = "Einstellungen";
+
+"text4" = "Eine geschichte mit hilfe von startsatzen und wurfeln erstellen";
+
+"text5" = "Nur mit wurfeln eine geschichte erstellen";
+
+//STORYSTARTERS
+
+"placeholder" = "Geben sie hier...";
+
+"incipit1" = "Es war einmal...";
+
+"incipit2" = "Jeden tag...";
+
+"incipit3" = "Aber eines tages...";
+
+"incipit4" = "Deswegen...";
+
+"incipit5" = "Bis endlich...";
+
+"incipit6" = "Und seitdem";
+
+"button2" = "Getan";
+
+//GUIDED VIEW
+
+"title1" = "Ausgewahlte spieler";
+
+"player1" = "Spieler 1";
+
+"player2" = "Spieler 2";
+
+"player3" = "Spieler 3";
+
+"player4" = "Spieler 4";
+
+"player5" = "Spieler 5";
+
+"player6" = "Spieler 6";
+
+"button1" = "Bereit";
+
+"addButton" = "Neuen Spieler";
+
+//NEXT TURN
+
+"button3" = "Hier!";
+
+"firstPart" = "Ist %@";
+
+"secondPart" = "dran, gib das telefon";
+
+"thirdPart" = "Letzten Kurve - %@";
+
+"fourthPart" = ", sie sind der letzte zu schreiben!";
+
+//SIRI VIEW
+
+"language" = "de";
+
+"finalTitle" = "Ganze geschichte:";
+
+"speech" = "Lesen";
+
+"menu" = "Menu";
+
+// SETTINGS VIEW
+
+"musicTranslation" = "Musik";
+
+"startersCreation" = "Anpassung der ersten satze";
+
+"language" = "Sprache";
+
+"credits" = "Credits";
+
+"settings" = "Einstellungen";
+
+// DICE STORYTELLING
+
+"diceTitle" = "Wurfel auswahlen, lass dich inspirieren und beginnen zu schreiben";
+
+"rollDice" = "Wurfeln";
+
+// ALERT VIEW
+
+"mainMenu" = "Menu";
+
+"quit" = "Du willst das spiel aufgeben?";
+
+"yesAlert" = "Ja";
+
+"noAlert" = "Nein";
