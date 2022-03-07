@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var navigationRoot = NavigationRoot()
     @State var isView1Active: Bool = false
+    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
     let text1: LocalizedStringKey = "text1"
     let text2: LocalizedStringKey = "text2"
@@ -62,6 +63,9 @@ struct ContentView: View {
                     .ignoresSafeArea()
             )
         }
+        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+        })
         .onReceive(navigationRoot.$backToRoot) { moveToDashboard in
                         if moveToDashboard {
                             isView1Active = false
@@ -113,3 +117,5 @@ struct ContentView_Previews: PreviewProvider {
 
 
 //ONBOARDING
+
+

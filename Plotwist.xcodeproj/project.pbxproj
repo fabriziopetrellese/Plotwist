@@ -43,6 +43,7 @@
 		B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78E8127CFAE330083BB3C /* CardModel1.swift */; };
 		B9D78E8427CFB1000083BB3C /* CardModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78E8327CFB1000083BB3C /* CardModel2.swift */; };
 		B9D78E8627CFB6A10083BB3C /* SettingsButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78E8527CFB6A10083BB3C /* SettingsButtonModel.swift */; };
+		B9DA60C027D60FFE003F53C7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */; };
 		B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
@@ -92,6 +93,7 @@
 		B9D78E8127CFAE330083BB3C /* CardModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel1.swift; sourceTree = "<group>"; };
 		B9D78E8327CFB1000083BB3C /* CardModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel2.swift; sourceTree = "<group>"; };
 		B9D78E8527CFB6A10083BB3C /* SettingsButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonModel.swift; sourceTree = "<group>"; };
+		B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
+				B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				49E7C5A327BD491F0043AD25 /* RollDiceModel.swift in Sources */,
 				4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */,
 				49AC301F27BAB75900629633 /* PlotwistApp.swift in Sources */,
+				B9DA60C027D60FFE003F53C7 /* OnboardingView.swift in Sources */,
 				49E7C59B27BD32160043AD25 /* NextTurn.swift in Sources */,
 				49E7C59F27BD32160043AD25 /* DiceCategories.swift in Sources */,
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
