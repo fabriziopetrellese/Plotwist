@@ -33,7 +33,9 @@ struct AlertView: View {
                 .foregroundColor(.black)
                 .offset(x: 0, y: -23)
             Button {
+                navigationRoot.playerButton = 0
                 navigationRoot.mode1 = false
+                navigationRoot.mode2 = false
                 navigationRoot.backToRoot = true
             } label: {
                 ZStack {
