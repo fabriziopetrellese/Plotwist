@@ -45,8 +45,8 @@ struct Storystarters: View {
                         Text(placeholder)
                             .font(Font.custom("Quick Pencil", size: 32))
                             .foregroundColor(.darkGray)
-                            .padding(.horizontal)
-                            .position(x: 78, y: 20)
+                            .padding(.leading, 20)
+                            .padding(.bottom, 356)
                     }
                     TextEditor(text: $story)
                         .font(Font.custom("Quick Pencil", size: 33))
@@ -57,6 +57,7 @@ struct Storystarters: View {
             }
             .frame(height: 400)
             .position(x: 207, y: 195)
+
             
             NavigationLink {
                 if storiesModel.index < 6 {
