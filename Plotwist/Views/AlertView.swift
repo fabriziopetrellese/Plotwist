@@ -65,5 +65,6 @@ struct AlertView_Previews: PreviewProvider {
     static var previews: some View {
         AlertView()
             .environmentObject(AlertClass())
+            .environmentObject(NavigationRoot())
     }
 }

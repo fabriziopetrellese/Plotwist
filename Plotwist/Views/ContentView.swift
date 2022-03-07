@@ -22,7 +22,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Image("appname")
+                Image("plotwistVector")
                     .resizable()
                     .frame(width: 162.09, height: 123)
                     .padding(.bottom, 47)

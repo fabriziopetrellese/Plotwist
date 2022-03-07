@@ -8,100 +8,100 @@
 
 //CONTENT VIEW
 
-"text1" = "Guided Storytelling";
+"text1" = "Направляемый сторителлинг";
 
-"text2" = "Dice Storytelling";
+"text2" = "Случайный сторителлинг";
 
-"text3" = "Settings";
+"text3" = "Настройки";
 
-"text4" = "Create a story with the help of story starters and dice";
+"text4" = "Создай историю на основе заготовок и с помощью кубика";
 
-"text5" = "Create a story with only dice";
+"text5" = "Создай историю только с помощью кубика";
 
 //STORYSTARTERS
 
-"placeholder" = "Type here...";
+"placeholder" = "Напиши здесь...";
 
-"incipit1" = "Once upon a time...";
+"incipit1" = "Однажды...";
 
-"incipit2" = "Every day...";
+"incipit2" = "Каждый день...";
 
-"incipit3" = "But one day...";
+"incipit3" = "Но однажды...";
 
-"incipit4" = "Because of that...";
+"incipit4" = "Из-за этого...";
 
-"incipit5" = "Until finally...";
+"incipit5" = "Пока наконец-то...";
 
-"incipit6" = "And ever since then";
+"incipit6" = "И с тех пор";
 
-"button2" = "Done";
+"button2" = "Готово";
 
 //GUIDED VIEW
 
-"title1" = "Select players";
+"title1" = "Выберите игроков";
 
-"player1" = "Player 1";
+"player1" = "Игрок 1";
 
-"player2" = "Player 2";
+"player2" = "Игрок 2";
 
-"player3" = "Player 3";
+"player3" = "Игрок 3";
 
-"player4" = "Player 4";
+"player4" = "Игрок 4";
 
-"player5" = "Player 5";
+"player5" = "Игрок 5";
 
-"player6" = "Player 6";
+"player6" = "Игрок 6";
 
-"button1" = "Ready";
+"button1" = "Готово";
 
-"addButton" = "Add new player";
+"addButton" = "Добавить нового игрока";
 
 //NEXT TURN
 
-"button3" = "I'm here!";
+"button3" = "Я здесь!";
 
-"firstPart" = "It's %@";
+"firstPart" = "Очередь %@";
 
-"secondPart" = "'s turn, pass the phone";
+"secondPart" = "передай телефон";
 
-"thirdPart" = "Last turn - %@";
+"thirdPart" = "Последняя попытка - %@";
 
-"fourthPart" = ", you are the last one writing!";
+"fourthPart" = ", только ты продолжаешь писать!";
 
 //SIRI VIEW
 
-"language" = "en-US";
+"language" = "ru-RU";
 
-"finalTitle" = "Final story:";
+"finalTitle" = "Вся история:";
 
-"speech" = "Read";
+"speech" = "Читать";
 
-"menu" = "Menu";
+"menu" = "Меню";
 
 // SETTINGS VIEW
 
-"musicTranslation" = "Music";
+"musicTranslation" = "Музыка";
 
-"startersCreation" = "Storystarters creation";
+"startersCreation" = "Создание заготовок";
 
-"language" = "Language";
+"language" = "Язык";
 
-"credits" = "Credits";
+"credits" = "Создатели";
 
-"settings" = "Settings";
+"settings" = "Настройки";
 
 // DICE STORYTELLING
 
-"diceTitle" = "Select dice, get inspired and start writing";
+"diceTitle" = "Выбери кубик для вдохновения и начни писать";
 
-"rollDice" = "Roll dice";
+"rollDice" = "Кинь кубик";
 
 // ALERT VIEW
 
-"mainMenu" = "Main menu";
+"mainMenu" = "Главное меню";
 
-"quit" = "Do you want to leave the game?";
+"quit" = "Ты хочешь покинуть игру?";
 
-"yesAlert" = "Yes";
+"yesAlert" = "Да";
 
-"noAlert" = "No";
+"noAlert" = "Нет";
