@@ -11,6 +11,7 @@ struct GuidedView: View {
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var modeSelection: NavigationRoot
+    @EnvironmentObject var alertClass: AlertClass
     @Environment(\.dismiss) var back2
 
     let title1: LocalizedStringKey = "title1"
@@ -26,25 +27,28 @@ struct GuidedView: View {
     var body: some View {
 
         VStack {
-            ZStack {
-                Text(title1)
-                    .font(Font.custom("Quick Pencil", size: 70))
-                    .font(.largeTitle)
-                    .frame(width: 300, height: 110)
-                    .multilineTextAlignment(.center)
-                
-                Image("FALLIN")
-                    .offset(x: -40, y: 60)
-            }
-            .padding(.bottom, 56)
-            .position(x: 207, y: 37)
+            Text(title1)
+                .font(Font.custom("Life Savers", size: 40))
+                .fontWeight(.heavy)
+                .font(.largeTitle)
+                .frame(width: 250, height: 110)
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 56)
+                .position(x: 207, y: 37)
             
             ScrollView(showsIndicators: false) {
                 VStack {
                     ZStack {
                         Image("PLAYERS")
-                        TextField(player1, text: $playersModel.playersNames[0])
-                            .font(.system(size: 26))
+                        TextField("", text: $playersModel.playersNames[0])
+                            .placeholder(when: playersModel.playersNames[0].isEmpty) {
+                                Text(player1)
+                                    .font(Font.custom("Life Savers", size: 26))
+                                    .padding(.horizontal, 83)
+                                    .frame(width: 295, height: 60)
+                                    .foregroundColor(.darkGray)
+                        }
+                            .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
                     }
@@ -52,8 +56,16 @@ struct GuidedView: View {
                     
                     ZStack {
                         Image("PLAYERS")
-                        TextField(player2, text: $playersModel.playersNames[1])
-                            .font(.system(size: 26))
+                        TextField("", text: $playersModel.playersNames[1])
+                            .placeholder(when: playersModel.playersNames[1].isEmpty) {
+                                Text(player2)
+                                    .font(Font.custom("Life Savers", size: 26))
+                                    .padding(.horizontal, 83)
+                                    .frame(width: 295, height: 60)
+
+                                    .foregroundColor(.darkGray)
+                        }
+                            .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
                     }
@@ -62,8 +74,15 @@ struct GuidedView: View {
                     if modeSelection.playerButton > 0 {
                         ZStack {
                             Image("PLAYERS")
-                            TextField(player3, text: $playersModel.playersNames[2])
-                                .font(.system(size: 26))
+                            TextField("", text: $playersModel.playersNames[2])
+                                .placeholder(when: playersModel.playersNames[2].isEmpty) {
+                                    Text(player3)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.darkGray)
+                            }
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                         }
@@ -73,8 +92,15 @@ struct GuidedView: View {
                     if modeSelection.playerButton > 1 {
                         ZStack {
                             Image("PLAYERS")
-                            TextField(player4, text: $playersModel.playersNames[3])
-                                .font(.system(size: 26))
+                            TextField("", text: $playersModel.playersNames[3])
+                                .placeholder(when: playersModel.playersNames[3].isEmpty) {
+                                    Text(player4)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.darkGray)
+                            }
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                         }
@@ -84,8 +110,15 @@ struct GuidedView: View {
                     if modeSelection.playerButton > 2 {
                         ZStack {
                             Image("PLAYERS")
-                            TextField(player5, text: $playersModel.playersNames[4])
-                                .font(.system(size: 26))
+                            TextField("", text: $playersModel.playersNames[4])
+                                .placeholder(when: playersModel.playersNames[4].isEmpty) {
+                                    Text(player5)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.darkGray)
+                            }
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                         }
@@ -95,8 +128,15 @@ struct GuidedView: View {
                     if modeSelection.playerButton > 3 {
                         ZStack {
                             Image("PLAYERS")
-                            TextField(player6, text: $playersModel.playersNames[5])
-                                .font(.system(size: 26))
+                            TextField("", text: $playersModel.playersNames[5])
+                                .placeholder(when: playersModel.playersNames[5].isEmpty) {
+                                    Text(player6)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.darkGray)
+                            }
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                         }
@@ -110,8 +150,9 @@ struct GuidedView: View {
                             ZStack {
                                 Image("PLAYERS")
                                 Text(addButton)
-                                    .font(.system(size: 26))
-                                    .padding(.horizontal, 20)
+                                    .font(Font.custom("Life Savers", size: 29))
+                                    .fontWeight(.heavy)
+                                    .padding(.horizontal, 10)
                                     .multilineTextAlignment(.center)
                             }
                             .frame(width: 300, height: 75, alignment: .center)
@@ -120,7 +161,7 @@ struct GuidedView: View {
                 }
             }
             .frame(width: 300, height: 500)
-            .position(x: 207, y: 127)
+            .position(x: 207, y: 110)
     
             if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {
@@ -180,5 +221,19 @@ struct GuidedView_Previews: PreviewProvider {
             .environmentObject(PlayersModel())
             .environmentObject(IncipitsModel())
             .environmentObject(NavigationRoot())
+            .environmentObject(AlertClass())
+    }
+}
+
+extension View {
+    func placeholder<Content: View>(
+        when shouldShow: Bool,
+        alignment: Alignment = .leading,
+        @ViewBuilder placeholder: () -> Content) -> some View {
+
+        ZStack(alignment: alignment) {
+            placeholder().opacity(shouldShow ? 1 : 0)
+            self
+        }
     }
 }

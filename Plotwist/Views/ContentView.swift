@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var navigationRoot = NavigationRoot()
     @State var isView1Active: Bool = false
-    //    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = false
     
     let text1: LocalizedStringKey = "text1"
     let text2: LocalizedStringKey = "text2"
@@ -62,9 +62,9 @@ struct ContentView: View {
                     .ignoresSafeArea()
             )
         }
-        //        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
-        //            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-        //        })
+                .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+                    OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+                })
         .onReceive(navigationRoot.$backToRoot) { moveToDashboard in
             if moveToDashboard {
                 isView1Active = false
@@ -86,7 +86,19 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+                .environment(\.locale, .init(identifier: "it"))
+            ContentView()
+                .environment(\.locale, .init(identifier: "es"))
+            ContentView()
+                .environment(\.locale, .init(identifier: "de"))
+            ContentView()
+                .environment(\.locale, .init(identifier: "fr"))
+            ContentView()
+                .environment(\.locale, .init(identifier: "ru"))
+        }
     }
 }
 

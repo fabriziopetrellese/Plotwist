@@ -21,7 +21,8 @@ struct SiriView: View {
     var body: some View {
         VStack {
             Text(finalTitle)
-                .font(Font.custom("Quick Pencil", size: 45))
+                .font(Font.custom("Life Savers", size: 39))
+                .fontWeight(.heavy)
                 .padding(.bottom, 30)
                 .offset(x: 0, y: -1)
             
@@ -30,7 +31,8 @@ struct SiriView: View {
                 Text(storiesModel.fullStory)
                     .padding()
                     .foregroundColor(.darkGray)
-                    .font(Font.custom("Quick Pencil", size: 34))
+                    .font(Font.custom("Life Savers", size: 28))
+//                    .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .frame(width: geometry.size.width)
                     .frame(minHeight: geometry.size.height)

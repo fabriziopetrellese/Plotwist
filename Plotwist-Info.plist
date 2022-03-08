@@ -4,7 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Quick Pencil.ttf</string>
+		<string>Life Savers.ttf</string>
+		<string>LifeSaversB.ttf</string>
+		<string>LifeSaversEB.ttf</string>
 	</array>
 </dict>
 </plist>

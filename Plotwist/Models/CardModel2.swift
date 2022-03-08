@@ -21,20 +21,21 @@ struct CardModel2: View {
             
             VStack {
                 Text(title)
-                    .fontWeight(.bold)
-                    .font(Font.custom("Quick Pencil", size: 30))
+                    .font(Font.custom("Life Savers", size: 23))
+                    .fontWeight(.heavy)
                     .foregroundColor(.black)
                     .frame(width: 160, height: 80)
                     .multilineTextAlignment(.center)
                     .padding(.trailing, 132)
-                    .padding(.top)
+                    .padding(.top, 30)
                 
                 Text(description)
                     .foregroundColor(.darkGray)
-                    .font(Font.custom("Quick Pencil", size: 29))
+                    .font(Font.custom("Life Savers", size: 23))
+                    .bold()
                     .frame(width: 247, height: 96)
                     .multilineTextAlignment(.center)
-                    .padding(.bottom)
+                    .padding(.bottom, 36)
                 
             }
         }

@@ -20,19 +20,19 @@
 
 //STORYSTARTERS
 
-"placeholder" = "Scrivi qui...";
+"placeholder" = "Scrivi qui";
 
-"incipit1" = "C'era una volta...";
+"incipit1" = "C'era una volta";
 
-"incipit2" = "Ogni giorno...";
+"incipit2" = "Ogni giorno";
 
-"incipit3" = "Tuttavia un giorno...";
+"incipit3" = "Tuttavia un giorno";
 
-"incipit4" = "A causa di questo...";
+"incipit4" = "A causa di questo";
 
-"incipit5" = "Alla fine...";
+"incipit5" = "Alla fine";
 
-"incipit6" = "E da quel momento in poi...";
+"incipit6" = "E da quel momento in poi";
 
 "button2" = "Avanti";
 
@@ -105,3 +105,17 @@
 "yesAlert" = "Si";
 
 "noAlert" = "No";
+
+// ONBOARDING
+
+"welcome" = "Benvenuto in";
+
+"desc" = "un'app di Storytelling di gruppo";
+
+"moreInfo" = "Raggruppa da 2 a 6 persone qualsiasi";
+
+"finalInfo" = "Scegliete tra Storytelling Guidato o con i Dadi e iniziate a scrivere!";
+
+"continue" = "Continua";
+
+"letsgo" = "Iniziamo!";

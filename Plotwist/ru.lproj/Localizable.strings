@@ -22,15 +22,15 @@
 
 "placeholder" = "Напиши здесь...";
 
-"incipit1" = "Однажды...";
+"incipit1" = "Однажды";
 
-"incipit2" = "Каждый день...";
+"incipit2" = "Каждый день";
 
-"incipit3" = "Но однажды...";
+"incipit3" = "Но однажды";
 
-"incipit4" = "Из-за этого...";
+"incipit4" = "Из-за этого";
 
-"incipit5" = "Пока наконец-то...";
+"incipit5" = "Пока наконец-то";
 
 "incipit6" = "И с тех пор";
 
@@ -105,3 +105,17 @@
 "yesAlert" = "Да";
 
 "noAlert" = "Нет";
+
+// ONBOARDING
+
+"welcome" = "Welcome to";
+
+"desc" = "a group storytelling app";
+
+"moreInfo" = "Gather 2 to 6 random people";
+
+"finalInfo" = "Choose between Guided and Dice storytelling and start writing!";
+
+"continue" = "Continue";
+
+"letsgo" = "Let's start!";

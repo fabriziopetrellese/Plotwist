@@ -11,6 +11,7 @@ import SwiftUI
 struct PlotwistApp: App {
     @State var splashOpacity = 1.0
     @State var moveIcon = false
+
     
     var body: some Scene {
         WindowGroup {

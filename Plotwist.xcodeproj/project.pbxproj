@@ -44,7 +44,9 @@
 		B9D78E8427CFB1000083BB3C /* CardModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78E8327CFB1000083BB3C /* CardModel2.swift */; };
 		B9D78E8627CFB6A10083BB3C /* SettingsButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D78E8527CFB6A10083BB3C /* SettingsButtonModel.swift */; };
 		B9DA60C027D60FFE003F53C7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */; };
-		B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */; };
+		B9DA60C727D7AA03003F53C7 /* LifeSaversB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */; };
+		B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */; };
+		B9DA60CA27D7ABB3003F53C7 /* Life Savers.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
 		B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */; };
@@ -94,7 +96,9 @@
 		B9D78E8327CFB1000083BB3C /* CardModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel2.swift; sourceTree = "<group>"; };
 		B9D78E8527CFB6A10083BB3C /* SettingsButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonModel.swift; sourceTree = "<group>"; };
 		B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quick Pencil.ttf"; sourceTree = "<group>"; };
+		B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LifeSaversB.ttf; sourceTree = "<group>"; };
+		B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LifeSaversEB.ttf; sourceTree = "<group>"; };
+		B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Savers.ttf"; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
 		B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsIconModel.swift; sourceTree = "<group>"; };
@@ -121,11 +125,11 @@
 				49E7C59627BD32160043AD25 /* NextTurn.swift */,
 				491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */,
 				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
+				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
 				49D48C1627C1D3CC00F1E935 /* LanguageView.swift */,
 				490C98A227BDF4E100574E1B /* creditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
-				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
 				B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */,
 			);
@@ -212,7 +216,9 @@
 		49D0B17D27BB2BCC00F34BF5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				B9EE518427C51DCD00CFA313 /* Quick Pencil.ttf */,
+				B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */,
+				B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */,
+				B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -286,13 +292,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DA60CA27D7ABB3003F53C7 /* Life Savers.ttf in Resources */,
 				B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */,
 				49EB564D27D2560400E23086 /* foodDice.usdz in Resources */,
 				B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */,
-				B9EE518527C51DCD00CFA313 /* Quick Pencil.ttf in Resources */,
 				49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */,
 				49D07AAE27C6D35F00C6F332 /* backgroundmusic.mp3 in Resources */,
 				49AC302327BAB75900629633 /* Assets.xcassets in Resources */,
+				B9DA60C727D7AA03003F53C7 /* LifeSaversB.ttf in Resources */,
+				B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -515,7 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";

@@ -22,15 +22,15 @@
 
 "placeholder" = "Geben sie hier...";
 
-"incipit1" = "Es war einmal...";
+"incipit1" = "Es war einmal";
 
-"incipit2" = "Jeden tag...";
+"incipit2" = "Jeden tag";
 
-"incipit3" = "Aber eines tages...";
+"incipit3" = "Aber eines tages";
 
-"incipit4" = "Deswegen...";
+"incipit4" = "Deswegen";
 
-"incipit5" = "Bis endlich...";
+"incipit5" = "Bis endlich";
 
 "incipit6" = "Und seitdem";
 
@@ -105,3 +105,17 @@
 "yesAlert" = "Ja";
 
 "noAlert" = "Nein";
+
+// ONBOARDING
+
+"welcome" = "Welcome to";
+
+"desc" = "a group storytelling app";
+
+"moreInfo" = "Gather 2 to 6 random people";
+
+"finalInfo" = "Choose between Guided and Dice storytelling and start writing!";
+
+"continue" = "Continue";
+
+"letsgo" = "Let's start!";

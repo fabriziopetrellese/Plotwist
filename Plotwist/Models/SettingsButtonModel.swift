@@ -15,8 +15,8 @@ struct SettingsButtonModel: View {
             
             HStack {
                 Text(title)
-                    .font(Font.custom("Quick Pencil", size: 30))
-                    .fontWeight(.bold)
+                    .font(Font.custom("Life Savers", size: 27))
+                    .fontWeight(.heavy)
                     .foregroundColor(.black)
                 
                 Spacer()

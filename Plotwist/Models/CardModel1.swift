@@ -21,18 +21,21 @@ struct CardModel1: View {
             
             VStack {
                 Text(title)
-                    .font(Font.custom("Quick Pencil", size: 30))
+                    .font(Font.custom("Life Savers", size: 23))
+                    .fontWeight(.heavy)
                     .foregroundColor(.black)
-                    .frame(width: 190, height: 79)
+                    .frame(width: 170, height: 79)
                     .multilineTextAlignment(.center)
                     .padding(.trailing, 136)
+                    .padding(.top, 12)
                 
                 Text(description)
                     .foregroundColor(.darkGray)
-                    .font(Font.custom("Quick Pencil", size: 29))
+                    .font(Font.custom("Life Savers", size: 23))
+                    .bold()
                     .frame(width: 247, height: 96)
                     .multilineTextAlignment(.center)
-                    .padding(.bottom)
+                    .padding(.bottom, 34)
                 
             }
             
@@ -43,6 +46,6 @@ struct CardModel1: View {
 
 struct CardModel1_Previews: PreviewProvider {
     static var previews: some View {
-        CardModel1()
+            CardModel1()
     }
 }
