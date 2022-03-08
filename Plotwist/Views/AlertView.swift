@@ -33,6 +33,16 @@ struct AlertView: View {
                 .foregroundColor(.black)
                 .offset(x: 0, y: -23)
             Button {
+                alertClass.showingAlert = false
+            } label: {
+                ZStack {
+                    Image("noAlert")
+                    Text(noAlert)
+                        .font(Font.custom("Quick Pencil", size: 35))
+                }
+            }
+            .offset(x: 77, y: 59)
+            Button {
                 navigationRoot.playerButton = 0
                 navigationRoot.mode1 = false
                 navigationRoot.mode2 = false
@@ -41,16 +51,6 @@ struct AlertView: View {
                 ZStack {
                     Image("yesAlert")
                     Text(yesAlert)
-                        .font(Font.custom("Quick Pencil", size: 35))
-                }
-            }
-            .offset(x: 77, y: 59)
-            Button {
-                alertClass.showingAlert = false
-            } label: {
-                ZStack {
-                    Image("yesAlert")
-                    Text(noAlert)
                         .font(Font.custom("Quick Pencil", size: 35))
                 }
             }

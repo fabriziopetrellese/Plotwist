@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "noAlert.png",
+      "filename" : "yesAlert.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
