@@ -14,10 +14,11 @@ struct ButtonsModel: View {
         ZStack {
             Image("buttonback")
             HStack {
-                Text(label)
-                    .font(Font.custom("Quick Pencil", size: 45.5))
+                Text("Кинь кубик")
+                    .font(Font.custom("Quick Pencil", size: 44))
                     .foregroundColor(.black)
-            }.padding(.horizontal, 30)
+                    .frame(width: 218, height: 80)
+            }
         }
         
     }
@@ -25,6 +26,6 @@ struct ButtonsModel: View {
 
 struct ButtonsModel_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonsModel()
+            ButtonsModel()
     }
 }

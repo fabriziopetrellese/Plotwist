@@ -29,7 +29,7 @@ struct AlertView: View {
             Text(quit)
                 .font(Font.custom("Quick Pencil", size: 35))
                 .multilineTextAlignment(.center)
-                .frame(width: 211, height: 60)
+                .frame(width: 250, height: 60)
                 .foregroundColor(.black)
                 .offset(x: 0, y: -23)
             Button {
