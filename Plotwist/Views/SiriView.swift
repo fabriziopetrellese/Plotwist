@@ -23,7 +23,8 @@ struct SiriView: View {
             Text(finalTitle)
                 .font(Font.custom("Life Savers", size: 39))
                 .fontWeight(.heavy)
-                .padding(.bottom, 30)
+                .padding(.bottom, 20)
+                .padding(.top)
                 .offset(x: 0, y: -1)
             
             GeometryReader { geometry in
@@ -47,7 +48,7 @@ struct SiriView: View {
                 let lang = String(format: NSLocalizedString("language", comment: ""))
                 let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
                 utterance.voice = AVSpeechSynthesisVoice(language: lang)
-                utterance.rate = 0.42
+                utterance.rate = 0.43
                 let synthesizer = AVSpeechSynthesizer()
                 synthesizer.speak(utterance)
             } label: {
@@ -59,6 +60,7 @@ struct SiriView: View {
             } label: {
                 ButtonsIconModel(label: menu, icon: "house.fill")
             }
+            .padding(.bottom)
         }
         .padding(.bottom, 60)
         .background(

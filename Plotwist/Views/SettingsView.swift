@@ -16,6 +16,7 @@ struct SettingsView: View {
     let startersCreation: LocalizedStringKey = "startersCreation"
     let language: LocalizedStringKey = "language"
     let settings: LocalizedStringKey = "settings"
+    let createdBy: LocalizedStringKey = "createdBy"
     
     var body: some View {
         VStack {
@@ -29,7 +30,8 @@ struct SettingsView: View {
             
             Toggle(isOn: $music) {
                 Text(musicTranslation)
-                    .font(Font.custom("Quick Pencil", size: 40))
+                    .font(Font.custom("Life Savers", size: 31))
+                    .fontWeight(.heavy)
             }
             .tint(.blue)
             .padding(.horizontal, 60)
@@ -51,7 +53,8 @@ struct SettingsView: View {
                         .padding(.top, 30)
                     HStack {
                         Text(startersCreation)
-                            .font(Font.custom("Quick Pencil", size: 35))
+                            .font(Font.custom("Life Savers", size: 29))
+                            .fontWeight(.heavy)
                             .foregroundColor(.black)
                             .padding(.top, 27)
                     }.padding(.horizontal, 68)
@@ -86,7 +89,8 @@ struct SettingsView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text(settings)
-                    .font(Font.custom("Quick Pencil", size: 45))
+                    .font(Font.custom("Life Savers", size: 33))
+                    .fontWeight(.heavy)
             }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {

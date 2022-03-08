@@ -90,6 +90,8 @@
 
 "settings" = "Parametres";
 
+"createdBy" = "Cree par";
+
 // DICE STORYTELLING
 
 "diceTitle" = "Selectionner des, inspirez-vous et commencez a ecrire";

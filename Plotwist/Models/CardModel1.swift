@@ -21,21 +21,23 @@ struct CardModel1: View {
             
             VStack {
                 Text(title)
-                    .font(Font.custom("Life Savers", size: 23))
+                    .font(Font.custom("Life Savers", size: 22))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
                     .frame(width: 170, height: 79)
                     .multilineTextAlignment(.center)
                     .padding(.trailing, 136)
-                    .padding(.top, 12)
+//                    .offset(x: 0, y: -10)
+                    .padding(.top, 13)
                 
                 Text(description)
                     .foregroundColor(.darkGray)
-                    .font(Font.custom("Life Savers", size: 23))
+                    .font(Font.custom("Life Savers", size: 22))
                     .bold()
                     .frame(width: 247, height: 96)
                     .multilineTextAlignment(.center)
-                    .padding(.bottom, 34)
+//                    .offset(x: 0, y: -13)
+                    .padding(.bottom, 36)
                 
             }
             
