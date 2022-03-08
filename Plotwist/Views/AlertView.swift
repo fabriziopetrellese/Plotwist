@@ -29,9 +29,19 @@ struct AlertView: View {
             Text(quit)
                 .font(Font.custom("Quick Pencil", size: 35))
                 .multilineTextAlignment(.center)
-                .frame(width: 211, height: 60)
+                .frame(width: 250, height: 60)
                 .foregroundColor(.black)
                 .offset(x: 0, y: -23)
+            Button {
+                alertClass.showingAlert = false
+            } label: {
+                ZStack {
+                    Image("noAlert")
+                    Text(noAlert)
+                        .font(Font.custom("Quick Pencil", size: 35))
+                }
+            }
+            .offset(x: 77, y: 59)
             Button {
                 navigationRoot.playerButton = 0
                 navigationRoot.mode1 = false
@@ -41,16 +51,6 @@ struct AlertView: View {
                 ZStack {
                     Image("yesAlert")
                     Text(yesAlert)
-                        .font(Font.custom("Quick Pencil", size: 35))
-                }
-            }
-            .offset(x: 77, y: 59)
-            Button {
-                alertClass.showingAlert = false
-            } label: {
-                ZStack {
-                    Image("yesAlert")
-                    Text(noAlert)
                         .font(Font.custom("Quick Pencil", size: 35))
                 }
             }
@@ -65,5 +65,6 @@ struct AlertView_Previews: PreviewProvider {
     static var previews: some View {
         AlertView()
             .environmentObject(AlertClass())
+            .environmentObject(NavigationRoot())
     }
 }

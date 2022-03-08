@@ -58,7 +58,7 @@ struct Storystarters: View {
             .frame(height: 400)
             .position(x: 207, y: 195)
 
-            
+            Spacer()
             NavigationLink {
                 if storiesModel.index < 6 {
                     NextTurn()
@@ -91,7 +91,7 @@ struct Storystarters: View {
                 .position(x: 207, y: 400)
         )
         .navigationBarBackButtonHidden(true)
-        .blur(radius: alertClass.showingAlert ? 9 : 0)
+        .blur(radius: alertClass.showingAlert ? 12 : 0)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {

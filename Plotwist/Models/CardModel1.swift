@@ -21,10 +21,9 @@ struct CardModel1: View {
             
             VStack {
                 Text(title)
-                    .fontWeight(.bold)
                     .font(Font.custom("Quick Pencil", size: 30))
                     .foregroundColor(.black)
-                    .frame(width: 188, height: 79)
+                    .frame(width: 190, height: 79)
                     .multilineTextAlignment(.center)
                     .padding(.trailing, 136)
                 

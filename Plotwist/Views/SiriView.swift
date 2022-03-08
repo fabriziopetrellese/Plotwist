@@ -12,9 +12,7 @@ struct SiriView: View {
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
     @EnvironmentObject var alertClass: AlertClass
-    
-    @State private var showingAlert = false
-    
+        
     let finalTitle: LocalizedStringKey = "finalTitle"
     let language: LocalizedStringKey = "language"
     let speech: LocalizedStringKey = "speech"
