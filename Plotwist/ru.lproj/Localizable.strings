@@ -8,13 +8,13 @@
 
 //CONTENT VIEW
 
-"text1" = "Направляемый сторителлинг";         //shorter
+"text1" = "Гайд";
 
-"text2" = "Случайный сторителлинг";        //shorter
+"text2" = "Игральный кубик";
 
 "text3" = "Настройки";
 
-"text4" = "Создай историю на основе заготовок и с помощью кубика";       //shorter
+"text4" = "Создай историю с помощью гайда и кубика";
 
 "text5" = "Создай историю только с помощью кубика";
 
@@ -38,7 +38,7 @@
 
 //GUIDED VIEW
 
-"title1" = "Выберите игроков";       //shorter
+"title1" = "Выберите игроков";
 
 "player1" = "Игрок 1";
 
@@ -108,18 +108,18 @@
 
 // ONBOARDING
 
-"welcome" = "Welcome to";
+"welcome" = "Добро пожаловать в";
 
-"desc" = "a group storytelling app";
+"desc" = "групповое приложение для повествования";
 
-"moreInfo" = "Gather 2 to 6 random people";
+"moreInfo" = "Соберите от 2 до 6 человек";
 
-"finalInfo" = "Choose between Guided and Dice storytelling and start writing!";
+"finalInfo" = "Выберите руководствуясь и кости рассказ и начать писать!";
 
-"letsgo" = "Let's start!";
+"letsgo" = "давайте начнем!";
 
 // CREDITS VIEW
 
-"createdBy" = "Created By:";       // added
+"createdBy" = "Создано:";
 
-"russianBy" = "Russian translation by:";     // added
+"russianBy" = "Перевод на русский:";

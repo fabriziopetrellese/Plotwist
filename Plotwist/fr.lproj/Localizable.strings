@@ -82,7 +82,7 @@
 
 "musicTranslation" = "Musique";
 
-"startersCreation" = "Personnalisation phrases";
+"startersCreation" = "Personnalisez phrases";
 
 "language" = "Langue";
 
@@ -108,15 +108,15 @@
 
 // ONBOARDING
 
-"welcome" = "Welcome to";
+"welcome" = "Bienvenue a";
 
-"desc" = "a group storytelling app";
+"desc" = "une application de storytelling de groupe";
 
-"moreInfo" = "Gather 2 to 6 random people";
+"moreInfo" = "Reunir 2 a 6 personnes";
 
-"finalInfo" = "Choose between Guided and Dice storytelling and start writing!";
+"finalInfo" = "Choisissez entre Storytelling guidee et avec des et commencez a ecrire!";
 
-"letsgo" = "Let's start!";
+"letsgo" = "Commencons!";
 
 // CREDITS VIEW
 

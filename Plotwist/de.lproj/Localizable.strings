@@ -108,15 +108,15 @@
 
 // ONBOARDING
 
-"welcome" = "Welcome to";
+"welcome" = "Willkommen in";
 
-"desc" = "a group storytelling app";
+"desc" = "eine storytelling app fur die gruppe";
 
-"moreInfo" = "Gather 2 to 6 random people";
+"moreInfo" = "Sammeln sie 2 bis 6 personen";
 
-"finalInfo" = "Choose between Guided and Dice storytelling and start writing!";
+"finalInfo" = "Wahlen sie zwischen gefuhrte und wurfel storytelling und beginnen sie zu schreiben!";
 
-"letsgo" = "Let's start!";
+"letsgo" = "Beginnen wir!";
 
 // CREDITS VIEW
 

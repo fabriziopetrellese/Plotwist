@@ -50,7 +50,6 @@
 		B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */; };
 		B9DA60D027D8EA97003F53C7 /* DiceFood.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B9DA60CF27D8EA97003F53C7 /* DiceFood.rcproject */; };
 		B9DA610A27D8F500003F53C7 /* ARDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA610927D8F500003F53C7 /* ARDiceView.swift */; };
-		B9DA611827D8F8F6003F53C7 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B9DA611727D8F8F6003F53C7 /* Experience.rcproject */; };
 		B9DA611A27D909CD003F53C7 /* Dices.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B9DA611927D909CD003F53C7 /* Dices.rcproject */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
@@ -107,7 +106,6 @@
 		B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStoryWriting.swift; sourceTree = "<group>"; };
 		B9DA60CF27D8EA97003F53C7 /* DiceFood.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = DiceFood.rcproject; sourceTree = "<group>"; };
 		B9DA610927D8F500003F53C7 /* ARDiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARDiceView.swift; sourceTree = "<group>"; };
-		B9DA611727D8F8F6003F53C7 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Experience.rcproject; path = ../../DiceAR/DiceAR/Experience.rcproject; sourceTree = "<group>"; };
 		B9DA611927D909CD003F53C7 /* Dices.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Dices.rcproject; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 				49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
 				49EB564E27D2560800E23086 /* foodDice.usdz */,
-				B9DA611727D8F8F6003F53C7 /* Experience.rcproject */,
 				B9DA60CF27D8EA97003F53C7 /* DiceFood.rcproject */,
 				B9DA610927D8F500003F53C7 /* ARDiceView.swift */,
 				B9DA611927D909CD003F53C7 /* Dices.rcproject */,
@@ -338,7 +335,6 @@
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
-				B9DA611827D8F8F6003F53C7 /* Experience.rcproject in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
 				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
@@ -510,7 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 37THZ8H7Q6;
+				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -543,7 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 37THZ8H7Q6;
+				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
