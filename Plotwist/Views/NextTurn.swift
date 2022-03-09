@@ -11,6 +11,7 @@ struct NextTurn: View {
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
     @EnvironmentObject var storiesModel: StoriesModel
+    @EnvironmentObject var navigationRoot: NavigationRoot
     
     let button3: LocalizedStringKey = "button3"
     let firstPart: LocalizedStringKey = "firstPart"
@@ -42,7 +43,12 @@ struct NextTurn: View {
             }
             
             NavigationLink {
-                Storystarters()
+                if navigationRoot.mode1 == true {
+                    Storystarters()
+                }
+                if navigationRoot.mode2 == true {
+                    DiceStorytelling()
+                }
             } label: {
                 ZStack {
                     ButtonsModel(label: button3)

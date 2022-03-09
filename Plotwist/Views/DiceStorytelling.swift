@@ -36,9 +36,6 @@ struct DiceStorytelling: View {
         ).position(x: 207, y: 400)
             .blur(radius: alertClass.showingAlert ? 9 : 0)
             .navigationBarBackButtonHidden(true)
-            .onAppear(perform: {
-                navigationRoot.mode2 = false
-            })
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {

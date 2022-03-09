@@ -46,7 +46,7 @@ struct GuidedView: View {
                                     .font(Font.custom("Life Savers", size: 26))
                                     .padding(.horizontal, 83)
                                     .frame(width: 295, height: 60)
-                                    .foregroundColor(.darkGray)
+                                    .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
@@ -63,7 +63,7 @@ struct GuidedView: View {
                                     .padding(.horizontal, 83)
                                     .frame(width: 295, height: 60)
                                 
-                                    .foregroundColor(.darkGray)
+                                    .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
@@ -80,7 +80,7 @@ struct GuidedView: View {
                                         .font(Font.custom("Life Savers", size: 26))
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
-                                        .foregroundColor(.darkGray)
+                                        .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
@@ -98,7 +98,7 @@ struct GuidedView: View {
                                         .font(Font.custom("Life Savers", size: 26))
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
-                                        .foregroundColor(.darkGray)
+                                        .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
@@ -116,7 +116,7 @@ struct GuidedView: View {
                                         .font(Font.custom("Life Savers", size: 26))
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
-                                        .foregroundColor(.darkGray)
+                                        .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
@@ -134,7 +134,7 @@ struct GuidedView: View {
                                         .font(Font.custom("Life Savers", size: 26))
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
-                                        .foregroundColor(.darkGray)
+                                        .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)

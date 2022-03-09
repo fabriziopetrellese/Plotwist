@@ -47,6 +47,7 @@
 		B9DA60C727D7AA03003F53C7 /* LifeSaversB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */; };
 		B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */; };
 		B9DA60CA27D7ABB3003F53C7 /* Life Savers.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */; };
+		B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
 		B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */; };
@@ -99,6 +100,7 @@
 		B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LifeSaversB.ttf; sourceTree = "<group>"; };
 		B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LifeSaversEB.ttf; sourceTree = "<group>"; };
 		B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Savers.ttf"; sourceTree = "<group>"; };
+		B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStoryWriting.swift; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
 		B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsIconModel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				49E7C59827BD32160043AD25 /* Storystarters.swift */,
 				49E7C59627BD32160043AD25 /* NextTurn.swift */,
 				491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */,
+				B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */,
 				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
 				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
@@ -338,6 +341,7 @@
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
 				49EB564827D254B000E23086 /* RealityKitView.swift in Sources */,
+				B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */,
 				B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */,
 				4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */,
 				49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */,

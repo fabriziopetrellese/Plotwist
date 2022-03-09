@@ -16,10 +16,10 @@ struct DiceView: View {
             RealityKitView()
             
             
-            Button {
-                backAr()
+            NavigationLink {
+                DiceStoryWriting()
             } label: {
-                ButtonsModel(label: "Prova")
+                ButtonsModel(label: "I feel inspired")
             }
             .position(x: 207, y: 800)
             
@@ -28,16 +28,16 @@ struct DiceView: View {
         
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    backAr()
-                } label: {
-                    Image(systemName: "arrowshape.turn.up.backward.fill")
-                        .foregroundColor(.black)
-                }
-            }
-        }
+//        .toolbar {
+//            ToolbarItem(placement: .navigationBarLeading) {
+//                Button {
+//                    backAr()
+//                } label: {
+//                    Image(systemName: "arrowshape.turn.up.backward.fill")
+//                        .foregroundColor(.black)
+//                }
+//            }
+//        }
     }
 }
 
