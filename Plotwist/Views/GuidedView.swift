@@ -25,7 +25,7 @@ struct GuidedView: View {
     let addButton: LocalizedStringKey = "addButton"
     
     var body: some View {
-
+        
         VStack {
             Text(title1)
                 .font(Font.custom("Life Savers", size: 40))
@@ -47,7 +47,7 @@ struct GuidedView: View {
                                     .padding(.horizontal, 83)
                                     .frame(width: 295, height: 60)
                                     .foregroundColor(.darkGray)
-                        }
+                            }
                             .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
@@ -62,9 +62,9 @@ struct GuidedView: View {
                                     .font(Font.custom("Life Savers", size: 26))
                                     .padding(.horizontal, 83)
                                     .frame(width: 295, height: 60)
-
+                                
                                     .foregroundColor(.darkGray)
-                        }
+                            }
                             .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
@@ -81,7 +81,7 @@ struct GuidedView: View {
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
                                         .foregroundColor(.darkGray)
-                            }
+                                }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
@@ -99,7 +99,7 @@ struct GuidedView: View {
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
                                         .foregroundColor(.darkGray)
-                            }
+                                }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
@@ -117,7 +117,7 @@ struct GuidedView: View {
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
                                         .foregroundColor(.darkGray)
-                            }
+                                }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
@@ -135,7 +135,7 @@ struct GuidedView: View {
                                         .padding(.horizontal, 83)
                                         .frame(width: 295, height: 60)
                                         .foregroundColor(.darkGray)
-                            }
+                                }
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
@@ -150,7 +150,7 @@ struct GuidedView: View {
                             ZStack {
                                 Image("PLAYERS")
                                 Text(addButton)
-                                    .font(Font.custom("Life Savers", size: 29))
+                                    .font(Font.custom("Life Savers", size: 28))
                                     .fontWeight(.heavy)
                                     .padding(.horizontal, 10)
                                     .multilineTextAlignment(.center)
@@ -162,7 +162,7 @@ struct GuidedView: View {
             }
             .frame(width: 300, height: 500)
             .position(x: 207, y: 110)
-    
+            
             if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {
                     if modeSelection.mode1 == true {

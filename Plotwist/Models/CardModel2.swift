@@ -21,7 +21,7 @@ struct CardModel2: View {
             
             VStack {
                 Text(title)
-                    .font(Font.custom("Life Savers", size: 23))
+                    .font(Font.custom("Life Savers", size: 22))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
                     .frame(width: 160, height: 80)
@@ -31,7 +31,7 @@ struct CardModel2: View {
                 
                 Text(description)
                     .foregroundColor(.darkGray)
-                    .font(Font.custom("Life Savers", size: 23))
+                    .font(Font.custom("Life Savers", size: 22))
                     .bold()
                     .frame(width: 247, height: 96)
                     .multilineTextAlignment(.center)

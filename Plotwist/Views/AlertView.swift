@@ -23,23 +23,26 @@ struct AlertView: View {
                     .offset(x: 0, y: -122)
                 Image("customAlertPNG")
                 Text(mainMenu)
-                    .font(Font.custom("Quick Pencil", size: 27))
-                    .offset(x: 0, y: -96)
+                    .font(Font.custom("Life Savers", size: 23))
+                    .fontWeight(.bold)
+                    .offset(x: 0, y: -97.5)
                 Image("ominoAlertMani")
                     .offset(x: 0, y: -116)
                 Text(quit)
-                    .font(Font.custom("Quick Pencil", size: 35))
+                    .font(Font.custom("Life Savers", size: 27))
+                    .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
-                    .frame(width: 250, height: 60)
+                    .frame(width: 250, height: 90)
                     .foregroundColor(.black)
-                    .offset(x: 0, y: -23)
+                    .offset(x: 0, y: -28)
                 Button {
                     alertClass.showingAlert = false
                 } label: {
                     ZStack {
                         Image("noAlert")
                         Text(noAlert)
-                            .font(Font.custom("Quick Pencil", size: 35))
+                            .font(Font.custom("Life Savers", size: 25))
+                            .fontWeight(.heavy)
                     }
                 }
                 .offset(x: 77, y: 59)
@@ -52,7 +55,8 @@ struct AlertView: View {
                     ZStack {
                         Image("yesAlert")
                         Text(yesAlert)
-                            .font(Font.custom("Quick Pencil", size: 35))
+                            .font(Font.custom("Life Savers", size: 25))
+                            .fontWeight(.heavy)
                     }
                 }
                 .offset(x: -80, y: 59)

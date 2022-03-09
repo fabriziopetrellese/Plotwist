@@ -16,7 +16,7 @@ struct ButtonsIconModel: View {
                 Image("buttonback")
                 HStack {
                     Text(label)
-                        .font(Font.custom("Life Savers", size: 33))
+                        .font(Font.custom("Life Savers", size: 31))
                         .fontWeight(.heavy)
                         .foregroundColor(.black)
                     

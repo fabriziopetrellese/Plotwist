@@ -119,3 +119,9 @@
 "continue" = "Continue";
 
 "letsgo" = "Let's start!";
+
+// CREDITS VIEW
+
+"createdBy" = "Created By:";
+
+"russianBy" = "Russian translation by:";

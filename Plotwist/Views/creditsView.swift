@@ -10,32 +10,48 @@ import SwiftUI
 struct creditsView: View {
     @State private var showCredits = false
     let credits: LocalizedStringKey = "credits"
+    let createdBy: LocalizedStringKey = "createdBy"
+    let russianBy: LocalizedStringKey = "russianBy"
     
     var body: some View {
         ZStack {
             if showCredits {
-                Image("showcredits")
+                Image("showcredits2")
                 Image("ominicredits")
-                    .offset(x: -80, y: -162)
+                    .offset(x: -80, y: -199)
                 VStack {
                     Text(credits)
-                        .padding(.vertical, 12)
-                        .font(Font.custom("Quick Pencil", size: 50))
-                    Text("""
-Created by:
-
-Eleonora Franco
-Fabrizio Petrellese
-Giovanni Del Piano
-Valerio Domenico Conte
-""").multilineTextAlignment(.center)
-                        .font(Font.custom("Quick Pencil", size: 31))
-                        .padding(.bottom, 30)
+                        .font(Font.custom("Life Savers", size: 37))
+                        .fontWeight(.heavy)
+                        .offset(x: 0, y: -22.5)
+                    Text(createdBy)
+                        .font(Font.custom("Life Savers", size: 23))
+                        .fontWeight(.bold)
+                        .offset(x: 0, y: -10)
+                    Text("Eleonora Franco")
+                        .font(Font.custom("Life Savers", size: 25))
+                        .fontWeight(.bold)
+                    Text("Fabrizio Petrellese")
+                        .font(Font.custom("Life Savers", size: 25))
+                        .fontWeight(.bold)
+                    Text("Valerio Domenico Conte")
+                        .font(Font.custom("Life Savers", size: 25))
+                        .fontWeight(.bold)
+                    Text("Giovanni Del Piano")
+                        .font(Font.custom("Life Savers", size: 25))
+                        .fontWeight(.bold)
+                        Text(russianBy)
+                            .font(Font.custom("Life Savers", size: 25))
+                            .offset(x: 0, y: 19)
+                    Text("Natalia Kuznetsova")
+                        .font(Font.custom("Life Savers", size: 24))
+                        .offset(x: 0, y: 22)
                 }
             } else {
                 Image("settingsbutton")
                 Text(credits)
-                    .font(Font.custom("Quick Pencil", size: 50))
+                    .font(Font.custom("Life Savers", size: 37))
+                    .fontWeight(.heavy)
                 Image("ominicredits")
                     .offset(x: -80, y: -70)
             }

@@ -28,7 +28,7 @@ struct NextTurn: View {
                 let secondaParte = String(format: NSLocalizedString("secondPart", comment: ""))
                 Text(primaParte + secondaParte)
                     .multilineTextAlignment(.center)
-                    .font(Font.custom("Life Savers", size: 45))
+                    .font(Font.custom("Life Savers", size: 43))
 //                    .fontWeight(.bold)
                     .frame(width: 300, height: 200)
             } else {

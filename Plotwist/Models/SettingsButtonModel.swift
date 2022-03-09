@@ -15,7 +15,7 @@ struct SettingsButtonModel: View {
             
             HStack {
                 Text(title)
-                    .font(Font.custom("Life Savers", size: 27))
+                    .font(Font.custom("Life Savers", size: 26))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
                 

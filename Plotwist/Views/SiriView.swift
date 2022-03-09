@@ -23,8 +23,9 @@ struct SiriView: View {
             Text(finalTitle)
                 .font(Font.custom("Life Savers", size: 39))
                 .fontWeight(.heavy)
-                .padding(.bottom, 30)
-                .offset(x: 0, y: -1)
+                .padding(.bottom, 20)
+                .padding(.top)
+                .offset(x: 0, y: -10)
             
             GeometryReader { geometry in
             ScrollView(showsIndicators: false) {
@@ -59,8 +60,9 @@ struct SiriView: View {
             } label: {
                 ButtonsIconModel(label: menu, icon: "house.fill")
             }
+            .padding(.bottom)
         }
-        .padding(.bottom, 60)
+        .padding(.bottom, 75)
         .background(
             Image("Background")
                 .ignoresSafeArea()

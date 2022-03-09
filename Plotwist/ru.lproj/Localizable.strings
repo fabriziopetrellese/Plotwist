@@ -8,13 +8,13 @@
 
 //CONTENT VIEW
 
-"text1" = "Направляемый сторителлинг";  //shorter
+"text1" = "Направляемый сторителлинг";         //shorter
 
-"text2" = "Случайный сторителлинг";  //shorter
+"text2" = "Случайный сторителлинг";        //shorter
 
 "text3" = "Настройки";
 
-"text4" = "Создай историю на основе заготовок и с помощью кубика";  //shorter
+"text4" = "Создай историю на основе заготовок и с помощью кубика";       //shorter
 
 "text5" = "Создай историю только с помощью кубика";
 
@@ -38,7 +38,7 @@
 
 //GUIDED VIEW
 
-"title1" = "Выберите игроков";  //shorter
+"title1" = "Выберите игроков";       //shorter
 
 "player1" = "Игрок 1";
 
@@ -119,3 +119,9 @@
 "continue" = "Continue";
 
 "letsgo" = "Let's start!";
+
+// CREDITS VIEW
+
+"createdBy" = "Created By:";       // added
+
+"russianBy" = "Russian translation by:";     // added
