@@ -14,16 +14,15 @@ struct OnboardingView: View {
     let desc: LocalizedStringKey = "desc"
     let moreInfo: LocalizedStringKey = "moreInfo"
     let finalInfo: LocalizedStringKey = "finalInfo"
-    let continueButton: LocalizedStringKey = "continue"
     let letsgo: LocalizedStringKey = "letsgo"
     
     var body: some View {
         TabView {
             FirstPageView(title: welcome, subtitle: desc, image: "plotwistOnboarding", shouldShowOnboarding: $shouldShowOnboarding)
             
-            PageView(title: moreInfo, buttonLabel: continueButton, showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
+            SecondPageView(title: moreInfo, image: "omini_onboarding", shouldShowOnboarding: $shouldShowOnboarding)
             
-            PageView(title: finalInfo, buttonLabel: letsgo, showsDismissButton: true, shouldShowOnboarding: $shouldShowOnboarding)
+            ThirdPageView(title: finalInfo, buttonLabel: letsgo, showsDismissButton: true, shouldShowOnboarding: $shouldShowOnboarding)
             
             
         }
@@ -52,30 +51,58 @@ struct FirstPageView: View {
     var body: some View {
         VStack{
             Text(title)
-                .font(Font.custom("Quick Pencil", size: 50))
+                .font(Font.custom("Life Savers", size: 40))
+                .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .frame(width: 240)
-                .padding(32)
+                .frame(width: 280)
+                .padding(24)
+
+            Image(image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 164.94, height: 119)
+                .padding(24)
+            
+            Text(subtitle)
+                .font(Font.custom("Life Savers", size: 38))
+                .fontWeight(.heavy)
+                .foregroundColor(.black)
+                .multilineTextAlignment(.center)
+                .frame(width: 280)
+                .padding(24)
+        }
+        .padding(.bottom, 288)
+    }
+}
+
+struct SecondPageView: View {
+    let title: LocalizedStringKey
+    let image: String
+    @Binding var shouldShowOnboarding: Bool
+    
+    var body: some View {
+        VStack{
+            Text(title)
+                .font(Font.custom("Life Savers", size: 40))
+                .fontWeight(.heavy)
+                .foregroundColor(.black)
+                .multilineTextAlignment(.center)
+                .frame(width: 280)
+                .padding(48)
             
             
             Image(image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 164.94, height: 119)
-                .padding(32)
-            
-            Text(subtitle)
-                .font(Font.custom("Quick Pencil", size: 48))
-                .foregroundColor(.black)
-                .multilineTextAlignment(.center)
-                .frame(width: 280)
-                .padding(32)
+                .frame(width: 249.55, height: 153.99)
+                .padding(48)
         }
+        .padding(.bottom, 288)
     }
 }
 
-struct PageView: View {
+struct ThirdPageView: View {
     let title: LocalizedStringKey
     let buttonLabel: LocalizedStringKey
     let showsDismissButton: Bool
@@ -84,10 +111,11 @@ struct PageView: View {
     var body: some View {
         VStack{
             Text(title)
-                .font(Font.custom("Quick Pencil", size: 50))
+                .font(Font.custom("Life Savers", size: 40))
+                .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .frame(width: 280)
+                .frame(width: 320, height: 380)
                 .padding(128)
             
             
@@ -97,20 +125,20 @@ struct PageView: View {
                 } label: {
                     ButtonsModel(label: buttonLabel)
                 }
-                .padding(128)
+                .padding(160)
             } else {
                 ZStack {
                     
                 }
-                .padding(192)
+                .padding(160)
             }
              
         }
     }
 }
 
-//struct Onboarding_Previews: PreviewProvider {
-//    static var previews: some View {
-//        OnboardingView(shouldShowOnboarding: .constant(true))
-//    }
-//}
+struct OnboardingView_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardingView(shouldShowOnboarding: .constant(true))
+    }
+}

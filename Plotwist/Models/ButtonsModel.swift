@@ -14,7 +14,7 @@ struct ButtonsModel: View {
         ZStack {
             Image("buttonback")
             HStack {
-                Text("Avvia")
+                Text(label)
                     .font(Font.custom("Life Savers", size: 31))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)

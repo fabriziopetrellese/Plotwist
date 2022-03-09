@@ -11,19 +11,33 @@ struct DiceView: View {
     @Environment(\.dismiss) var backAr
     
     var body: some View {
-        RealityKitView()
-            .ignoresSafeArea()
-            .navigationBarBackButtonHidden(true)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        backAr()
-                    } label: {
-                        Image(systemName: "arrowshape.turn.up.backward.fill")
-                            .foregroundColor(.black)
-                    }
+        
+        ZStack {
+            RealityKitView()
+            
+            
+            Button {
+                backAr()
+            } label: {
+                ButtonsModel(label: "Prova")
+            }
+            .position(x: 207, y: 800)
+            
+            
+        }
+        
+        .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    backAr()
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.backward.fill")
+                        .foregroundColor(.black)
                 }
             }
+        }
     }
 }
 
