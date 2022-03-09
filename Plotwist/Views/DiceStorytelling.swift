@@ -16,11 +16,11 @@ struct DiceStorytelling: View {
     var body: some View {
         VStack {
             Text(diceTitle)
-                .font(Font.custom("Life Savers", size: 40))
+                .font(Font.custom("Life Savers", size: 39))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
-                .frame(width: 300, height: 220)
-                .position(x: 207, y: 50)
+                .frame(width: 300, height: 250)
+                .position(x: 207, y: 65)
             
             Spacer()
             

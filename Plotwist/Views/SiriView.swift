@@ -25,7 +25,7 @@ struct SiriView: View {
                 .fontWeight(.heavy)
                 .padding(.bottom, 20)
                 .padding(.top)
-                .offset(x: 0, y: -1)
+                .offset(x: 0, y: -10)
             
             GeometryReader { geometry in
             ScrollView(showsIndicators: false) {
@@ -48,7 +48,7 @@ struct SiriView: View {
                 let lang = String(format: NSLocalizedString("language", comment: ""))
                 let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
                 utterance.voice = AVSpeechSynthesisVoice(language: lang)
-                utterance.rate = 0.43
+                utterance.rate = 0.42
                 let synthesizer = AVSpeechSynthesizer()
                 synthesizer.speak(utterance)
             } label: {
@@ -62,7 +62,7 @@ struct SiriView: View {
             }
             .padding(.bottom)
         }
-        .padding(.bottom, 60)
+        .padding(.bottom, 75)
         .background(
             Image("Background")
                 .ignoresSafeArea()
