@@ -48,6 +48,10 @@
 		B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */; };
 		B9DA60CA27D7ABB3003F53C7 /* Life Savers.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */; };
 		B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */; };
+		B9DA60D027D8EA97003F53C7 /* DiceFood.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B9DA60CF27D8EA97003F53C7 /* DiceFood.rcproject */; };
+		B9DA610A27D8F500003F53C7 /* ARDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA610927D8F500003F53C7 /* ARDiceView.swift */; };
+		B9DA611827D8F8F6003F53C7 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B9DA611727D8F8F6003F53C7 /* Experience.rcproject */; };
+		B9DA611A27D909CD003F53C7 /* Dices.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B9DA611927D909CD003F53C7 /* Dices.rcproject */; };
 		B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */; };
 		B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518C27C90EE400CFA313 /* StoriesModel.swift */; };
 		B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */; };
@@ -101,6 +105,10 @@
 		B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LifeSaversEB.ttf; sourceTree = "<group>"; };
 		B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Savers.ttf"; sourceTree = "<group>"; };
 		B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStoryWriting.swift; sourceTree = "<group>"; };
+		B9DA60CF27D8EA97003F53C7 /* DiceFood.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = DiceFood.rcproject; sourceTree = "<group>"; };
+		B9DA610927D8F500003F53C7 /* ARDiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARDiceView.swift; sourceTree = "<group>"; };
+		B9DA611727D8F8F6003F53C7 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Experience.rcproject; path = ../../DiceAR/DiceAR/Experience.rcproject; sourceTree = "<group>"; };
+		B9DA611927D909CD003F53C7 /* Dices.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Dices.rcproject; sourceTree = "<group>"; };
 		B9EE518A27C67CC600CFA313 /* IncipitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipitsModel.swift; sourceTree = "<group>"; };
 		B9EE518C27C90EE400CFA313 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
 		B9EE518E27C92BA100CFA313 /* ButtonsIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsIconModel.swift; sourceTree = "<group>"; };
@@ -202,6 +210,10 @@
 				49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
 				49EB564E27D2560800E23086 /* foodDice.usdz */,
+				B9DA611727D8F8F6003F53C7 /* Experience.rcproject */,
+				B9DA60CF27D8EA97003F53C7 /* DiceFood.rcproject */,
+				B9DA610927D8F500003F53C7 /* ARDiceView.swift */,
+				B9DA611927D909CD003F53C7 /* Dices.rcproject */,
 			);
 			path = Plotwist;
 			sourceTree = "<group>";
@@ -317,13 +329,16 @@
 				49F08C2227BB47100046D206 /* GuidedView.swift in Sources */,
 				49EB564627D2548C00E23086 /* DiceView.swift in Sources */,
 				493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */,
+				B9DA60D027D8EA97003F53C7 /* DiceFood.rcproject in Sources */,
 				B9D78E8427CFB1000083BB3C /* CardModel2.swift in Sources */,
 				492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */,
+				B9DA610A27D8F500003F53C7 /* ARDiceView.swift in Sources */,
 				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
 				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
+				B9DA611827D8F8F6003F53C7 /* Experience.rcproject in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
 				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
@@ -346,6 +361,7 @@
 				4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */,
 				49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */,
 				49E7C59E27BD32160043AD25 /* CategoriesListModel.swift in Sources */,
+				B9DA611A27D909CD003F53C7 /* Dices.rcproject in Sources */,
 				492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */,
 				49124DB027C1E22200CCECAF /* SiriView.swift in Sources */,
 			);

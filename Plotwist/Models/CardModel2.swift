@@ -30,9 +30,9 @@ struct CardModel2: View {
                     .padding(.top, 30)
                 
                 Text(description)
-                    .foregroundColor(.darkGray)
                     .font(Font.custom("Life Savers", size: 22))
-                    .bold()
+                    .fontWeight(.bold)
+                    .foregroundColor(.darkGray)
                     .frame(width: 247, height: 96)
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 36)

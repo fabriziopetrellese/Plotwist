@@ -51,7 +51,7 @@ struct DiceStoryWriting: View {
                             .padding(.bottom, 356)
                     }
                     TextEditor(text: $story)
-                        .font(Font.custom("Life Savers", size: 24))
+                        .font(Font.custom("Life Savers", size: 24).weight(.bold))
                         .foregroundColor(.darkGray)
                         .background(.clear)
                         .padding(.horizontal)

@@ -13,7 +13,8 @@ struct RollDiceModel: View {
             Image("rollbutton")
             HStack {
                 Text("Roll Dice")
-                    .font(Font.custom("Quick Pencil", size: 46))
+                    .font(Font.custom("Life Savers", size: 40))
+                    .fontWeight(.heavy)
                     .foregroundColor(.black)
                 Image("rolldice")
                     .resizable()

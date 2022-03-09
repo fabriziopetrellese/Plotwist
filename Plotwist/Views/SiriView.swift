@@ -18,6 +18,7 @@ struct SiriView: View {
     let speech: LocalizedStringKey = "speech"
     let menu: LocalizedStringKey = "menu"
     
+    
     var body: some View {
         VStack {
             Text(finalTitle)
@@ -30,10 +31,10 @@ struct SiriView: View {
             GeometryReader { geometry in
             ScrollView(showsIndicators: false) {
                 Text(storiesModel.fullStory)
+                    .font(Font.custom("Life Savers", size: 28))
+                    .fontWeight(.bold)
                     .padding()
                     .foregroundColor(.darkGray)
-                    .font(Font.custom("Life Savers", size: 28))
-//                    .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .frame(width: geometry.size.width)
                     .frame(minHeight: geometry.size.height)
@@ -44,6 +45,7 @@ struct SiriView: View {
             .frame(width: 360, height: 404, alignment: .center)
             
             Spacer()
+            
             Button {
                 let lang = String(format: NSLocalizedString("language", comment: ""))
                 let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
@@ -53,7 +55,8 @@ struct SiriView: View {
                 synthesizer.speak(utterance)
             } label: {
                 ButtonsIconModel(label: speech, icon: "person.wave.2.fill")
-            }.padding(.top, 30)
+            }
+            .padding(.top, 30)
             
             Button {
                 alertClass.showingAlert = true

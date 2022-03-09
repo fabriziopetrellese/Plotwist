@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct CategoriesButtonModel: View {
-    @State private var isSelected = false
-    @State private var selectedButtons = 0
     var content: String
     
     var body: some View {
@@ -19,29 +17,21 @@ struct CategoriesButtonModel: View {
                 .foregroundColor(.white)
                 .shadow(color: .black, radius: 5, x: -1.5, y: 2)
             
-            let categoryButtonSelected = RoundedRectangle(cornerRadius: 19)
-                .strokeBorder(Color.yellowSelection, lineWidth: 4)
-                .frame(width: 300, height: 75)
-                .foregroundColor(.white)
-            
-            
-            if isSelected {
-                ZStack {
-                    categoryButton
-                    categoryButtonSelected
-                    Text(content)
-                        .font(Font.custom("Quick Pencil", size: 45))
-                }.frame(width: 320, height: 96, alignment: .center)
-            } else {
+            NavigationLink {
+                DiceView(diceName: content)
+            } label: {
                 ZStack {
                     categoryButton
                     Text(content)
-                        .font(Font.custom("Quick Pencil", size: 45))
-                }.frame(width: 320, height: 96, alignment: .center)
+                        .font(Font.custom("Life Savers", size: 40))
+                        .fontWeight(.heavy)
+                }
+                .frame(width: 320, height: 96, alignment: .center)
+                
             }
-        }
-        .onTapGesture {
-            isSelected = !isSelected
+            
+
+            
         }
         
     }
@@ -52,3 +42,48 @@ struct CategoriesButtonModel_Previews: PreviewProvider {
         CategoriesButtonModel(content: "")
     }
 }
+
+/*
+ struct CategoriesButtonModel: View {
+     @State private var isSelected = false
+     @State private var selectedButtons = 0
+     var content: String
+     
+     var body: some View {
+         ZStack {
+             let categoryButton = RoundedRectangle(cornerRadius: 20)
+                 .frame(width: 300, height: 75)
+                 .foregroundColor(.white)
+                 .shadow(color: .black, radius: 5, x: -1.5, y: 2)
+             
+             let categoryButtonSelected = RoundedRectangle(cornerRadius: 19)
+                 .strokeBorder(Color.yellowSelection, lineWidth: 4)
+                 .frame(width: 300, height: 75)
+                 .foregroundColor(.white)
+             
+             
+             if isSelected {
+                 ZStack {
+                     categoryButton
+                     categoryButtonSelected
+                     Text(content)
+                         .font(Font.custom("Life Savers", size: 40))
+                         .fontWeight(.heavy)
+                 }.frame(width: 320, height: 96, alignment: .center)
+             } else {
+                 ZStack {
+                     categoryButton
+                     Text(content)
+                         .font(Font.custom("Life Savers", size: 40))
+                         .fontWeight(.heavy)
+                 }.frame(width: 320, height: 96, alignment: .center)
+             }
+         }
+         .onTapGesture {
+             isSelected = !isSelected
+         }
+         
+     }
+ }
+ 
+ */

@@ -25,7 +25,7 @@ struct DiceStorytelling: View {
             Spacer()
             
             NavigationLink {
-                DiceView()
+                DiceView(diceName: "")
             } label: {
                 ButtonsModel(label: rollDice)
             }.position(x: 207, y: 270)

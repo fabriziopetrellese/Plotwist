@@ -9,40 +9,43 @@ import SwiftUI
 
 struct DiceView: View {
     @Environment(\.dismiss) var backAr
+    @EnvironmentObject var navigationRoot: NavigationRoot
+    
+    let button2: LocalizedStringKey = "button2"
+    var diceName: String
     
     var body: some View {
         
         ZStack {
             RealityKitView()
             
-            
-            NavigationLink {
-                DiceStoryWriting()
-            } label: {
-                ButtonsModel(label: "I feel inspired")
+            if navigationRoot.mode2 {
+                NavigationLink {
+                    DiceStoryWriting()
+                } label: {
+                    ButtonsModel(label: button2)
+                }
+                .position(x: 207, y: 800)
             }
-            .position(x: 207, y: 800)
-            
-            
         }
         
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
-//        .toolbar {
-//            ToolbarItem(placement: .navigationBarLeading) {
-//                Button {
-//                    backAr()
-//                } label: {
-//                    Image(systemName: "arrowshape.turn.up.backward.fill")
-//                        .foregroundColor(.black)
-//                }
-//            }
-//        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    backAr()
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.backward.fill")
+                        .foregroundColor(.black)
+                }
+            }
+        }
     }
 }
 
 struct DiceView_Previews: PreviewProvider {
     static var previews: some View {
-        DiceView()
+        DiceView(diceName: "")
     }
 }

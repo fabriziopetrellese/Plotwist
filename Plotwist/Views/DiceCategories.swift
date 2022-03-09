@@ -15,7 +15,8 @@ struct DiceCategories: View {
         VStack {
             HStack {
                 Text("Select dice categories")
-                    .font(Font.custom("Quick Pencil", size: 50))
+                    .font(Font.custom("Life Savers", size: 40))
+                    .fontWeight(.heavy)
                     .padding(.horizontal)
                     .frame(width: 250, height: 100, alignment: .center)
                 //                Spacer()
@@ -23,14 +24,7 @@ struct DiceCategories: View {
             .padding(.bottom, 32)
             
             CategoriesListModel()
-            
-            Button {
-                
-            } label: {
-                RollDiceModel()
-            }
-            .padding(.vertical, 32)
-            
+                        
         }
         .background(
             Image("Background")
@@ -57,3 +51,12 @@ struct DiceCategories_Previews: PreviewProvider {
         DiceCategories()
     }
 }
+
+/*
+ Button {
+     
+ } label: {
+     RollDiceModel()
+ }
+ .padding(.vertical, 32)
+ */

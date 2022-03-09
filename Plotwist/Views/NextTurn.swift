@@ -28,17 +28,17 @@ struct NextTurn: View {
                 let primaParte = String(format: NSLocalizedString("firstPart", comment: ""), arguments: [playersModel.activePlayer])
                 let secondaParte = String(format: NSLocalizedString("secondPart", comment: ""))
                 Text(primaParte + secondaParte)
-                    .multilineTextAlignment(.center)
                     .font(Font.custom("Life Savers", size: 43))
-//                    .fontWeight(.bold)
+                    .fontWeight(.heavy)
+                    .multilineTextAlignment(.center)
                     .frame(width: 300, height: 200)
             } else {
                 let terzaParte = String(format: NSLocalizedString("thirdPart", comment: ""), arguments: [playersModel.activePlayer])
                 let quartaParte = String(format: NSLocalizedString("fourthPart", comment: ""))
                 Text(terzaParte + quartaParte)
-                    .multilineTextAlignment(.center)
                     .font(Font.custom("Life Savers", size: 45))
-//                    .fontWeight(.bold)
+                    .fontWeight(.heavy)
+                    .multilineTextAlignment(.center)
                     .frame(width: 300, height: 200)
             }
             
