@@ -10,6 +10,8 @@ import SwiftUI
 struct creditsView: View {
     @State private var showCredits = false
     let credits: LocalizedStringKey = "credits"
+    let createdBy: LocalizedStringKey = "createdBy"
+    let russianBy: LocalizedStringKey = "russianBy"
     
     var body: some View {
         ZStack {
@@ -22,7 +24,7 @@ struct creditsView: View {
                         .font(Font.custom("Life Savers", size: 37))
                         .fontWeight(.heavy)
                         .offset(x: 0, y: -22.5)
-                    Text("Created by:")
+                    Text(createdBy)
                         .font(Font.custom("Life Savers", size: 23))
                         .fontWeight(.bold)
                         .offset(x: 0, y: -10)
@@ -38,7 +40,7 @@ struct creditsView: View {
                     Text("Giovanni Del Piano")
                         .font(Font.custom("Life Savers", size: 25))
                         .fontWeight(.bold)
-                        Text("Russian translation by:")
+                        Text(russianBy)
                             .font(Font.custom("Life Savers", size: 25))
                             .offset(x: 0, y: 19)
                     Text("Natalia Kuznetsova")

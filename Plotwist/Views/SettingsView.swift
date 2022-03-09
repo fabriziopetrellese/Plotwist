@@ -16,7 +16,6 @@ struct SettingsView: View {
     let startersCreation: LocalizedStringKey = "startersCreation"
     let language: LocalizedStringKey = "language"
     let settings: LocalizedStringKey = "settings"
-    let createdBy: LocalizedStringKey = "createdBy"
     
     var body: some View {
         VStack {
@@ -30,7 +29,7 @@ struct SettingsView: View {
             
             Toggle(isOn: $music) {
                 Text(musicTranslation)
-                    .font(Font.custom("Life Savers", size: 31))
+                    .font(Font.custom("Life Savers", size: 29))
                     .fontWeight(.heavy)
             }
             .tint(.blue)

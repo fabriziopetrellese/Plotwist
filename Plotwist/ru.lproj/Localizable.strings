@@ -90,8 +90,6 @@
 
 "settings" = "Настройки";
 
-"createdBy" = "Created By";       //added
-
 // DICE STORYTELLING
 
 "diceTitle" = "Выбери кубик для вдохновения и начни писать";
@@ -121,3 +119,9 @@
 "continue" = "Continue";
 
 "letsgo" = "Let's start!";
+
+// CREDITS VIEW
+
+"createdBy" = "Created By";       // added
+
+"russianBy" = "Russian translation by:";     // added

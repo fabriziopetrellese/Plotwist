@@ -90,8 +90,6 @@
 
 "settings" = "Parametres";
 
-"createdBy" = "Cree par";
-
 // DICE STORYTELLING
 
 "diceTitle" = "Selectionner des, inspirez-vous et commencez a ecrire";
@@ -121,3 +119,9 @@
 "continue" = "Continue";
 
 "letsgo" = "Let's start!";
+
+// CREDITS VIEW
+
+"createdBy" = "Cree par";
+
+"russianBy" = "Traduction russe:";

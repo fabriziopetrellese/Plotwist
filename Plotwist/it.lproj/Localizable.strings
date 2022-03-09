@@ -90,8 +90,6 @@
 
 "settings" = "Impostazioni";
 
-"createdBy" = "Creato da";
-
 // DICE STORYTELLING
 
 "diceTitle" = "Seleziona i dadi, trova ispirazione e comincia a scrivere";
@@ -121,3 +119,9 @@
 "continue" = "Continua";
 
 "letsgo" = "Iniziamo!";
+
+// CREDITS VIEW
+
+"createdBy" = "Creato da";
+
+"russianBy" = "Traduzione russa:";
