@@ -59,26 +59,6 @@ struct SettingsView: View {
                     }.padding(.horizontal, 68)
                 }
             }
-            
-//            Button {
-//                languageModal.toggle()
-//            } label: {
-//                ZStack {
-//                    Image("settingsbutton")
-//                        .padding(.bottom, 90)
-//                    HStack (spacing: 75) {
-//                        Text(language)
-//                            .font(Font.custom("Quick Pencil", size: 40))
-//                            .foregroundColor(.black)
-//                            .padding(.bottom, 93)
-//                        Image("english")
-//                            .offset(x: 0, y: -47)
-//                    }
-//                }
-//            }
-//            .fullScreenCover(isPresented: $languageModal) {
-//                LanguageView()
-//            }
             creditsView()
                 .offset(x: 0, y: 65)
             Spacer()

@@ -22,7 +22,8 @@
 		49AC302327BAB75900629633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302227BAB75900629633 /* Assets.xcassets */; };
 		49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302527BAB75900629633 /* Preview Assets.xcassets */; };
 		49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */; };
-		49D07AAE27C6D35F00C6F332 /* backgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */; };
+		49B4B6F527D995B6009204E2 /* musicBack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49B4B6F427D995B6009204E2 /* musicBack.mp3 */; };
+		49BCA99F27D988DA001336C2 /* foodDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49BCA99E27D988DA001336C2 /* foodDice.usdz */; };
 		49D48C1727C1D3CC00F1E935 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D48C1627C1D3CC00F1E935 /* LanguageView.swift */; };
 		49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E20D6D27BC5720002BAFA3 /* SettingsView.swift */; };
 		49E7C59B27BD32160043AD25 /* NextTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C59627BD32160043AD25 /* NextTurn.swift */; };
@@ -35,7 +36,6 @@
 		49EB564627D2548C00E23086 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB564527D2548C00E23086 /* DiceView.swift */; };
 		49EB564827D254B000E23086 /* RealityKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB564727D254B000E23086 /* RealityKitView.swift */; };
 		49EB564B27D2556600E23086 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 49EB564A27D2556600E23086 /* FocusEntity */; };
-		49EB564D27D2560400E23086 /* foodDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49EB564C27D2560400E23086 /* foodDice.usdz */; };
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
 		B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302E27BABB1300629633 /* Plotwist-Info.plist */; };
 		B9B7F67327CE6F930064A8B3 /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */; };
@@ -73,7 +73,8 @@
 		49AC302527BAB75900629633 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49AC302E27BABB1300629633 /* Plotwist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Plotwist-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboardButton.swift; sourceTree = "<group>"; };
-		49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backgroundmusic.mp3; path = ../../backgroundmusic.mp3; sourceTree = "<group>"; };
+		49B4B6F427D995B6009204E2 /* musicBack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = musicBack.mp3; path = ../../musicBack.mp3; sourceTree = "<group>"; };
+		49BCA99E27D988DA001336C2 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = foodDice.usdz; path = ../../../../foodDice.usdz; sourceTree = "<group>"; };
 		49D48C1627C1D3CC00F1E935 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		49E20D6D27BC5720002BAFA3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		49E7C59627BD32160043AD25 /* NextTurn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextTurn.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceModel.swift; sourceTree = "<group>"; };
 		49EB564527D2548C00E23086 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		49EB564727D254B000E23086 /* RealityKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitView.swift; sourceTree = "<group>"; };
-		49EB564C27D2560400E23086 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = foodDice.usdz; path = ../../../foodDice.usdz; sourceTree = "<group>"; };
 		49EB564E27D2560800E23086 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = foodDice.usdz; sourceTree = "<group>"; };
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
 		B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
@@ -199,9 +199,9 @@
 				B9D78E7A27CFA7370083BB3C /* Localizable.strings */,
 				49AC302227BAB75900629633 /* Assets.xcassets */,
 				49AC302427BAB75900629633 /* Preview Content */,
-				49D07AAD27C6D35F00C6F332 /* backgroundmusic.mp3 */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
 				49EB564E27D2560800E23086 /* foodDice.usdz */,
+				49B4B6F427D995B6009204E2 /* musicBack.mp3 */,
 			);
 			path = Plotwist;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 		49AC302427BAB75900629633 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				49EB564C27D2560400E23086 /* foodDice.usdz */,
+				49BCA99E27D988DA001336C2 /* foodDice.usdz */,
 				49AC302527BAB75900629633 /* Preview Assets.xcassets */,
 			);
 			name = "Preview Content";
@@ -295,14 +295,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BCA99F27D988DA001336C2 /* foodDice.usdz in Resources */,
 				B9DA60CA27D7ABB3003F53C7 /* Life Savers.ttf in Resources */,
 				B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */,
-				49EB564D27D2560400E23086 /* foodDice.usdz in Resources */,
 				B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */,
 				49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */,
-				49D07AAE27C6D35F00C6F332 /* backgroundmusic.mp3 in Resources */,
 				49AC302327BAB75900629633 /* Assets.xcassets in Resources */,
 				B9DA60C727D7AA03003F53C7 /* LifeSaversB.ttf in Resources */,
+				49B4B6F527D995B6009204E2 /* musicBack.mp3 in Resources */,
 				B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

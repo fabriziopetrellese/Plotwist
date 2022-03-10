@@ -31,7 +31,7 @@ struct NextTurn: View {
                     .font(Font.custom("Life Savers", size: 41))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
-                    .frame(width: 300, height: 200)
+                    .frame(width: 330, height: 200)
             } else {
                 let terzaParte = String(format: NSLocalizedString("thirdPart", comment: ""), arguments: [playersModel.activePlayer])
                 let quartaParte = String(format: NSLocalizedString("fourthPart", comment: ""))
@@ -39,7 +39,7 @@ struct NextTurn: View {
                     .font(Font.custom("Life Savers", size: 43))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
-                    .frame(width: 300, height: 225)
+                    .frame(width: 330, height: 225)
             }
             
             NavigationLink {
