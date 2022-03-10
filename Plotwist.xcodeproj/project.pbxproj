@@ -11,6 +11,8 @@
 		49124DB027C1E22200CCECAF /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49124DAF27C1E22200CCECAF /* SiriView.swift */; };
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
+		4921D92F27DA289E007E00F2 /* emotionsDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4921D92D27DA289E007E00F2 /* emotionsDice.usdz */; };
+		4921D93027DA289E007E00F2 /* animalsDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4921D92E27DA289E007E00F2 /* animalsDice.usdz */; };
 		492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC727D296C700F3BD65 /* AlertView.swift */; };
 		492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC927D35D8000F3BD65 /* AlertClass.swift */; };
 		493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493AB1B627CC548F00224AF8 /* SplashScreenView.swift */; };
@@ -58,6 +60,8 @@
 		49124DAF27C1E22200CCECAF /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
+		4921D92D27DA289E007E00F2 /* emotionsDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = emotionsDice.usdz; sourceTree = "<group>"; };
+		4921D92E27DA289E007E00F2 /* animalsDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = animalsDice.usdz; sourceTree = "<group>"; };
 		492D3BC727D296C700F3BD65 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		492D3BC927D35D8000F3BD65 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		493AB1B627CC548F00224AF8 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 		49D0B17D27BB2BCC00F34BF5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				4921D92E27DA289E007E00F2 /* animalsDice.usdz */,
+				4921D92D27DA289E007E00F2 /* emotionsDice.usdz */,
 				B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */,
 				B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */,
 				B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */,
@@ -295,12 +301,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4921D93027DA289E007E00F2 /* animalsDice.usdz in Resources */,
 				49BCA99F27D988DA001336C2 /* foodDice.usdz in Resources */,
 				B9DA60CA27D7ABB3003F53C7 /* Life Savers.ttf in Resources */,
 				B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */,
 				B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */,
 				49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */,
 				49AC302327BAB75900629633 /* Assets.xcassets in Resources */,
+				4921D92F27DA289E007E00F2 /* emotionsDice.usdz in Resources */,
 				B9DA60C727D7AA03003F53C7 /* LifeSaversB.ttf in Resources */,
 				49B4B6F527D995B6009204E2 /* musicBack.mp3 in Resources */,
 				B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */,
@@ -492,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
 				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;
@@ -525,7 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
 				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;

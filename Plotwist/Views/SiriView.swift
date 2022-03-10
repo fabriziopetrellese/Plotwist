@@ -18,6 +18,10 @@ struct SiriView: View {
     let speech: LocalizedStringKey = "speech"
     let menu: LocalizedStringKey = "menu"
     
+    let synthesizer = AVSpeechSynthesizer()
+    let lang = String(format: NSLocalizedString("language", comment: ""))
+
+
     
     var body: some View {
         VStack {
@@ -45,20 +49,26 @@ struct SiriView: View {
             .frame(width: 360, height: 404, alignment: .center)
             
             Spacer()
-            
+
             Button {
-                let lang = String(format: NSLocalizedString("language", comment: ""))
-                let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
-                utterance.voice = AVSpeechSynthesisVoice(language: lang)
-                utterance.rate = 0.42
-                let synthesizer = AVSpeechSynthesizer()
-                synthesizer.speak(utterance)
+                if synthesizer.isSpeaking == false {
+                    let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
+                    utterance.voice = AVSpeechSynthesisVoice(language: lang)
+                    utterance.rate = 0.42
+                    synthesizer.speak(utterance)
+                } else {
+                    synthesizer.pauseSpeaking(at: AVSpeechBoundary.immediate)
+                }
+                if synthesizer.isPaused {
+                    synthesizer.continueSpeaking()
+                }
             } label: {
                 ButtonsIconModel(label: speech, icon: "person.wave.2.fill")
             }
             .padding(.top, 30)
             
             Button {
+                synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
                 alertClass.showingAlert = true
             } label: {
                 ButtonsIconModel(label: menu, icon: "house.fill")

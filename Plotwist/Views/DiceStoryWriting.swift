@@ -30,7 +30,7 @@ struct DiceStoryWriting: View {
     var body: some View {
         VStack {
             HStack {
-                Text("")
+                Text("chicken right now, please")
                     .font(Font.custom("Life Savers", size: 33))
                     .fontWeight(.heavy)
                     .padding(.horizontal)

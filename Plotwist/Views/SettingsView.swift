@@ -10,7 +10,6 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.dismiss) var back3
     @State private var music = MusicClass.shared.isPlaying
-    @State private var musicIsAllowed = true
     
     let musicTranslation: LocalizedStringKey = "musicTranslation"
     let startersCreation: LocalizedStringKey = "startersCreation"
@@ -19,7 +18,7 @@ struct SettingsView: View {
     
     var body: some View {
         VStack {
-            if musicIsAllowed {
+            if music {
             Image("ominomusic")
                 .offset(x: 110, y: 10)
             } else {
@@ -36,10 +35,8 @@ struct SettingsView: View {
             .padding(.horizontal, 60)
             .onChange(of: music) { newValue in
                 if newValue == true {
-                    musicIsAllowed.toggle()
                     MusicClass.shared.play()
                 } else {
-                    musicIsAllowed.toggle()
                     MusicClass.shared.pause()
                 }
             }

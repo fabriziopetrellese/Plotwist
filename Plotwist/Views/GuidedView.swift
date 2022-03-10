@@ -36,7 +36,9 @@ struct GuidedView: View {
                 .padding(.bottom, 56)
                 .position(x: 207, y: 37)
             
-            ScrollView(showsIndicators: false) {
+//            ScrollView(showsIndicators: false) {
+            GeometryReader{ geometry in
+                
                 VStack {
                     ZStack {
                         Image("PLAYERS")
@@ -145,7 +147,7 @@ struct GuidedView: View {
                     
                     if modeSelection.playerButton < 4 {
                         Button {
-                            modeSelection.playerButton += 1
+                                modeSelection.playerButton += 1
                         } label: {
                             ZStack {
                                 Image("PLAYERS")
@@ -159,9 +161,12 @@ struct GuidedView: View {
                         }
                     }
                 }
-            }
+        }
+//            }
             .frame(width: 300, height: 500)
             .position(x: 207, y: 110)
+            
+
             
             if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                 NavigationLink {
@@ -207,6 +212,16 @@ struct GuidedView: View {
                     back2()
                 } label: {
                     Image(systemName: "arrowshape.turn.up.backward.fill")
+                        .foregroundColor(.black)
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    if modeSelection.playerButton > 0 {
+                        modeSelection.playerButton -= 1
+                    }
+                } label: {
+                    Image(systemName: "trash.fill")
                         .foregroundColor(.black)
                 }
             }
