@@ -11,7 +11,6 @@
 		49124DB027C1E22200CCECAF /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49124DAF27C1E22200CCECAF /* SiriView.swift */; };
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
-		4921D92F27DA289E007E00F2 /* emotionsDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4921D92D27DA289E007E00F2 /* emotionsDice.usdz */; };
 		4921D93027DA289E007E00F2 /* animalsDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4921D92E27DA289E007E00F2 /* animalsDice.usdz */; };
 		492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC727D296C700F3BD65 /* AlertView.swift */; };
 		492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC927D35D8000F3BD65 /* AlertClass.swift */; };
@@ -39,6 +38,7 @@
 		49EB564827D254B000E23086 /* RealityKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB564727D254B000E23086 /* RealityKitView.swift */; };
 		49EB564B27D2556600E23086 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 49EB564A27D2556600E23086 /* FocusEntity */; };
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
+		B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */; };
 		B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302E27BABB1300629633 /* Plotwist-Info.plist */; };
 		B9B7F67327CE6F930064A8B3 /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */; };
 		B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D78E7A27CFA7370083BB3C /* Localizable.strings */; };
@@ -60,7 +60,6 @@
 		49124DAF27C1E22200CCECAF /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
-		4921D92D27DA289E007E00F2 /* emotionsDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = emotionsDice.usdz; sourceTree = "<group>"; };
 		4921D92E27DA289E007E00F2 /* animalsDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = animalsDice.usdz; sourceTree = "<group>"; };
 		492D3BC727D296C700F3BD65 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		492D3BC927D35D8000F3BD65 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		49EB564727D254B000E23086 /* RealityKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitView.swift; sourceTree = "<group>"; };
 		49EB564E27D2560800E23086 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = foodDice.usdz; sourceTree = "<group>"; };
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
+		B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlayersNumberView.swift; sourceTree = "<group>"; };
 		B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
 		B9D78E7927CFA7370083BB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9D78E7C27CFA75A0083BB3C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -126,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				49AC302027BAB75900629633 /* ContentView.swift */,
+				B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */,
 				49F08C2127BB47100046D206 /* GuidedView.swift */,
 				49E7C59827BD32160043AD25 /* Storystarters.swift */,
 				49E7C59627BD32160043AD25 /* NextTurn.swift */,
@@ -224,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				4921D92E27DA289E007E00F2 /* animalsDice.usdz */,
-				4921D92D27DA289E007E00F2 /* emotionsDice.usdz */,
 				B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */,
 				B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */,
 				B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */,
@@ -308,7 +308,6 @@
 				B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */,
 				49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */,
 				49AC302327BAB75900629633 /* Assets.xcassets in Resources */,
-				4921D92F27DA289E007E00F2 /* emotionsDice.usdz in Resources */,
 				B9DA60C727D7AA03003F53C7 /* LifeSaversB.ttf in Resources */,
 				49B4B6F527D995B6009204E2 /* musicBack.mp3 in Resources */,
 				B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */,
@@ -349,6 +348,7 @@
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
 				49EB564827D254B000E23086 /* RealityKitView.swift in Sources */,
+				B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */,
 				B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */,
 				B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */,
 				4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */,
@@ -502,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -535,7 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";

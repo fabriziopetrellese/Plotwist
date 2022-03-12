@@ -123,3 +123,7 @@
 "createdBy" = "Creado por:";
 
 "russianBy" = "Traduccion rusa:";
+
+// PLAYERS' NUMBER SELECTION
+
+"numberSelection" = "Select the number of players";
