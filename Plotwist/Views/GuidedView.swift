@@ -10,7 +10,7 @@ import SwiftUI
 struct GuidedView: View {
     @EnvironmentObject var playersModel: PlayersModel
     @EnvironmentObject var incipitsModel: IncipitsModel
-    @EnvironmentObject var modeSelection: NavigationRoot
+    @EnvironmentObject var navigationRoot: NavigationRoot
     @EnvironmentObject var alertClass: AlertClass
     @Environment(\.dismiss) var back2
     
@@ -24,114 +24,119 @@ struct GuidedView: View {
     let button1: LocalizedStringKey = "button1"
     let addButton: LocalizedStringKey = "addButton"
     
+    
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack {
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("", text: $playersModel.playersNames[0])
-                        .placeholder(when: playersModel.playersNames[0].isEmpty) {
-                            Text(player1)
+        VStack {
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("", text: $playersModel.playersNames[0])
+                            .placeholder(when: playersModel.playersNames[0].isEmpty) {
+                                Text(player1)
+                                    .font(Font.custom("Life Savers", size: 26))
+                                    .padding(.horizontal, 83)
+                                    .frame(width: 295, height: 60)
+                                    .foregroundColor(.gray)
+                            }
+                            .font(Font.custom("Life Savers", size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    ZStack {
+                        Image("PLAYERS")
+                        TextField("", text: $playersModel.playersNames[1])
+                            .placeholder(when: playersModel.playersNames[1].isEmpty) {
+                                Text(player2)
+                                    .font(Font.custom("Life Savers", size: 26))
+                                    .padding(.horizontal, 83)
+                                    .frame(width: 295, height: 60)
+                                
+                                    .foregroundColor(.gray)
+                            }
+                            .font(Font.custom("Life Savers", size: 26))
+                            .padding(.horizontal, 20)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: 300, height: 75, alignment: .center)
+                    
+                    if navigationRoot.playerButton > 0 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("", text: $playersModel.playersNames[2])
+                                .placeholder(when: playersModel.playersNames[2].isEmpty) {
+                                    Text(player3)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.gray)
+                                }
                                 .font(Font.custom("Life Savers", size: 26))
-                                .padding(.horizontal, 83)
-                                .frame(width: 295, height: 60)
-                                .foregroundColor(.gray)
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
                         }
-                        .font(Font.custom("Life Savers", size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                ZStack {
-                    Image("PLAYERS")
-                    TextField("", text: $playersModel.playersNames[1])
-                        .placeholder(when: playersModel.playersNames[1].isEmpty) {
-                            Text(player2)
+                        .frame(width: 300, height: 75, alignment: .center)
+                    }
+                    
+                    if navigationRoot.playerButton > 1 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("", text: $playersModel.playersNames[3])
+                                .placeholder(when: playersModel.playersNames[3].isEmpty) {
+                                    Text(player4)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.gray)
+                                }
                                 .font(Font.custom("Life Savers", size: 26))
-                                .padding(.horizontal, 83)
-                                .frame(width: 295, height: 60)
-                            
-                                .foregroundColor(.gray)
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
                         }
-                        .font(Font.custom("Life Savers", size: 26))
-                        .padding(.horizontal, 20)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(width: 300, height: 75, alignment: .center)
-                
-                if modeSelection.playerButton > 0 {
-                    ZStack {
-                        Image("PLAYERS")
-                        TextField("", text: $playersModel.playersNames[2])
-                            .placeholder(when: playersModel.playersNames[2].isEmpty) {
-                                Text(player3)
-                                    .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 83)
-                                    .frame(width: 295, height: 60)
-                                    .foregroundColor(.gray)
-                            }
-                            .font(Font.custom("Life Savers", size: 26))
-                            .padding(.horizontal, 20)
-                            .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 75, alignment: .center)
                     }
-                    .frame(width: 300, height: 75, alignment: .center)
-                }
-                
-                if modeSelection.playerButton > 1 {
-                    ZStack {
-                        Image("PLAYERS")
-                        TextField("", text: $playersModel.playersNames[3])
-                            .placeholder(when: playersModel.playersNames[3].isEmpty) {
-                                Text(player4)
-                                    .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 83)
-                                    .frame(width: 295, height: 60)
-                                    .foregroundColor(.gray)
-                            }
-                            .font(Font.custom("Life Savers", size: 26))
-                            .padding(.horizontal, 20)
-                            .multilineTextAlignment(.center)
+                    
+                    if navigationRoot.playerButton > 2 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("", text: $playersModel.playersNames[4])
+                                .placeholder(when: playersModel.playersNames[4].isEmpty) {
+                                    Text(player5)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.gray)
+                                }
+                                .font(Font.custom("Life Savers", size: 26))
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
+                        }
+                        .frame(width: 300, height: 75, alignment: .center)
                     }
-                    .frame(width: 300, height: 75, alignment: .center)
-                }
-                
-                if modeSelection.playerButton > 2 {
-                    ZStack {
-                        Image("PLAYERS")
-                        TextField("", text: $playersModel.playersNames[4])
-                            .placeholder(when: playersModel.playersNames[4].isEmpty) {
-                                Text(player5)
-                                    .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 83)
-                                    .frame(width: 295, height: 60)
-                                    .foregroundColor(.gray)
-                            }
-                            .font(Font.custom("Life Savers", size: 26))
-                            .padding(.horizontal, 20)
-                            .multilineTextAlignment(.center)
+                    
+                    if navigationRoot.playerButton > 3 {
+                        ZStack {
+                            Image("PLAYERS")
+                            TextField("", text: $playersModel.playersNames[5])
+                                .placeholder(when: playersModel.playersNames[5].isEmpty) {
+                                    Text(player6)
+                                        .font(Font.custom("Life Savers", size: 26))
+                                        .padding(.horizontal, 83)
+                                        .frame(width: 295, height: 60)
+                                        .foregroundColor(.gray)
+                                }
+                                .font(Font.custom("Life Savers", size: 26))
+                                .padding(.horizontal, 20)
+                                .multilineTextAlignment(.center)
+                        }
+                        .frame(width: 300, height: 75, alignment: .center)
                     }
-                    .frame(width: 300, height: 75, alignment: .center)
-                }
-                
-                if modeSelection.playerButton > 3 {
-                    ZStack {
-                        Image("PLAYERS")
-                        TextField("", text: $playersModel.playersNames[5])
-                            .placeholder(when: playersModel.playersNames[5].isEmpty) {
-                                Text(player6)
-                                    .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 83)
-                                    .frame(width: 295, height: 60)
-                                    .foregroundColor(.gray)
-                            }
-                            .font(Font.custom("Life Savers", size: 26))
-                            .padding(.horizontal, 20)
-                            .multilineTextAlignment(.center)
-                    }
-                    .frame(width: 300, height: 75, alignment: .center)
                 }
             }
+            
+            SelectPlayersNumberView()
         }
         .background(
             Image("BACK")
@@ -145,6 +150,9 @@ struct GuidedView: View {
             }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
+                    navigationRoot.playerButton = 0
+                    navigationRoot.mode1 = false
+                    navigationRoot.mode2 = false
                     back2()
                 } label: {
                     Image(systemName: "arrowshape.turn.up.backward.fill")
@@ -154,10 +162,10 @@ struct GuidedView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
                     NavigationLink {
-                        if modeSelection.mode1 == true {
+                        if navigationRoot.mode1 == true {
                             Storystarters()
                         }
-                        if modeSelection.mode2 == true {
+                        if navigationRoot.mode2 == true {
                             DiceStorytelling()
                         }
                     } label: {

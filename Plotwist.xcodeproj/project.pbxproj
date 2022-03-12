@@ -126,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				49AC302027BAB75900629633 /* ContentView.swift */,
-				B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */,
 				49F08C2127BB47100046D206 /* GuidedView.swift */,
+				B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */,
 				49E7C59827BD32160043AD25 /* Storystarters.swift */,
 				49E7C59627BD32160043AD25 /* NextTurn.swift */,
 				491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */,

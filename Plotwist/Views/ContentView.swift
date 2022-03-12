@@ -27,7 +27,7 @@ struct ContentView: View {
                     .frame(width: 162.09, height: 123)
                 Spacer()
                 
-                NavigationLink(destination: SelectPlayersNumberView(), isActive: $isView1Active) {
+                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
                     CardModel1(title: text1, description: text4)
                     
@@ -38,7 +38,7 @@ struct ContentView: View {
                 })
                 .offset(x: -5, y: 25)
                 
-                NavigationLink(destination: SelectPlayersNumberView(), isActive: $isView1Active) {
+                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
                     CardModel2(title: text2, description: text5)
                     
