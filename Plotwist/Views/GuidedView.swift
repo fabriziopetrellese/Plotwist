@@ -163,8 +163,7 @@ struct GuidedView: View {
                     NavigationLink {
                         if navigationRoot.mode1 == true {
                             Storystarters()
-                        }
-                        if navigationRoot.mode2 == true {
+                        } else if navigationRoot.mode2 == true {
                             DiceStorytelling()
                         }
                     } label: {

@@ -28,7 +28,6 @@ struct Storystarters: View {
     }
     
     var body: some View {
-        
         VStack {
             HStack {
                 Text(incipitsModel.currentIncipit)

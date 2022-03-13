@@ -36,7 +36,7 @@ struct ContentView: View {
                 .simultaneousGesture(TapGesture().onEnded {
                     navigationRoot.mode1 = true
                 })
-                .offset(x: -5, y: 25)
+                .offset(x: -5, y: 35)
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
@@ -53,7 +53,7 @@ struct ContentView: View {
                     
                     SettingsButtonModel(title: text3)
                     
-                }.offset(x: -5, y: -18)
+                }.offset(x: -5, y: -25)
                 Spacer()
             }
             .offset(x: 0, y: -55)
@@ -71,11 +71,11 @@ struct ContentView: View {
                 navigationRoot.backToRoot = false
             }
         }
-        .environmentObject(PlayersModel())
         .environmentObject(IncipitsModel())
+        .environmentObject(PlayersModel())
         .environmentObject(StoriesModel())
-        .environmentObject(navigationRoot)
         .environmentObject(AlertClass())
+        .environmentObject(navigationRoot)
         .preferredColorScheme(.light)
         .onAppear(){
             MusicClass.shared.setup()
