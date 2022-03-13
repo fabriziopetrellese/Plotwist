@@ -18,7 +18,7 @@ struct SiriView: View {
     let speech: LocalizedStringKey = "speech"
     let menu: LocalizedStringKey = "menu"
     
-    let synthesizer = AVSpeechSynthesizer()
+//    let synthesizer = AVSpeechSynthesizer()
     let lang = String(format: NSLocalizedString("language", comment: ""))
 
 
@@ -32,35 +32,35 @@ struct SiriView: View {
                 .padding(.top)
                 .offset(x: 0, y: -10)
             
-            GeometryReader { geometry in
-            ScrollView(showsIndicators: false) {
-                Text(storiesModel.fullStory)
-                    .font(Font.custom("Life Savers", size: 28))
-                    .fontWeight(.bold)
-                    .padding()
-                    .foregroundColor(.darkGray)
-                    .multilineTextAlignment(.center)
-                    .frame(width: geometry.size.width)
-                    .frame(minHeight: geometry.size.height)
+            GeometryReader { geo in
+                ScrollView(showsIndicators: false) {
+                    Text(storiesModel.fullStory)
+                        .font(Font.custom("Life Savers", size: 28))
+                        .fontWeight(.bold)
+                        .padding()
+                        .foregroundColor(.darkGray)
+                        .multilineTextAlignment(.center)
+                        .frame(width: geo.size.width)
+                        .frame(minHeight: geo.size.height)
+                }
             }
-        }
             .offset(x: 0, y: 1)
             .padding(.vertical, 45)
             .frame(width: 360, height: 404, alignment: .center)
             
             Spacer()
-
+            
             Button {
-                if synthesizer.isSpeaking == false {
+                if alertClass.synthesizer.isSpeaking == false {
                     let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
                     utterance.voice = AVSpeechSynthesisVoice(language: lang)
                     utterance.rate = 0.42
-                    synthesizer.speak(utterance)
+                    alertClass.synthesizer.speak(utterance)
                 } else {
-                    synthesizer.pauseSpeaking(at: AVSpeechBoundary.immediate)
+                    alertClass.synthesizer.pauseSpeaking(at: AVSpeechBoundary.immediate)
                 }
-                if synthesizer.isPaused {
-                    synthesizer.continueSpeaking()
+                if alertClass.synthesizer.isPaused {
+                    alertClass.synthesizer.continueSpeaking()
                 }
             } label: {
                 ButtonsIconModel(label: speech, icon: "person.wave.2.fill")
@@ -68,8 +68,8 @@ struct SiriView: View {
             .padding(.top, 30)
             
             Button {
-                synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
                 alertClass.showingAlert = true
+//                alertClass.synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
             } label: {
                 ButtonsIconModel(label: menu, icon: "house.fill")
             }
@@ -80,9 +80,8 @@ struct SiriView: View {
             Image("Background")
                 .ignoresSafeArea()
         ).position(x: 207, y: 400)
-        
-        .navigationBarBackButtonHidden(true)
-        .blur(radius: alertClass.showingAlert ? 9 : 0)
+            .navigationBarBackButtonHidden(true)
+            .blur(radius: alertClass.showingAlert ? 9 : 0)
         if alertClass.showingAlert == true {
             AlertView()
         }

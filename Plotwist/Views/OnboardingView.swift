@@ -18,7 +18,7 @@ struct OnboardingView: View {
     
     var body: some View {
         TabView {
-            FirstPageView(title: welcome, subtitle: desc, image: "plotwistOnboarding", shouldShowOnboarding: $shouldShowOnboarding)
+            FirstPageView(title: welcome, subtitle: desc, image: "plotwistVector", shouldShowOnboarding: $shouldShowOnboarding)
             
             SecondPageView(title: moreInfo, image: "omini_onboarding", shouldShowOnboarding: $shouldShowOnboarding)
             

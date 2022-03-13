@@ -15,6 +15,7 @@
 		492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC727D296C700F3BD65 /* AlertView.swift */; };
 		492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC927D35D8000F3BD65 /* AlertClass.swift */; };
 		493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493AB1B627CC548F00224AF8 /* SplashScreenView.swift */; };
+		495A62B127DD3A4E00C64C35 /* musicBack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 495A62B027DD3A4E00C64C35 /* musicBack.mp3 */; };
 		49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */; };
 		4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981954C27C1F6BA0037E81E /* MusicClass.swift */; };
 		4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */; };
@@ -23,7 +24,6 @@
 		49AC302327BAB75900629633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302227BAB75900629633 /* Assets.xcassets */; };
 		49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302527BAB75900629633 /* Preview Assets.xcassets */; };
 		49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */; };
-		49B4B6F527D995B6009204E2 /* musicBack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49B4B6F427D995B6009204E2 /* musicBack.mp3 */; };
 		49BCA99F27D988DA001336C2 /* foodDice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49BCA99E27D988DA001336C2 /* foodDice.usdz */; };
 		49D48C1727C1D3CC00F1E935 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D48C1627C1D3CC00F1E935 /* LanguageView.swift */; };
 		49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E20D6D27BC5720002BAFA3 /* SettingsView.swift */; };
@@ -64,6 +64,7 @@
 		492D3BC727D296C700F3BD65 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		492D3BC927D35D8000F3BD65 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		493AB1B627CC548F00224AF8 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		495A62B027DD3A4E00C64C35 /* musicBack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musicBack.mp3; sourceTree = "<group>"; };
 		49771D6827C3E2BC00A99F28 /* LanguageButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButtonModel.swift; sourceTree = "<group>"; };
 		4981954C27C1F6BA0037E81E /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonModel.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		49AC302527BAB75900629633 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49AC302E27BABB1300629633 /* Plotwist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Plotwist-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboardButton.swift; sourceTree = "<group>"; };
-		49B4B6F427D995B6009204E2 /* musicBack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = musicBack.mp3; path = ../../musicBack.mp3; sourceTree = "<group>"; };
 		49BCA99E27D988DA001336C2 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = foodDice.usdz; path = ../../../../foodDice.usdz; sourceTree = "<group>"; };
 		49D48C1627C1D3CC00F1E935 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		49E20D6D27BC5720002BAFA3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -205,8 +205,9 @@
 				49AC302227BAB75900629633 /* Assets.xcassets */,
 				49AC302427BAB75900629633 /* Preview Content */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
+				4921D92E27DA289E007E00F2 /* animalsDice.usdz */,
 				49EB564E27D2560800E23086 /* foodDice.usdz */,
-				49B4B6F427D995B6009204E2 /* musicBack.mp3 */,
+				495A62B027DD3A4E00C64C35 /* musicBack.mp3 */,
 			);
 			path = Plotwist;
 			sourceTree = "<group>";
@@ -224,7 +225,6 @@
 		49D0B17D27BB2BCC00F34BF5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				4921D92E27DA289E007E00F2 /* animalsDice.usdz */,
 				B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */,
 				B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */,
 				B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */,
@@ -304,12 +304,12 @@
 				4921D93027DA289E007E00F2 /* animalsDice.usdz in Resources */,
 				49BCA99F27D988DA001336C2 /* foodDice.usdz in Resources */,
 				B9DA60CA27D7ABB3003F53C7 /* Life Savers.ttf in Resources */,
+				495A62B127DD3A4E00C64C35 /* musicBack.mp3 in Resources */,
 				B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */,
 				B9D78E7827CFA7370083BB3C /* Localizable.strings in Resources */,
 				49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */,
 				49AC302327BAB75900629633 /* Assets.xcassets in Resources */,
 				B9DA60C727D7AA03003F53C7 /* LifeSaversB.ttf in Resources */,
-				49B4B6F527D995B6009204E2 /* musicBack.mp3 in Resources */,
 				B9DA60C827D7AA03003F53C7 /* LifeSaversEB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 37THZ8H7Q6;
+				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -535,7 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 37THZ8H7Q6;
+				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";

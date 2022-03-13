@@ -135,7 +135,6 @@ struct GuidedView: View {
                     }
                 }
             }
-            
             SelectPlayersNumberView()
         }
         .background(
@@ -182,7 +181,6 @@ struct GuidedView: View {
                 }
             }
         }
-        
     }
 }
 
@@ -199,10 +197,9 @@ struct GuidedView_Previews: PreviewProvider {
 extension View {
     func placeholder<Content: View>(
         when shouldShow: Bool,
-        alignment: Alignment = .leading,
         @ViewBuilder placeholder: () -> Content) -> some View {
             
-            ZStack(alignment: alignment) {
+            ZStack {
                 placeholder().opacity(shouldShow ? 1 : 0)
                 self
             }
