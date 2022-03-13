@@ -12,5 +12,4 @@ class AlertClass: ObservableObject {
     @Published var showingAlert = false
     @Published var yesQuit = false
     let synthesizer = AVSpeechSynthesizer()
-    @Published var isViewActive = true
 }

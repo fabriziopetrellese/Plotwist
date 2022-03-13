@@ -107,7 +107,6 @@ struct Storystarters: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     alertClass.showingAlert = true
-                    alertClass.isViewActive.toggle()
                 } label: {
                     Image(systemName: "house.fill")
                         .foregroundColor(.black)
