@@ -38,9 +38,9 @@ struct Storystarters: View {
                 Spacer()
             }
             .position(x: 207.0, y: 50)
-            .frame(width: 414, height: 97)
+            .frame(width: 414, height: 100)
             
-            HStack {
+//            HStack {
                 ZStack(alignment: .leading) {
                     if story.isEmpty {
                         Text(placeholder)
@@ -50,13 +50,16 @@ struct Storystarters: View {
                             .padding(.leading, 20)
                             .padding(.bottom, 356)
                     }
+                    GeometryReader { geo in
                     TextEditor(text: $story)
                         .font(Font.custom("Life Savers", size: 24).weight(.bold))
                         .foregroundColor(.darkGray)
                         .background(.clear)
                         .padding(.horizontal)
+                        .frame(height: 200)
                 }
-            }
+                }
+//            }
             .frame(height: 400)
             .position(x: 207, y: 195)
             
@@ -68,12 +71,13 @@ struct Storystarters: View {
                     SiriView()
                 }
             } label: {
-                if story != "" {
-                    ButtonsModel(label: button2)
-                } else {
-                    ZStack {
-                    }
-                }
+//                if story != "" {
+//                    ButtonsModel(label: button2)
+//                } else {
+//                    ZStack {
+//                    }
+//                }
+                story != "" ? ButtonsModel(label: button2) : nil
             }
             .simultaneousGesture(TapGesture().onEnded{
                 if storiesModel.index < 6 {
