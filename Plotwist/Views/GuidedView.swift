@@ -27,6 +27,11 @@ struct GuidedView: View {
     
     var body: some View {
         VStack {
+            Text("Select players")
+                .font(Font.custom("Life Savers", size: 45))
+                .fontWeight(.heavy)
+                .padding(.bottom, 35)
+                
             ScrollView(showsIndicators: false) {
                 VStack {
                     ZStack {
@@ -42,6 +47,7 @@ struct GuidedView: View {
                             .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
+                            .disableAutocorrection(true)
                     }
                     .frame(width: 300, height: 75, alignment: .center)
                     
@@ -59,6 +65,7 @@ struct GuidedView: View {
                             .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
+                            .disableAutocorrection(true)
                     }
                     .frame(width: 300, height: 75, alignment: .center)
                     
@@ -76,6 +83,7 @@ struct GuidedView: View {
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
+                                .disableAutocorrection(true)
                         }
                         .frame(width: 300, height: 75, alignment: .center)
                     }
@@ -94,6 +102,7 @@ struct GuidedView: View {
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
+                                .disableAutocorrection(true)
                         }
                         .frame(width: 300, height: 75, alignment: .center)
                     }
@@ -112,6 +121,7 @@ struct GuidedView: View {
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
+                                .disableAutocorrection(true)
                         }
                         .frame(width: 300, height: 75, alignment: .center)
                     }
@@ -130,12 +140,15 @@ struct GuidedView: View {
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
+                                .disableAutocorrection(true)
                         }
                         .frame(width: 300, height: 75, alignment: .center)
                     }
                 }
+                SelectPlayersNumberView()
+                    .padding(.top, 12)
             }
-            SelectPlayersNumberView()
+//            SelectPlayersNumberView()
         }
         .background(
             Image("BACK")
