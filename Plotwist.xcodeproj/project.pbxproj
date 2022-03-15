@@ -206,7 +206,6 @@
 				49AC302427BAB75900629633 /* Preview Content */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
 				4921D92E27DA289E007E00F2 /* animalsDice.usdz */,
-				49EB564E27D2560800E23086 /* foodDice.usdz */,
 				495A62B027DD3A4E00C64C35 /* musicBack.mp3 */,
 			);
 			path = Plotwist;
@@ -216,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				49BCA99E27D988DA001336C2 /* foodDice.usdz */,
+				49EB564E27D2560800E23086 /* foodDice.usdz */,
 				49AC302527BAB75900629633 /* Preview Assets.xcassets */,
 			);
 			name = "Preview Content";
