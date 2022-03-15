@@ -5,43 +5,44 @@
 //  Created by Fabrizio Petrellese on 18/02/22.
 //
 
-//import SwiftUI
-//
-//struct CategoriesButtonModel: View {
-//    var content: String
-//    
-//    var body: some View {
-//        ZStack {
-//            let categoryButton = RoundedRectangle(cornerRadius: 20)
-//                .frame(width: 300, height: 75)
-//                .foregroundColor(.white)
-//                .shadow(color: .black, radius: 5, x: -1.5, y: 2)
-//            
-//            NavigationLink {
-//                DiceView(diceName: content)
-//            } label: {
-//                ZStack {
-//                    categoryButton
-//                    Text(content)
-//                        .font(Font.custom("Life Savers", size: 40))
-//                        .fontWeight(.heavy)
-//                }
-//                .frame(width: 320, height: 96, alignment: .center)
-//                
-//            }
-//            
-//
-//            
-//        }
-//        
-//    }
-//}
-//
-//struct CategoriesButtonModel_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CategoriesButtonModel(content: "")
-//    }
-//}
+import SwiftUI
+
+struct CategoriesButtonModel: View {
+    var content: LocalizedStringKey
+    
+    var body: some View {
+        ZStack {
+            let categoryButton = RoundedRectangle(cornerRadius: 20)
+                .frame(width: 300, height: 75)
+                .foregroundColor(.white)
+                .shadow(color: .black, radius: 5, x: -1.5, y: 2)
+            
+            NavigationLink {
+                DiceView(diceName: content)
+            } label: {
+                ZStack {
+                    categoryButton
+                    Text(content)
+                        .font(Font.custom("Life Savers", size: 40))
+                        .foregroundColor(.black)
+                        .fontWeight(.bold)
+                }
+                .frame(width: 320, height: 96, alignment: .center)
+                
+            }
+            
+
+            
+        }
+        
+    }
+}
+
+struct CategoriesButtonModel_Previews: PreviewProvider {
+    static var previews: some View {
+        CategoriesButtonModel(content: "")
+    }
+}
 
 /*
  struct CategoriesButtonModel: View {

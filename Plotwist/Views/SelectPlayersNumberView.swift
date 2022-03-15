@@ -9,10 +9,6 @@ import SwiftUI
 
 struct SelectPlayersNumberView: View {
     @EnvironmentObject var navigationRoot: NavigationRoot
-
-    
-    let button2: LocalizedStringKey = "button2"
-    let numberSelection: LocalizedStringKey = "numberSelection"
     
     var body: some View {
         ZStack {

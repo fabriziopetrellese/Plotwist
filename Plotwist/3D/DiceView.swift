@@ -12,12 +12,12 @@ struct DiceView: View {
     @EnvironmentObject var navigationRoot: NavigationRoot
     
     let button2: LocalizedStringKey = "button2"
-    var diceName: String
+    var diceName: LocalizedStringKey
     
     var body: some View {
         
         ZStack {
-            RealityKitView()
+            ARDiceView(diceName: diceName)
             
             if navigationRoot.mode2 {
                 NavigationLink {
@@ -28,7 +28,6 @@ struct DiceView: View {
                 .position(x: 207, y: 800)
             }
         }
-        
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
         .toolbar {

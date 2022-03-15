@@ -124,6 +124,18 @@
 
 "russianBy" = "Russian translation by:";
 
-// PLAYERS' NUMBER SELECTION
+//DICE CATEGORIES
 
-"numberSelection" = "Select the number of players";
+"cat1" = "Videogames";
+
+"cat2" = "Travel";
+
+"cat3" = "Animals";
+
+"cat4" = "Food";
+
+"cat5" = "Emotions";
+
+"cat6" = "Sports";
+
+"diceCategories" = "Select dice categories";

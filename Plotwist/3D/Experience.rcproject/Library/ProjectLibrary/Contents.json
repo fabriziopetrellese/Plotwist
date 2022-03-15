@@ -1,0 +1,52 @@
+[
+  {
+    "libraryIdentifier" : "f5c156b3d8c3db8217405b4622f8fed3",
+    "format" : "image",
+    "displayName" : "Joystick.png"
+  },
+  {
+    "libraryIdentifier" : "5b44bb956920d11383995815f74bed50",
+    "format" : "model",
+    "displayName" : "foodDice.usdz"
+  },
+  {
+    "libraryIdentifier" : "12f8ac4933dfbe4b1764e935e6b8efd6",
+    "format" : "model",
+    "displayName" : "diceGames.usdz"
+  },
+  {
+    "libraryIdentifier" : "04788ec06f7e40c3854ca8b0538563c0",
+    "format" : "model",
+    "displayName" : "diceGames2.usdz"
+  },
+  {
+    "libraryIdentifier" : "9902805131b66cc0546da9d328a1052c",
+    "format" : "model",
+    "displayName" : "diceGames3.usdz"
+  },
+  {
+    "libraryIdentifier" : "fc66074b3c86f4645294ecee0ee5c76b",
+    "format" : "model",
+    "displayName" : "diceGames4.usdz"
+  },
+  {
+    "libraryIdentifier" : "e0d2971bf2d48b30f51d0fc184449471",
+    "format" : "model",
+    "displayName" : "diceTravel1.usdz"
+  },
+  {
+    "libraryIdentifier" : "4e996a6122f53c280f78fb9de577c46f",
+    "format" : "model",
+    "displayName" : "diceTravel2.usdz"
+  },
+  {
+    "libraryIdentifier" : "1eeb6a4ee52c3d8a189bc9bb7443840b",
+    "format" : "model",
+    "displayName" : "diceTravel3.usdz"
+  },
+  {
+    "libraryIdentifier" : "d5c4d76df8b81644ccacb92470907483",
+    "format" : "model",
+    "displayName" : "diceTravel4.usdz"
+  }
+]

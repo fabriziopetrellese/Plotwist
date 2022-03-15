@@ -27,10 +27,11 @@ struct GuidedView: View {
     
     var body: some View {
         VStack {
-            Text("Select players")
+            Text(title1)
                 .font(Font.custom("Life Savers", size: 45))
                 .fontWeight(.heavy)
-                .padding(.bottom, 35)
+                .multilineTextAlignment(.center)
+                .frame(width: 300, height: 140)
                 
             ScrollView(showsIndicators: false) {
                 VStack {
@@ -153,7 +154,6 @@ struct GuidedView: View {
         .background(
             Image("BACK")
                 .ignoresSafeArea()
-                .position(x: 150, y: 440)
         )
         .navigationBarBackButtonHidden(true)
         .toolbar {

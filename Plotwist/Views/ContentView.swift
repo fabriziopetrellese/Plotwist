@@ -26,7 +26,7 @@ struct ContentView: View {
                     .resizable()
                     .frame(width: 162.09, height: 123)
                 Spacer()
-                
+                                
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
                     CardModel1(title: text1, description: text4)
@@ -75,6 +75,7 @@ struct ContentView: View {
         .environmentObject(PlayersModel())
         .environmentObject(StoriesModel())
         .environmentObject(AlertClass())
+        .environmentObject(CategoriesModel())
         .environmentObject(navigationRoot)
         .preferredColorScheme(.light)
         .onAppear(){

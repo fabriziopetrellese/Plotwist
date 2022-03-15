@@ -114,7 +114,7 @@ struct Storystarters: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-                    DiceView(diceName: "")
+                    DiceCategories()
                 } label: {
                     Image("rolldice")
                         .foregroundColor(.black)

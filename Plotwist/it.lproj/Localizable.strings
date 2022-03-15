@@ -124,6 +124,18 @@
 
 "russianBy" = "Traduzione russa:";
 
-// PLAYERS' NUMBER SELECTION
+//DICE CATEGORIES
 
-"numberSelection" = "Seleziona il numero di giocatori";
+"cat1" = "Videogiochi";
+
+"cat2" = "Viaggi";
+
+"cat3" = "Animali";
+
+"cat4" = "Cibo";
+
+"cat5" = "Emotioni";
+
+"cat6" = "Sport";
+
+"diceCategories" = "Scegli una categoria di dadi";
