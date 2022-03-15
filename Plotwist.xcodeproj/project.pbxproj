@@ -89,9 +89,10 @@
 		49E7C5A227BD491F0043AD25 /* RollDiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceModel.swift; sourceTree = "<group>"; };
 		49EB564527D2548C00E23086 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		49EB564727D254B000E23086 /* RealityKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitView.swift; sourceTree = "<group>"; };
-		49EB564E27D2560800E23086 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = foodDice.usdz; sourceTree = "<group>"; };
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
 		B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlayersNumberView.swift; sourceTree = "<group>"; };
+		B9B66D0427E0B0FA00E03D74 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = foodDice.usdz; path = ../../../foodDice.usdz; sourceTree = "<group>"; };
+		B9B66D0527E0B10000E03D74 /* foodDice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = foodDice.usdz; sourceTree = "<group>"; };
 		B9B7F67227CE6F930064A8B3 /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
 		B9D78E7927CFA7370083BB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9D78E7C27CFA75A0083BB3C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -206,6 +207,7 @@
 				49AC302427BAB75900629633 /* Preview Content */,
 				49D0B17D27BB2BCC00F34BF5 /* Font */,
 				4921D92E27DA289E007E00F2 /* animalsDice.usdz */,
+				B9B66D0527E0B10000E03D74 /* foodDice.usdz */,
 				495A62B027DD3A4E00C64C35 /* musicBack.mp3 */,
 			);
 			path = Plotwist;
@@ -215,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				49BCA99E27D988DA001336C2 /* foodDice.usdz */,
-				49EB564E27D2560800E23086 /* foodDice.usdz */,
 				49AC302527BAB75900629633 /* Preview Assets.xcassets */,
 			);
 			name = "Preview Content";
@@ -228,6 +229,7 @@
 				B9DA60C927D7ABB3003F53C7 /* Life Savers.ttf */,
 				B9DA60C527D7AA03003F53C7 /* LifeSaversB.ttf */,
 				B9DA60C627D7AA03003F53C7 /* LifeSaversEB.ttf */,
+				B9B66D0427E0B0FA00E03D74 /* foodDice.usdz */,
 			);
 			path = Font;
 			sourceTree = "<group>";
