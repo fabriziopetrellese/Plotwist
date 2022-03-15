@@ -12,6 +12,5 @@ class NavigationRoot: ObservableObject {
     
     @Published var mode1 = false
     @Published var mode2 = false
-    
     @Published var playerButton = 0
 }
