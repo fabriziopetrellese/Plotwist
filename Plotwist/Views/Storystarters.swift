@@ -13,8 +13,12 @@ struct Storystarters: View {
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
     @EnvironmentObject var alertClass: AlertClass
-    @State private var story = ""
     
+//    @State var timeRemaining = 5
+    @State private var story = ""
+//    @State private var shouldNavigate = false
+    
+//    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     let placeholder: LocalizedStringKey = "placeholder"
     let button2: LocalizedStringKey = "button2"
     
@@ -40,17 +44,17 @@ struct Storystarters: View {
             .position(x: 207.0, y: 50)
             .frame(width: 414, height: 100)
             
-//            HStack {
-                ZStack(alignment: .leading) {
-                    if story.isEmpty {
-                        Text(placeholder)
-                            .font(Font.custom("Life Savers", size: 24))
-                            .fontWeight(.bold)
-                            .foregroundColor(.darkGray)
-                            .padding(.leading, 20)
-                            .padding(.bottom, 356)
-                    }
-                    GeometryReader { geo in
+            //            HStack {
+            ZStack(alignment: .leading) {
+                if story.isEmpty {
+                    Text(placeholder)
+                        .font(Font.custom("Life Savers", size: 24))
+                        .fontWeight(.bold)
+                        .foregroundColor(.darkGray)
+                        .padding(.leading, 20)
+                        .padding(.bottom, 356)
+                }
+                GeometryReader { geo in
                     TextEditor(text: $story)
                         .font(Font.custom("Life Savers", size: 24).weight(.bold))
                         .foregroundColor(.darkGray)
@@ -58,25 +62,21 @@ struct Storystarters: View {
                         .padding(.horizontal)
                         .frame(height: 200)
                 }
-                }
-//            }
+            }
+            //            }
             .frame(height: 400)
             .position(x: 207, y: 195)
             
             Spacer()
-            NavigationLink {
+            
+            //automatically change view here
+            NavigationLink(/*isActive: $shouldNavigate*/) {
                 if storiesModel.index < 6 {
                     NextTurn()
                 } else {
                     SiriView()
                 }
             } label: {
-//                if story != "" {
-//                    ButtonsModel(label: button2)
-//                } else {
-//                    ZStack {
-//                    }
-//                }
                 story != "" ? ButtonsModel(label: button2) : nil
             }
             .simultaneousGesture(TapGesture().onEnded{
@@ -91,6 +91,20 @@ struct Storystarters: View {
             
             Spacer()
         }
+        //dismiss keyboard here and EXTENSION below preview
+        
+//        .onTapGesture {
+//            dismissKeyboard()
+//        }
+        
+//        .onReceive(timer) { _ in
+//            if timeRemaining > 0 {
+//                timeRemaining -= 1
+//                if timeRemaining == 0 {
+//                    shouldNavigate = true
+//                }
+//            }
+//        }
         .background(
             Image("Background")
                 .ignoresSafeArea()
@@ -118,11 +132,15 @@ struct Storystarters: View {
             ToolbarItem(placement: .keyboard) {
                 hideKeyboardButton()
             }
+//            ToolbarItem(placement: .principal) {
+//                Text("\(timeRemaining)")
+//                    .font(Font.custom("Life Savers", size: 31))
+//                    .fontWeight(.bold)
+//                    .frame(width: 45, height: 18)
+//            }
         }
         .blur(radius: alertClass.showingAlert ? 12 : 0)
-        if alertClass.showingAlert == true {
-            AlertView()
-        }
+        alertClass.showingAlert == true ? AlertView() : nil
     }
 }
 
@@ -136,6 +154,9 @@ struct Storystarters_Previews: PreviewProvider {
     }
 }
 
-
-
-
+//extension View {
+//    func dismissKeyboard() {
+//        let resign = #selector(UIResponder.resignFirstResponder)
+//        UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
+//    }
+//}
