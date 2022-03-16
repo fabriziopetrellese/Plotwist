@@ -128,14 +128,14 @@
 
 "cat1" = "Videogames";
 
-"cat2" = "Travel";
+"cat2" = "Voyages";
 
-"cat3" = "Animals";
+"cat3" = "Animaux";
 
-"cat4" = "Food";
+"cat4" = "Aliments";
 
-"cat5" = "Emotions";
+"cat5" = "Émotions";
 
 "cat6" = "Sports";
 
-"diceCategories" = "Select dice categories";
+"diceCategories" = "Sélectionner les catégories de dés";
