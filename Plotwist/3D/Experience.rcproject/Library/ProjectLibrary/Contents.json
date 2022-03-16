@@ -88,5 +88,45 @@
     "libraryIdentifier" : "30245955f43341a946817d99898ef28d",
     "format" : "model",
     "displayName" : "diceTravel4.usdz"
+  },
+  {
+    "libraryIdentifier" : "e8cc2285b7a55dce7687236973b27962",
+    "format" : "model",
+    "displayName" : "diceGames1.usdz"
+  },
+  {
+    "libraryIdentifier" : "c3cc670f889d22ed3e75c25bc7a69884",
+    "format" : "model",
+    "displayName" : "diceGames2.usdz"
+  },
+  {
+    "libraryIdentifier" : "5ea0adbe6e5dea097467f51b57672330",
+    "format" : "model",
+    "displayName" : "diceGames3.usdz"
+  },
+  {
+    "libraryIdentifier" : "cbf8fb2280edc73ce77b1f5f79073f7f",
+    "format" : "model",
+    "displayName" : "diceGames4.usdz"
+  },
+  {
+    "libraryIdentifier" : "723f0c936716d6ec6ae2e475179e6801",
+    "format" : "model",
+    "displayName" : "diceTravel1.usdz"
+  },
+  {
+    "libraryIdentifier" : "f7de9604284378fd36982b068af78a8c",
+    "format" : "model",
+    "displayName" : "diceTravel2.usdz"
+  },
+  {
+    "libraryIdentifier" : "7f9a264a04832a051d9e961e721a74ad",
+    "format" : "model",
+    "displayName" : "diceTravel3.usdz"
+  },
+  {
+    "libraryIdentifier" : "263c61c46b0b70292e4e0ca957d487cb",
+    "format" : "model",
+    "displayName" : "diceTravel4.usdz"
   }
 ]

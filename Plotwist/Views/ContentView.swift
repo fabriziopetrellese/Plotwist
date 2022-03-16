@@ -36,7 +36,7 @@ struct ContentView: View {
                 .simultaneousGesture(TapGesture().onEnded {
                     navigationRoot.mode1 = true
                 })
-                .offset(x: -5, y: 35)
+//                .offset(x: -5, y: 35)
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
@@ -47,16 +47,17 @@ struct ContentView: View {
                 .simultaneousGesture(TapGesture().onEnded {
                     navigationRoot.mode2 = true
                 })
-                .offset(x: -5, y: -20)
+//                .offset(x: -5, y: -20)
                 
                 NavigationLink(destination: SettingsView()) {
                     
                     SettingsButtonModel(title: text3)
                     
-                }.offset(x: -5, y: -25)
+                }
+//                .offset(x: -5, y: -25)
                 Spacer()
             }
-            .offset(x: 0, y: -55)
+//            .offset(x: 0, y: -55)
             .background(
                 Image("BACK")
                     .ignoresSafeArea()
