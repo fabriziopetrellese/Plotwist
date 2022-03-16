@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		490C98A327BDF4E100574E1B /* creditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C98A227BDF4E100574E1B /* creditsView.swift */; };
+		490C98A327BDF4E100574E1B /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C98A227BDF4E100574E1B /* CreditsView.swift */; };
 		49124DB027C1E22200CCECAF /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49124DAF27C1E22200CCECAF /* SiriView.swift */; };
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
@@ -55,7 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		490C98A227BDF4E100574E1B /* creditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditsView.swift; sourceTree = "<group>"; };
+		490C98A227BDF4E100574E1B /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		49124DAF27C1E22200CCECAF /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
 				49D48C1627C1D3CC00F1E935 /* LanguageView.swift */,
-				490C98A227BDF4E100574E1B /* creditsView.swift */,
+				490C98A227BDF4E100574E1B /* CreditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
 				B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */,
@@ -320,7 +320,7 @@
 				492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */,
 				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
-				490C98A327BDF4E100574E1B /* creditsView.swift in Sources */,
+				490C98A327BDF4E100574E1B /* CreditsView.swift in Sources */,
 				49771D6927C3E2BC00A99F28 /* LanguageButtonModel.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,

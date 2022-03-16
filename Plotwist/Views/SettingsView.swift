@@ -56,7 +56,7 @@ struct SettingsView: View {
                     }.padding(.horizontal, 68)
                 }
             }
-            creditsView()
+            CreditsView()
                 .offset(x: 0, y: 65)
             Spacer()
         }

@@ -1,5 +1,5 @@
 //
-//  creditsView.swift
+//  CreditsView.swift
 //  Rebooters MC3
 //
 //  Created by Fabrizio Petrellese on 17/02/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct creditsView: View {
+struct CreditsView: View {
     @State private var showCredits = false
     let credits: LocalizedStringKey = "credits"
     let createdBy: LocalizedStringKey = "createdBy"
@@ -28,16 +28,16 @@ struct creditsView: View {
                         .font(Font.custom("Life Savers", size: 23))
                         .fontWeight(.bold)
                         .offset(x: 0, y: -10)
-                    Text("Eleonora Franco")
+                    Text("Valerio Domenico Conte")
+                        .font(Font.custom("Life Savers", size: 25))
+                        .fontWeight(.bold)
+                    Text("Giovanni Del Piano")
                         .font(Font.custom("Life Savers", size: 25))
                         .fontWeight(.bold)
                     Text("Fabrizio Petrellese")
                         .font(Font.custom("Life Savers", size: 25))
                         .fontWeight(.bold)
-                    Text("Valerio Domenico Conte")
-                        .font(Font.custom("Life Savers", size: 25))
-                        .fontWeight(.bold)
-                    Text("Giovanni Del Piano")
+                    Text("Eleonora Franco")
                         .font(Font.custom("Life Savers", size: 25))
                         .fontWeight(.bold)
                         Text(russianBy)
@@ -62,8 +62,8 @@ struct creditsView: View {
     }
 }
 
-struct creditsView_Previews: PreviewProvider {
+struct CreditsView_Previews: PreviewProvider {
     static var previews: some View {
-        creditsView()
+        CreditsView()
     }
 }
