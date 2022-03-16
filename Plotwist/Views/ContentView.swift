@@ -92,3 +92,9 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
+extension View {
+    func dismissKeyboard() {
+        let resign = #selector(UIResponder.resignFirstResponder)
+        UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
+    }
+}

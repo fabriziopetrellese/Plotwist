@@ -28,11 +28,12 @@ struct GuidedView: View {
     var body: some View {
         VStack {
             Text(title1)
-                .font(Font.custom("Life Savers", size: 45))
+                .font(Font.custom("Life Savers", size: 41))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
-                .frame(width: 300, height: 140)
-                
+                .frame(width: 253, height: 100.3)
+                .padding(.bottom, 15)
+                            
             ScrollView(showsIndicators: false) {
                 VStack {
                     ZStack {
@@ -154,12 +155,16 @@ struct GuidedView: View {
         .background(
             Image("BACK")
                 .ignoresSafeArea()
+                .position(x: 150, y: 400)
+                .onTapGesture {
+                    dismissKeyboard()
+                }
         )
         .navigationBarBackButtonHidden(true)
         .toolbar {
-            ToolbarItem(placement: .keyboard) {
-                hideKeyboardButton()
-            }
+//            ToolbarItem(placement: .keyboard) {
+//                hideKeyboardButton()
+//            }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     navigationRoot.playerButton = 0

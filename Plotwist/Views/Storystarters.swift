@@ -91,11 +91,6 @@ struct Storystarters: View {
             
             Spacer()
         }
-        //dismiss keyboard here and EXTENSION below preview
-        
-//        .onTapGesture {
-//            dismissKeyboard()
-//        }
         
 //        .onReceive(timer) { _ in
 //            if timeRemaining > 0 {
@@ -109,6 +104,9 @@ struct Storystarters: View {
             Image("Background")
                 .ignoresSafeArea()
                 .position(x: 207, y: 400)
+                .onTapGesture {
+                    dismissKeyboard()
+                }
         )
         .navigationBarBackButtonHidden(true)
         .toolbar {
@@ -153,10 +151,3 @@ struct Storystarters_Previews: PreviewProvider {
             .environmentObject(AlertClass())
     }
 }
-
-//extension View {
-//    func dismissKeyboard() {
-//        let resign = #selector(UIResponder.resignFirstResponder)
-//        UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
-//    }
-//}
