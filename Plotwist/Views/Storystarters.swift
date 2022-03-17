@@ -34,27 +34,23 @@ struct Storystarters: View {
     var body: some View {
         VStack {
             HStack {
+//                incipitsModel.currentIncipit
                 Text(incipitsModel.currentIncipit)
                     .font(Font.custom("Life Savers", size: 33))
                     .fontWeight(.heavy)
-                    .padding(.horizontal)
-                    .frame(width: 272, height: 100, alignment: .leading)
+                    .padding(.trailing, 121)
+                    .padding(.leading)
                 Spacer()
             }
-            .position(x: 207.0, y: 50)
-            .frame(width: 414, height: 100)
-            
-            //            HStack {
             ZStack(alignment: .leading) {
-                if story.isEmpty {
-                    Text(placeholder)
-                        .font(Font.custom("Life Savers", size: 24))
-                        .fontWeight(.bold)
-                        .foregroundColor(.darkGray)
-                        .padding(.leading, 20)
-                        .padding(.bottom, 356)
-                }
                 GeometryReader { geo in
+                    if story.isEmpty {
+                        Text(placeholder)
+                            .font(Font.custom("Life Savers", size: 24))
+                            .fontWeight(.bold)
+                            .foregroundColor(.darkGray)
+                            .padding(.leading, 20)
+                    }
                     TextEditor(text: $story)
                         .font(Font.custom("Life Savers", size: 24).weight(.bold))
                         .foregroundColor(.darkGray)
@@ -63,12 +59,6 @@ struct Storystarters: View {
                         .frame(height: 200)
                 }
             }
-            //            }
-            .frame(height: 400)
-            .position(x: 207, y: 195)
-            
-            Spacer()
-            
             //automatically change view here
             NavigationLink(/*isActive: $shouldNavigate*/) {
                 if storiesModel.index < 6 {
@@ -79,6 +69,7 @@ struct Storystarters: View {
             } label: {
                 story != "" ? ButtonsModel(label: button2) : nil
             }
+            .position(x: 207, y: 260.0)
             .simultaneousGesture(TapGesture().onEnded{
                 if storiesModel.index < 6 {
                     playersModel.nextPlayer()
@@ -87,9 +78,6 @@ struct Storystarters: View {
                 storiesModel.index += 1
                 storiesModel.turnNumber += 1
             })
-            .position(x: 207, y: 260.0)
-            
-            Spacer()
         }
         
 //        .onReceive(timer) { _ in
