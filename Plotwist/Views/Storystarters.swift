@@ -69,7 +69,7 @@ struct Storystarters: View {
             } label: {
                 story != "" ? ButtonsModel(label: button2) : nil
             }
-            .position(x: 207, y: 260.0)
+            .padding(.bottom, 25)
             .simultaneousGesture(TapGesture().onEnded{
                 if storiesModel.index < 6 {
                     playersModel.nextPlayer()
@@ -79,6 +79,7 @@ struct Storystarters: View {
                 storiesModel.turnNumber += 1
             })
         }
+        .ignoresSafeArea(.keyboard)
         
 //        .onReceive(timer) { _ in
 //            if timeRemaining > 0 {

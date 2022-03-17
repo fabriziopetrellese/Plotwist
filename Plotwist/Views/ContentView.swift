@@ -10,14 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var navigationRoot = NavigationRoot()
     @State var isView1Active: Bool = false
-//    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
     let text1: LocalizedStringKey = "text1"
     let text2: LocalizedStringKey = "text2"
     let text3: LocalizedStringKey = "text3"
     let text4: LocalizedStringKey = "text4"
     let text5: LocalizedStringKey = "text5"
-    
     
     var body: some View {
         NavigationView {
@@ -26,10 +25,8 @@ struct ContentView: View {
                     .padding(.bottom, 90)
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
-                    
                     CardModel1(title: text1, description: text4)
                         .padding(.top, -50)
-                    
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -37,10 +34,8 @@ struct ContentView: View {
                 })
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
-                    
                     CardModel2(title: text2, description: text5)
                         .padding(.horizontal, 22)
-                    
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -48,12 +43,9 @@ struct ContentView: View {
                 })
                 
                 NavigationLink(destination: SettingsView()) {
-                    
                     SettingsButtonModel(title: text3)
                         .padding(.top, 10)
-                    
                 }
-                
             }
             .padding(.bottom, 95)
             .background(
@@ -61,9 +53,9 @@ struct ContentView: View {
                     .ignoresSafeArea()
             )
         }
-//        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
-//            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-//        })
+        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+        })
         .onReceive(navigationRoot.$backToRoot) { moveToDashboard in
             if moveToDashboard {
                 isView1Active = false
