@@ -21,45 +21,45 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-                VStack {
-                    Image("plotwistVector")
-                        .padding(.bottom, 90)
+            VStack {
+                Image("plotwistVector")
+                    .padding(.bottom, 90)
+                
+                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
-                    NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
-                        
-                        CardModel1(title: text1, description: text4)
-                            .padding(.top, -50)
-                        
-                    }
-                    .isDetailLink(false)
-                    .simultaneousGesture(TapGesture().onEnded {
-                        navigationRoot.mode1 = true
-                    })
-                    
-                    NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
-                        
-                        CardModel2(title: text2, description: text5)
-                            .padding(.horizontal, 22)
-                        
-                    }
-                    .isDetailLink(false)
-                    .simultaneousGesture(TapGesture().onEnded {
-                        navigationRoot.mode2 = true
-                    })
-                    
-                    NavigationLink(destination: SettingsView()) {
-                        
-                        SettingsButtonModel(title: text3)
-                            .padding(.top, 10)
-                        
-                    }
+                    CardModel1(title: text1, description: text4)
+                        .padding(.top, -50)
                     
                 }
-                .padding(.bottom, 95)
-                .background(
-                    Image("BACK")
-                        .ignoresSafeArea()
-                )
+                .isDetailLink(false)
+                .simultaneousGesture(TapGesture().onEnded {
+                    navigationRoot.mode1 = true
+                })
+                
+                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
+                    
+                    CardModel2(title: text2, description: text5)
+                        .padding(.horizontal, 22)
+                    
+                }
+                .isDetailLink(false)
+                .simultaneousGesture(TapGesture().onEnded {
+                    navigationRoot.mode2 = true
+                })
+                
+                NavigationLink(destination: SettingsView()) {
+                    
+                    SettingsButtonModel(title: text3)
+                        .padding(.top, 10)
+                    
+                }
+                
+            }
+            .padding(.bottom, 95)
+            .background(
+                Image("BACK")
+                    .ignoresSafeArea()
+            )
         }
         .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
             OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)

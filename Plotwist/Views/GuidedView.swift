@@ -33,7 +33,7 @@ struct GuidedView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 78)
                 .padding(.bottom, 15)
-                            
+            
             ScrollView(showsIndicators: false) {
                 VStack {
                     ZStack {
