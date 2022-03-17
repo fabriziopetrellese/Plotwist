@@ -24,13 +24,11 @@ struct ContentView: View {
                 VStack {
                     Image("plotwistVector")
                         .padding(.bottom, 90)
-                        .padding(.leading, 1)
                     
                     NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                         
                         CardModel1(title: text1, description: text4)
                             .padding(.top, -50)
-                            .padding(.leading, 1)
                         
                     }
                     .isDetailLink(false)
@@ -41,7 +39,7 @@ struct ContentView: View {
                     NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                         
                         CardModel2(title: text2, description: text5)
-                            .padding(.leading, 19.2125)
+                            .padding(.horizontal, 22)
                         
                     }
                     .isDetailLink(false)
@@ -57,8 +55,6 @@ struct ContentView: View {
                     }
                     
                 }
-//                .frame(width: geo.size.width)
-//                .frame(minHeight: geo.size.height)
                 .padding(.bottom, 95)
                 .background(
                     Image("BACK")

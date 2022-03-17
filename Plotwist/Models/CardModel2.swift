@@ -16,9 +16,9 @@ struct CardModel2: View {
             Image("CARD1")
             
             Image("OMINO2")
-                .offset(x: -160, y: 71)
-//                .padding(.trailing, 320)
-//                .padding(.top, 142)
+//                .offset(x: -160, y: 71)
+                .padding(.trailing, 320)
+                .padding(.top, 142)
             
             VStack {
                 Text(title)
@@ -28,15 +28,15 @@ struct CardModel2: View {
                     .multilineTextAlignment(.center)
                     .padding(.trailing, 142)
                     .padding(.horizontal, 51)
-                    .padding(.bottom, 27)
                 
                 Text(description)
+                    .foregroundColor(.darkGray)
                     .font(Font.custom("Life Savers", size: 22))
                     .fontWeight(.bold)
-                    .foregroundColor(.darkGray)
                     .multilineTextAlignment(.center)
+                    .padding(.top, 25)
                     .padding(.bottom, 32)
-                    .padding(.horizontal, 70)
+                    .padding(.horizontal, 69.3)
             }
         }
     }
@@ -45,6 +45,5 @@ struct CardModel2: View {
 struct CardModel2_Previews: PreviewProvider {
     static var previews: some View {
         CardModel2()
-//            .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
     }
 }
