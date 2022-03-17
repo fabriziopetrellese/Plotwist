@@ -128,5 +128,25 @@
     "libraryIdentifier" : "263c61c46b0b70292e4e0ca957d487cb",
     "format" : "model",
     "displayName" : "diceTravel4.usdz"
+  },
+  {
+    "libraryIdentifier" : "937802b59f62284603aed1162cc27cff",
+    "format" : "model",
+    "displayName" : "diceAnimals1.usdz"
+  },
+  {
+    "libraryIdentifier" : "4b5e3163a8f21449c186bc5905e71dda",
+    "format" : "model",
+    "displayName" : "diceAnimals2.usdz"
+  },
+  {
+    "libraryIdentifier" : "e4b3506fea41bce247526315a96fc002",
+    "format" : "model",
+    "displayName" : "diceAnimals3.usdz"
+  },
+  {
+    "libraryIdentifier" : "c3b37ef3d3bf2c7be8f3f66c26a2b5b1",
+    "format" : "model",
+    "displayName" : "diceAnimals4.usdz"
   }
 ]
