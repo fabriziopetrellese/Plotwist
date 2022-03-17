@@ -12,23 +12,19 @@ struct SettingsButtonModel: View {
     var body: some View {
         ZStack {
             Image("MODES")
-            
             HStack {
                 Text(title)
                     .font(Font.custom("Life Savers", size: 26))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
+                    .padding(.leading, 5)
                 
                 Spacer()
                 
                 Image("ROTELLA")
-                
             }
-            .padding(.horizontal, 32)
-
+            .padding(.horizontal, 75)
         }
-        .frame(width: 314, height: 80)
-
     }
 }
 

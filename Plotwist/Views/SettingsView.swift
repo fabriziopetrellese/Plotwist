@@ -20,10 +20,10 @@ struct SettingsView: View {
         VStack {
             if music {
             Image("ominomusic")
-                .offset(x: 110, y: 10)
+                    .padding(.leading, 197)
             } else {
                 Image("ominomusicOff")
-                    .offset(x: 110, y: 10)
+                    .padding(.leading, 197)
             }
             
             Toggle(isOn: $music) {
@@ -33,6 +33,7 @@ struct SettingsView: View {
             }
             .tint(.blue)
             .padding(.horizontal, 60)
+            .padding(.top, -12)
             .onChange(of: music) { newValue in
                 if newValue == true {
                     MusicClass.shared.play()
@@ -40,9 +41,7 @@ struct SettingsView: View {
                     MusicClass.shared.pause()
                 }
             }
-                
             Button {
-                
             } label: {
                 ZStack {
                     Image("settingsbutton")
@@ -57,15 +56,15 @@ struct SettingsView: View {
                 }
             }
             CreditsView()
-                .offset(x: 0, y: 65)
+                .padding(.top, 65)
             Spacer()
         }
-        .offset(x: 0, y: -10)
+        .padding(.top, -10)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text(settings)
-                    .font(Font.custom("Life Savers", size: 33))
+                    .font(Font.custom("Life Savers", size: 31))
                     .fontWeight(.heavy)
             }
             ToolbarItem(placement: .navigationBarLeading) {

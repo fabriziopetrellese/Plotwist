@@ -21,47 +21,49 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Image("plotwistVector")
-                    .resizable()
-                    .frame(width: 162.09, height: 123)
-                Spacer()
-                                
-                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
+                VStack {
+                    Image("plotwistVector")
+                        .padding(.bottom, 90)
+                        .padding(.leading, 1)
                     
-                    CardModel1(title: text1, description: text4)
+                    NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
+                        
+                        CardModel1(title: text1, description: text4)
+                            .padding(.top, -50)
+                            .padding(.leading, 1)
+                        
+                    }
+                    .isDetailLink(false)
+                    .simultaneousGesture(TapGesture().onEnded {
+                        navigationRoot.mode1 = true
+                    })
+                    
+                    NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
+                        
+                        CardModel2(title: text2, description: text5)
+                            .padding(.leading, 19.2125)
+                        
+                    }
+                    .isDetailLink(false)
+                    .simultaneousGesture(TapGesture().onEnded {
+                        navigationRoot.mode2 = true
+                    })
+                    
+                    NavigationLink(destination: SettingsView()) {
+                        
+                        SettingsButtonModel(title: text3)
+                            .padding(.top, 10)
+                        
+                    }
                     
                 }
-                .isDetailLink(false)
-                .simultaneousGesture(TapGesture().onEnded {
-                    navigationRoot.mode1 = true
-                })
-//                .offset(x: -5, y: 35)
-                
-                NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
-                    
-                    CardModel2(title: text2, description: text5)
-                    
-                }
-                .isDetailLink(false)
-                .simultaneousGesture(TapGesture().onEnded {
-                    navigationRoot.mode2 = true
-                })
-//                .offset(x: -5, y: -20)
-                
-                NavigationLink(destination: SettingsView()) {
-                    
-                    SettingsButtonModel(title: text3)
-                    
-                }
-//                .offset(x: -5, y: -25)
-                Spacer()
-            }
-//            .offset(x: 0, y: -55)
-            .background(
-                Image("BACK")
-                    .ignoresSafeArea()
-            )
+//                .frame(width: geo.size.width)
+//                .frame(minHeight: geo.size.height)
+                .padding(.bottom, 95)
+                .background(
+                    Image("BACK")
+                        .ignoresSafeArea()
+                )
         }
         .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
             OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
@@ -81,14 +83,14 @@ struct ContentView: View {
         .preferredColorScheme(.light)
         .onAppear(){
             MusicClass.shared.setup()
-//            MusicClass.shared.play()
+            //            MusicClass.shared.play()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-            ContentView()
+        ContentView()
     }
 }
 
