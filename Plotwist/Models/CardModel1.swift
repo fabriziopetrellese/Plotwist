@@ -24,24 +24,20 @@ struct CardModel1: View {
                     .font(Font.custom("Life Savers", size: 22))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
-                    .frame(width: 170, height: 79)
                     .multilineTextAlignment(.center)
-                    .padding(.trailing, 136)
-//                    .offset(x: 0, y: -10)
-                    .padding(.top, 13)
+                    .padding(.trailing, 138)
+                    .padding(.horizontal, 43)
                 
                 Text(description)
                     .foregroundColor(.darkGray)
                     .font(Font.custom("Life Savers", size: 22))
                     .bold()
-                    .frame(width: 247, height: 96)
                     .multilineTextAlignment(.center)
-//                    .offset(x: 0, y: -13)
-                    .padding(.bottom, 36)
+                    .padding(.top, 12)
+                    .padding(.bottom, 15)
+                    .padding(.horizontal, 95)
                 
             }
-            
-
         }
     }
 }

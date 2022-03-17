@@ -31,9 +31,9 @@ struct GuidedView: View {
                 .font(Font.custom("Life Savers", size: 41))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
-                .frame(width: 253, height: 100.3)
+                .padding(.horizontal, 78)
                 .padding(.bottom, 15)
-                            
+            
             ScrollView(showsIndicators: false) {
                 VStack {
                     ZStack {
@@ -42,8 +42,7 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[0].isEmpty) {
                                 Text(player1)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 83)
-                                    .frame(width: 295, height: 60)
+                                    .padding(.horizontal, 84)
                                     .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
@@ -51,7 +50,7 @@ struct GuidedView: View {
                             .multilineTextAlignment(.center)
                             .disableAutocorrection(true)
                     }
-                    .frame(width: 300, height: 75, alignment: .center)
+                    .padding(.horizontal, 84)
                     
                     ZStack {
                         Image("PLAYERS")
@@ -59,9 +58,7 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[1].isEmpty) {
                                 Text(player2)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 83)
-                                    .frame(width: 295, height: 60)
-                                
+                                    .padding(.horizontal, 84)
                                     .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
@@ -69,7 +66,7 @@ struct GuidedView: View {
                             .multilineTextAlignment(.center)
                             .disableAutocorrection(true)
                     }
-                    .frame(width: 300, height: 75, alignment: .center)
+                    .padding(.horizontal, 84)
                     
                     if navigationRoot.playerButton > 0 {
                         ZStack {
@@ -78,8 +75,7 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[2].isEmpty) {
                                     Text(player3)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 83)
-                                        .frame(width: 295, height: 60)
+                                        .padding(.horizontal, 84)
                                         .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
@@ -87,7 +83,7 @@ struct GuidedView: View {
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
                         }
-                        .frame(width: 300, height: 75, alignment: .center)
+                        .padding(.horizontal, 84)
                     }
                     
                     if navigationRoot.playerButton > 1 {
@@ -97,8 +93,7 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[3].isEmpty) {
                                     Text(player4)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 83)
-                                        .frame(width: 295, height: 60)
+                                        .padding(.horizontal, 84)
                                         .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
@@ -106,7 +101,7 @@ struct GuidedView: View {
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
                         }
-                        .frame(width: 300, height: 75, alignment: .center)
+                        .padding(.horizontal, 84)
                     }
                     
                     if navigationRoot.playerButton > 2 {
@@ -116,8 +111,7 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[4].isEmpty) {
                                     Text(player5)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 83)
-                                        .frame(width: 295, height: 60)
+                                        .padding(.horizontal, 84)
                                         .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
@@ -125,7 +119,7 @@ struct GuidedView: View {
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
                         }
-                        .frame(width: 300, height: 75, alignment: .center)
+                        .padding(.horizontal, 84)
                     }
                     
                     if navigationRoot.playerButton > 3 {
@@ -135,8 +129,7 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[5].isEmpty) {
                                     Text(player6)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 83)
-                                        .frame(width: 295, height: 60)
+                                        .padding(.horizontal, 84)
                                         .foregroundColor(.gray)
                                 }
                                 .font(Font.custom("Life Savers", size: 26))
@@ -144,27 +137,23 @@ struct GuidedView: View {
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
                         }
-                        .frame(width: 300, height: 75, alignment: .center)
+                        .padding(.horizontal, 84)
                     }
                 }
                 SelectPlayersNumberView()
                     .padding(.top, 12)
             }
-//            SelectPlayersNumberView()
         }
         .background(
             Image("BACK")
                 .ignoresSafeArea()
-                .position(x: 150, y: 400)
+                .position(x: 234, y: 400)
                 .onTapGesture {
                     dismissKeyboard()
                 }
         )
         .navigationBarBackButtonHidden(true)
         .toolbar {
-//            ToolbarItem(placement: .keyboard) {
-//                hideKeyboardButton()
-//            }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     navigationRoot.playerButton = 0

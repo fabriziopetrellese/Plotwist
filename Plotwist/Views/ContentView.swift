@@ -23,41 +23,39 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Image("plotwistVector")
-                    .resizable()
-                    .frame(width: 162.09, height: 123)
-                Spacer()
-                                
+                    .padding(.bottom, 90)
+                
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
                     CardModel1(title: text1, description: text4)
+                        .padding(.top, -50)
                     
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
                     navigationRoot.mode1 = true
                 })
-//                .offset(x: -5, y: 35)
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     
                     CardModel2(title: text2, description: text5)
+                        .padding(.horizontal, 22)
                     
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
                     navigationRoot.mode2 = true
                 })
-//                .offset(x: -5, y: -20)
                 
                 NavigationLink(destination: SettingsView()) {
                     
                     SettingsButtonModel(title: text3)
+                        .padding(.top, 10)
                     
                 }
-//                .offset(x: -5, y: -25)
-                Spacer()
+                
             }
-//            .offset(x: 0, y: -55)
+            .padding(.bottom, 95)
             .background(
                 Image("BACK")
                     .ignoresSafeArea()
@@ -81,14 +79,14 @@ struct ContentView: View {
         .preferredColorScheme(.light)
         .onAppear(){
             MusicClass.shared.setup()
-//            MusicClass.shared.play()
+            //            MusicClass.shared.play()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-            ContentView()
+        ContentView()
     }
 }
 
