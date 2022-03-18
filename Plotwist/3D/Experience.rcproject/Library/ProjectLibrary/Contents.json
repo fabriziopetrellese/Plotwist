@@ -168,5 +168,25 @@
     "libraryIdentifier" : "978f5973aba2351263fdb0fa7f938305",
     "format" : "model",
     "displayName" : "diceFood4.usdz"
+  },
+  {
+    "libraryIdentifier" : "d5743df0f3dcb668ad0dc83c8626ff87",
+    "format" : "model",
+    "displayName" : "diceEmotions1.usdz"
+  },
+  {
+    "libraryIdentifier" : "1ffc24c65a5670c2bc4c6a690a224708",
+    "format" : "model",
+    "displayName" : "diceEmotions2.usdz"
+  },
+  {
+    "libraryIdentifier" : "d832d52ab56e8ce66fedeb574f21adc0",
+    "format" : "model",
+    "displayName" : "diceEmotions3.usdz"
+  },
+  {
+    "libraryIdentifier" : "48f96f5773b55747fc17897d85a2ac6b",
+    "format" : "model",
+    "displayName" : "diceEmotions4.usdz"
   }
 ]
