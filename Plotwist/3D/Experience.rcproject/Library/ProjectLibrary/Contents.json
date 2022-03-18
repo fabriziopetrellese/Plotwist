@@ -188,5 +188,25 @@
     "libraryIdentifier" : "48f96f5773b55747fc17897d85a2ac6b",
     "format" : "model",
     "displayName" : "diceEmotions4.usdz"
+  },
+  {
+    "libraryIdentifier" : "3fc6731dd4a652a0b1f9ad60bbf3999e",
+    "format" : "model",
+    "displayName" : "diceSports1.usdz"
+  },
+  {
+    "libraryIdentifier" : "6345d0881fee01f28543b6ab4dc489a9",
+    "format" : "model",
+    "displayName" : "diceSports2.usdz"
+  },
+  {
+    "libraryIdentifier" : "74b0566387c71afafca9b8dd562b2075",
+    "format" : "model",
+    "displayName" : "diceSports3.usdz"
+  },
+  {
+    "libraryIdentifier" : "a6b5110f012fc762e60ffb52248ae7f5",
+    "format" : "model",
+    "displayName" : "diceSports4.usdz"
   }
 ]

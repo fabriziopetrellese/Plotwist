@@ -4893,9 +4893,9 @@
                   0.6648673415184021,
                   0.7469603419303894,
                   0,
-                  0.12257709354162216,
-                  0.97561407089233398,
-                  0.87206429243087769,
+                  0.053138792514801025,
+                  0.67904698848724365,
+                  0.56880533695220947,
                   1
                 ],
                 "sceneTransform" : [
@@ -5106,7 +5106,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:5ea0adbe6e5dea097467f51b57672330\/diceGames3.usdz"
+                                  "value" : "model:3fc6731dd4a652a0b1f9ad60bbf3999e\/diceSports1.usdz"
                                 }
                               ],
                               [
@@ -5126,7 +5126,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "79FE23FA-4DF8-4CFD-88B2-53A5AB382990"
+                                  "value" : "6D588ADF-E627-47F8-8048-C2FC8AACCA7E"
                                 }
                               ]
                             ]
@@ -5254,7 +5254,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:c3cc670f889d22ed3e75c25bc7a69884\/diceGames2.usdz"
+                                  "value" : "model:a6b5110f012fc762e60ffb52248ae7f5\/diceSports4.usdz"
                                 }
                               ],
                               [
@@ -5274,7 +5274,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "67888696-33D8-4B83-8986-8C43242032FF"
+                                  "value" : "3151D0EF-814D-4F74-B4F4-A9074301BADE"
                                 }
                               ]
                             ]
@@ -5406,7 +5406,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:cbf8fb2280edc73ce77b1f5f79073f7f\/diceGames4.usdz"
+                                  "value" : "model:74b0566387c71afafca9b8dd562b2075\/diceSports3.usdz"
                                 }
                               ],
                               [
@@ -5426,7 +5426,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "45AD0918-21C0-403C-9CB6-F3A6263BDF40"
+                                  "value" : "802D3DEA-DF05-4CE5-8D2A-BCE3500B3D60"
                                 }
                               ]
                             ]
@@ -5556,7 +5556,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:e8cc2285b7a55dce7687236973b27962\/diceGames1.usdz"
+                                  "value" : "model:6345d0881fee01f28543b6ab4dc489a9\/diceSports2.usdz"
                                 }
                               ],
                               [
@@ -5576,7 +5576,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "FEB353FA-13AA-44C5-A380-F65A65228E3A"
+                                  "value" : "845C563A-25D6-4877-BD17-8AC52394C971"
                                 }
                               ]
                             ]
@@ -5880,21 +5880,21 @@
               "title" : "Sports",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.95449584722518921,
-                  -6.0216883923658315e-08,
-                  0.29822421073913574,
+                  0.85532116889953613,
+                  -6.3411043527139554e-08,
+                  0.51809823513031006,
                   0,
-                  0.16071958839893341,
-                  0.84235578775405884,
-                  -0.51439875364303589,
+                  0.2831093966960907,
+                  0.83749848604202271,
+                  -0.46738120913505554,
                   0,
-                  -0.25121068954467773,
-                  0.53892171382904053,
-                  0.80402523279190063,
+                  -0.43390637636184692,
+                  0.54643929004669189,
+                  0.71633040904998779,
                   0,
-                  -0.87230384349822998,
-                  1.8295613527297974,
-                  2.6762700080871582,
+                  -0.71374392509460449,
+                  1.6487189531326294,
+                  1.4706265926361084,
                   1
                 ],
                 "sceneTransform" : [
