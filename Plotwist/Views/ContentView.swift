@@ -18,7 +18,6 @@ struct ContentView: View {
     let text4: LocalizedStringKey = "text4"
     let text5: LocalizedStringKey = "text5"
     
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -26,10 +25,8 @@ struct ContentView: View {
                     .padding(.bottom, 90)
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
-                    
                     CardModel1(title: text1, description: text4)
                         .padding(.top, -50)
-                    
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -37,10 +34,8 @@ struct ContentView: View {
                 })
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
-                    
                     CardModel2(title: text2, description: text5)
                         .padding(.horizontal, 22)
-                    
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -48,12 +43,9 @@ struct ContentView: View {
                 })
                 
                 NavigationLink(destination: SettingsView()) {
-                    
                     SettingsButtonModel(title: text3)
                         .padding(.top, 10)
-                    
                 }
-                
             }
             .padding(.bottom, 95)
             .background(

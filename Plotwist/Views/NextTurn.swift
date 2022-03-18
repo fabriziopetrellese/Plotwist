@@ -24,6 +24,7 @@ struct NextTurn: View {
     
     var body: some View {
         VStack {
+            Spacer()
             if storiesModel.turnNumber < 5 {
                 let primaParte = String(format: NSLocalizedString("firstPart", comment: ""), arguments: [playersModel.activePlayer])
                 let secondaParte = String(format: NSLocalizedString("secondPart", comment: ""))
@@ -31,7 +32,8 @@ struct NextTurn: View {
                     .font(Font.custom("Life Savers", size: 41))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
-                    .frame(width: 330, height: 200)
+                    .padding(.horizontal)
+                    .padding(.bottom)
             } else {
                 let terzaParte = String(format: NSLocalizedString("thirdPart", comment: ""), arguments: [playersModel.activePlayer])
                 let quartaParte = String(format: NSLocalizedString("fourthPart", comment: ""))
@@ -39,9 +41,10 @@ struct NextTurn: View {
                     .font(Font.custom("Life Savers", size: 43))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
-                    .frame(width: 330, height: 225)
+                    .padding(.horizontal)
+                    .padding(.bottom)
             }
-            
+            Spacer()
             NavigationLink {
                 if navigationRoot.mode1 == true {
                     Storystarters()
@@ -53,14 +56,13 @@ struct NextTurn: View {
                 ZStack {
                     ButtonsModel(label: button3)
                     Image("OMINO1")
-                        .position(x: 155, y: 2)
+                        .padding(.bottom, 96)
+                        .padding(.leading, 92)
                 }
             }
             .simultaneousGesture(TapGesture().onEnded{
                 incipitsModel.nextIncipit()
             })
-            .offset(x: 0.0, y: 205.0)
-            .frame(width: 100, height: 100)
         }
         .background(
             Image("BACK")
@@ -76,5 +78,6 @@ struct NextTurn_Previews: PreviewProvider {
             .environmentObject(PlayersModel())
             .environmentObject(IncipitsModel())
             .environmentObject(StoriesModel())
+            .environmentObject(NavigationRoot())
     }
 }

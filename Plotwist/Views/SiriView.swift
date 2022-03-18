@@ -28,9 +28,7 @@ struct SiriView: View {
             Text(finalTitle)
                 .font(Font.custom("Life Savers", size: 39))
                 .fontWeight(.heavy)
-                .padding(.bottom, 20)
-                .padding(.top)
-                .offset(x: 0, y: -10)
+                .padding(.bottom, 10)
             
             GeometryReader { geo in
                 ScrollView(showsIndicators: false) {
@@ -41,10 +39,9 @@ struct SiriView: View {
                         .foregroundColor(.darkGray)
                         .multilineTextAlignment(.center)
                         .frame(width: geo.size.width)
-                        .frame(minHeight: geo.size.height)
                 }
             }
-            .offset(x: 0, y: 1)
+            .padding(.top)
             .padding(.vertical, 45)
             .frame(width: 360, height: 404, alignment: .center)
             
@@ -75,13 +72,14 @@ struct SiriView: View {
             }
             .padding(.bottom)
         }
-        .padding(.bottom, 75)
+        .padding(.top, 45)
+        .padding(.bottom, 50)
         .background(
             Image("Background")
                 .ignoresSafeArea()
-        ).position(x: 207, y: 400)
-            .navigationBarBackButtonHidden(true)
-            .blur(radius: alertClass.showingAlert ? 9 : 0)
+        )
+        .navigationBarBackButtonHidden(true)
+        .blur(radius: alertClass.showingAlert ? 9 : 0)
         if alertClass.showingAlert == true {
             AlertView()
         }
