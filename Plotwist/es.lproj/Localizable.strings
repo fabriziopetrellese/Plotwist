@@ -126,16 +126,16 @@
 
 //DICE CATEGORIES
 
-"cat1" = "Videogames";
+"cat1" = "Videojuegos";
 
-"cat2" = "Travel";
+"cat2" = "Viajes";
 
-"cat3" = "Animals";
+"cat3" = "Animales";
 
-"cat4" = "Food";
+"cat4" = "Comida";
 
-"cat5" = "Emotions";
+"cat5" = "Emociones";
 
-"cat6" = "Sports";
+"cat6" = "Deporte";
 
-"diceCategories" = "Select dice categories";
+"diceCategories" = "Seleccionar categorias de dados";

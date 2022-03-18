@@ -19,13 +19,16 @@ struct DiceView: View {
         ZStack {
             ARDiceView(diceName: diceName)
             
-            if navigationRoot.mode2 {
-                NavigationLink {
-                    DiceStoryWriting()
-                } label: {
-                    ButtonsModel(label: button2)
+            VStack {
+                Spacer()
+                if navigationRoot.mode2 {
+                    NavigationLink {
+                        DiceStoryWriting()
+                    } label: {
+                        ButtonsModel(label: button2)
+                    }
+                    .padding(.bottom, 50)
                 }
-                .position(x: 207, y: 800)
             }
         }
         .ignoresSafeArea()

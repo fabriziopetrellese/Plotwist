@@ -19,8 +19,7 @@ struct DiceStorytelling: View {
                 .font(Font.custom("Life Savers", size: 39))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
-                .frame(width: 300, height: 250)
-                .position(x: 207, y: 65)
+                .padding(.horizontal, 30)
             
             Spacer()
             
@@ -28,24 +27,25 @@ struct DiceStorytelling: View {
                 DiceCategories()
             } label: {
                 ButtonsModel(label: rollDice)
-            }.position(x: 207, y: 270)
+                    .padding()
+            }
         }
         .background(
             Image("Background")
                 .ignoresSafeArea()
-        ).position(x: 207, y: 400)
-            .blur(radius: alertClass.showingAlert ? 9 : 0)
-            .navigationBarBackButtonHidden(true)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        alertClass.showingAlert = true
-                    } label: {
-                        Image(systemName: "house.fill")
-                            .foregroundColor(.black)
-                    }
+        )
+        .blur(radius: alertClass.showingAlert ? 9 : 0)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    alertClass.showingAlert = true
+                } label: {
+                    Image(systemName: "house.fill")
+                        .foregroundColor(.black)
                 }
             }
+        }
         if alertClass.showingAlert == true {
             AlertView()
         }
@@ -55,6 +55,7 @@ struct DiceStorytelling: View {
 struct DiceStorytelling_Previews: PreviewProvider {
     static var previews: some View {
         DiceStorytelling()
+//            .environment(\.locale, .init(identifier: "it"))
             .environmentObject(NavigationRoot())
             .environmentObject(AlertClass())
     }
