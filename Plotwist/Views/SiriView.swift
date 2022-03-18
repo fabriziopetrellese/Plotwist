@@ -28,7 +28,7 @@ struct SiriView: View {
             Text(finalTitle)
                 .font(Font.custom("Life Savers", size: 39))
                 .fontWeight(.heavy)
-                .padding(.bottom, 10)
+            Spacer()
             
             GeometryReader { geo in
                 ScrollView(showsIndicators: false) {
@@ -41,10 +41,8 @@ struct SiriView: View {
                         .frame(width: geo.size.width)
                 }
             }
-            .padding(.top)
-            .padding(.vertical, 45)
-            .frame(width: 360, height: 404, alignment: .center)
-            
+            .frame(width: 360, height: 260)
+                        
             Spacer()
             
             Button {
@@ -62,7 +60,6 @@ struct SiriView: View {
             } label: {
                 ButtonsIconModel(label: speech, icon: "person.wave.2.fill")
             }
-            .padding(.top, 30)
             
             Button {
                 alertClass.showingAlert = true
@@ -70,10 +67,8 @@ struct SiriView: View {
             } label: {
                 ButtonsIconModel(label: menu, icon: "house.fill")
             }
-            .padding(.bottom)
         }
-        .padding(.top, 45)
-        .padding(.bottom, 50)
+        .padding(.top, 30)
         .background(
             Image("Background")
                 .ignoresSafeArea()

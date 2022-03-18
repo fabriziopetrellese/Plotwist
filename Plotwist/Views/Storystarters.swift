@@ -43,21 +43,22 @@ struct Storystarters: View {
                 Spacer()
             }
             ZStack(alignment: .leading) {
-                GeometryReader { geo in
-                    if story.isEmpty {
-                        Text(placeholder)
-                            .font(Font.custom("Life Savers", size: 24))
-                            .fontWeight(.bold)
+                    GeometryReader { geo in
+                        if story.isEmpty {
+                            Text(placeholder)
+                                .font(Font.custom("Life Savers", size: 24))
+                                .fontWeight(.bold)
+                                .foregroundColor(.darkGray)
+                                .padding(.leading, 20)
+                                .offset(y: 7)
+                        }
+                        TextEditor(text: $story)
+                            .font(Font.custom("Life Savers", size: 24).weight(.bold))
                             .foregroundColor(.darkGray)
-                            .padding(.leading, 20)
+                            .background(.clear)
+                            .padding(.horizontal)
+                            .frame(height: 200)
                     }
-                    TextEditor(text: $story)
-                        .font(Font.custom("Life Savers", size: 24).weight(.bold))
-                        .foregroundColor(.darkGray)
-                        .background(.clear)
-                        .padding(.horizontal)
-                        .frame(height: 200)
-                }
             }
             //automatically change view here
             NavigationLink(/*isActive: $shouldNavigate*/) {
