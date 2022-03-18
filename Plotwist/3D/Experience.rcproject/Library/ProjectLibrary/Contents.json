@@ -148,5 +148,25 @@
     "libraryIdentifier" : "c3b37ef3d3bf2c7be8f3f66c26a2b5b1",
     "format" : "model",
     "displayName" : "diceAnimals4.usdz"
+  },
+  {
+    "libraryIdentifier" : "667aae06c7e5261382a1afe32f2615d7",
+    "format" : "model",
+    "displayName" : "diceFood1.usdz"
+  },
+  {
+    "libraryIdentifier" : "165e0e34713d2b451a0af43bf9153b41",
+    "format" : "model",
+    "displayName" : "diceFood2.usdz"
+  },
+  {
+    "libraryIdentifier" : "42d76c99bc7479e6f66f45c16e467a6f",
+    "format" : "model",
+    "displayName" : "diceFood3.usdz"
+  },
+  {
+    "libraryIdentifier" : "978f5973aba2351263fdb0fa7f938305",
+    "format" : "model",
+    "displayName" : "diceFood4.usdz"
   }
 ]
