@@ -118,8 +118,11 @@ struct Storystarters: View {
                 }
             }
             ToolbarItem(placement: .keyboard) {
-                Button ("Done") {
+                Button {
                     hideKeyboard()
+                } label: {
+                    Text("Done")
+                        .fontWeight(.bold)
                 }
             }
 //            ToolbarItem(placement: .principal) {
