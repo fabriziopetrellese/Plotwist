@@ -72,6 +72,7 @@ struct SiriView: View {
         .background(
             Image("Background")
                 .ignoresSafeArea()
+                .position(x: 180, y: 400)
         )
         .navigationBarBackButtonHidden(true)
         .blur(radius: alertClass.showingAlert ? 9 : 0)

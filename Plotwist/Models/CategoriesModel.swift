@@ -19,8 +19,7 @@ class CategoriesModel: ObservableObject {
                                              Category(cat: "cat3"),
                                              Category(cat: "cat4"),
                                              Category(cat: "cat5"),
-                                             Category(cat: "cat6"),
-    ]
+                                             Category(cat: "cat6"),]
     
     func selectCategory(category: LocalizedStringKey) -> Int {
         if category == "cat1" {
