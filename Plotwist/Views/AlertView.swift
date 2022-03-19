@@ -11,6 +11,7 @@ import AVFoundation
 struct AlertView: View {
     @EnvironmentObject var alertClass: AlertClass
     @EnvironmentObject var navigationRoot: NavigationRoot
+    @EnvironmentObject var playersModel: PlayersModel
     
     let mainMenu: LocalizedStringKey = "mainMenu"
     let quit: LocalizedStringKey = "quit"
@@ -48,7 +49,7 @@ struct AlertView: View {
             .offset(x: 77, y: 59)
             Button {
                 alertClass.yesQuit.toggle()
-                navigationRoot.playerButton = 0
+                playersModel.playerButton = 0
                 navigationRoot.mode1 = false
                 navigationRoot.mode2 = false
                 navigationRoot.backToRoot = true

@@ -18,7 +18,8 @@ struct DiceCategories: View {
                 .font(Font.custom("Life Savers", size: 40))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
-                .frame(width: 330, height: 120)
+                .padding(.horizontal, 28)
+                .padding(.bottom, 40)
             
             CategoriesListModel()
             
@@ -47,15 +48,7 @@ struct DiceCategories: View {
 struct DiceCategories_Previews: PreviewProvider {
     static var previews: some View {
         DiceCategories()
+//            .environment(\.locale, .init(identifier: "ru"))
             .environmentObject(CategoriesModel())
     }
 }
-
-/*
- Button {
-     
- } label: {
-     RollDiceModel()
- }
- .padding(.vertical, 32)
- */

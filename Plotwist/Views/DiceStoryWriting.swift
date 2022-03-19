@@ -33,34 +33,28 @@ struct DiceStoryWriting: View {
                 Text("")
                     .font(Font.custom("Life Savers", size: 33))
                     .fontWeight(.heavy)
-                    .padding(.horizontal)
-                    .frame(width: 272, height: 100, alignment: .leading)
+                    .padding(.trailing, 121)
+                    .padding(.leading)
                 Spacer()
             }
-            .position(x: 207.0, y: 50)
-            .frame(width: 414, height: 97)
-            
-            HStack {
-                ZStack(alignment: .leading) {
-                    if story.isEmpty {
-                        Text(placeholder)
-                            .font(Font.custom("Life Savers", size: 24))
-                            .fontWeight(.bold)
+            ZStack(alignment: .leading) {
+                    GeometryReader { geo in
+                        if story.isEmpty {
+                            Text(placeholder)
+                                .font(Font.custom("Life Savers", size: 24))
+                                .fontWeight(.bold)
+                                .foregroundColor(.darkGray)
+                                .padding(.leading, 20)
+                                .offset(y: 7)
+                        }
+                        TextEditor(text: $story)
+                            .font(Font.custom("Life Savers", size: 24).weight(.bold))
                             .foregroundColor(.darkGray)
-                            .padding(.leading, 20)
-                            .padding(.bottom, 356)
+                            .background(.clear)
+                            .padding(.horizontal)
+                            .frame(height: 200)
                     }
-                    TextEditor(text: $story)
-                        .font(Font.custom("Life Savers", size: 24).weight(.bold))
-                        .foregroundColor(.darkGray)
-                        .background(.clear)
-                        .padding(.horizontal)
-                }
             }
-            .frame(height: 400)
-            .position(x: 207, y: 195)
-            
-            Spacer()
             NavigationLink {
                 if storiesModel.index < 6 {
                     NextTurn()
@@ -68,13 +62,9 @@ struct DiceStoryWriting: View {
                     SiriView()
                 }
             } label: {
-                if story != "" {
-                    ButtonsModel(label: button2)
-                } else {
-                    ZStack {
-                    }
-                }
+                story != "" ? ButtonsModel(label: button2) : nil
             }
+            .padding(.bottom, 25)
             .simultaneousGesture(TapGesture().onEnded{
                 if storiesModel.index < 6 {
                     playersModel.nextPlayer()
@@ -83,15 +73,15 @@ struct DiceStoryWriting: View {
                 storiesModel.index += 1
                 storiesModel.turnNumber += 1
             })
-            .position(x: 207, y: 260.0)
-            
-            Spacer()
-            
         }
+        .ignoresSafeArea(.keyboard)
         .background(
             Image("Background")
                 .ignoresSafeArea()
                 .position(x: 207, y: 400)
+                .onTapGesture {
+                    dismissKeyboard()
+                }
         )
         .navigationBarBackButtonHidden(true)
         .toolbar {
@@ -109,9 +99,7 @@ struct DiceStoryWriting: View {
             }
         }
         .blur(radius: alertClass.showingAlert ? 12 : 0)
-        if alertClass.showingAlert == true {
-            AlertView()
-        }
+        alertClass.showingAlert == true ? AlertView() : nil
     }
 }
 

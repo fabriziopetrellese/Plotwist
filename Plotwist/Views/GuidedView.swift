@@ -22,7 +22,7 @@ struct GuidedView: View {
     let player5: LocalizedStringKey = "player5"
     let player6: LocalizedStringKey = "player6"
     let button1: LocalizedStringKey = "button1"
-    let addButton: LocalizedStringKey = "addButton"
+//    let addButton: LocalizedStringKey = "addButton"
     
     
     var body: some View {
@@ -33,7 +33,6 @@ struct GuidedView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 78)
                 .padding(.bottom, 15)
-            
             ScrollView(showsIndicators: false) {
                 VStack {
                     ZStack {
@@ -42,7 +41,6 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[0].isEmpty) {
                                 Text(player1)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 67)
                                     .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
@@ -58,7 +56,6 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[1].isEmpty) {
                                 Text(player2)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 67)
                                     .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
@@ -68,74 +65,118 @@ struct GuidedView: View {
                     }
                     .padding(.horizontal, 84)
                     
-                    if navigationRoot.playerButton > 0 {
+                    if playersModel.playerButton > 0 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[2])
                                 .placeholder(when: playersModel.playersNames[2].isEmpty) {
                                     Text(player3)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            if playersModel.playerButton < 2 {
+                                Button {
+                                    if playersModel.playerButton > 0 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
                     
-                    if navigationRoot.playerButton > 1 {
+                    if playersModel.playerButton > 1 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[3])
                                 .placeholder(when: playersModel.playersNames[3].isEmpty) {
                                     Text(player4)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            if playersModel.playerButton < 3 {
+                                Button {
+                                    if playersModel.playerButton > 1 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
                     
-                    if navigationRoot.playerButton > 2 {
+                    if playersModel.playerButton > 2 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[4])
                                 .placeholder(when: playersModel.playersNames[4].isEmpty) {
                                     Text(player5)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            if playersModel.playerButton < 4 {
+                                Button {
+                                    if playersModel.playerButton > 2 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
                     
-                    if navigationRoot.playerButton > 3 {
+                    if playersModel.playerButton > 3 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[5])
                                 .placeholder(when: playersModel.playersNames[5].isEmpty) {
                                     Text(player6)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            if playersModel.playerButton < 5 {
+                                Button {
+                                    if playersModel.playerButton > 3 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
@@ -156,7 +197,7 @@ struct GuidedView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    navigationRoot.playerButton = 0
+                    playersModel.playerButton = 0
                     navigationRoot.mode1 = false
                     navigationRoot.mode2 = false
                     back2()
@@ -221,7 +262,7 @@ extension View {
 /*
  if modeSelection.playerButton < 4 {
      Button {
-             modeSelection.playerButton += 1
+             navigationRoot.playerButton += 1
      } label: {
          ZStack {
              Image("PLAYERS")
@@ -241,10 +282,10 @@ extension View {
 /*
  if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
      NavigationLink {
-         if modeSelection.mode1 == true {
+         if navigationRoot.mode1 == true {
              Storystarters()
          }
-         if modeSelection.mode2 == true {
+         if navigationRoot.mode2 == true {
              DiceStorytelling()
          }
      } label: {
@@ -254,14 +295,8 @@ extension View {
          playersModel.setUpPlayers()
          incipitsModel.nextIncipit()
      })
-     .padding(36)
-     .position(x: 202, y: 195)
  } else {
      ZStack {
-         
      }
-     .frame(width: 218, height: 80)
-     .padding(36)
-     .position(x: 202, y: 195)
  }
  */

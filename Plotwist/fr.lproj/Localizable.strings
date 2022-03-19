@@ -126,16 +126,16 @@
 
 //DICE CATEGORIES
 
-"cat1" = "Videogames";
+"cat1" = "Jeux video";
 
 "cat2" = "Voyages";
 
 "cat3" = "Animaux";
 
-"cat4" = "Aliments";
+"cat4" = "Nourriture";
 
 "cat5" = "Émotions";
 
-"cat6" = "Sports";
+"cat6" = "Sport";
 
-"diceCategories" = "Sélectionner les catégories de dés";
+"diceCategories" = "Selectionner les categories de des";
