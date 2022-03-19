@@ -22,7 +22,7 @@ struct GuidedView: View {
     let player5: LocalizedStringKey = "player5"
     let player6: LocalizedStringKey = "player6"
     let button1: LocalizedStringKey = "button1"
-    let addButton: LocalizedStringKey = "addButton"
+//    let addButton: LocalizedStringKey = "addButton"
     
     
     var body: some View {
@@ -33,7 +33,6 @@ struct GuidedView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 78)
                 .padding(.bottom, 15)
-            
             ScrollView(showsIndicators: false) {
                 VStack {
                     ZStack {
@@ -42,7 +41,6 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[0].isEmpty) {
                                 Text(player1)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 67)
                                     .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
@@ -58,7 +56,6 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[1].isEmpty) {
                                 Text(player2)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .padding(.horizontal, 67)
                                     .foregroundColor(.gray)
                             }
                             .font(Font.custom("Life Savers", size: 26))
@@ -75,13 +72,22 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[2].isEmpty) {
                                     Text(player3)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            Button {
+                                if navigationRoot.playerButton > 0 {
+                                    navigationRoot.playerButton -= 1
+                                }
+                            } label: {
+                                Image(systemName: "trash.fill")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                            }.offset(x: 120)
                         }
                         .padding(.horizontal, 84)
                     }
@@ -93,13 +99,22 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[3].isEmpty) {
                                     Text(player4)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            Button {
+                                if navigationRoot.playerButton > 0 {
+                                    navigationRoot.playerButton -= 1
+                                }
+                            } label: {
+                                Image(systemName: "trash.fill")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                            }.offset(x: 120)
                         }
                         .padding(.horizontal, 84)
                     }
@@ -111,13 +126,22 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[4].isEmpty) {
                                     Text(player5)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            Button {
+                                if navigationRoot.playerButton > 0 {
+                                    navigationRoot.playerButton -= 1
+                                }
+                            } label: {
+                                Image(systemName: "trash.fill")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                            }.offset(x: 120)
                         }
                         .padding(.horizontal, 84)
                     }
@@ -129,13 +153,22 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[5].isEmpty) {
                                     Text(player6)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .padding(.horizontal, 67)
                                         .foregroundColor(.gray)
                                 }
+                                .frame(width: 205)
                                 .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
+                            Button {
+                                if navigationRoot.playerButton > 0 {
+                                    navigationRoot.playerButton -= 1
+                                }
+                            } label: {
+                                Image(systemName: "trash.fill")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                            }.offset(x: 120)
                         }
                         .padding(.horizontal, 84)
                     }
