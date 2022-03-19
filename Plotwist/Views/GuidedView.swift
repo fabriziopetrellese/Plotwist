@@ -87,7 +87,7 @@ struct GuidedView: View {
                                 Image(systemName: "trash.fill")
                                     .resizable()
                                     .frame(width: 20, height: 20)
-                            }.offset(x: 120)
+                            }.padding(.leading, 240)
                         }
                         .padding(.horizontal, 84)
                     }
@@ -114,7 +114,7 @@ struct GuidedView: View {
                                 Image(systemName: "trash.fill")
                                     .resizable()
                                     .frame(width: 20, height: 20)
-                            }.offset(x: 120)
+                            }.padding(.leading, 240)
                         }
                         .padding(.horizontal, 84)
                     }
@@ -141,7 +141,7 @@ struct GuidedView: View {
                                 Image(systemName: "trash.fill")
                                     .resizable()
                                     .frame(width: 20, height: 20)
-                            }.offset(x: 120)
+                            }.padding(.leading, 240)
                         }
                         .padding(.horizontal, 84)
                     }
@@ -168,7 +168,7 @@ struct GuidedView: View {
                                 Image(systemName: "trash.fill")
                                     .resizable()
                                     .frame(width: 20, height: 20)
-                            }.offset(x: 120)
+                            }.padding(.leading, 240)
                         }
                         .padding(.horizontal, 84)
                     }
@@ -274,10 +274,10 @@ extension View {
 /*
  if playersModel.playersNames[0] != "" && playersModel.playersNames[0] != " " && playersModel.playersNames[1] != "" && playersModel.playersNames[1] != " " {
      NavigationLink {
-         if modeSelection.mode1 == true {
+         if navigationRoot.mode1 == true {
              Storystarters()
          }
-         if modeSelection.mode2 == true {
+         if navigationRoot.mode2 == true {
              DiceStorytelling()
          }
      } label: {
@@ -287,14 +287,8 @@ extension View {
          playersModel.setUpPlayers()
          incipitsModel.nextIncipit()
      })
-     .padding(36)
-     .position(x: 202, y: 195)
  } else {
      ZStack {
-         
      }
-     .frame(width: 218, height: 80)
-     .padding(36)
-     .position(x: 202, y: 195)
  }
  */
