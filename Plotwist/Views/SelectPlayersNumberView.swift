@@ -8,46 +8,14 @@
 import SwiftUI
 
 struct SelectPlayersNumberView: View {
-    @EnvironmentObject var navigationRoot: NavigationRoot
+    @EnvironmentObject var playersModel: PlayersModel
     let addButton: LocalizedStringKey = "addButton"
     
     var body: some View {
-//        ZStack {
-//            Image("PLAYERS")
-//
-//            Text("|")
-//                .font(Font.custom("Life Savers", size: 40))
-//
-//            HStack {
-//                Button {
-//                    if navigationRoot.playerButton < 4 {
-//                        navigationRoot.playerButton += 1
-//                    }
-//                } label: {
-//                    Image(systemName: "plus")
-//                        .frame(width: 149, height: 72)
-//
-//                }
-//                .frame(width: 149, height: 72)
-//
-//                Spacer()
-//
-//                Button {
-//                    if navigationRoot.playerButton > 0 {
-//                        navigationRoot.playerButton -= 1
-//                    }
-//                } label: {
-//                    Image(systemName: "minus")
-//                        .frame(width: 149, height: 72)
-//                }
-//                .frame(width: 149, height: 72)
-//            }
-//            .frame(width: 300, height: 72)
-//        }
         VStack {
-            if navigationRoot.playerButton < 4 {
+            if playersModel.playerButton < 4 {
                 Button {
-                    navigationRoot.playerButton += 1
+                    playersModel.playerButton += 1
                 } label: {
                     ZStack {
                         Image("PLAYERS")
@@ -66,6 +34,45 @@ struct SelectPlayersNumberView: View {
 struct SelectPlayersNumberView_Previews: PreviewProvider {
     static var previews: some View {
         SelectPlayersNumberView()
-            .environmentObject(NavigationRoot())
+            .environmentObject(PlayersModel())
     }
 }
+
+
+
+
+// + AND - buttons
+/*
+ ZStack {
+     Image("PLAYERS")
+
+     Text("|")
+         .font(Font.custom("Life Savers", size: 40))
+
+     HStack {
+         Button {
+             if navigationRoot.playerButton < 4 {
+                 navigationRoot.playerButton += 1
+             }
+         } label: {
+             Image(systemName: "plus")
+                 .frame(width: 149, height: 72)
+
+         }
+         .frame(width: 149, height: 72)
+
+         Spacer()
+
+         Button {
+             if navigationRoot.playerButton > 0 {
+                 navigationRoot.playerButton -= 1
+             }
+         } label: {
+             Image(systemName: "minus")
+                 .frame(width: 149, height: 72)
+         }
+         .frame(width: 149, height: 72)
+     }
+     .frame(width: 300, height: 72)
+ }
+ */

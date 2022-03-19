@@ -13,6 +13,7 @@ class PlayersModel: ObservableObject {
     @Published var activePlayer = ""
     @Published var indexNumber = 1
     @Published var j = 0
+    @Published var playerButton = 0
     
     func setUpPlayers() {
         playersNames.forEach { playerName in

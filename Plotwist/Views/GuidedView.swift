@@ -65,7 +65,7 @@ struct GuidedView: View {
                     }
                     .padding(.horizontal, 84)
                     
-                    if navigationRoot.playerButton > 0 {
+                    if playersModel.playerButton > 0 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[2])
@@ -79,20 +79,22 @@ struct GuidedView: View {
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
-                            Button {
-                                if navigationRoot.playerButton > 0 {
-                                    navigationRoot.playerButton -= 1
-                                }
-                            } label: {
-                                Image(systemName: "trash.fill")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                            }.padding(.leading, 240)
+                            if playersModel.playerButton < 2 {
+                                Button {
+                                    if playersModel.playerButton > 0 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
                     
-                    if navigationRoot.playerButton > 1 {
+                    if playersModel.playerButton > 1 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[3])
@@ -106,20 +108,22 @@ struct GuidedView: View {
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
-                            Button {
-                                if navigationRoot.playerButton > 0 {
-                                    navigationRoot.playerButton -= 1
-                                }
-                            } label: {
-                                Image(systemName: "trash.fill")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                            }.padding(.leading, 240)
+                            if playersModel.playerButton < 3 {
+                                Button {
+                                    if playersModel.playerButton > 1 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
                     
-                    if navigationRoot.playerButton > 2 {
+                    if playersModel.playerButton > 2 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[4])
@@ -133,20 +137,22 @@ struct GuidedView: View {
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
-                            Button {
-                                if navigationRoot.playerButton > 0 {
-                                    navigationRoot.playerButton -= 1
-                                }
-                            } label: {
-                                Image(systemName: "trash.fill")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                            }.padding(.leading, 240)
+                            if playersModel.playerButton < 4 {
+                                Button {
+                                    if playersModel.playerButton > 2 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
                     
-                    if navigationRoot.playerButton > 3 {
+                    if playersModel.playerButton > 3 {
                         ZStack {
                             Image("PLAYERS")
                             TextField("", text: $playersModel.playersNames[5])
@@ -160,15 +166,17 @@ struct GuidedView: View {
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
-                            Button {
-                                if navigationRoot.playerButton > 0 {
-                                    navigationRoot.playerButton -= 1
-                                }
-                            } label: {
-                                Image(systemName: "trash.fill")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                            }.padding(.leading, 240)
+                            if playersModel.playerButton < 5 {
+                                Button {
+                                    if playersModel.playerButton > 3 {
+                                        playersModel.playerButton -= 1
+                                    }
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                }.padding(.leading, 240)
+                            }
                         }
                         .padding(.horizontal, 84)
                     }
@@ -189,7 +197,7 @@ struct GuidedView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    navigationRoot.playerButton = 0
+                    playersModel.playerButton = 0
                     navigationRoot.mode1 = false
                     navigationRoot.mode2 = false
                     back2()
@@ -254,7 +262,7 @@ extension View {
 /*
  if modeSelection.playerButton < 4 {
      Button {
-             modeSelection.playerButton += 1
+             navigationRoot.playerButton += 1
      } label: {
          ZStack {
              Image("PLAYERS")
