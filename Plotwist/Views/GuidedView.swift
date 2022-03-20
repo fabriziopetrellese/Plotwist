@@ -83,9 +83,10 @@ struct GuidedView: View {
                                 Button {
                                     if playersModel.playerButton > 0 {
                                         playersModel.playerButton -= 1
+                                        playersModel.playersNames[2] = ""
                                     }
                                 } label: {
-                                    Image(systemName: "trash.fill")
+                                    Image(systemName: "trash")
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                 }.padding(.leading, 240)
@@ -112,9 +113,10 @@ struct GuidedView: View {
                                 Button {
                                     if playersModel.playerButton > 1 {
                                         playersModel.playerButton -= 1
+                                        playersModel.playersNames[3] = ""
                                     }
                                 } label: {
-                                    Image(systemName: "trash.fill")
+                                    Image(systemName: "trash")
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                 }.padding(.leading, 240)
@@ -141,9 +143,10 @@ struct GuidedView: View {
                                 Button {
                                     if playersModel.playerButton > 2 {
                                         playersModel.playerButton -= 1
+                                        playersModel.playersNames[4] = ""
                                     }
                                 } label: {
-                                    Image(systemName: "trash.fill")
+                                    Image(systemName: "trash")
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                 }.padding(.leading, 240)
@@ -170,9 +173,10 @@ struct GuidedView: View {
                                 Button {
                                     if playersModel.playerButton > 3 {
                                         playersModel.playerButton -= 1
+                                        playersModel.playersNames[5] = ""
                                     }
                                 } label: {
-                                    Image(systemName: "trash.fill")
+                                    Image(systemName: "trash")
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                 }.padding(.leading, 240)
@@ -215,18 +219,40 @@ struct GuidedView: View {
                             DiceStorytelling()
                         }
                     } label: {
-                        Text(button1)
+                        Image(systemName: "checkmark")
                             .foregroundColor(.black)
+                            .font(Font.title3.weight(.heavy))
                     }
                     .simultaneousGesture(TapGesture().onEnded {
                         playersModel.setUpPlayers()
                         incipitsModel.nextIncipit()
                     })
                 } else {
-                    Text(button1)
+                    Image(systemName: "checkmark")
                         .foregroundColor(.gray)
+                        .font(Font.title3.weight(.heavy))
                 }
             }
+            
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button {
+                    hideKeyboard()
+                } label: {
+                    Text("Done")
+                        .fontWeight(.bold)
+                }
+                Button("Cancel") {
+                    hideKeyboard()
+                    playersModel.playersNames[0] = ""
+                    playersModel.playersNames[1] = ""
+                    playersModel.playersNames[2] = ""
+                    playersModel.playersNames[3] = ""
+                    playersModel.playersNames[4] = ""
+                    playersModel.playersNames[5] = ""
+                }
+            }
+            
         }
     }
 }
@@ -248,7 +274,8 @@ extension View {
         @ViewBuilder placeholder: () -> Content) -> some View {
             
             ZStack {
-                placeholder().opacity(shouldShow ? 1 : 0)
+                placeholder()
+                    .opacity(shouldShow ? 1 : 0)
                 self
             }
         }

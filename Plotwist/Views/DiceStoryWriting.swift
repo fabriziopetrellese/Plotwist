@@ -95,7 +95,12 @@ struct DiceStoryWriting: View {
             }
             
             ToolbarItem(placement: .keyboard) {
-                hideKeyboardButton()
+                Button {
+                    hideKeyboard()
+                } label: {
+                    Text("Done")
+                        .fontWeight(.bold)
+                }
             }
         }
         .blur(radius: alertClass.showingAlert ? 12 : 0)

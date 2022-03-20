@@ -118,7 +118,12 @@ struct Storystarters: View {
                 }
             }
             ToolbarItem(placement: .keyboard) {
-                hideKeyboardButton()
+                Button {
+                    hideKeyboard()
+                } label: {
+                    Text("Done")
+                        .fontWeight(.bold)
+                }
             }
 //            ToolbarItem(placement: .principal) {
 //                Text("\(timeRemaining)")
