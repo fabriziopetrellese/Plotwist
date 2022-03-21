@@ -21,6 +21,7 @@ struct Storystarters: View {
 //    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     let placeholder: LocalizedStringKey = "placeholder"
     let button2: LocalizedStringKey = "button2"
+    let doneKeyboard: LocalizedStringKey = "doneKeyboard"
     
     func saveStory(story: String, incipit: String, index: Int) {
         storiesModel.stories[index] = story
@@ -121,7 +122,7 @@ struct Storystarters: View {
                 Button {
                     hideKeyboard()
                 } label: {
-                    Text("Done")
+                    Text(doneKeyboard)
                         .fontWeight(.bold)
                 }
             }

@@ -56,6 +56,8 @@
 
 "addButton" = "Add new player";
 
+"doneKeyboard" = "Done";
+
 //NEXT TURN
 
 "button3" = "I'm here!";

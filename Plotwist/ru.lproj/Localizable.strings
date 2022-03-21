@@ -54,7 +54,9 @@
 
 "button1" = "Готово";
 
-"addButton" = "Добавить нового игрока";
+"addButton" = "Добавить игрок";
+
+"doneKeyboard" = "Готово";
 
 //NEXT TURN
 

@@ -22,6 +22,7 @@ struct GuidedView: View {
     let player5: LocalizedStringKey = "player5"
     let player6: LocalizedStringKey = "player6"
     let button1: LocalizedStringKey = "button1"
+    let doneKeyboard: LocalizedStringKey = "doneKeyboard"
 //    let addButton: LocalizedStringKey = "addButton"
     
     
@@ -235,22 +236,22 @@ struct GuidedView: View {
             }
             
             ToolbarItemGroup(placement: .keyboard) {
-                Spacer()
+//                Spacer()
                 Button {
                     hideKeyboard()
                 } label: {
-                    Text("Done")
+                    Text(doneKeyboard)
                         .fontWeight(.bold)
                 }
-                Button("Cancel") {
-                    hideKeyboard()
-                    playersModel.playersNames[0] = ""
-                    playersModel.playersNames[1] = ""
-                    playersModel.playersNames[2] = ""
-                    playersModel.playersNames[3] = ""
-                    playersModel.playersNames[4] = ""
-                    playersModel.playersNames[5] = ""
-                }
+//                Button("Cancel") {
+//                    hideKeyboard()
+//                    playersModel.playersNames[0] = ""
+//                    playersModel.playersNames[1] = ""
+//                    playersModel.playersNames[2] = ""
+//                    playersModel.playersNames[3] = ""
+//                    playersModel.playersNames[4] = ""
+//                    playersModel.playersNames[5] = ""
+//                }
             }
             
         }
