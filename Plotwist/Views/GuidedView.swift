@@ -235,22 +235,22 @@ struct GuidedView: View {
             }
             
             ToolbarItemGroup(placement: .keyboard) {
-                Spacer()
+//                Spacer()
                 Button {
                     hideKeyboard()
                 } label: {
                     Text("Done")
                         .fontWeight(.bold)
                 }
-                Button("Cancel") {
-                    hideKeyboard()
-                    playersModel.playersNames[0] = ""
-                    playersModel.playersNames[1] = ""
-                    playersModel.playersNames[2] = ""
-                    playersModel.playersNames[3] = ""
-                    playersModel.playersNames[4] = ""
-                    playersModel.playersNames[5] = ""
-                }
+//                Button("Cancel") {
+//                    hideKeyboard()
+//                    playersModel.playersNames[0] = ""
+//                    playersModel.playersNames[1] = ""
+//                    playersModel.playersNames[2] = ""
+//                    playersModel.playersNames[3] = ""
+//                    playersModel.playersNames[4] = ""
+//                    playersModel.playersNames[5] = ""
+//                }
             }
             
         }

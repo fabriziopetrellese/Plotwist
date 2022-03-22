@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct ARDiceView : View {
     var diceName: LocalizedStringKey
@@ -22,6 +23,17 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
+        
+        let session = arView.session
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = .horizontal
+        session.run(config)
+
+        let coachingOverlay = ARCoachingOverlayView()
+        coachingOverlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        coachingOverlay.session = session
+        coachingOverlay.goal = .horizontalPlane
+        arView.addSubview(coachingOverlay)
                 
         if categoriesModel.selectCategory(category: diceName) == 1 {
             let boxAnchor = try! Experience.loadVideogames()

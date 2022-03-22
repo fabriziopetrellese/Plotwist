@@ -161,8 +161,12 @@
                 "children" : {
                   "1AC1CB66-B0DF-4008-9397-CAC2BA3567CD" : null,
                   "2A79AFCB-55EC-4A68-8CD2-0C599BC5D4D1" : null,
+                  "2BCEFAA2-73A2-4413-B0EA-5D4F41217D9B" : null,
+                  "3AE59712-3159-4E7F-8E87-EB8C29975EE4" : null,
                   "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
+                  "5B809CF5-5664-404D-9902-25A91A5F1CE0" : null,
                   "6E112ECB-32D1-461F-95B9-3FBE2D1B1F10" : null,
+                  "6FF4D0BD-DC98-43DA-80C3-103EEFF5C0FB" : null,
                   "7A70878F-DC07-40E5-B651-8389882E24E2" : {
                     "overrides" : {
                       "children" : {
@@ -457,9 +461,15 @@
                       ]
                     }
                   },
+                  "28E43A31-B906-49EB-B729-F2F661CCDD40" : null,
+                  "46AA9A3F-BE67-4812-B1A9-93C0A77C0907" : null,
+                  "51D53FEF-E89C-4E10-BC43-D2C2CDFBEB82" : null,
                   "57A10A3B-DC35-44FA-BE89-5FA5C8DF7D6B" : null,
                   "61A73728-50A1-49CD-9842-1764166E594A" : null,
+                  "075F7B01-E7E7-4BD3-B195-A74ABA7F0C83" : null,
                   "85F6857C-A81F-4B5C-B4CC-F3E6FAF41A97" : null,
+                  "91A9EDC1-EF50-44A2-B0BA-99B4D42BC084" : null,
+                  "273C4DEC-D5AE-4DCD-9902-4DB4392F4D8F" : null,
                   "588D564F-95DE-4CD5-9649-F8A37DE2E02D" : null,
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
                   "681A3EB3-7B05-4CE2-BA68-4AA67CCCFE74" : null,
@@ -487,7 +497,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:cbf8fb2280edc73ce77b1f5f79073f7f\/diceGames4.usdz"
+                                  "value" : "model:f85f4d5c2d46ca9d26d03c55df63782e\/diceGames4.usdz"
                                 }
                               ],
                               [
@@ -507,7 +517,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "B88564A5-22DB-4B43-ADCA-7BF1538A12D7"
+                                  "value" : "0FE5A3D1-A137-4769-B95E-CD1AEDD4242D"
                                 }
                               ]
                             ]
@@ -609,8 +619,14 @@
                       ]
                     }
                   },
+                  "2405DA2B-6907-46A4-86D9-BA6F884375EB" : null,
+                  "25485B4C-A21C-467E-A3AD-64FBF71A3048" : null,
+                  "285874AF-DAF2-446F-ADF4-F64ECE41C422" : null,
+                  "406902B5-2390-40DA-856C-E567CC48BB83" : null,
+                  "681791D0-EBF5-4162-B433-EEE5489F8CD3" : null,
                   "1488007A-36D3-4660-9B34-5F3F76E791AE" : null,
                   "2115638C-4704-4F20-8E0E-4DE7C4F3AC6C" : null,
+                  "09393763-11B8-4CC5-86B3-42877783BA45" : null,
                   "14695035-64E5-476F-A18A-1766ADB982B7" : null,
                   "A2A5A371-267C-428A-B8A3-D7B88E99B54A" : null,
                   "A215F881-7927-4B0E-BFDD-44B100FC1A8A" : {
@@ -759,6 +775,9 @@
                       ]
                     }
                   },
+                  "A4903775-0E52-4EA7-AE69-6BC6DB98148C" : null,
+                  "ADCD14B4-D35E-4AB2-8A21-C36CADC20138" : null,
+                  "B43C17A1-F8EB-4679-A5F0-A0AC30803E1C" : null,
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
                   "B39393AD-353C-4E90-8D67-5ECE81E64F3D" : {
                     "overrides" : {
@@ -944,7 +963,14 @@
                       ]
                     }
                   },
-                  "CC9AE0A0-4A9C-4EB6-A285-7820A1969E8B" : null
+                  "BF073EEC-5E27-49BE-9245-1EFD55C90282" : null,
+                  "CA21A73E-B42E-476A-B337-AA800C21887D" : null,
+                  "CC9AE0A0-4A9C-4EB6-A285-7820A1969E8B" : null,
+                  "CD7ED1D0-EE91-44B2-B9C1-67461CED6FDD" : null,
+                  "F21A29BF-7B4C-46E6-9999-AAC48739D917" : null,
+                  "F50D5B37-8C60-4F39-ABF6-CC0F16D11266" : null,
+                  "F246A88F-E8E2-4B22-BC66-78383455BFC6" : null,
+                  "FFB1B2CB-2098-47B0-A2C1-46C6F9EB5BA7" : null
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -961,21 +987,21 @@
               "title" : "Videogames",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99999779462814331,
-                  -6.8656277107947972e-08,
-                  0.0020818552002310753,
+                  -0.34702658653259277,
+                  -1.847983668312736e-07,
+                  0.9378553032875061,
                   0,
-                  0.00086692883633077145,
-                  0.90919697284698486,
-                  -0.41636541485786438,
+                  0.68045532703399658,
+                  0.68817567825317383,
+                  0.25178301334381104,
                   0,
-                  -0.0018926007905974984,
-                  0.41636624932289124,
-                  0.90919500589370728,
+                  -0.64540916681289673,
+                  0.725544273853302,
+                  -0.23881490528583527,
                   0,
-                  -0.23483105003833771,
-                  0.53499460220336914,
-                  0.92823177576065063,
+                  -4.1487350463867188,
+                  5.862328052520752,
+                  -1.0556740760803223,
                   1
                 ],
                 "sceneTransform" : [
