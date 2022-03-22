@@ -22,6 +22,7 @@ struct GuidedView: View {
     let player5: LocalizedStringKey = "player5"
     let player6: LocalizedStringKey = "player6"
     let button1: LocalizedStringKey = "button1"
+    let doneKeyboard: LocalizedStringKey = "doneKeyboard"
 //    let addButton: LocalizedStringKey = "addButton"
     
     
@@ -239,7 +240,7 @@ struct GuidedView: View {
                 Button {
                     hideKeyboard()
                 } label: {
-                    Text("Done")
+                    Text(doneKeyboard)
                         .fontWeight(.bold)
                 }
 //                Button("Cancel") {

@@ -34,7 +34,7 @@
 
 "incipit6" = "Et depuis lors";
 
-"button2" = "Fini";
+"button2" = "Fait";
 
 //GUIDED VIEW
 
@@ -54,7 +54,9 @@
 
 "button1" = "Pret";
 
-"addButton" = "Ajouter nouveau joueur";
+"addButton" = "Nouveau joueur";
+
+"doneKeyboard" = "Fait";
 
 //NEXT TURN
 

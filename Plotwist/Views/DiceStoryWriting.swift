@@ -17,6 +17,7 @@ struct DiceStoryWriting: View {
     
     let placeholder: LocalizedStringKey = "placeholder"
     let button2: LocalizedStringKey = "button2"
+    let doneKeyboard: LocalizedStringKey = "doneKeyboard"
     
     func saveDiceStory(story: String, index: Int) {
         storiesModel.stories[index] = story
@@ -98,7 +99,7 @@ struct DiceStoryWriting: View {
                 Button {
                     hideKeyboard()
                 } label: {
-                    Text("Done")
+                    Text(doneKeyboard)
                         .fontWeight(.bold)
                 }
             }

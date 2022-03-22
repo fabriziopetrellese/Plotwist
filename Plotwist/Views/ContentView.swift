@@ -71,7 +71,7 @@ struct ContentView: View {
         .preferredColorScheme(.light)
         .onAppear(){
             MusicClass.shared.setup()
-//            MusicClass.shared.play()
+            MusicClass.shared.play()
         }
     }
 }
