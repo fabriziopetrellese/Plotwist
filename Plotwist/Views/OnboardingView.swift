@@ -55,7 +55,7 @@ struct FirstPageView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .frame(width: 280)
+//                .frame(width: 280)
                 .padding(24)
 
             Image(image)
@@ -69,10 +69,10 @@ struct FirstPageView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .frame(width: 280)
+//                .frame(width: 280)
                 .padding(24)
         }
-        .padding(.bottom, 288)
+        .padding(.bottom, 179)
     }
 }
 
@@ -98,7 +98,7 @@ struct SecondPageView: View {
                 .frame(width: 249.55, height: 153.99)
                 .padding(48)
         }
-        .padding(.bottom, 288)
+        .padding(.bottom, 179)
     }
 }
 
@@ -115,9 +115,11 @@ struct ThirdPageView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .frame(width: 320, height: 380)
-                .padding(128)
+                .padding(.horizontal, 30)
+                .padding(.horizontal)
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.55 * UIScreen.main.bounds.height)
             
+            Spacer()
             
             if showsDismissButton {
                 Button {
@@ -125,14 +127,14 @@ struct ThirdPageView: View {
                 } label: {
                     ButtonsModel(label: buttonLabel)
                 }
-                .padding(160)
+//                .padding(.bottom)
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.25 * UIScreen.main.bounds.height)
             } else {
                 ZStack {
-                    
                 }
-                .padding(160)
+//                .padding(.bottom)
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.25 * UIScreen.main.bounds.height)
             }
-             
         }
     }
 }
@@ -140,5 +142,6 @@ struct ThirdPageView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView(shouldShowOnboarding: .constant(true))
+            .environment(\.locale, .init(identifier: "it"))
     }
 }

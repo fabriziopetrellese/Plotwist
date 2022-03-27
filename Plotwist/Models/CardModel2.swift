@@ -36,7 +36,8 @@ struct CardModel2: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 25)
                     .padding(.bottom, 32)
-                    .padding(.horizontal, 69.3)
+//                    .padding(.horizontal, 69.3)
+                    .padding(.horizontal, 50)
             }
         }
     }

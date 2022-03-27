@@ -19,11 +19,14 @@ struct DiceCategories: View {
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 28)
-                .padding(.bottom, 40)
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.25 * UIScreen.main.bounds.height)
+                .padding(.bottom)
             
             CategoriesListModel()
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.65 * UIScreen.main.bounds.height)
+                .padding(.bottom)
             
-            Spacer()
+//            Spacer()
         }
         .background(
             Image("Background")
@@ -48,7 +51,7 @@ struct DiceCategories: View {
 struct DiceCategories_Previews: PreviewProvider {
     static var previews: some View {
         DiceCategories()
-//            .environment(\.locale, .init(identifier: "ru"))
+//            .environment(\.locale, .init(identifier: "it"))
             .environmentObject(CategoriesModel())
     }
 }

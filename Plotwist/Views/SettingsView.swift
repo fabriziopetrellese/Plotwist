@@ -21,9 +21,11 @@ struct SettingsView: View {
             if music {
             Image("ominomusic")
                     .padding(.leading, 197)
+                    .frame(width: 1 * UIScreen.main.bounds.width, height: 0.107 * UIScreen.main.bounds.height)
             } else {
                 Image("ominomusicOff")
                     .padding(.leading, 197)
+                    .frame(width: 1 * UIScreen.main.bounds.width, height: 0.107 * UIScreen.main.bounds.height)
             }
             
             Toggle(isOn: $music) {

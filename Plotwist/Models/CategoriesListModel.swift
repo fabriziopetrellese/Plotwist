@@ -15,7 +15,7 @@ struct CategoriesListModel: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(width: 334, height: 487, alignment: .center)
+//                .frame(width: 334, height: 487, alignment: .center)
                 .cornerRadius(20)
                 .foregroundColor(.listBackground)
             
@@ -27,9 +27,10 @@ struct CategoriesListModel: View {
                 }
                 .padding(.vertical, 17)
             }
-            .frame(width: 334, height: 487, alignment: .center)
+//            .frame(width: 334, height: 487, alignment: .center)
         }
-        .frame(width: 334, height: 487, alignment: .center)
+//        .frame(width: 334, height: 487, alignment: .center)
+        .padding(.horizontal)
     }
 }
 
