@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var navigationRoot = NavigationRoot()
     @State var isView1Active: Bool = false
-    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+//    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
     let text1: LocalizedStringKey = "text1"
     let text2: LocalizedStringKey = "text2"
@@ -26,6 +26,7 @@ struct ContentView: View {
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     CardModel1(title: text1, description: text4)
+                        .frame(width: 1 * UIScreen.main.bounds.width, height: 0.21 * UIScreen.main.bounds.height)
                         .padding(.top, -50)
                 }
                 .isDetailLink(false)
@@ -53,9 +54,9 @@ struct ContentView: View {
                     .ignoresSafeArea()
             )
         }
-        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
-            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-        })
+//        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+//            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+//        })
         .onReceive(navigationRoot.$backToRoot) { moveToDashboard in
             if moveToDashboard {
                 isView1Active = false
@@ -71,7 +72,7 @@ struct ContentView: View {
         .preferredColorScheme(.light)
         .onAppear(){
             MusicClass.shared.setup()
-            MusicClass.shared.play()
+//            MusicClass.shared.play()
         }
     }
 }
