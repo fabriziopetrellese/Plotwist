@@ -41,7 +41,8 @@ struct SettingsView: View {
                     MusicClass.shared.pause()
                 }
             }
-            Button {
+            NavigationLink {
+                CompletedStories()
             } label: {
                 ZStack {
                     Image("settingsbutton")

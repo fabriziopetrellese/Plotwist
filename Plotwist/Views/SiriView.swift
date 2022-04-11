@@ -12,6 +12,8 @@ struct SiriView: View {
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
     @EnvironmentObject var alertClass: AlertClass
+    
+    @FetchRequest(sortDescriptors: []) var completestories: FetchedResults<CompleteStory>
         
     let finalTitle: LocalizedStringKey = "finalTitle"
     let language: LocalizedStringKey = "language"
@@ -20,8 +22,6 @@ struct SiriView: View {
     
 //    let synthesizer = AVSpeechSynthesizer()
     let lang = String(format: NSLocalizedString("language", comment: ""))
-
-
     
     var body: some View {
         VStack {
@@ -62,6 +62,7 @@ struct SiriView: View {
             }
             
             Button {
+                DataController.shared.saveStory(storia: storiesModel.fullStory)
                 alertClass.showingAlert = true
 //                alertClass.synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
             } label: {
