@@ -10,6 +10,8 @@ import SwiftUI
 struct CategoriesButtonModel: View {
     var content: LocalizedStringKey
     
+    @EnvironmentObject var categoriesModel: CategoriesModel
+    
     var body: some View {
         ZStack {
             let categoryButton = RoundedRectangle(cornerRadius: 20)
@@ -18,7 +20,7 @@ struct CategoriesButtonModel: View {
                 .shadow(color: .black, radius: 5, x: -1.5, y: 2)
             
             NavigationLink {
-                DiceView(diceName: content)
+                DiceView()
             } label: {
                 ZStack {
                     categoryButton
@@ -28,8 +30,10 @@ struct CategoriesButtonModel: View {
                         .fontWeight(.bold)
                 }
                 .frame(width: 320, height: 96, alignment: .center)
-                
             }
+            .simultaneousGesture(TapGesture().onEnded{
+                categoriesModel.selectCategory(category: content)
+            })
             
 
             
@@ -41,6 +45,7 @@ struct CategoriesButtonModel: View {
 struct CategoriesButtonModel_Previews: PreviewProvider {
     static var previews: some View {
         CategoriesButtonModel(content: "")
+            .environmentObject(CategoriesModel())
     }
 }
 

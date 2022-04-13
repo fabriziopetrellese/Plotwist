@@ -9,7 +9,12 @@ import Foundation
 
 class NavigationRoot: ObservableObject {
     @Published var backToRoot = false
-    
     @Published var mode1 = false
     @Published var mode2 = false
+    
+    func exit() {
+        mode1 = false
+        mode2 = false
+        backToRoot = true
+    }
 }

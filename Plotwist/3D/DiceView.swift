@@ -12,42 +12,62 @@ struct DiceView: View {
     @EnvironmentObject var navigationRoot: NavigationRoot
     
     let button2: LocalizedStringKey = "button2"
-    var diceName: LocalizedStringKey
+
     
     var body: some View {
-        
-        ZStack {
-            ARDiceView(diceName: diceName)
-            
-            VStack {
-                Spacer()
-                if navigationRoot.mode2 {
-                    NavigationLink {
-                        DiceStoryWriting()
-                    } label: {
-                        ButtonsModel(label: button2)
+        if navigationRoot.mode2 {
+            ARDiceView()
+                .ignoresSafeArea()
+                .navigationBarBackButtonHidden(true)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            backAr()
+                        } label: {
+                            Image(systemName: "arrowshape.turn.up.backward.fill")
+                                .foregroundColor(.black)
+                        }
                     }
-                    .padding(.bottom, 50)
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink {
+                            DiceStoryWriting()
+                        } label: {
+                            Text(button2)
+                                .foregroundColor(.black)
+                        }
+                    }
                 }
-            }
-        }
-        .ignoresSafeArea()
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    backAr()
-                } label: {
-                    Image(systemName: "arrowshape.turn.up.backward.fill")
-                        .foregroundColor(.black)
+        } else {
+            ARDiceView()
+                .ignoresSafeArea()
+                .navigationBarBackButtonHidden(true)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            backAr()
+                        } label: {
+                            Image(systemName: "arrowshape.turn.up.backward.fill")
+                                .foregroundColor(.black)
+                        }
+                    }
                 }
-            }
         }
     }
 }
 
 struct DiceView_Previews: PreviewProvider {
     static var previews: some View {
-        DiceView(diceName: "")
+        DiceView()
     }
 }
+
+/*
+ if navigationRoot.mode2 {
+     NavigationLink {
+
+     } label: {
+         ButtonsModel(label: button2)
+     }
+     .padding(.bottom, 50)
+ }
+ */

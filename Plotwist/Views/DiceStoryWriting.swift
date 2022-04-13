@@ -19,10 +19,7 @@ struct DiceStoryWriting: View {
     let button2: LocalizedStringKey = "button2"
     let doneKeyboard: LocalizedStringKey = "doneKeyboard"
     
-    func saveDiceStory(story: String, index: Int) {
-        storiesModel.stories[index] = story
-        storiesModel.fullStory += story + ".\n"
-    }
+
     
     init() {
         UITextView.appearance().backgroundColor = .clear
@@ -31,11 +28,21 @@ struct DiceStoryWriting: View {
     var body: some View {
         VStack {
             HStack {
-                Text("")
-                    .font(Font.custom("Life Savers", size: 33))
-                    .fontWeight(.heavy)
-                    .padding(.trailing, 121)
-                    .padding(.leading)
+                if storiesModel.index == 0 {
+                    Text("Here will appear your last four words to the next player")
+                        .font(Font.custom("Life Savers", size: 30))
+                        .fontWeight(.heavy)
+    //                    .padding(.trailing, 121)
+                        .padding(.leading)
+
+                } else {
+                    Text("..." + storiesModel.lastFourWords())
+                        .font(Font.custom("Life Savers", size: 30))
+                        .fontWeight(.heavy)
+    //                    .padding(.trailing, 121)
+                        .padding(.leading)
+                }
+
                 Spacer()
             }
             ZStack(alignment: .leading) {
@@ -70,9 +77,7 @@ struct DiceStoryWriting: View {
                 if storiesModel.index < 6 {
                     playersModel.nextPlayer()
                 }
-                saveDiceStory(story: story, index: storiesModel.index)
-                storiesModel.index += 1
-                storiesModel.turnNumber += 1
+                storiesModel.nextSecondMode(storia: story)
             })
         }
         .ignoresSafeArea(.keyboard)
@@ -118,3 +123,4 @@ struct DiceStoryWriting_Previews: PreviewProvider {
             .environmentObject(AlertClass())
     }
 }
+
