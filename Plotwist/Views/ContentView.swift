@@ -54,9 +54,9 @@ struct ContentView: View {
                     .ignoresSafeArea()
             )
         }
-//        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
-//            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-//        })
+        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+        })
         .onReceive(navigationRoot.$backToRoot) { moveToDashboard in
             if moveToDashboard {
                 isView1Active = false
@@ -72,7 +72,7 @@ struct ContentView: View {
         .preferredColorScheme(.light)
         .onAppear(){
             MusicClass.shared.setup()
-//            MusicClass.shared.play()
+            MusicClass.shared.play()
         }
     }
 }

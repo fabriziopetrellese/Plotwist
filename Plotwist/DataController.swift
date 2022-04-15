@@ -47,7 +47,7 @@ final class DataController {
         save()
     }
     
-    func deletePass(completeStory: CompleteStory) {
+    func deleteStory(completeStory: CompleteStory) {
         viewContext.delete(completeStory)
         save()
     }

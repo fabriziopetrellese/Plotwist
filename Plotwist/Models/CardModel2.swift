@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CardModel2: View {
-    @State var title: LocalizedStringKey = "Dice Storytelling"
-    @State var description: LocalizedStringKey = "Create a story with only dice"
+    let title: LocalizedStringKey
+    let description: LocalizedStringKey
     
     var body: some View {
         ZStack {
@@ -45,6 +45,7 @@ struct CardModel2: View {
 
 struct CardModel2_Previews: PreviewProvider {
     static var previews: some View {
-        CardModel2()
+        CardModel2(title: "Dice Storytelling", description: "Create a story with only dice")
     }
 }
+
