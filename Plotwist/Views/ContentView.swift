@@ -51,9 +51,7 @@ struct ContentView: View {
             .padding(.bottom, 95)
             .background(
                 Image("BACK")
-                    .ignoresSafeArea()
-                    .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
-            )
+                    .ignoresSafeArea()            )
         }
         .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
             OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
