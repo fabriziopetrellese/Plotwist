@@ -141,3 +141,7 @@
 "cat6" = "Sport";
 
 "diceCategories" = "Scegli una categoria di dadi";
+
+//DICE STORYWRITING
+
+"firstTurnMessage" = "Qui appariranno al prossimo giocatorè le tue ultime 4 parole";

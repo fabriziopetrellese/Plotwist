@@ -141,3 +141,7 @@
 "cat6" = "Deporte";
 
 "diceCategories" = "Seleccionar categorias de dados";
+
+//DICE STORYWRITING
+
+"firstTurnMessage" = "Aquí aparecerán tus últimas cuatro palabras para el siguiente jugador";

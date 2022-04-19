@@ -33,6 +33,7 @@ struct OnboardingView: View {
         .background(
             Image("BACK")
                 .ignoresSafeArea()
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
         )
     }
     

@@ -18,6 +18,7 @@ struct SettingsView: View {
     
     var body: some View {
         VStack {
+/*
             if music {
             Image("ominomusic")
                     .padding(.leading, 197)
@@ -43,6 +44,23 @@ struct SettingsView: View {
                     MusicClass.shared.pause()
                 }
             }
+*/
+            Button {
+                
+            } label: {
+                ZStack {
+                    Image("settingsbutton")
+                        .padding(.top, 30)
+                    HStack {
+                        Text(startersCreation)
+                            .font(Font.custom("Life Savers", size: 29))
+                            .fontWeight(.heavy)
+                            .foregroundColor(.black)
+                            .padding(.top, 27)
+                    }.padding(.horizontal, 68)
+                }
+            }
+/*
             NavigationLink {
                 CompletedStories()
             } label: {
@@ -58,6 +76,7 @@ struct SettingsView: View {
                     }.padding(.horizontal, 68)
                 }
             }
+ */
             CreditsView()
                 .padding(.top, 65)
             Spacer()

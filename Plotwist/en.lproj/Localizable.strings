@@ -141,3 +141,7 @@
 "cat6" = "Sports";
 
 "diceCategories" = "Select dice categories";
+
+//DICE STORYWRITING
+
+"firstTurnMessage" = "Here your last four words will appear to the next player";

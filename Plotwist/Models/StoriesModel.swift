@@ -15,14 +15,14 @@ class StoriesModel: ObservableObject {
     
     func nextFirstMode(storia: String, inizio: String) {
         stories[index] = storia
-        fullStory += inizio + " " + storia + ".\n"
+        fullStory += inizio + " " + storia + ". "
         index += 1
         turnNumber += 1
     }
     
     func nextSecondMode(storia: String) {
         stories[index] = storia
-        fullStory += storia + ".\n"
+        fullStory += storia + ". "
         index += 1
         turnNumber += 1
     }

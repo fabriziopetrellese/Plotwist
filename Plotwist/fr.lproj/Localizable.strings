@@ -141,3 +141,7 @@
 "cat6" = "Sport";
 
 "diceCategories" = "Selectionner les categories de des";
+
+//DICE STORYWRITING
+
+"firstTurnMessage" = "Ici apparaîtront vos quatre derniers mots au prochain joueur";

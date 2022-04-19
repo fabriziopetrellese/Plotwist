@@ -52,6 +52,7 @@ struct ContentView: View {
             .background(
                 Image("BACK")
                     .ignoresSafeArea()
+                    .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
             )
         }
         .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
@@ -70,10 +71,12 @@ struct ContentView: View {
         .environmentObject(CategoriesModel())
         .environmentObject(navigationRoot)
         .preferredColorScheme(.light)
+/*
         .onAppear(){
             MusicClass.shared.setup()
             MusicClass.shared.play()
         }
+ */
     }
 }
 

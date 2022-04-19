@@ -19,6 +19,7 @@ struct DiceStoryWriting: View {
     let button2: LocalizedStringKey = "button2"
     let doneKeyboard: LocalizedStringKey = "doneKeyboard"
     
+    let firstTurnMessage: LocalizedStringKey = "firstTurnMessage"
 
     
     init() {
@@ -29,7 +30,7 @@ struct DiceStoryWriting: View {
         VStack {
             HStack {
                 if storiesModel.index == 0 {
-                    Text("Here will appear your last four words to the next player")
+                    Text(firstTurnMessage)
                         .font(Font.custom("Life Savers", size: 30))
                         .fontWeight(.heavy)
     //                    .padding(.trailing, 121)
