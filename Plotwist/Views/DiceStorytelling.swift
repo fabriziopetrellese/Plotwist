@@ -32,8 +32,8 @@ struct DiceStorytelling: View {
         }
         .background(
             Image("Background")
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
                 .ignoresSafeArea()
-                .position(x: 189, y: 400)
         )
         .blur(radius: alertClass.showingAlert ? 9 : 0)
         .navigationBarBackButtonHidden(true)
