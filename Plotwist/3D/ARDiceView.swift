@@ -9,57 +9,63 @@ import SwiftUI
 import RealityKit
 
 struct ARDiceView : View {
-    var diceName: LocalizedStringKey
-    
     var body: some View {
-        return ARViewContainer(diceName: diceName).edgesIgnoringSafeArea(.all)
+        return ARViewContainer().edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
     @EnvironmentObject var categoriesModel: CategoriesModel
-    var diceName: LocalizedStringKey
-    
+        
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
-                
-        if categoriesModel.selectCategory(category: diceName) == 1 {
+      
+        arView.renderOptions = [.disableMotionBlur,
+                                .disableDepthOfField,
+                                .disablePersonOcclusion,
+                                .disableGroundingShadows,
+                                .disableFaceMesh,
+                                .disableHDR]
+   
+        switch categoriesModel.selectedCategory {
+        case 1:
             let boxAnchor = try! Experience.loadVideogames()
             arView.scene.anchors.append(boxAnchor)
-        }
-        if categoriesModel.selectCategory(category: diceName) == 2 {
+            
+        case 2:
             let boxAnchor = try! Experience.loadTravel()
             arView.scene.anchors.append(boxAnchor)
-        }
-        if categoriesModel.selectCategory(category: diceName) == 3 {
+            
+        case 3:
             let boxAnchor = try! Experience.loadAnimals()
             arView.scene.anchors.append(boxAnchor)
-        }
-        if categoriesModel.selectCategory(category: diceName) == 4 {
+
+        case 4:
             let boxAnchor = try! Experience.loadFood()
             arView.scene.anchors.append(boxAnchor)
-        }
-        if categoriesModel.selectCategory(category: diceName) == 5 {
+            
+        case 5:
             let boxAnchor = try! Experience.loadEmotions()
             arView.scene.anchors.append(boxAnchor)
-        }
-        if categoriesModel.selectCategory(category: diceName) == 6 {
+            
+        case 6:
             let boxAnchor = try! Experience.loadSports()
             arView.scene.anchors.append(boxAnchor)
+            
+        default:
+            print("ERROR")
         }
-        
+                
         return arView
-        
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
-    
 }
 
 #if DEBUG
 struct ARDiceView_Previews : PreviewProvider {
     static var previews: some View {
-        ARDiceView(diceName: "")
+        ARDiceView()
             .environmentObject(CategoriesModel())
     }
 }

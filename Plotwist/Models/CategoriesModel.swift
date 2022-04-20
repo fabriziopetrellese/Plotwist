@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 struct Category: Identifiable {
-    let cat: LocalizedStringKey
     let id = UUID()
+    let cat: LocalizedStringKey
 }
 
 class CategoriesModel: ObservableObject {
@@ -21,26 +21,31 @@ class CategoriesModel: ObservableObject {
                                              Category(cat: "cat5"),
                                              Category(cat: "cat6"),]
     
-    func selectCategory(category: LocalizedStringKey) -> Int {
-        if category == "cat1" {
-            return 1
+    @Published var selectedCategory: Int = 0;
+    
+    func selectCategory(category: LocalizedStringKey) {
+        switch category {
+        case "cat1":
+            selectedCategory = 1
+            
+        case "cat2":
+            selectedCategory = 2
+            
+        case "cat3":
+            selectedCategory = 3
+            
+        case "cat4":
+            selectedCategory = 4
+            
+        case  "cat5":
+            selectedCategory = 5
+            
+        case "cat6":
+            selectedCategory = 6
+            
+        default:
+            selectedCategory = 0
         }
-        if category == "cat2" {
-            return 2
-        }
-        if category == "cat3" {
-            return 3
-        }
-        if category == "cat4" {
-            return 4
-        }
-        if category == "cat5" {
-            return 5
-        }
-        if category == "cat6" {
-            return 6
-        }
-        return 0
     }
     
 }

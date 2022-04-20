@@ -32,6 +32,9 @@
 		49EB564627D2548C00E23086 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB564527D2548C00E23086 /* DiceView.swift */; };
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
 		B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */; };
+		B96303112800654C006E4E4D /* PlotwistDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B963030F2800654C006E4E4D /* PlotwistDatabase.xcdatamodeld */; };
+		B963031728006809006E4E4D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031628006809006E4E4D /* DataController.swift */; };
+		B963031928006E79006E4E4D /* CompletedStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031828006E79006E4E4D /* CompletedStories.swift */; };
 		B9910B6C27D5026400B712E2 /* Plotwist-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302E27BABB1300629633 /* Plotwist-Info.plist */; };
 		B9B66D0827E0D2E800E03D74 /* ARDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B66D0627E0D2E800E03D74 /* ARDiceView.swift */; };
 		B9B66D0927E0D2E800E03D74 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B9B66D0727E0D2E800E03D74 /* Experience.rcproject */; };
@@ -81,6 +84,9 @@
 		49EB564527D2548C00E23086 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
 		B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlayersNumberView.swift; sourceTree = "<group>"; };
+		B96303102800654C006E4E4D /* PlotwistDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlotwistDatabase.xcdatamodel; sourceTree = "<group>"; };
+		B963031628006809006E4E4D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B963031828006E79006E4E4D /* CompletedStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedStories.swift; sourceTree = "<group>"; };
 		B9B66D0627E0D2E800E03D74 /* ARDiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARDiceView.swift; sourceTree = "<group>"; };
 		B9B66D0727E0D2E800E03D74 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		B9B66D0A27E0E25100E03D74 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 				B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */,
 				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
+				B963031828006E79006E4E4D /* CompletedStories.swift */,
 				490C98A227BDF4E100574E1B /* CreditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
@@ -191,6 +198,8 @@
 				49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */,
 				49E7C59727BD32160043AD25 /* ThemeColors.swift */,
 				4981954C27C1F6BA0037E81E /* MusicClass.swift */,
+				B963030F2800654C006E4E4D /* PlotwistDatabase.xcdatamodeld */,
+				B963031628006809006E4E4D /* DataController.swift */,
 				B9D78E7A27CFA7370083BB3C /* Localizable.strings */,
 				49AC302227BAB75900629633 /* Assets.xcassets */,
 				49AC302427BAB75900629633 /* Preview Content */,
@@ -318,6 +327,7 @@
 				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
 				B9D78E8627CFB6A10083BB3C /* SettingsButtonModel.swift in Sources */,
 				B9B66D0927E0D2E800E03D74 /* Experience.rcproject in Sources */,
+				B96303112800654C006E4E4D /* PlotwistDatabase.xcdatamodeld in Sources */,
 				B9B66D0B27E0E25100E03D74 /* CategoriesModel.swift in Sources */,
 				B9B7F67327CE6F930064A8B3 /* NavigationRoot.swift in Sources */,
 				49AC302127BAB75900629633 /* ContentView.swift in Sources */,
@@ -330,12 +340,14 @@
 				49E7C59F27BD32160043AD25 /* DiceCategories.swift in Sources */,
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
+				B963031728006809006E4E4D /* DataController.swift in Sources */,
 				B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */,
 				B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */,
 				B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */,
 				4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */,
 				49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */,
 				49E7C59E27BD32160043AD25 /* CategoriesListModel.swift in Sources */,
+				B963031928006E79006E4E4D /* CompletedStories.swift in Sources */,
 				492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */,
 				49124DB027C1E22200CCECAF /* SiriView.swift in Sources */,
 			);
@@ -483,10 +495,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -508,7 +521,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,10 +530,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -542,7 +556,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -568,6 +582,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B963030F2800654C006E4E4D /* PlotwistDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B96303102800654C006E4E4D /* PlotwistDatabase.xcdatamodel */,
+			);
+			currentVersion = B96303102800654C006E4E4D /* PlotwistDatabase.xcdatamodel */;
+			path = PlotwistDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 49AC301327BAB75900629633 /* Project object */;
 }

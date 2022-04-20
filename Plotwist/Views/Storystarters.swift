@@ -22,12 +22,7 @@ struct Storystarters: View {
     let placeholder: LocalizedStringKey = "placeholder"
     let button2: LocalizedStringKey = "button2"
     let doneKeyboard: LocalizedStringKey = "doneKeyboard"
-    
-    func saveStory(story: String, incipit: String, index: Int) {
-        storiesModel.stories[index] = story
-        storiesModel.fullStory += incipit + " " + story + ".\n"
-    }
-    
+        
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
@@ -35,7 +30,6 @@ struct Storystarters: View {
     var body: some View {
         VStack {
             HStack {
-//                incipitsModel.currentIncipit
                 Text(incipitsModel.currentIncipit)
                     .font(Font.custom("Life Savers", size: 33))
                     .fontWeight(.heavy)
@@ -76,9 +70,7 @@ struct Storystarters: View {
                 if storiesModel.index < 6 {
                     playersModel.nextPlayer()
                 }
-                saveStory(story: story, incipit: incipitsModel.currentIncipit, index: storiesModel.index)
-                storiesModel.index += 1
-                storiesModel.turnNumber += 1
+                storiesModel.nextFirstMode(storia: story, inizio: incipitsModel.currentIncipit)
             })
         }
         .ignoresSafeArea(.keyboard)

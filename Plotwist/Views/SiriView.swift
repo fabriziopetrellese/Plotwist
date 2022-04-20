@@ -12,16 +12,15 @@ struct SiriView: View {
     @EnvironmentObject var storiesModel: StoriesModel
     @EnvironmentObject var navigationRoot: NavigationRoot
     @EnvironmentObject var alertClass: AlertClass
+    
+    @FetchRequest(sortDescriptors: []) var completestories: FetchedResults<CompleteStory>
         
     let finalTitle: LocalizedStringKey = "finalTitle"
     let language: LocalizedStringKey = "language"
     let speech: LocalizedStringKey = "speech"
     let menu: LocalizedStringKey = "menu"
     
-//    let synthesizer = AVSpeechSynthesizer()
     let lang = String(format: NSLocalizedString("language", comment: ""))
-
-
     
     var body: some View {
         VStack {
@@ -46,22 +45,13 @@ struct SiriView: View {
             Spacer()
             
             Button {
-                if alertClass.synthesizer.isSpeaking == false {
-                    let utterance = AVSpeechUtterance(string: storiesModel.fullStory)
-                    utterance.voice = AVSpeechSynthesisVoice(language: lang)
-                    utterance.rate = 0.42
-                    alertClass.synthesizer.speak(utterance)
-                } else {
-                    alertClass.synthesizer.pauseSpeaking(at: AVSpeechBoundary.immediate)
-                }
-                if alertClass.synthesizer.isPaused {
-                    alertClass.synthesizer.continueSpeaking()
-                }
+                alertClass.handleSynthesizer(storiaCompleta: storiesModel.fullStory, lingua: lang)
             } label: {
                 ButtonsIconModel(label: speech, icon: "person.wave.2.fill")
             }
             
             Button {
+                DataController.shared.saveStory(storia: storiesModel.fullStory)
                 alertClass.showingAlert = true
 //                alertClass.synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
             } label: {

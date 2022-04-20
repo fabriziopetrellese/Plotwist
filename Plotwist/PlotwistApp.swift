@@ -11,7 +11,7 @@ import SwiftUI
 struct PlotwistApp: App {
     @State var splashOpacity = 1.0
     @State var moveIcon = false
-
+    let dataController = DataController.shared
     
     var body: some Scene {
         WindowGroup {
@@ -24,6 +24,7 @@ struct PlotwistApp: App {
                             .opacity(splashOpacity)
                             .animation(Animation.easeOut.delay(1.1), value: moveIcon)
                 )
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

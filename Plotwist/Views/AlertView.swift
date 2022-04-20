@@ -48,14 +48,12 @@ struct AlertView: View {
             }
             .offset(x: 77, y: 59)
             Button {
-                alertClass.yesQuit.toggle()
-                playersModel.playerButton = 0
-                navigationRoot.mode1 = false
-                navigationRoot.mode2 = false
-                navigationRoot.backToRoot = true
+                alertClass.yesQuit = true
                 if alertClass.yesQuit {
                     alertClass.synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
                 }
+                playersModel.playerButton = 0
+                navigationRoot.exit()
             } label: {
                 ZStack {
                     Image("yesAlert")

@@ -141,3 +141,7 @@
 "cat6" = "Sport";
 
 "diceCategories" = "Wahlen sie wurfel kategorien";
+
+//DICE STORYWRITING
+
+"firstTurnMessage" = "Hier erscheinen deine letzten vier Worte für den nächsten Spieler";
