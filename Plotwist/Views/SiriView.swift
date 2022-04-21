@@ -51,9 +51,7 @@ struct SiriView: View {
             }
             
             Button {
-                DataController.shared.saveStory(storia: storiesModel.fullStory)
                 alertClass.showingAlert = true
-//                alertClass.synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
             } label: {
                 ButtonsIconModel(label: menu, icon: "house.fill")
             }
@@ -65,6 +63,15 @@ struct SiriView: View {
                 .position(x: 180, y: 400)
         )
         .navigationBarBackButtonHidden(true)
+        .toolbar{
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    DataController.shared.saveStory(storia: storiesModel.fullStory)
+                } label: {
+                    Text("Save")
+                }
+            }
+        }
         .blur(radius: alertClass.showingAlert ? 9 : 0)
         if alertClass.showingAlert == true {
             AlertView()

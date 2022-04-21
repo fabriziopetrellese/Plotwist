@@ -45,8 +45,8 @@ struct SettingsView: View {
                 }
             }
 */
-            Button {
-                
+            NavigationLink {
+                CompletedStories()
             } label: {
                 ZStack {
                     Image("settingsbutton")

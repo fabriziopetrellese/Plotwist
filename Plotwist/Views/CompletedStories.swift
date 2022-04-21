@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CompletedStories: View {
+    @EnvironmentObject var alertClass: AlertClass
+    let lang = String(format: NSLocalizedString("language", comment: ""))
     
     @FetchRequest(
         entity: CompleteStory.entity(),
@@ -19,21 +21,25 @@ struct CompletedStories: View {
     
     var body: some View {
         if completedstories.count > 0 {
-            ScrollView(showsIndicators: false) {
-                VStack(spacing: 8) {
-                    ForEach(completedstories) { storiaCompleta in
-                        Text(storiaCompleta.storyfull!)
-                            .frame(width: 400, height: 200)
-            
-
-                    }
-
+            TabView {
+                ForEach(completedstories) { storiaCompleta in
+                    StoryCard(story: storiaCompleta.storyfull!)
                 }
-                .padding()
             }
-
+            .tabViewStyle(PageTabViewStyle())
+            .onAppear {
+                setupAppearance()
+            }
+            .background(
+                Image("Background")
+                    .ignoresSafeArea()
+            )
         } else {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            StoryCard(story: "No stories yet")
+                .background(
+                    Image("Background")
+                        .ignoresSafeArea()
+                )
         }
     }
 }
@@ -41,5 +47,23 @@ struct CompletedStories: View {
 struct CompletedStories_Previews: PreviewProvider {
     static var previews: some View {
         CompletedStories()
+            .environmentObject(AlertClass())
     }
 }
+
+/*
+ .toolbar{
+     ToolbarItemGroup(placement: .navigationBarTrailing) {
+         Button {
+             DataController.shared.deleteStory(completeStory: storiaCompleta)
+         } label: {
+             Text("Delete")
+         }
+         Button {
+             alertClass.handleSynthesizer(storiaCompleta: storiaCompleta.storyfull!, lingua: lang)
+         } label: {
+             Text("Play")
+         }
+     }
+ }
+ */

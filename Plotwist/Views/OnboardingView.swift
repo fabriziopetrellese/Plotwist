@@ -35,11 +35,11 @@ struct OnboardingView: View {
                 .ignoresSafeArea()
         )
     }
-    
-    func setupAppearance() {
-        UIPageControl.appearance().currentPageIndicatorTintColor = .black
-        UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
-    }
+}
+
+func setupAppearance() {
+    UIPageControl.appearance().currentPageIndicatorTintColor = .black
+    UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
 }
 
 struct FirstPageView: View {

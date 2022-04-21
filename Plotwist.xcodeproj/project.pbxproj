@@ -32,6 +32,7 @@
 		49EB564627D2548C00E23086 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB564527D2548C00E23086 /* DiceView.swift */; };
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
 		B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */; };
+		B91586902811987500DB8D27 /* StoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915868F2811987500DB8D27 /* StoryCard.swift */; };
 		B96303112800654C006E4E4D /* PlotwistDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B963030F2800654C006E4E4D /* PlotwistDatabase.xcdatamodeld */; };
 		B963031728006809006E4E4D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031628006809006E4E4D /* DataController.swift */; };
 		B963031928006E79006E4E4D /* CompletedStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031828006E79006E4E4D /* CompletedStories.swift */; };
@@ -84,6 +85,7 @@
 		49EB564527D2548C00E23086 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
 		B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlayersNumberView.swift; sourceTree = "<group>"; };
+		B915868F2811987500DB8D27 /* StoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCard.swift; sourceTree = "<group>"; };
 		B96303102800654C006E4E4D /* PlotwistDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlotwistDatabase.xcdatamodel; sourceTree = "<group>"; };
 		B963031628006809006E4E4D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		B963031828006E79006E4E4D /* CompletedStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedStories.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				492D3BC727D296C700F3BD65 /* AlertView.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
 				B963031828006E79006E4E4D /* CompletedStories.swift */,
+				B915868F2811987500DB8D27 /* StoryCard.swift */,
 				490C98A227BDF4E100574E1B /* CreditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F08C2227BB47100046D206 /* GuidedView.swift in Sources */,
+				B91586902811987500DB8D27 /* StoryCard.swift in Sources */,
 				49EB564627D2548C00E23086 /* DiceView.swift in Sources */,
 				493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */,
 				B9D78E8427CFB1000083BB3C /* CardModel2.swift in Sources */,
