@@ -69,12 +69,10 @@ struct ContentView: View {
         .environmentObject(CategoriesModel())
         .environmentObject(navigationRoot)
         .preferredColorScheme(.light)
-/*
         .onAppear(){
             MusicClass.shared.setup()
             MusicClass.shared.play()
         }
- */
     }
 }
 
