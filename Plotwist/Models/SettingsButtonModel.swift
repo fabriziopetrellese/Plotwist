@@ -17,9 +17,9 @@ struct SettingsButtonModel: View {
                     .font(Font.custom("Life Savers", size: 26))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
-                    .padding(.leading, 5)
+                    .padding(.leading, 4)
                 
-                Spacer()
+               
                 
                 Image("ROTELLA")
             }

@@ -15,6 +15,7 @@ struct SettingsView: View {
     let startersCreation: LocalizedStringKey = "startersCreation"
     let language: LocalizedStringKey = "language"
     let settings: LocalizedStringKey = "settings"
+    let saved: LocalizedStringKey = "saved"
     
     var body: some View {
         VStack {
@@ -52,7 +53,7 @@ struct SettingsView: View {
                     Image("settingsbutton")
                         .padding(.top, 30)
                     HStack {
-                        Text(startersCreation)
+                        Text(saved)
                             .font(Font.custom("Life Savers", size: 29))
                             .fontWeight(.heavy)
                             .foregroundColor(.black)
@@ -62,7 +63,7 @@ struct SettingsView: View {
             }
 /*
             NavigationLink {
-                CompletedStories()
+                
             } label: {
                 ZStack {
                     Image("settingsbutton")
