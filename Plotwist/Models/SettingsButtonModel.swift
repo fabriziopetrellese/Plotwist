@@ -19,7 +19,7 @@ struct SettingsButtonModel: View {
                     .foregroundColor(.black)
                     .padding(.leading, 4)
                 
-               
+                Spacer()
                 
                 Image("ROTELLA")
             }

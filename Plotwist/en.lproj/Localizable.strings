@@ -112,13 +112,13 @@
 
 // ONBOARDING
 
-"welcome" = "Welcome to";
+"welcome" = "Find your inspiration from the world or with the use of AR story dice";
 
 "desc" = "a group storytelling game";
 
-"moreInfo" = "Gather 2 to 6 people";
+"moreInfo" = "Gather 2 to 6 random people";
 
-"finalInfo" = "Choose a storytelling mode and start writing your part of the story!";
+"finalInfo" = "Pass the phone around and create a story together!";
 
 "letsgo" = "Let's start!";
 

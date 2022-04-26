@@ -56,7 +56,7 @@ struct NextTurn: View {
                 ZStack {
                     ButtonsModel(label: button3)
                     Image("OMINO1")
-                        .padding(.bottom, 96)
+                        .padding(.bottom, 95)
                         .padding(.leading, 92)
                 }
             }

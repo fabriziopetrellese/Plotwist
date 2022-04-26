@@ -33,6 +33,8 @@
 		49F08C2227BB47100046D206 /* GuidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F08C2127BB47100046D206 /* GuidedView.swift */; };
 		B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */; };
 		B91586902811987500DB8D27 /* StoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915868F2811987500DB8D27 /* StoryCard.swift */; };
+		B91586922812F16400DB8D27 /* OminiOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91586912812F16400DB8D27 /* OminiOnboarding.swift */; };
+		B915869428131DBE00DB8D27 /* DiceOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915869328131DBE00DB8D27 /* DiceOnboarding.swift */; };
 		B96303112800654C006E4E4D /* PlotwistDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B963030F2800654C006E4E4D /* PlotwistDatabase.xcdatamodeld */; };
 		B963031728006809006E4E4D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031628006809006E4E4D /* DataController.swift */; };
 		B963031928006E79006E4E4D /* CompletedStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031828006E79006E4E4D /* CompletedStories.swift */; };
@@ -86,6 +88,8 @@
 		49F08C2127BB47100046D206 /* GuidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedView.swift; sourceTree = "<group>"; };
 		B9021C8627DCAF2D006035B2 /* SelectPlayersNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlayersNumberView.swift; sourceTree = "<group>"; };
 		B915868F2811987500DB8D27 /* StoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCard.swift; sourceTree = "<group>"; };
+		B91586912812F16400DB8D27 /* OminiOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OminiOnboarding.swift; sourceTree = "<group>"; };
+		B915869328131DBE00DB8D27 /* DiceOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceOnboarding.swift; sourceTree = "<group>"; };
 		B96303102800654C006E4E4D /* PlotwistDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlotwistDatabase.xcdatamodel; sourceTree = "<group>"; };
 		B963031628006809006E4E4D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		B963031828006E79006E4E4D /* CompletedStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedStories.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				B9D78E8327CFB1000083BB3C /* CardModel2.swift */,
 				B9D78E8527CFB6A10083BB3C /* SettingsButtonModel.swift */,
 				B9B66D0A27E0E25100E03D74 /* CategoriesModel.swift */,
+				B91586912812F16400DB8D27 /* OminiOnboarding.swift */,
+				B915869328131DBE00DB8D27 /* DiceOnboarding.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 				B9DA60C027D60FFE003F53C7 /* OnboardingView.swift in Sources */,
 				49E7C59B27BD32160043AD25 /* NextTurn.swift in Sources */,
 				B9B66D0827E0D2E800E03D74 /* ARDiceView.swift in Sources */,
+				B91586922812F16400DB8D27 /* OminiOnboarding.swift in Sources */,
 				49E7C59F27BD32160043AD25 /* DiceCategories.swift in Sources */,
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
@@ -348,6 +355,7 @@
 				B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */,
 				B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */,
 				B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */,
+				B915869428131DBE00DB8D27 /* DiceOnboarding.swift in Sources */,
 				4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */,
 				49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */,
 				49E7C59E27BD32160043AD25 /* CategoriesListModel.swift in Sources */,

@@ -16,8 +16,7 @@ struct CardModel2: View {
             Image("CARD1")
             
             Image("OMINO2")
-//                .offset(x: -160, y: 71)
-                .padding(.trailing, 320)
+                .padding(.trailing, 316)
                 .padding(.top, 142)
             
             VStack {
@@ -36,7 +35,6 @@ struct CardModel2: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 25)
                     .padding(.bottom, 32)
-//                    .padding(.horizontal, 69.3)
                     .padding(.horizontal, 50)
             }
         }

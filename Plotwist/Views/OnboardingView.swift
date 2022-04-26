@@ -18,11 +18,19 @@ struct OnboardingView: View {
     
     var body: some View {
         TabView {
-            FirstPageView(title: welcome, subtitle: desc, image: "plotwistVector", shouldShowOnboarding: $shouldShowOnboarding)
+            ZeroPageView(subtitle: desc,
+                         image: "Onboarding1",
+                         shouldShowOnboarding: $shouldShowOnboarding)
             
-            SecondPageView(title: moreInfo, image: "omini_onboarding", shouldShowOnboarding: $shouldShowOnboarding)
+            FirstPageView(title: moreInfo,
+                           shouldShowOnboarding: $shouldShowOnboarding)
             
-            ThirdPageView(title: finalInfo, buttonLabel: letsgo, showsDismissButton: true, shouldShowOnboarding: $shouldShowOnboarding)
+            SecondPageView(title: welcome,
+                          shouldShowOnboarding: $shouldShowOnboarding)
+            
+            ThirdPageView(title: finalInfo,
+                          buttonLabel: letsgo,
+                          shouldShowOnboarding: $shouldShowOnboarding)
             
             
         }
@@ -42,10 +50,30 @@ func setupAppearance() {
     UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
 }
 
-struct FirstPageView: View {
-    let title: LocalizedStringKey
+struct ZeroPageView: View {
     let subtitle: LocalizedStringKey
     let image: String
+    @Binding var shouldShowOnboarding: Bool
+    var body: some View {
+        ZStack {
+            Image(image)
+                .resizable()
+                .scaledToFit()
+                
+            Text(subtitle)
+                .font(Font.custom("Life Savers", size: 40))
+                .fontWeight(.heavy)
+                .foregroundColor(.black)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 40)
+                .padding(.bottom, 128)
+        }
+        .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
+    }
+}
+
+struct FirstPageView: View {
+    let title: LocalizedStringKey
     @Binding var shouldShowOnboarding: Bool
     
     var body: some View {
@@ -55,30 +83,17 @@ struct FirstPageView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-//                .frame(width: 280)
-                .padding(24)
-
-            Image(image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 164.94, height: 119)
-                .padding(24)
+                .padding(.bottom, 32)
             
-            Text(subtitle)
-                .font(Font.custom("Life Savers", size: 38))
-                .fontWeight(.heavy)
-                .foregroundColor(.black)
-                .multilineTextAlignment(.center)
-//                .frame(width: 280)
-                .padding(24)
+            OminiOnboarding()
+                .padding(.top, 32)
         }
-        .padding(.bottom, 179)
+        .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
     }
 }
 
 struct SecondPageView: View {
     let title: LocalizedStringKey
-    let image: String
     @Binding var shouldShowOnboarding: Bool
     
     var body: some View {
@@ -88,24 +103,21 @@ struct SecondPageView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .frame(width: 280)
-                .padding(48)
+                .padding(.horizontal, 40)
+                .padding(.bottom, 64)
             
-            
-            Image(image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 249.55, height: 153.99)
-                .padding(48)
+            DiceOnboarding()
+                .padding(.top, 64)
         }
-        .padding(.bottom, 179)
+        .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
     }
 }
+
+
 
 struct ThirdPageView: View {
     let title: LocalizedStringKey
     let buttonLabel: LocalizedStringKey
-    let showsDismissButton: Bool
     @Binding var shouldShowOnboarding: Bool
     
     var body: some View {
@@ -121,27 +133,29 @@ struct ThirdPageView: View {
             
             Spacer()
             
-            if showsDismissButton {
-                Button {
-                    shouldShowOnboarding.toggle()
-                } label: {
-                    ButtonsModel(label: buttonLabel)
-                }
-//                .padding(.bottom)
-                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.25 * UIScreen.main.bounds.height)
-            } else {
+            
+            Button {
+                shouldShowOnboarding.toggle()
+            } label: {
                 ZStack {
+                    ButtonsModel(label: buttonLabel)
+                    
+                    Image("omionb4")
+                        .padding(.bottom, 156)
+                        .padding(.leading, 128)
                 }
-//                .padding(.bottom)
-                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.25 * UIScreen.main.bounds.height)
             }
+            
+            .frame(width: 1 * UIScreen.main.bounds.width, height: 0.25 * UIScreen.main.bounds.height)
+
         }
     }
 }
 
 struct OnboardingView_Previews: PreviewProvider {
+
     static var previews: some View {
         OnboardingView(shouldShowOnboarding: .constant(true))
-            .environment(\.locale, .init(identifier: "it"))
+        
     }
 }
