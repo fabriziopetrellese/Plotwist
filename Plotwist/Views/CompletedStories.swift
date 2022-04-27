@@ -10,6 +10,7 @@ import SwiftUI
 struct CompletedStories: View {
     @EnvironmentObject var alertClass: AlertClass
     let lang = String(format: NSLocalizedString("language", comment: ""))
+    let saved: LocalizedStringKey = "saved"
     
     @FetchRequest(
         entity: CompleteStory.entity(),
@@ -19,28 +20,47 @@ struct CompletedStories: View {
     )
     var completedstories: FetchedResults<CompleteStory>
     
+    @Environment(\.dismiss) var back10
+    
     var body: some View {
-        if completedstories.count > 0 {
-            TabView {
-                ForEach(completedstories) { storiaCompleta in
-                    StoryCard(story: storiaCompleta.storyfull!)
+        VStack {
+            if completedstories.count > 0 {
+                ScrollView {
+                    ForEach(completedstories) { storiaCompleta in
+                        NavigationLink {
+                            SingleView(newTitle: storiaCompleta.storytitle!, storyDatabase: storiaCompleta)
+                        } label: {
+                            StoryCard(title: storiaCompleta.storytitle!)
+                        }
+                    }
+                }
+            } else {
+                StoryCard(title: "No stories yet")
+
+            }
+
+        }
+        .background(
+            Image("BACK")
+                .ignoresSafeArea()
+        )
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text(saved)
+                    .font(Font.custom("Life Savers", size: 31))
+                    .fontWeight(.heavy)
+            }
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    back10()
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.backward.fill")
+                        .foregroundColor(.black)
                 }
             }
-            .tabViewStyle(PageTabViewStyle())
-            .onAppear {
-                setupAppearance()
-            }
-            .background(
-                Image("Background")
-                    .ignoresSafeArea()
-            )
-        } else {
-            StoryCard(story: "No stories yet")
-                .background(
-                    Image("Background")
-                        .ignoresSafeArea()
-                )
         }
+        
     }
 }
 

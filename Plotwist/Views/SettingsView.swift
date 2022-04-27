@@ -19,7 +19,7 @@ struct SettingsView: View {
     
     var body: some View {
         VStack {
-/*
+
             if music {
             Image("ominomusic")
                     .padding(.leading, 197)
@@ -45,20 +45,30 @@ struct SettingsView: View {
                     MusicClass.shared.pause()
                 }
             }
-*/
+
             NavigationLink {
                 CompletedStories()
             } label: {
                 ZStack {
-                    Image("settingsbutton")
+                    Image("yourStoriesCard")
                         .padding(.top, 30)
                     HStack {
                         Text(saved)
-                            .font(Font.custom("Life Savers", size: 29))
+                            .font(Font.custom("Life Savers", size: 23))
                             .fontWeight(.heavy)
                             .foregroundColor(.black)
                             .padding(.top, 27)
-                    }.padding(.horizontal, 68)
+                        
+                        Spacer()
+                        
+                        Image(systemName: "list.star")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.black)
+                            .frame(width: 30, height: 30)
+                            .padding(.top, 27)
+                    }
+                    .padding(.horizontal, 72)
                 }
             }
 /*

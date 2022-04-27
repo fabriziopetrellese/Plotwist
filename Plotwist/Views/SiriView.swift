@@ -14,7 +14,11 @@ struct SiriView: View {
     @EnvironmentObject var alertClass: AlertClass
     
     @FetchRequest(sortDescriptors: []) var completestories: FetchedResults<CompleteStory>
-        
+    
+    @State var storyTitle: String = ""
+    @State var isSaved: Bool = false
+    let untitled: LocalizedStringKey = "untitled"
+    
     let finalTitle: LocalizedStringKey = "finalTitle"
     let language: LocalizedStringKey = "language"
     let speech: LocalizedStringKey = "speech"
@@ -24,9 +28,17 @@ struct SiriView: View {
     
     var body: some View {
         VStack {
-            Text(finalTitle)
-                .font(Font.custom("Life Savers", size: 39))
-                .fontWeight(.heavy)
+            TextField("", text: $storyTitle)
+                .placeholder(when: storyTitle.isEmpty) {
+                    Text(untitled)
+                        .font(Font.custom("Life Savers", size: 32))
+                        .foregroundColor(.gray)
+                }
+                .font(Font.custom("Life Savers", size: 40))
+                .multilineTextAlignment(.center)
+                .disableAutocorrection(true)
+                .frame(width: 360)
+            
             Spacer()
             
             GeometryReader { geo in
@@ -41,19 +53,24 @@ struct SiriView: View {
                 }
             }
             .frame(width: 360, height: 260)
-                        
+            
             Spacer()
             
             Button {
-                alertClass.handleSynthesizer(storiaCompleta: storiesModel.fullStory, lingua: lang)
+                alertClass.handleSynthesizer(storiaCompleta: storiesModel.fullStory,
+                                             lingua: lang)
             } label: {
-                ButtonsIconModel(label: speech, icon: "person.wave.2.fill")
+                ListenButton(label: speech,
+                             icon: "playpause.fill",
+                             shouldShowOmino: false)
             }
             
             Button {
                 alertClass.showingAlert = true
             } label: {
-                ButtonsIconModel(label: menu, icon: "house.fill")
+                ListenButton(label: menu,
+                             icon: "house.fill",
+                             shouldShowOmino: false)
             }
         }
         .padding(.top, 30)
@@ -65,10 +82,26 @@ struct SiriView: View {
         .navigationBarBackButtonHidden(true)
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    DataController.shared.saveStory(storia: storiesModel.fullStory)
-                } label: {
-                    Text("Save")
+                if (isSaved == false) {
+                    Button {
+                        
+                        if (storyTitle != "" && storyTitle != " ") {
+                            DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
+                            isSaved = true
+                        } else {
+                            DataController.shared.saveStory(storia: storiesModel.fullStory,
+                                                            titolo: String(format: NSLocalizedString("untitled", comment: "")))
+                            isSaved = true
+                        }
+                        
+                    } label: {
+                        Text("Save")
+                            .foregroundColor(.black)
+                    }
+                    
+                } else {
+                    Text("Saved")
+                        .foregroundColor(.gray)
                 }
             }
         }
@@ -78,9 +111,10 @@ struct SiriView: View {
         }
     }
 }
+
 struct SiriView_Previews: PreviewProvider {
     static var previews: some View {
-        SiriView()
+        SiriView(storyTitle: "")
             .environmentObject(StoriesModel())
             .environmentObject(AlertClass())
     }

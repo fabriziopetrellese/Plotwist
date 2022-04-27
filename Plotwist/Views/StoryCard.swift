@@ -8,29 +8,23 @@
 import SwiftUI
 
 struct StoryCard: View {
-    @State var story = "Hi"
+    let title: String
     var body: some View {
-        VStack {
-            GeometryReader { geo in
-                ScrollView(showsIndicators: false) {
-                    Text(story)
-                        .font(Font.custom("Life Savers", size: 28))
-                        .fontWeight(.bold)
-                        .padding()
-                        .foregroundColor(.darkGray)
-                        .multilineTextAlignment(.center)
-                        .frame(width: geo.size.width)
-                }
-            }
-            .padding(.horizontal, 24)
-            .frame(height: 550)
-            Spacer()
+        ZStack {
+            Image("storyTitleBack")
+            
+            Text(title)
+                .font(Font.custom("Life Savers", size: 27))
+                .fontWeight(.bold)
+                .foregroundColor(.darkGray)
+                .multilineTextAlignment(.center)
+                
         }
     }
 }
 
 struct StoryCard_Previews: PreviewProvider {
     static var previews: some View {
-        StoryCard()
+        StoryCard(title: "[Your Title]")
     }
 }

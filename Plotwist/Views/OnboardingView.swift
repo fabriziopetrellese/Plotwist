@@ -19,7 +19,6 @@ struct OnboardingView: View {
     var body: some View {
         TabView {
             ZeroPageView(subtitle: desc,
-                         image: "Onboarding1",
                          shouldShowOnboarding: $shouldShowOnboarding)
             
             FirstPageView(title: moreInfo,
@@ -52,23 +51,29 @@ func setupAppearance() {
 
 struct ZeroPageView: View {
     let subtitle: LocalizedStringKey
-    let image: String
     @Binding var shouldShowOnboarding: Bool
     var body: some View {
-        ZStack {
-            Image(image)
+        VStack {
+            Image("logoOnb1")
                 .resizable()
                 .scaledToFit()
-                
+
+
             Text(subtitle)
                 .font(Font.custom("Life Savers", size: 40))
                 .fontWeight(.heavy)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .padding(.horizontal, 40)
-                .padding(.bottom, 128)
+//                .padding(.horizontal, 40)
+//                .padding(.bottom, 128)
+
+            
+            Image("diceOnb1")
+                .resizable()
+                .scaledToFit()
+                .padding(.leading, 184)
         }
-        .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
+        .frame(width: 1 * UIScreen.main.bounds.width, height: 0.65 * UIScreen.main.bounds.height)
     }
 }
 

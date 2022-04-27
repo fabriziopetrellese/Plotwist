@@ -40,10 +40,16 @@ final class DataController {
         }
     }
 
-    func saveStory(storia: String) {
+    func saveStory(storia: String, titolo: String) {
         let newStory = CompleteStory(context: viewContext)
         newStory.id = UUID()
         newStory.storyfull = storia
+        newStory.storytitle = titolo
+        save()
+    }
+    
+    func editTitle(nuovoTitolo: String, completeStory: CompleteStory) {
+        completeStory.storytitle = nuovoTitolo
         save()
     }
     

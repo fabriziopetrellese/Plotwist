@@ -92,7 +92,7 @@
 
 "settings" = "Impostazioni";
 
-"saved" = "Storie salvate";
+"saved" = "Le tue storie";
 
 // DICE STORYTELLING
 
@@ -112,13 +112,13 @@
 
 // ONBOARDING
 
-"welcome" = "Benvenuto in";
+"welcome" = "Trova ispirazione dal mondo reale o attraverso i dadi in Realtà Aumentata";
 
 "desc" = "un gioco di storytelling di gruppo";
 
 "moreInfo" = "Raggruppa da 2 a 6 persone a caso";
 
-"finalInfo" = "Scegli una modalità di storytelling e inizia a scrivere la tua parte di storia!";
+"finalInfo" = "Passate il telefono tra di voi e create la vostra storia!";
 
 "letsgo" = "Iniziamo!";
 
