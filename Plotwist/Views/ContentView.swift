@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
     @ObservedObject var navigationRoot = NavigationRoot()

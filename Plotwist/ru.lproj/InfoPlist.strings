@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Plotwist
+
+  Created by Valerio Domenico Conte on 28/04/22.
+  
+*/
+
+NSCameraUsageDescription = "Плотвисту нужна ваша камера, чтобы бросать кости в дополненной реальности";

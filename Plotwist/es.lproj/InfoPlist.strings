@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Plotwist
+
+  Created by Valerio Domenico Conte on 28/04/22.
+  
+*/
+
+NSCameraUsageDescription = "Plotwist necesita tu cámara para tirar los dados en Realidad Aumentada";

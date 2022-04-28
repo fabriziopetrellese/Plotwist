@@ -87,7 +87,7 @@ struct SiriView: View {
             .padding(.bottom)
             .padding(.top, 8)
         }
-        .ignoresSafeArea(.keyboard)
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .background(
             Image("Background")
                 .ignoresSafeArea()

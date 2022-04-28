@@ -62,6 +62,7 @@ struct SingleView: View {
             Spacer()
         }
         .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .background(
             Image("BACK")
                 .ignoresSafeArea()
