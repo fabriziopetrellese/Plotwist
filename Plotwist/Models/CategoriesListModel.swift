@@ -13,24 +13,26 @@ struct CategoriesListModel: View {
     let categoriesNumber = 6
     
     var body: some View {
-        ZStack {
-            Rectangle()
-//                .frame(width: 334, height: 487, alignment: .center)
-                .cornerRadius(20)
-                .foregroundColor(.listBackground)
-            
-            ScrollView(showsIndicators: false) {
-                VStack {
-                    ForEach(categoriesModel.categories[0..<categoriesNumber]) { category in
-                        CategoriesButtonModel(content: category.cat)
+        GeometryReader { geo in
+            ZStack {
+                Rectangle()
+                    .cornerRadius(20)
+                    .foregroundColor(.listBackground)
+                    .opacity(0.32)
+                    .frame(width: 0.9 * UIScreen.main.bounds.width, height: 0.72 * UIScreen.main.bounds.height)
+                
+                ScrollView(showsIndicators: false) {
+                    VStack {
+                        ForEach(categoriesModel.categories[0..<categoriesNumber]) { category in
+                            CategoriesButtonModel(content: category.cat)
+                        }
+//                        .frame(width: 0.9 * UIScreen.main.bounds.width, height: 0.106 * UIScreen.main.bounds.height)
                     }
+                    .padding(.vertical, 17)
                 }
-                .padding(.vertical, 17)
             }
-//            .frame(width: 334, height: 487, alignment: .center)
+            .padding(.horizontal)
         }
-//        .frame(width: 334, height: 487, alignment: .center)
-        .padding(.horizontal)
     }
 }
 

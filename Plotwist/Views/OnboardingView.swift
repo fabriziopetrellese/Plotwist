@@ -52,26 +52,24 @@ func setupAppearance() {
 struct ZeroPageView: View {
     let subtitle: LocalizedStringKey
     @Binding var shouldShowOnboarding: Bool
+    
     var body: some View {
         VStack {
             Image("logoOnb1")
                 .resizable()
-                .scaledToFit()
-
-
+                .frame(width: 283, height: 178)
+            
             Text(subtitle)
-                .font(Font.custom("Life Savers", size: 40))
+                .font(Font.custom("Life Savers", size: 36))
                 .fontWeight(.heavy)
+                .frame(height: 98)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-//                .padding(.horizontal, 40)
-//                .padding(.bottom, 128)
-
+                .padding(.top)
             
             Image("diceOnb1")
-                .resizable()
-                .scaledToFit()
-                .padding(.leading, 184)
+                .padding(.leading, 190)
+                .padding(.top, 30)
         }
         .frame(width: 1 * UIScreen.main.bounds.width, height: 0.65 * UIScreen.main.bounds.height)
     }
@@ -89,6 +87,7 @@ struct FirstPageView: View {
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 32)
+                .padding(.horizontal)
             
             OminiOnboarding()
                 .padding(.top, 32)
@@ -157,10 +156,19 @@ struct ThirdPageView: View {
     }
 }
 
-struct OnboardingView_Previews: PreviewProvider {
+//struct OnboardingView_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        OnboardingView(shouldShowOnboarding: .constant(false))
+//
+//    }
+//}
+
+
+struct SecondPageView_Previews: PreviewProvider {
 
     static var previews: some View {
-        OnboardingView(shouldShowOnboarding: .constant(true))
+        ZeroPageView(subtitle: "", shouldShowOnboarding: .constant(false))
         
     }
 }

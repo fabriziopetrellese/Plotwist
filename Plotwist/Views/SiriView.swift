@@ -17,14 +17,16 @@ struct SiriView: View {
     
     @State var storyTitle: String = ""
     @State var isSaved: Bool = false
-    let untitled: LocalizedStringKey = "untitled"
     
+    let untitled: LocalizedStringKey = "untitled"
     let finalTitle: LocalizedStringKey = "finalTitle"
     let language: LocalizedStringKey = "language"
     let speech: LocalizedStringKey = "speech"
     let menu: LocalizedStringKey = "menu"
-    
     let lang = String(format: NSLocalizedString("language", comment: ""))
+    let saveStory: LocalizedStringKey = "saveStory"
+    let storySaved: LocalizedStringKey = "storySaved"
+    let doneKeyboard: LocalizedStringKey = "doneKeyboard"
     
     var body: some View {
         VStack {
@@ -33,14 +35,21 @@ struct SiriView: View {
                     Text(untitled)
                         .font(Font.custom("Life Savers", size: 32))
                         .foregroundColor(.gray)
+                        .fontWeight(.heavy)
                 }
-                .font(Font.custom("Life Savers", size: 40))
+                .font(Font.custom("Life Savers", size: 40).weight(.heavy))
                 .multilineTextAlignment(.center)
                 .disableAutocorrection(true)
                 .frame(width: 360)
             
             Spacer()
             
+            ZStack {
+                Image("storyRectangle")
+                    .resizable()
+                    .frame(width: 0.865 * UIScreen.main.bounds.width, height: 0.455 * UIScreen.main.bounds.height)
+                    .padding(.vertical, 10)
+                
             GeometryReader { geo in
                 ScrollView(showsIndicators: false) {
                     Text(storiesModel.fullStory)
@@ -52,7 +61,9 @@ struct SiriView: View {
                         .frame(width: geo.size.width)
                 }
             }
-            .frame(width: 360, height: 260)
+//            .frame(width: 360, height: 260)
+            .frame(width: 0.88 * UIScreen.main.bounds.width, height: 0.40 * UIScreen.main.bounds.height)
+        }
             
             Spacer()
             
@@ -64,6 +75,7 @@ struct SiriView: View {
                              icon: "playpause.fill",
                              shouldShowOmino: false)
             }
+            .padding(.top)
             
             Button {
                 alertClass.showingAlert = true
@@ -72,12 +84,17 @@ struct SiriView: View {
                              icon: "house.fill",
                              shouldShowOmino: false)
             }
+            .padding(.bottom)
+            .padding(.top, 8)
         }
-        .padding(.top, 30)
+        .ignoresSafeArea(.keyboard)
         .background(
             Image("Background")
                 .ignoresSafeArea()
-                .position(x: 180, y: 400)
+//                .position(x: 180, y: 400)
+                .onTapGesture {
+                    dismissKeyboard()
+                }
         )
         .navigationBarBackButtonHidden(true)
         .toolbar{
@@ -95,13 +112,24 @@ struct SiriView: View {
                         }
                         
                     } label: {
-                        Text("Save")
+                        Text(saveStory)
                             .foregroundColor(.black)
+                            .fontWeight(.heavy)
                     }
                     
                 } else {
-                    Text("Saved")
+                    Text(storySaved)
                         .foregroundColor(.gray)
+                        .fontWeight(.heavy)
+                }
+            }
+            
+            ToolbarItem(placement: .keyboard) {
+                Button {
+                    hideKeyboard()
+                } label: {
+                    Text(doneKeyboard)
+                        .fontWeight(.bold)
                 }
             }
         }

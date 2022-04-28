@@ -15,6 +15,7 @@
 		492D3BCA27D35D8000F3BD65 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D3BC927D35D8000F3BD65 /* AlertClass.swift */; };
 		493AB1B727CC548F00224AF8 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493AB1B627CC548F00224AF8 /* SplashScreenView.swift */; };
 		4981954D27C1F6BA0037E81E /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981954C27C1F6BA0037E81E /* MusicClass.swift */; };
+		498C3CE4281A90110095EC34 /* ReunitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3CE3281A90110095EC34 /* ReunitedView.swift */; };
 		4995DC8727BF530A0011B4F5 /* CategoriesButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */; };
 		49AC301F27BAB75900629633 /* PlotwistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AC301E27BAB75900629633 /* PlotwistApp.swift */; };
 		49AC302127BAB75900629633 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AC302027BAB75900629633 /* ContentView.swift */; };
@@ -68,6 +69,7 @@
 		492D3BC927D35D8000F3BD65 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		493AB1B627CC548F00224AF8 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		4981954C27C1F6BA0037E81E /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
+		498C3CE3281A90110095EC34 /* ReunitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReunitedView.swift; sourceTree = "<group>"; };
 		4995DC8627BF530A0011B4F5 /* CategoriesButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonModel.swift; sourceTree = "<group>"; };
 		499C53EA27D522B90068BE17 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		499C53EB27D523E80068BE17 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
 				B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */,
 				B9574585281845FE00DD6E0D /* SingleView.swift */,
+				498C3CE3281A90110095EC34 /* ReunitedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				B9B66D0827E0D2E800E03D74 /* ARDiceView.swift in Sources */,
 				B91586922812F16400DB8D27 /* OminiOnboarding.swift in Sources */,
 				49E7C59F27BD32160043AD25 /* DiceCategories.swift in Sources */,
+				498C3CE4281A90110095EC34 /* ReunitedView.swift in Sources */,
 				49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */,
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
 				B963031728006809006E4E4D /* DataController.swift in Sources */,
@@ -519,12 +523,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 37THZ8H7Q6;
+				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Plotwist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs your camera to use Augmented Reality to throw dice";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Plotwist needs your camera to use Augmented Reality to throw dice";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -554,12 +558,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 37THZ8H7Q6;
+				DEVELOPMENT_TEAM = 2LK4JE65RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Plotwist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs your camera to use Augmented Reality to throw dice";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Plotwist needs your camera to use Augmented Reality to throw dice";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

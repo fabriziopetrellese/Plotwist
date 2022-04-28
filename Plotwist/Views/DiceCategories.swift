@@ -19,15 +19,16 @@ struct DiceCategories: View {
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 28)
-                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.25 * UIScreen.main.bounds.height)
-                .padding(.bottom)
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.15 * UIScreen.main.bounds.height)
+//                .padding(.bottom)
             
             CategoriesListModel()
-                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.65 * UIScreen.main.bounds.height)
-                .padding(.bottom)
+                .frame(width: 1 * UIScreen.main.bounds.width, height: 0.45 * UIScreen.main.bounds.height)
+//                .padding(.bottom)
             
 //            Spacer()
         }
+        .padding(.bottom, 270)
         .background(
             Image("Background")
                 .ignoresSafeArea()

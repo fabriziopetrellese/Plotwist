@@ -70,15 +70,23 @@
 
 "fourthPart" = ", manchi solo tu!";
 
+"weReady" = "Siamo pronti!";
+
 //SIRI VIEW
 
 "language" = "it-IT";
 
 "finalTitle" = "Storia completa:";
 
-"speech" = "Leggi";
+"speech" = "Ascolta";
 
 "menu" = "Menu";
+
+"untitled" = "Nome storia";
+
+"saveStory" = "Salva";
+
+"storySaved" = "Salvata";
 
 // SETTINGS VIEW
 
@@ -116,11 +124,17 @@
 
 "desc" = "un gioco di storytelling di gruppo";
 
-"moreInfo" = "Raggruppa da 2 a 6 persone a caso";
+"moreInfo" = "Raggruppa da 2 a 6 persone casuali";
 
 "finalInfo" = "Passate il telefono tra di voi e create la vostra storia!";
 
 "letsgo" = "Iniziamo!";
+
+"youOmini" = "tu";
+
+"randomPeopleOmini" = "persone casuali";
+
+"diceIcon" = "Icona dadi AR";
 
 // CREDITS VIEW
 
@@ -146,4 +160,14 @@
 
 //DICE STORYWRITING
 
-"firstTurnMessage" = "Qui appariranno al prossimo giocatorè le tue ultime 4 parole";
+"firstTurnMessage" = "Qui appariranno al prossimo giocatore le tue ultime 4 parole";
+
+//SINGLE VIEW
+
+"deleteStory" = "Elimina";
+
+//REUNITED VIEW
+
+"wellDone" = "Bene, la storia è completa!";
+
+"gatherAround" = "Riunitevi, è il momento di ascoltare la vostra incredibile creazione...e non dimenticate di scegliere un titolo tutti insieme!";

@@ -22,12 +22,13 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Image("plotwistVector")
-                    .padding(.bottom, 90)
+                    .padding(.bottom, 40)
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     CardModel1(title: text1, description: text4)
                         .frame(width: 1 * UIScreen.main.bounds.width, height: 0.21 * UIScreen.main.bounds.height)
-                        .padding(.top, -50)
+                        .padding(.top, 20)
+                        .padding(.bottom, 22)
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -36,7 +37,9 @@ struct ContentView: View {
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     CardModel2(title: text2, description: text5)
+                        .frame(height: 0.17 * UIScreen.main.bounds.height)
                         .padding(.horizontal, 22)
+                        .padding(.bottom, 5)
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -45,10 +48,11 @@ struct ContentView: View {
                 
                 NavigationLink(destination: SettingsView()) {
                     SettingsButtonModel(title: text3)
-                        .padding(.top, 10)
+                        .frame(height: 0.16 * UIScreen.main.bounds.height)
+                        .padding(.bottom, 40)
                 }
             }
-            .padding(.bottom, 95)
+            .padding(.bottom, 30)
             .background(
                 Image("BACK")
                     .ignoresSafeArea()

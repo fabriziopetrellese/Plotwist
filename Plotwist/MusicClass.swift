@@ -25,7 +25,7 @@ class MusicClass {
     func play() {
         audioPlayer.numberOfLoops = -1
         audioPlayer.play()
-        audioPlayer.volume = 0.03
+        audioPlayer.volume = 0.1
         isPlaying = true
     }
     

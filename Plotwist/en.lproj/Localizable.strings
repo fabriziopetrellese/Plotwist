@@ -70,15 +70,23 @@
 
 "fourthPart" = ", you are the last one writing!";
 
+"weReady" = "We're ready!";
+
 //SIRI VIEW
 
 "language" = "en-US";
 
 "finalTitle" = "Final story:";
 
-"speech" = "Read";
+"speech" = "Listen";
 
 "menu" = "Menu";
+
+"untitled" = "Story name";
+
+"saveStory" = "Save";
+
+"storySaved" = "Saved";
 
 // SETTINGS VIEW
 
@@ -112,7 +120,7 @@
 
 // ONBOARDING
 
-"welcome" = "Find your inspiration from the world or with the use of AR story dice";
+"welcome" = "Find your inspiration from the world or using the Augmented Reality dice";
 
 "desc" = "a group storytelling game";
 
@@ -121,6 +129,12 @@
 "finalInfo" = "Pass the phone around and create a story together!";
 
 "letsgo" = "Let's start!";
+
+"youOmini" = "you";
+
+"randomPeopleOmini" = "random people";
+
+"diceIcon" = "AR dice icon";
 
 // CREDITS VIEW
 
@@ -146,4 +160,14 @@
 
 //DICE STORYWRITING
 
-"firstTurnMessage" = "Here your last four words will appear to the next player";
+"firstTurnMessage" = "Your last four words will appear here to the next player";
+
+//SINGLE VIEW
+
+"deleteStory" = "Delete";
+
+//REUNITED VIEW
+
+"wellDone" = "Well done, you've finished the story!";
+
+"gatherAround" = "Gather around, it's time to listen to your amazing creation...and don't forget to choose a title all together!";

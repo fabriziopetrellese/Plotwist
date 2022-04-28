@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct OminiOnboarding: View {
+    let youOmini: LocalizedStringKey = "youOmini"
+    let randomPeopleOmini: LocalizedStringKey = "randomPeopleOmini"
+    
     var body: some View {
         ZStack {
             Image("omini_onboarding")
             
-            Text("you")
+            Text(youOmini)
                 .font(Font.custom("Life Savers", size: 15))
                 .fontWeight(.heavy)
                 .padding(.bottom, 160)
                 .padding(.leading, 56)
 
-            Text("random people")
+            Text(randomPeopleOmini)
                 .font(Font.custom("Life Savers", size: 15))
                 .fontWeight(.heavy)
                 .padding(.top, 172)

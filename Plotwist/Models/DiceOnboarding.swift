@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct DiceOnboarding: View {
+    let diceIcon: LocalizedStringKey = "diceIcon"
+    
     var body: some View {
         ZStack {
             Image("onb3")
             
             VStack {
-                Text("AR dice icon")
+                Text(diceIcon)
                     .font(Font.custom("Life Savers", size: 15))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
-                    .frame(width: 60, height: 38)
+                    .frame(width: 84, height: 38)
             }
             .padding(.bottom, 80)
             .padding(.leading, 40)
@@ -28,5 +30,6 @@ struct DiceOnboarding: View {
 struct DiceOnboarding_Previews: PreviewProvider {
     static var previews: some View {
         DiceOnboarding()
+            .environment(\.locale, .init(identifier: "ru"))
     }
 }

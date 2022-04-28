@@ -70,15 +70,23 @@
 
 "fourthPart" = ", sie sind der letzte zu schreiben!";
 
+"weReady" = "Sind bereit!";
+
 //SIRI VIEW
 
 "language" = "de";
 
 "finalTitle" = "Ganze geschichte:";
 
-"speech" = "Lesen";
+"speech" = "Hor zu";
 
 "menu" = "Menu";
+
+"untitled" = "Name geschichte";
+
+"saveStory" = "Speichern";
+
+"storySaved" = "Gespeichert";
 
 // SETTINGS VIEW
 
@@ -112,7 +120,7 @@
 
 // ONBOARDING
 
-"welcome" = "Willkommen in";
+"welcome" = "Finden sie ihre inspiration aus der welt oder mit den augmented reality wurfeln";
 
 "desc" = "ein storytelling spiel der gruppe";
 
@@ -121,6 +129,12 @@
 "finalInfo" = "Wahlen sie zwischen gefuhrte und wurfel storytelling und beginnen sie zu schreiben!";
 
 "letsgo" = "Beginnen wir!";
+
+"youOmini" = "sie";
+
+"randomPeopleOmini" = "zufallige personen";
+
+"diceIcon" = "AR sagt icon";
 
 // CREDITS VIEW
 
@@ -147,3 +161,13 @@
 //DICE STORYWRITING
 
 "firstTurnMessage" = "Hier erscheinen deine letzten vier Worte für den nächsten Spieler";
+
+//SINGLE VIEW
+
+"deleteStory" = "Loschen";
+
+//REUNITED VIEW
+
+"wellDone" = "Gut gemacht, ihr habt die geschichte vollendet!";
+
+"gatherAround" = "Versammelt euch, es ist zeit, eurer unglaublichen Schopfung zuzuhoren...und vergesst nicht, euch einen titel auszusuchen!";

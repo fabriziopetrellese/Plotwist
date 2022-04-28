@@ -70,15 +70,23 @@
 
 "fourthPart" = ", ne reste plus que toi!";
 
+"weReady" = "Sommes prets!";
+
 //SIRI VIEW
 
 "language" = "fr-FR";
 
 "finalTitle" = "Histoire complete:";
 
-"speech" = "Lis";
+"speech" = "Ecoute";
 
 "menu" = "Menu";
+
+"untitled" = "Nom de l’histoire";
+
+"saveStory" = "Sauver";
+
+"storySaved" = "A sauve";
 
 // SETTINGS VIEW
 
@@ -112,15 +120,21 @@
 
 // ONBOARDING
 
-"welcome" = "Bienvenue a";
+"welcome" = "Trouvez votre inspiration dans le monde ou utilisez les dss de la Realite Augmentee";
 
 "desc" = "un jeu de storytelling de groupe";
 
 "moreInfo" = "Reunir 2 a 6 personnes";
 
-"finalInfo" = "Choisissez entre Storytelling guidee et avec des et commencez a ecrire!";
+"finalInfo" = "Choisissez entre storytelling guidee et avec des et commencez a ecrire!";
 
 "letsgo" = "Commencons!";
+
+"youOmini" = "vous";
+
+"randomPeopleOmini" = "des gens au hasard";
+
+"diceIcon" = "Icone de des AR";
 
 // CREDITS VIEW
 
@@ -147,3 +161,13 @@
 //DICE STORYWRITING
 
 "firstTurnMessage" = "Ici apparaîtront vos quatre derniers mots au prochain joueur";
+
+//SINGLE VIEW
+
+"deleteStory" = "Supprimer";
+
+//REUNITED VIEW
+
+"wellDone" = "Bien joue, vous avez termine l’histoire!";
+
+"gatherAround" = "Rassemblez-vous, il est temps d’ecouter votre incroyable creation...et n’oubliez pas de choisir un titre tous ensemble!";
