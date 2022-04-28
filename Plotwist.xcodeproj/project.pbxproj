@@ -38,6 +38,7 @@
 		B915869428131DBE00DB8D27 /* DiceOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915869328131DBE00DB8D27 /* DiceOnboarding.swift */; };
 		B957458428183EC100DD6E0D /* ListenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957458328183EC100DD6E0D /* ListenButton.swift */; };
 		B9574586281845FE00DD6E0D /* SingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9574585281845FE00DD6E0D /* SingleView.swift */; };
+		B9574588281AB8A600DD6E0D /* DeleteAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9574587281AB8A600DD6E0D /* DeleteAlertView.swift */; };
 		B96303112800654C006E4E4D /* PlotwistDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B963030F2800654C006E4E4D /* PlotwistDatabase.xcdatamodeld */; };
 		B963031728006809006E4E4D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031628006809006E4E4D /* DataController.swift */; };
 		B963031928006E79006E4E4D /* CompletedStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031828006E79006E4E4D /* CompletedStories.swift */; };
@@ -96,6 +97,7 @@
 		B915869328131DBE00DB8D27 /* DiceOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceOnboarding.swift; sourceTree = "<group>"; };
 		B957458328183EC100DD6E0D /* ListenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenButton.swift; sourceTree = "<group>"; };
 		B9574585281845FE00DD6E0D /* SingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleView.swift; sourceTree = "<group>"; };
+		B9574587281AB8A600DD6E0D /* DeleteAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAlertView.swift; sourceTree = "<group>"; };
 		B96303102800654C006E4E4D /* PlotwistDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlotwistDatabase.xcdatamodel; sourceTree = "<group>"; };
 		B963031628006809006E4E4D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		B963031828006E79006E4E4D /* CompletedStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedStories.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
 				B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */,
 				492D3BC727D296C700F3BD65 /* AlertView.swift */,
+				B9574587281AB8A600DD6E0D /* DeleteAlertView.swift */,
 				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
 				B963031828006E79006E4E4D /* CompletedStories.swift */,
 				B915868F2811987500DB8D27 /* StoryCard.swift */,
@@ -365,6 +368,7 @@
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
 				B963031728006809006E4E4D /* DataController.swift in Sources */,
 				B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */,
+				B9574588281AB8A600DD6E0D /* DeleteAlertView.swift in Sources */,
 				B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */,
 				B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */,
 				B915869428131DBE00DB8D27 /* DiceOnboarding.swift in Sources */,
@@ -523,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";
@@ -558,7 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Plotwist/Preview Content\"";
-				DEVELOPMENT_TEAM = 2LK4JE65RJ;
+				DEVELOPMENT_TEAM = 37THZ8H7Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rebooters-MC3-Info.plist";

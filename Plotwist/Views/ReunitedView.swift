@@ -32,10 +32,9 @@ struct ReunitedView: View {
             
             Spacer()
             
-            Button {
-                
+            NavigationLink {
+                SiriView()
             } label: {
-//                ButtonsModel(label: weReady)
                 ZStack {
                     Image("buttonback")
                     HStack {
@@ -51,7 +50,9 @@ struct ReunitedView: View {
         }
         .background(
             Image("BACK")
+                .ignoresSafeArea()
         )
+        .navigationBarBackButtonHidden(true)
     }
 }
 

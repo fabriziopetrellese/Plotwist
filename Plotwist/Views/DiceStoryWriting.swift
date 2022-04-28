@@ -68,7 +68,7 @@ struct DiceStoryWriting: View {
                 if storiesModel.index < 6 {
                     NextTurn()
                 } else {
-                    SiriView()
+                    ReunitedView()
                 }
             } label: {
                 story != "" ? ButtonsModel(label: button2) : nil

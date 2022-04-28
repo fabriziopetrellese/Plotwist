@@ -83,10 +83,9 @@ struct SingleView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    alertClass.showingAlert = true
-//                    alertClass.synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
-//                    back11()
-//                    DataController.shared.deleteStory(completeStory: storyDatabase)
+                    alertClass.synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
+                    back11()
+                    DataController.shared.deleteStory(completeStory: storyDatabase)
                 } label: {
                     Text(deleteStory)
                         .fontWeight(.heavy)
