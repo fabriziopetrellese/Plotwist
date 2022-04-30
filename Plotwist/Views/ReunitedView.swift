@@ -17,7 +17,7 @@ struct ReunitedView: View {
             Spacer()
             
             Text(wellDone)
-                .font(Font.custom("Life Savers", size: 34))
+                .font(Font.custom("Life Savers", size: 37))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 28)
@@ -62,6 +62,6 @@ struct ReunitedView: View {
 struct ReunitedView_Previews: PreviewProvider {
     static var previews: some View {
         ReunitedView()
-//            .environment(\.locale, .init(identifier: "ru"))
+            .environment(\.locale, .init(identifier: "it"))
     }
 }
