@@ -37,6 +37,7 @@ struct SiriView: View {
                         .foregroundColor(.gray)
                         .fontWeight(.heavy)
                 }
+                .ignoresSafeArea(.keyboard)
                 .font(Font.custom("Life Savers", size: 40).weight(.heavy))
                 .multilineTextAlignment(.center)
                 .disableAutocorrection(true)
@@ -49,6 +50,7 @@ struct SiriView: View {
                     .resizable()
                     .frame(width: 0.865 * UIScreen.main.bounds.width, height: 0.455 * UIScreen.main.bounds.height)
                     .padding(.vertical, 10)
+                    .ignoresSafeArea(.keyboard)
                 
             GeometryReader { geo in
                 ScrollView(showsIndicators: false) {
@@ -63,6 +65,7 @@ struct SiriView: View {
             }
             .frame(width: 0.88 * UIScreen.main.bounds.width, height: 0.40 * UIScreen.main.bounds.height)
         }
+            .ignoresSafeArea(.keyboard)
             
             Spacer()
             
@@ -74,6 +77,7 @@ struct SiriView: View {
                              icon: "playpause.fill",
                              shouldShowOmino: false)
             }
+            .ignoresSafeArea(.keyboard)
             .padding(.top)
             
             Button {
@@ -83,17 +87,21 @@ struct SiriView: View {
                              icon: "house.fill",
                              shouldShowOmino: false)
             }
+            .ignoresSafeArea(.keyboard)
             .padding(.bottom)
             .padding(.top, 8)
         }
         .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
+        .ignoresSafeArea(.keyboard)
         .background(
             Image("Background")
                 .ignoresSafeArea()
+                .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
                 .onTapGesture {
                     dismissKeyboard()
                 }
         )
+        .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing) {

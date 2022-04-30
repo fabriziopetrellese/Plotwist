@@ -30,6 +30,7 @@ struct SingleView: View {
                         .fontWeight(.heavy)
                         .foregroundColor(.gray)
                 }
+                .ignoresSafeArea(.keyboard)
                 .font(Font.custom("Life Savers", size: 40).weight(.heavy))
                 .multilineTextAlignment(.center)
                 .disableAutocorrection(true)
@@ -46,6 +47,7 @@ struct SingleView: View {
                         .frame(width: geo.size.width)
                 }
             }
+            .ignoresSafeArea(.keyboard)
             .frame(width: 1 * UIScreen.main.bounds.width, height: 0.4 * UIScreen.main.bounds.height)
             .padding(.top, 15)
             
@@ -58,9 +60,11 @@ struct SingleView: View {
                 ListenButton(label: speech, icon: "playpause.fill", shouldShowOmino: true)
                     .padding(.top, 15)
             }
+            .ignoresSafeArea(.keyboard)
             Spacer()
         }
         .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
+        .ignoresSafeArea(.keyboard)
         .background(
             Image("BACK")
                 .ignoresSafeArea()

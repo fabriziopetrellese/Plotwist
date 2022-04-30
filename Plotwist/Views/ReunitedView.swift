@@ -17,18 +17,19 @@ struct ReunitedView: View {
             Spacer()
             
             Text(wellDone)
-                .font(Font.custom("Life Savers", size: 40))
+                .font(Font.custom("Life Savers", size: 34))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 28)
-                .padding(.bottom)
+//                .padding(.bottom)
             
             Text(gatherAround)
-                .font(Font.custom("Life Savers", size: 40))
+                .font(Font.custom("Life Savers", size: 34))
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 33)
                 .padding(.top, 30)
+//                .padding(.bottom)
             
             Spacer()
             
@@ -46,8 +47,10 @@ struct ReunitedView: View {
                     }
                 }
             }
-            .padding(.bottom)
+//            .padding(.top, 50)
+            .padding(.bottom, 60)
         }
+        .frame(height: 0.9 * UIScreen.main.bounds.height)
         .background(
             Image("BACK")
                 .ignoresSafeArea()
@@ -59,6 +62,6 @@ struct ReunitedView: View {
 struct ReunitedView_Previews: PreviewProvider {
     static var previews: some View {
         ReunitedView()
-//            .environment(\.locale, .init(identifier: "de"))
+//            .environment(\.locale, .init(identifier: "ru"))
     }
 }

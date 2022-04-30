@@ -29,10 +29,11 @@ struct DiceStorytelling: View {
                 ButtonsModel(label: rollDice)
                     .padding()
             }
+//            .position(x: 0.5 * UIScreen.main.bounds.width, y: 0.578 * UIScreen.main.bounds.height)
         }
         .background(
             Image("Background")
-                .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
+                .position(x: 0.50 * UIScreen.main.bounds.width, y: 0.498 * UIScreen.main.bounds.height)
                 .ignoresSafeArea()
         )
         .blur(radius: alertClass.showingAlert ? 9 : 0)

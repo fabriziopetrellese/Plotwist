@@ -6,4 +6,4 @@
   
 */
 
-NSCameraUsageDescription = "Plotwist ha bisogno della fotocamera per  lanciare i dadi in Realtà Aumentata";
+NSCameraUsageDescription = "Plotwist ha bisogno della fotocamera per lanciare i dadi in Realtà Aumentata";
