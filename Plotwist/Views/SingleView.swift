@@ -33,7 +33,7 @@ struct SingleView: View {
                 .font(Font.custom("Life Savers", size: 40).weight(.heavy))
                 .multilineTextAlignment(.center)
                 .disableAutocorrection(true)
-                .frame(width: 360)
+                .frame(width: 286)
             
             GeometryReader { geo in
                 ScrollView(showsIndicators: false) {
@@ -46,7 +46,6 @@ struct SingleView: View {
                         .frame(width: geo.size.width)
                 }
             }
-//            .frame(width: 360, height: 300)
             .frame(width: 1 * UIScreen.main.bounds.width, height: 0.4 * UIScreen.main.bounds.height)
             .padding(.top, 15)
             
@@ -61,11 +60,11 @@ struct SingleView: View {
             }
             Spacer()
         }
-        .frame(width: 1 * UIScreen.main.bounds.width, height: 1 * UIScreen.main.bounds.height)
-        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
         .background(
             Image("BACK")
                 .ignoresSafeArea()
+                .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
                 .onTapGesture {
                     dismissKeyboard()
                 }
