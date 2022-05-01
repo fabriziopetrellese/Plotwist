@@ -34,9 +34,7 @@ struct CategoriesButtonModel: View {
             .simultaneousGesture(TapGesture().onEnded{
                 categoriesModel.selectCategory(category: content)
             })
-            
-
-            
+    
         }
         
     }
