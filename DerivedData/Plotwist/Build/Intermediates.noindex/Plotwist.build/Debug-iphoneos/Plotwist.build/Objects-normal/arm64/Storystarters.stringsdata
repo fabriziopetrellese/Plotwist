@@ -1,0 +1,20 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/Storystarters.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "placeholder"
+      },
+      {
+        "comment": "",
+        "key": "button2"
+      },
+      {
+        "comment": "",
+        "key": "doneKeyboard"
+      }
+    ]
+  },
+  "version": 1
+}

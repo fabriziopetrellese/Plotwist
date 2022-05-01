@@ -1,0 +1,16 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Models/OminiOnboarding.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "youOmini"
+      },
+      {
+        "comment": "",
+        "key": "randomPeopleOmini"
+      }
+    ]
+  },
+  "version": 1
+}

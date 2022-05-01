@@ -1,0 +1,24 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/DiceStoryWriting.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "placeholder"
+      },
+      {
+        "comment": "",
+        "key": "button2"
+      },
+      {
+        "comment": "",
+        "key": "doneKeyboard"
+      },
+      {
+        "comment": "",
+        "key": "firstTurnMessage"
+      }
+    ]
+  },
+  "version": 1
+}

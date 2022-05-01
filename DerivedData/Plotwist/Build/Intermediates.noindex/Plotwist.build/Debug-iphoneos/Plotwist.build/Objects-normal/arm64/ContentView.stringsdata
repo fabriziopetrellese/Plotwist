@@ -1,0 +1,28 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "text1"
+      },
+      {
+        "comment": "",
+        "key": "text2"
+      },
+      {
+        "comment": "",
+        "key": "text3"
+      },
+      {
+        "comment": "",
+        "key": "text4"
+      },
+      {
+        "comment": "",
+        "key": "text5"
+      }
+    ]
+  },
+  "version": 1
+}

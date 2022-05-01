@@ -1,0 +1,28 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "musicTranslation"
+      },
+      {
+        "comment": "",
+        "key": "startersCreation"
+      },
+      {
+        "comment": "",
+        "key": "language"
+      },
+      {
+        "comment": "",
+        "key": "settings"
+      },
+      {
+        "comment": "",
+        "key": "saved"
+      }
+    ]
+  },
+  "version": 1
+}

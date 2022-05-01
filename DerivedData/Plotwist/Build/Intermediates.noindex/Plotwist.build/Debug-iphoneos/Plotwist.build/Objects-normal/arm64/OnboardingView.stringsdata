@@ -1,0 +1,32 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/OnboardingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "welcome"
+      },
+      {
+        "comment": "",
+        "key": "desc"
+      },
+      {
+        "comment": "",
+        "key": "moreInfo"
+      },
+      {
+        "comment": "",
+        "key": "finalInfo"
+      },
+      {
+        "comment": "",
+        "key": "letsgo"
+      },
+      {
+        "comment": "",
+        "key": ""
+      }
+    ]
+  },
+  "version": 1
+}

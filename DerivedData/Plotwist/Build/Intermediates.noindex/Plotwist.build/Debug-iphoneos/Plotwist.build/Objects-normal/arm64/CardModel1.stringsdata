@@ -1,0 +1,16 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Models/CardModel1.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Guided Storytelling"
+      },
+      {
+        "comment": "",
+        "key": "Create a story with the help of story starters and dice"
+      }
+    ]
+  },
+  "version": 1
+}

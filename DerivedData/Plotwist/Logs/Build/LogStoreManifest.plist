@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>28553AE3-EF66-4BC7-ABD0-8823AD879A24</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>28553AE3-EF66-4BC7-ABD0-8823AD879A24.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Plotwist project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Plotwist</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Plotwist</string>
+			<key>timeStartedRecording</key>
+			<real>673119962.22872996</real>
+			<key>timeStoppedRecording</key>
+			<real>673119971.37425601</real>
+			<key>title</key>
+			<string>Build Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>28553AE3-EF66-4BC7-ABD0-8823AD879A24</string>
+		</dict>
+		<key>57D6851A-A72F-49FA-AB95-86B846711419</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>57D6851A-A72F-49FA-AB95-86B846711419.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Plotwist project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Plotwist</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Plotwist</string>
+			<key>timeStartedRecording</key>
+			<real>673119981.11170495</real>
+			<key>timeStoppedRecording</key>
+			<real>673119981.85898304</real>
+			<key>title</key>
+			<string>Build Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>57D6851A-A72F-49FA-AB95-86B846711419</string>
+		</dict>
+		<key>65E6329E-C998-432E-9634-215B6F1D8411</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>65E6329E-C998-432E-9634-215B6F1D8411.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Plotwist project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Plotwist</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Plotwist</string>
+			<key>timeStartedRecording</key>
+			<real>673121130.18704998</real>
+			<key>timeStoppedRecording</key>
+			<real>673121131.90781105</real>
+			<key>title</key>
+			<string>Build Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>65E6329E-C998-432E-9634-215B6F1D8411</string>
+		</dict>
+		<key>8BFF785A-9B30-4DEC-B249-0BF7DBC66DCE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8BFF785A-9B30-4DEC-B249-0BF7DBC66DCE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Plotwist project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Plotwist</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Plotwist</string>
+			<key>timeStartedRecording</key>
+			<real>673121040.61840796</real>
+			<key>timeStoppedRecording</key>
+			<real>673121043.22434497</real>
+			<key>title</key>
+			<string>Build Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>8BFF785A-9B30-4DEC-B249-0BF7DBC66DCE</string>
+		</dict>
+		<key>91EC09DD-7FBB-49C3-BA04-D33EB4BF4999</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>91EC09DD-7FBB-49C3-BA04-D33EB4BF4999.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Plotwist project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Plotwist</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Plotwist</string>
+			<key>timeStartedRecording</key>
+			<real>673120381.72745097</real>
+			<key>timeStoppedRecording</key>
+			<real>673120384.88868797</real>
+			<key>title</key>
+			<string>Build Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>91EC09DD-7FBB-49C3-BA04-D33EB4BF4999</string>
+		</dict>
+		<key>9A63BFD3-BDC1-4A97-B9BE-C408E3228AD5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9A63BFD3-BDC1-4A97-B9BE-C408E3228AD5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Plotwist project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Plotwist</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Plotwist</string>
+			<key>timeStartedRecording</key>
+			<real>673119998.40707195</real>
+			<key>timeStoppedRecording</key>
+			<real>673120006.71245897</real>
+			<key>title</key>
+			<string>Build Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>9A63BFD3-BDC1-4A97-B9BE-C408E3228AD5</string>
+		</dict>
+		<key>E1D96229-EBFC-47AE-9C68-8BF393A9CAEC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E1D96229-EBFC-47AE-9C68-8BF393A9CAEC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Plotwist project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Plotwist</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Plotwist</string>
+			<key>timeStartedRecording</key>
+			<real>673119779.236233</real>
+			<key>timeStoppedRecording</key>
+			<real>673119783.98886895</real>
+			<key>title</key>
+			<string>Build Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>E1D96229-EBFC-47AE-9C68-8BF393A9CAEC</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

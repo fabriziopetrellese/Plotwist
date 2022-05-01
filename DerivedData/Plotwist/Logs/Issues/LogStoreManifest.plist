@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>6A2C0B7F-AAAF-4283-A8A5-D458342A52A0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>6A2C0B7F-AAAF-4283-A8A5-D458342A52A0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>FocusEntity-abssulsvkpsjrbgejdgoshyxzsrn</string>
+			<key>timeStartedRecording</key>
+			<real>668616654.85543895</real>
+			<key>timeStoppedRecording</key>
+			<real>668616656.79972696</real>
+			<key>title</key>
+			<string>Build target FocusEntity</string>
+			<key>uniqueIdentifier</key>
+			<string>6A2C0B7F-AAAF-4283-A8A5-D458342A52A0</string>
+		</dict>
+		<key>970C0A0F-355D-4A2D-AC76-2C9DC22D8EEB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>970C0A0F-355D-4A2D-AC76-2C9DC22D8EEB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Plotwist-bmeqxgrmoqqvoeedtkvuhaymyfas</string>
+			<key>timeStartedRecording</key>
+			<real>673121131.77316105</real>
+			<key>timeStoppedRecording</key>
+			<real>673121131.90364206</real>
+			<key>title</key>
+			<string>Build target Plotwist</string>
+			<key>uniqueIdentifier</key>
+			<string>970C0A0F-355D-4A2D-AC76-2C9DC22D8EEB</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

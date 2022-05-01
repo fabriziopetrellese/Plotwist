@@ -1,0 +1,40 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/CreditsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "credits"
+      },
+      {
+        "comment": "",
+        "key": "createdBy"
+      },
+      {
+        "comment": "",
+        "key": "russianBy"
+      },
+      {
+        "comment": "",
+        "key": "Valerio Domenico Conte"
+      },
+      {
+        "comment": "",
+        "key": "Giovanni Del Piano"
+      },
+      {
+        "comment": "",
+        "key": "Fabrizio Petrellese"
+      },
+      {
+        "comment": "",
+        "key": "Eleonora Franco"
+      },
+      {
+        "comment": "",
+        "key": "Natalia Kuznetsova"
+      }
+    ]
+  },
+  "version": 1
+}

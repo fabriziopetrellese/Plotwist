@@ -1,0 +1,48 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/GuidedView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "title1"
+      },
+      {
+        "comment": "",
+        "key": "player1"
+      },
+      {
+        "comment": "",
+        "key": "player2"
+      },
+      {
+        "comment": "",
+        "key": "player3"
+      },
+      {
+        "comment": "",
+        "key": "player4"
+      },
+      {
+        "comment": "",
+        "key": "player5"
+      },
+      {
+        "comment": "",
+        "key": "player6"
+      },
+      {
+        "comment": "",
+        "key": "button1"
+      },
+      {
+        "comment": "",
+        "key": "doneKeyboard"
+      },
+      {
+        "comment": "",
+        "key": ""
+      }
+    ]
+  },
+  "version": 1
+}

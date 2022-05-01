@@ -1,0 +1,12 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Models/DiceOnboarding.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "diceIcon"
+      }
+    ]
+  },
+  "version": 1
+}

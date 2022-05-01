@@ -1,0 +1,16 @@
+{
+  "source": "/Users/fabrizio/Desktop/Plotwist/Plotwist/Views/DiceStorytelling.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "diceTitle"
+      },
+      {
+        "comment": "",
+        "key": "rollDice"
+      }
+    ]
+  },
+  "version": 1
+}
