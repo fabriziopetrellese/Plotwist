@@ -6,4 +6,4 @@
   
 */
 
-NSCameraUsageDescription = "Plotwist needs your camera to throw dice in Augmented Reality";
+NSCameraUsageDescription = "Plotwist needs your camera to throw Augmented Reality dice";
