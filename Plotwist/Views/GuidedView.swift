@@ -43,10 +43,9 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[0].isEmpty) {
                                 Text(player1)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .fontWeight(.bold)
                                     .foregroundColor(.gray)
                             }
-                            .font(Font.custom("Life Savers", size: 26).weight(.heavy))
+                            .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
                             .disableAutocorrection(true)
@@ -59,10 +58,9 @@ struct GuidedView: View {
                             .placeholder(when: playersModel.playersNames[1].isEmpty) {
                                 Text(player2)
                                     .font(Font.custom("Life Savers", size: 26))
-                                    .fontWeight(.bold)
                                     .foregroundColor(.gray)
                             }
-                            .font(Font.custom("Life Savers", size: 26).weight(.heavy))
+                            .font(Font.custom("Life Savers", size: 26))
                             .padding(.horizontal, 20)
                             .multilineTextAlignment(.center)
                             .disableAutocorrection(true)
@@ -76,11 +74,10 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[2].isEmpty) {
                                     Text(player3)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .fontWeight(.bold)
                                         .foregroundColor(.gray)
                                 }
                                 .frame(width: 205)
-                                .font(Font.custom("Life Savers", size: 26).weight(.heavy))
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
@@ -107,11 +104,10 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[3].isEmpty) {
                                     Text(player4)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .fontWeight(.bold)
                                         .foregroundColor(.gray)
                                 }
                                 .frame(width: 205)
-                                .font(Font.custom("Life Savers", size: 26).weight(.heavy))
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
@@ -138,11 +134,10 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[4].isEmpty) {
                                     Text(player5)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .fontWeight(.bold)
                                         .foregroundColor(.gray)
                                 }
                                 .frame(width: 205)
-                                .font(Font.custom("Life Savers", size: 26).weight(.heavy))
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)
@@ -169,11 +164,10 @@ struct GuidedView: View {
                                 .placeholder(when: playersModel.playersNames[5].isEmpty) {
                                     Text(player6)
                                         .font(Font.custom("Life Savers", size: 26))
-                                        .fontWeight(.bold)
                                         .foregroundColor(.gray)
                                 }
                                 .frame(width: 205)
-                                .font(Font.custom("Life Savers", size: 26).weight(.heavy))
+                                .font(Font.custom("Life Savers", size: 26))
                                 .padding(.horizontal, 20)
                                 .multilineTextAlignment(.center)
                                 .disableAutocorrection(true)

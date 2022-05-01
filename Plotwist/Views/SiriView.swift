@@ -37,10 +37,11 @@ struct SiriView: View {
                         .foregroundColor(.gray)
                         .fontWeight(.heavy)
                 }
+                .ignoresSafeArea(.keyboard)
                 .font(Font.custom("Life Savers", size: 40).weight(.heavy))
                 .multilineTextAlignment(.center)
                 .disableAutocorrection(true)
-                .frame(width: 360)
+                .frame(width: 286)
             
             Spacer()
             
@@ -49,6 +50,7 @@ struct SiriView: View {
                     .resizable()
                     .frame(width: 0.865 * UIScreen.main.bounds.width, height: 0.455 * UIScreen.main.bounds.height)
                     .padding(.vertical, 10)
+                    .ignoresSafeArea(.keyboard)
                 
             GeometryReader { geo in
                 ScrollView(showsIndicators: false) {
@@ -61,9 +63,9 @@ struct SiriView: View {
                         .frame(width: geo.size.width)
                 }
             }
-//            .frame(width: 360, height: 260)
             .frame(width: 0.88 * UIScreen.main.bounds.width, height: 0.40 * UIScreen.main.bounds.height)
         }
+            .ignoresSafeArea(.keyboard)
             
             Spacer()
             
@@ -75,6 +77,7 @@ struct SiriView: View {
                              icon: "playpause.fill",
                              shouldShowOmino: false)
             }
+            .ignoresSafeArea(.keyboard)
             .padding(.top)
             
             Button {
@@ -84,18 +87,21 @@ struct SiriView: View {
                              icon: "house.fill",
                              shouldShowOmino: false)
             }
+            .ignoresSafeArea(.keyboard)
             .padding(.bottom)
             .padding(.top, 8)
         }
-        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
+        .ignoresSafeArea(.keyboard)
         .background(
             Image("Background")
                 .ignoresSafeArea()
-//                .position(x: 180, y: 400)
+                .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
                 .onTapGesture {
                     dismissKeyboard()
                 }
         )
+        .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing) {
