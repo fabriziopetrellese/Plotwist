@@ -23,8 +23,9 @@ struct SettingsButtonModel: View {
                 
                 Image("ROTELLA")
             }
-            .padding(.horizontal, 75)
+            .padding(.horizontal, 25)
         }
+        .frame(width: 305, height: 72)
     }
 }
 

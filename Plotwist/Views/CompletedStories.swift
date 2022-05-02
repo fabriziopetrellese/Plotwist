@@ -11,6 +11,7 @@ struct CompletedStories: View {
     @EnvironmentObject var alertClass: AlertClass
     let lang = String(format: NSLocalizedString("language", comment: ""))
     let saved: LocalizedStringKey = "saved"
+    let noStories: LocalizedStringKey = "noStories"
     
     @FetchRequest(
         entity: CompleteStory.entity(),
@@ -35,7 +36,17 @@ struct CompletedStories: View {
                     }
                 }
             } else {
-                StoryCard(title: "No stories yet")
+                ZStack {
+                    Image("noStoriesYet")
+                    
+                    Text(noStories)
+                        .font(Font.custom("Life Savers", size: 27))
+                        .fontWeight(.bold)
+                        .foregroundColor(.darkGray)
+                        .multilineTextAlignment(.center)
+                        
+                }
+                .padding(.bottom, 25)
 
             }
 
@@ -68,6 +79,7 @@ struct CompletedStories_Previews: PreviewProvider {
     static var previews: some View {
         CompletedStories()
             .environmentObject(AlertClass())
+//            .environment(\.locale, .init(identifier: "ru"))
     }
 }
 

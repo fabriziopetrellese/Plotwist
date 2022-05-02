@@ -26,7 +26,7 @@ struct CardModel2: View {
                     .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                     .padding(.trailing, 142)
-                    .padding(.horizontal, 51)
+                    .padding(.horizontal, 23)
                 
                 Text(description)
                     .foregroundColor(.darkGray)
@@ -35,9 +35,10 @@ struct CardModel2: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 25)
                     .padding(.bottom, 32)
-                    .padding(.horizontal, 50)
+                    .padding(.horizontal, 42)
             }
         }
+        .frame(width: 306, height: 185, alignment: .center)
     }
 }
 

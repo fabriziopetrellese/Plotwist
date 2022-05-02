@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import StoreKit
 
 struct ContentView: View {
     @ObservedObject var navigationRoot = NavigationRoot()
@@ -23,13 +22,13 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Image("plotwistVector")
-                    .padding(.bottom, 40)
+                    .padding(.bottom, 30)
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     CardModel1(title: text1, description: text4)
-                        .frame(width: 1 * UIScreen.main.bounds.width, height: 0.21 * UIScreen.main.bounds.height)
+//                        .frame(width: 1 * UIScreen.main.bounds.width, height: 0.21 * UIScreen.main.bounds.height)
                         .padding(.top, 20)
-                        .padding(.bottom, 22)
+                        .padding(.bottom, 6)
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -38,9 +37,9 @@ struct ContentView: View {
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     CardModel2(title: text2, description: text5)
-                        .frame(height: 0.17 * UIScreen.main.bounds.height)
-                        .padding(.horizontal, 22)
-                        .padding(.bottom, 5)
+//                        .frame(width: 0.94 * UIScreen.main.bounds.width, height: 0.165 * UIScreen.main.bounds.height)
+//                        .padding(.horizontal, 22)
+                        .padding(.bottom, 18)
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
@@ -49,11 +48,11 @@ struct ContentView: View {
                 
                 NavigationLink(destination: SettingsView()) {
                     SettingsButtonModel(title: text3)
-                        .frame(height: 0.16 * UIScreen.main.bounds.height)
+//                        .frame(height: 0.16 * UIScreen.main.bounds.height)
                         .padding(.bottom, 40)
                 }
             }
-            .padding(.bottom, 30)
+            .padding(.bottom, 80)
             .background(
                 Image("BACK")
                     .ignoresSafeArea()
@@ -85,6 +84,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+//            .environment(\.locale, .init(identifier: "en"))
     }
 }
 
