@@ -171,3 +171,7 @@
 "wellDone" = "Well done, you've finished the story!";
 
 "gatherAround" = "Gather around, it's time to listen to your amazing creation...and don't forget to choose a title all together!";
+
+// COMPLETED STORIES
+
+"noStories" = "No stories yet";

@@ -62,6 +62,6 @@ struct ReunitedView: View {
 struct ReunitedView_Previews: PreviewProvider {
     static var previews: some View {
         ReunitedView()
-            .environment(\.locale, .init(identifier: "it"))
+//            .environment(\.locale, .init(identifier: "it"))
     }
 }

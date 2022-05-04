@@ -171,3 +171,7 @@
 "wellDone" = "Bene, la storia è completa!";
 
 "gatherAround" = "Riunitevi, è il momento di ascoltare la vostra incredibile creazione...e non dimenticate di scegliere un titolo tutti insieme!";
+
+// COMPLETED STORIES
+
+"noStories" = "Nessuna storia";
