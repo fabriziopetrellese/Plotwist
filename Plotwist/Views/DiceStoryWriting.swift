@@ -105,8 +105,7 @@ struct DiceStoryWriting: View {
                 Button {
                     hideKeyboard()
                 } label: {
-                    Text(doneKeyboard)
-                        .fontWeight(.bold)
+                    Image(systemName: "keyboard.chevron.compact.down")
                 }
             }
         }

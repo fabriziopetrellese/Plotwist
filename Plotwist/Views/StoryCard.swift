@@ -18,6 +18,7 @@ struct StoryCard: View {
                 .fontWeight(.bold)
                 .foregroundColor(.darkGray)
                 .multilineTextAlignment(.center)
+                .frame(width: 286, height: 65)
                 
         }
     }
