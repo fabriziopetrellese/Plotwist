@@ -200,6 +200,13 @@ struct GuidedView: View {
                 }
         )
         .navigationBarBackButtonHidden(true)
+        .onAppear {
+            AppState.shared.swipeEnabled = true
+        }
+        .onDisappear {
+            AppState.shared.swipeEnabled = false
+        }
+        
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
@@ -271,29 +278,6 @@ extension View {
             }
         }
 }
-
-
-
-
-
-// ADD NEW PLAYER BUTTON
-/*
- if modeSelection.playerButton < 4 {
-     Button {
-             navigationRoot.playerButton += 1
-     } label: {
-         ZStack {
-             Image("PLAYERS")
-             Text(addButton)
-                 .font(Font.custom("Life Savers", size: 28))
-                 .fontWeight(.heavy)
-                 .padding(.horizontal, 10)
-                 .multilineTextAlignment(.center)
-         }
-         .frame(width: 300, height: 75, alignment: .center)
-     }
- }
- */
 
 
 //START GAME

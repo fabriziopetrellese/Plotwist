@@ -84,6 +84,8 @@ struct DiceStoryWriting: View {
         .ignoresSafeArea(.keyboard)
         .background(
             Image("Background")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
                 .position(x: 207, y: 400)
                 .onTapGesture {

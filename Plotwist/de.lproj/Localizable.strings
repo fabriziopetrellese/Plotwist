@@ -18,6 +18,8 @@
 
 "text5" = "Nur mit wurfeln eine geschichte erstellen";
 
+"saved" = "Deine geschichten";
+
 //STORYSTARTERS
 
 "placeholder" = "Geben sie hier...";
@@ -86,21 +88,19 @@
 
 "saveStory" = "Speichern";
 
-"storySaved" = "Gespeichert";
+//"storySaved" = "Gespeichert";
 
 // SETTINGS VIEW
 
-"musicTranslation" = "Musik";
-
-"startersCreation" = "Anpassung der ersten satze";
-
-"language" = "Sprache";
-
-"credits" = "Credits";
-
-"settings" = "Einstellungen";
-
-"saved" = "Gespeicherte Geschichten";
+//"musicTranslation" = "Musik";
+//
+//"startersCreation" = "Anpassung der ersten satze";
+//
+//"language" = "Sprache";
+//
+//"credits" = "Credits";
+//
+//"settings" = "Einstellungen";
 
 // DICE STORYTELLING
 
@@ -164,7 +164,7 @@
 
 //SINGLE VIEW
 
-"deleteStory" = "Loschen";
+//"deleteStory" = "Loschen";
 
 //REUNITED VIEW
 

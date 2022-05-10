@@ -15,7 +15,7 @@ struct SingleView: View {
     let untitled: LocalizedStringKey = "untitled"
     let speech: LocalizedStringKey = "speech"
     let lang = String(format: NSLocalizedString("language", comment: ""))
-    let deleteStory: LocalizedStringKey = "deleteStory"
+//    let deleteStory: LocalizedStringKey = "deleteStory"
     let doneKeyboard: LocalizedStringKey = "doneKeyboard"
     
     @Environment(\.dismiss) var back11
@@ -49,7 +49,8 @@ struct SingleView: View {
             }
             .ignoresSafeArea(.keyboard)
             .frame(width: 1 * UIScreen.main.bounds.width, height: 0.4 * UIScreen.main.bounds.height)
-            .padding(.top, 15)
+            .padding(.top, 35)
+            .padding(.bottom, 40)
             
             Spacer()
             
@@ -57,16 +58,40 @@ struct SingleView: View {
                 alertClass.handleSynthesizer(storiaCompleta: storyDatabase.storyfull!,
                                              lingua: lang)
             } label: {
-                ListenButton(label: speech, icon: "playpause.fill", shouldShowOmino: true)
-                    .padding(.top, 15)
+                ZStack {
+                    Image("rectButton")
+                    HStack {
+                        Text(speech)
+                            .font(Font.custom("Life Savers", size: 31))
+                            .fontWeight(.heavy)
+                            .foregroundColor(.black)
+                        
+                        Spacer()
+                        
+                        Image(systemName: "playpause.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.black)
+                            .frame(width: 30, height: 30)
+                    }
+                    .padding(.horizontal, 26)
+                    
+                    Image("ominoListen")
+                        .padding(.bottom, 93)
+                }
+                .frame(width: 218, height: 68)
             }
+            .padding(.bottom, 60)
+            .padding(.top, 50)
             .ignoresSafeArea(.keyboard)
-            Spacer()
+//            Spacer()
         }
         .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
         .ignoresSafeArea(.keyboard)
         .background(
             Image("BACK")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
                 .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
                 .onTapGesture {
@@ -74,6 +99,7 @@ struct SingleView: View {
                 }
         )
         .navigationBarBackButtonHidden(true)
+        
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
@@ -91,8 +117,7 @@ struct SingleView: View {
                     back11()
                     DataController.shared.deleteStory(completeStory: storyDatabase)
                 } label: {
-                    Text(deleteStory)
-                        .fontWeight(.heavy)
+                    Image(systemName: "trash")
                 }
             }
             

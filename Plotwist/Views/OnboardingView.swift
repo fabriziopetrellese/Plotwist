@@ -39,6 +39,8 @@ struct OnboardingView: View {
         }
         .background(
             Image("BACK")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
         )
     }

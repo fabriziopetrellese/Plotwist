@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CompletedStories: View {
+    
     @EnvironmentObject var alertClass: AlertClass
     let lang = String(format: NSLocalizedString("language", comment: ""))
     let saved: LocalizedStringKey = "saved"
@@ -56,6 +57,13 @@ struct CompletedStories: View {
                 .ignoresSafeArea()
         )
         .navigationBarBackButtonHidden(true)
+        .onAppear {
+            AppState.shared.swipeEnabled = true
+        }
+        .onDisappear {
+            AppState.shared.swipeEnabled = false
+        }
+        
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text(saved)

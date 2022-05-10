@@ -18,6 +18,8 @@
 
 "text5" = "Создай историю только с помощью кубика";
 
+"saved" = "Твои истории";
+
 //STORYSTARTERS
 
 "placeholder" = "Напиши здесь...";
@@ -86,21 +88,19 @@
 
 "saveStory" = "Спасти";
 
-"storySaved" = "Спас";
+//"storySaved" = "Спас";
 
 // SETTINGS VIEW
 
-"musicTranslation" = "Музыка";
-
-"startersCreation" = "Создание заготовок";
-
-"language" = "Язык";
-
-"credits" = "Создатели";
-
-"settings" = "Настройки";
-
-"saved" = "Сохраненные истории";
+//"musicTranslation" = "Музыка";
+//
+//"startersCreation" = "Создание заготовок";
+//
+//"language" = "Язык";
+//
+//"credits" = "Создатели";
+//
+//"settings" = "Настройки";
 
 // DICE STORYTELLING
 
@@ -164,7 +164,7 @@
 
 //SINGLE VIEW
 
-"deleteStory" = "Исключить";
+//"deleteStory" = "Исключить";
 
 //REUNITED VIEW
 

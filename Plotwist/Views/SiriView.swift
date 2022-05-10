@@ -25,7 +25,7 @@ struct SiriView: View {
     let menu: LocalizedStringKey = "menu"
     let lang = String(format: NSLocalizedString("language", comment: ""))
     let saveStory: LocalizedStringKey = "saveStory"
-    let storySaved: LocalizedStringKey = "storySaved"
+//    let storySaved: LocalizedStringKey = "storySaved"
     let doneKeyboard: LocalizedStringKey = "doneKeyboard"
     
     var body: some View {
@@ -41,7 +41,7 @@ struct SiriView: View {
                 .font(Font.custom("Life Savers", size: 40).weight(.heavy))
                 .multilineTextAlignment(.center)
                 .disableAutocorrection(true)
-                .frame(width: 286)
+                .frame(width: 286, height: 60)
             
             Spacer()
             
@@ -67,34 +67,66 @@ struct SiriView: View {
         }
             .ignoresSafeArea(.keyboard)
             
-            Spacer()
+//            Spacer()
             
             Button {
                 alertClass.handleSynthesizer(storiaCompleta: storiesModel.fullStory,
                                              lingua: lang)
             } label: {
-                ListenButton(label: speech,
-                             icon: "playpause.fill",
-                             shouldShowOmino: false)
+                ListenButton(label: speech, icon: "playpause.fill")
             }
             .ignoresSafeArea(.keyboard)
             .padding(.top)
             
             Button {
+                if (storyTitle != "" && storyTitle != " ") {
+                    DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
+                    isSaved = true
+                } else {
+                    DataController.shared.saveStory(storia: storiesModel.fullStory,
+                                                    titolo: String(format: NSLocalizedString("untitled", comment: "")))
+                    isSaved = true
+                }
+            } label: {
+                ZStack {
+                    Image("rectButton")
+                        .resizable()
+                        .frame(width: 230, height: 73)
+                    
+                    HStack {
+                        Text(saveStory)
+                            .font(Font.custom("Life Savers", size: 27))
+                            .fontWeight(.heavy)
+                            .foregroundColor(.black)
+                        
+                        Spacer()
+                        
+                        Image(systemName: "square.and.arrow.down.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.black)
+                            .frame(width: 26, height: 26)
+                    }
+                    .padding(.horizontal, 31)
+                }
+                .frame(width: 250, height: 68)
+            }
+            
+            Button {
                 alertClass.showingAlert = true
             } label: {
-                ListenButton(label: menu,
-                             icon: "house.fill",
-                             shouldShowOmino: false)
+                ListenButton(label: menu, icon: "house.fill")
             }
             .ignoresSafeArea(.keyboard)
-            .padding(.bottom)
-            .padding(.top, 8)
+            .padding(.bottom, 34)
+//            .padding(.top, 8)
         }
         .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
         .ignoresSafeArea(.keyboard)
         .background(
             Image("Background")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
                 .position(x: 0.502 * UIScreen.main.bounds.width, y: 0.4 * UIScreen.main.bounds.height)
                 .onTapGesture {
@@ -104,31 +136,31 @@ struct SiriView: View {
         .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .toolbar{
-            ToolbarItem(placement: .navigationBarTrailing) {
-                if (isSaved == false) {
-                    Button {
-                        
-                        if (storyTitle != "" && storyTitle != " ") {
-                            DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
-                            isSaved = true
-                        } else {
-                            DataController.shared.saveStory(storia: storiesModel.fullStory,
-                                                            titolo: String(format: NSLocalizedString("untitled", comment: "")))
-                            isSaved = true
-                        }
-                        
-                    } label: {
-                        Text(saveStory)
-                            .foregroundColor(.black)
-                            .fontWeight(.heavy)
-                    }
-                    
-                } else {
-                    Text(storySaved)
-                        .foregroundColor(.gray)
-                        .fontWeight(.heavy)
-                }
-            }
+//            ToolbarItem(placement: .navigationBarTrailing) {
+//                if (isSaved == false) {
+//                    Button {
+//
+//                        if (storyTitle != "" && storyTitle != " ") {
+//                            DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
+//                            isSaved = true
+//                        } else {
+//                            DataController.shared.saveStory(storia: storiesModel.fullStory,
+//                                                            titolo: String(format: NSLocalizedString("untitled", comment: "")))
+//                            isSaved = true
+//                        }
+//
+//                    } label: {
+//                        Text(saveStory)
+//                            .foregroundColor(.black)
+//                            .fontWeight(.heavy)
+//                    }
+//
+//                } else {
+//                    Text(storySaved)
+//                        .foregroundColor(.gray)
+//                        .fontWeight(.heavy)
+//                }
+//            }
             
             ToolbarItem(placement: .keyboard) {
                 Button {
@@ -147,9 +179,10 @@ struct SiriView: View {
 
 struct SiriView_Previews: PreviewProvider {
     static var previews: some View {
-        SiriView(storyTitle: "")
+        SiriView()
             .environmentObject(StoriesModel())
             .environmentObject(AlertClass())
+//            .environment(\.locale, .init(identifier: "it"))
     }
 }
 

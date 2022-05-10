@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		490C98A327BDF4E100574E1B /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C98A227BDF4E100574E1B /* CreditsView.swift */; };
 		49124DB027C1E22200CCECAF /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49124DAF27C1E22200CCECAF /* SiriView.swift */; };
 		4912986B27C4738600912339 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912986A27C4738600912339 /* PlayersModel.swift */; };
 		491E707827BFDCEC0039FBB1 /* DiceStorytelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */; };
@@ -23,7 +22,6 @@
 		49AC302627BAB75900629633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AC302527BAB75900629633 /* Preview Assets.xcassets */; };
 		49B470E927BEA7A50012C24D /* hideKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */; };
 		49D3D09028109F5D00A1B3A1 /* musicBack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D3D08F28109F5D00A1B3A1 /* musicBack.mp3 */; };
-		49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E20D6D27BC5720002BAFA3 /* SettingsView.swift */; };
 		49E7C59B27BD32160043AD25 /* NextTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C59627BD32160043AD25 /* NextTurn.swift */; };
 		49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C59727BD32160043AD25 /* ThemeColors.swift */; };
 		49E7C59D27BD32160043AD25 /* Storystarters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7C59827BD32160043AD25 /* Storystarters.swift */; };
@@ -38,7 +36,6 @@
 		B915869428131DBE00DB8D27 /* DiceOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915869328131DBE00DB8D27 /* DiceOnboarding.swift */; };
 		B957458428183EC100DD6E0D /* ListenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957458328183EC100DD6E0D /* ListenButton.swift */; };
 		B9574586281845FE00DD6E0D /* SingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9574585281845FE00DD6E0D /* SingleView.swift */; };
-		B9574588281AB8A600DD6E0D /* DeleteAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9574587281AB8A600DD6E0D /* DeleteAlertView.swift */; };
 		B957458B281ACF5A00DD6E0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B957458D281ACF5A00DD6E0D /* InfoPlist.strings */; };
 		B96303112800654C006E4E4D /* PlotwistDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B963030F2800654C006E4E4D /* PlotwistDatabase.xcdatamodeld */; };
 		B963031728006809006E4E4D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B963031628006809006E4E4D /* DataController.swift */; };
@@ -63,7 +60,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		490C98A227BDF4E100574E1B /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		49124DAF27C1E22200CCECAF /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		4912986A27C4738600912339 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 		491E707727BFDCEC0039FBB1 /* DiceStorytelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceStorytelling.swift; sourceTree = "<group>"; };
@@ -83,7 +79,6 @@
 		49AC302E27BABB1300629633 /* Plotwist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Plotwist-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49B470E827BEA7A50012C24D /* hideKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboardButton.swift; sourceTree = "<group>"; };
 		49D3D08F28109F5D00A1B3A1 /* musicBack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musicBack.mp3; sourceTree = "<group>"; };
-		49E20D6D27BC5720002BAFA3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		49E7C59627BD32160043AD25 /* NextTurn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextTurn.swift; sourceTree = "<group>"; };
 		49E7C59727BD32160043AD25 /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
 		49E7C59827BD32160043AD25 /* Storystarters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storystarters.swift; sourceTree = "<group>"; };
@@ -98,7 +93,6 @@
 		B915869328131DBE00DB8D27 /* DiceOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceOnboarding.swift; sourceTree = "<group>"; };
 		B957458328183EC100DD6E0D /* ListenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenButton.swift; sourceTree = "<group>"; };
 		B9574585281845FE00DD6E0D /* SingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleView.swift; sourceTree = "<group>"; };
-		B9574587281AB8A600DD6E0D /* DeleteAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAlertView.swift; sourceTree = "<group>"; };
 		B957458C281ACF5A00DD6E0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B957458F281ACF5E00DD6E0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9574590281ACF5F00DD6E0D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -152,11 +146,8 @@
 				49E7C59A27BD32160043AD25 /* DiceCategories.swift */,
 				B9DA60CB27D8C194003F53C7 /* DiceStoryWriting.swift */,
 				492D3BC727D296C700F3BD65 /* AlertView.swift */,
-				B9574587281AB8A600DD6E0D /* DeleteAlertView.swift */,
-				49E20D6D27BC5720002BAFA3 /* SettingsView.swift */,
 				B963031828006E79006E4E4D /* CompletedStories.swift */,
 				B915868F2811987500DB8D27 /* StoryCard.swift */,
-				490C98A227BDF4E100574E1B /* CreditsView.swift */,
 				49124DAF27C1E22200CCECAF /* SiriView.swift */,
 				493AB1B627CC548F00224AF8 /* SplashScreenView.swift */,
 				B9DA60BF27D60FFE003F53C7 /* OnboardingView.swift */,
@@ -351,12 +342,10 @@
 				492D3BC827D296C700F3BD65 /* AlertView.swift in Sources */,
 				B9EE518B27C67CC600CFA313 /* IncipitsModel.swift in Sources */,
 				4912986B27C4738600912339 /* PlayersModel.swift in Sources */,
-				490C98A327BDF4E100574E1B /* CreditsView.swift in Sources */,
 				B9EE518F27C92BA100CFA313 /* ButtonsIconModel.swift in Sources */,
 				49E7C5A127BD44A00043AD25 /* ButtonsModel.swift in Sources */,
 				B9EE518D27C90EE400CFA313 /* StoriesModel.swift in Sources */,
 				B9574586281845FE00DD6E0D /* SingleView.swift in Sources */,
-				49E20D6E27BC5720002BAFA3 /* SettingsView.swift in Sources */,
 				B9D78E8627CFB6A10083BB3C /* SettingsButtonModel.swift in Sources */,
 				B9B66D0927E0D2E800E03D74 /* Experience.rcproject in Sources */,
 				B96303112800654C006E4E4D /* PlotwistDatabase.xcdatamodeld in Sources */,
@@ -377,7 +366,6 @@
 				49E7C59C27BD32160043AD25 /* ThemeColors.swift in Sources */,
 				B963031728006809006E4E4D /* DataController.swift in Sources */,
 				B9021C8727DCAF2D006035B2 /* SelectPlayersNumberView.swift in Sources */,
-				B9574588281AB8A600DD6E0D /* DeleteAlertView.swift in Sources */,
 				B9DA60CC27D8C194003F53C7 /* DiceStoryWriting.swift in Sources */,
 				B9D78E8227CFAE330083BB3C /* CardModel1.swift in Sources */,
 				B915869428131DBE00DB8D27 /* DiceOnboarding.swift in Sources */,
