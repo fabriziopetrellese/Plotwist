@@ -93,7 +93,12 @@ struct ContentView: View {
                             MusicClass.shared.pause()
                         }
                     } label: {
-                        music ? Image(systemName: "speaker.wave.3.fill") : Image(systemName: "speaker.slash.fill")
+                        if music {
+                            Image(systemName: "speaker.wave.3.fill")
+                        } else {
+                            Image(systemName: "speaker.slash.fill")
+                                .padding(.trailing, 13)
+                        }
                     }
                 }
             }
