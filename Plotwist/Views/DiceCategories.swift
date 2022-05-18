@@ -31,9 +31,18 @@ struct DiceCategories: View {
         .padding(.bottom, 270)
         .background(
             Image("Background")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
         )
         .navigationBarBackButtonHidden(true)
+        .onAppear {
+            AppState.shared.swipeEnabled = true
+        }
+        .onDisappear {
+            AppState.shared.swipeEnabled = false
+        }
+        
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {

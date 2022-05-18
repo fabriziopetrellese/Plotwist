@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var navigationRoot = NavigationRoot()
     @State var isView1Active: Bool = false
+    @State var music: Bool = true
     @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
     let text1: LocalizedStringKey = "text1"
@@ -17,6 +18,7 @@ struct ContentView: View {
     let text3: LocalizedStringKey = "text3"
     let text4: LocalizedStringKey = "text4"
     let text5: LocalizedStringKey = "text5"
+    let saved: LocalizedStringKey = "saved"
     
     var body: some View {
         NavigationView {
@@ -26,7 +28,6 @@ struct ContentView: View {
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     CardModel1(title: text1, description: text4)
-//                        .frame(width: 1 * UIScreen.main.bounds.width, height: 0.21 * UIScreen.main.bounds.height)
                         .padding(.top, 20)
                         .padding(.bottom, 6)
                 }
@@ -37,26 +38,70 @@ struct ContentView: View {
                 
                 NavigationLink(destination: GuidedView(), isActive: $isView1Active) {
                     CardModel2(title: text2, description: text5)
-//                        .frame(width: 0.94 * UIScreen.main.bounds.width, height: 0.165 * UIScreen.main.bounds.height)
-//                        .padding(.horizontal, 22)
-                        .padding(.bottom, 18)
+                        .padding(.bottom, 10)
                 }
                 .isDetailLink(false)
                 .simultaneousGesture(TapGesture().onEnded {
                     navigationRoot.mode2 = true
                 })
                 
-                NavigationLink(destination: SettingsView()) {
-                    SettingsButtonModel(title: text3)
-//                        .frame(height: 0.16 * UIScreen.main.bounds.height)
-                        .padding(.bottom, 40)
+                NavigationLink {
+                    CompletedStories()
+                } label: {
+                    ZStack {
+                        Image("yourStoriesCard")
+//                            .padding(.top, 30)
+                        HStack {
+                            Text(saved)
+                                .font(Font.custom("Life Savers", size: 23))
+                                .fontWeight(.heavy)
+                                .foregroundColor(.black)
+//                                .padding(.top, 27)
+                            
+                            Spacer()
+                            
+                            Image(systemName: "list.star")
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundColor(.black)
+                                .frame(width: 30, height: 30)
+//                                .padding(.top, 27)
+                        }
+                        .padding(.horizontal, 72)
+                    }
+                    .padding(.leading, 4)
                 }
+                .padding(.bottom, 30)
+                
+//                NavigationLink(destination: SettingsView()) {
+//                    SettingsButtonModel(title: text3)
+//                        .padding(.bottom, 40)
+//                }
             }
             .padding(.bottom, 80)
             .background(
                 Image("BACK")
                     .ignoresSafeArea()
             )
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        music.toggle()
+                        if music == true {
+                            MusicClass.shared.play()
+                        } else {
+                            MusicClass.shared.pause()
+                        }
+                    } label: {
+                        if music {
+                            Image(systemName: "speaker.wave.3.fill")
+                        } else {
+                            Image(systemName: "speaker.slash.fill")
+                                .padding(.trailing, 13)
+                        }
+                    }
+                }
+            }
         }
         .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
             OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
@@ -84,14 +129,35 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-//            .environment(\.locale, .init(identifier: "en"))
+//            .environment(\.locale, .init(identifier: "fr"))
     }
 }
+
+
+
 
 
 extension View {
     func dismissKeyboard() {
         let resign = #selector(UIResponder.resignFirstResponder)
         UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
+    }
+}
+
+class AppState {
+  static let shared = AppState()
+
+  var swipeEnabled = false
+}
+
+extension UINavigationController: UIGestureRecognizerDelegate {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = self
+    }
+    
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return AppState.shared.swipeEnabled ?
+        viewControllers.count > 1 : false
     }
 }

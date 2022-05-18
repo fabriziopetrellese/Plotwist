@@ -84,6 +84,8 @@ struct DiceStoryWriting: View {
         .ignoresSafeArea(.keyboard)
         .background(
             Image("Background")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
                 .position(x: 207, y: 400)
                 .onTapGesture {
@@ -105,8 +107,7 @@ struct DiceStoryWriting: View {
                 Button {
                     hideKeyboard()
                 } label: {
-                    Text(doneKeyboard)
-                        .fontWeight(.bold)
+                    Image(systemName: "keyboard.chevron.compact.down")
                 }
             }
         }

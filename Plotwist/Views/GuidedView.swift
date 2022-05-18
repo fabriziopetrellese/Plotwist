@@ -26,7 +26,6 @@ struct GuidedView: View {
     let doneKeyboard: LocalizedStringKey = "doneKeyboard"
 //    let addButton: LocalizedStringKey = "addButton"
     
-    
     var body: some View {
         VStack {
             Text(title1)
@@ -200,6 +199,13 @@ struct GuidedView: View {
                 }
         )
         .navigationBarBackButtonHidden(true)
+        .onAppear {
+            AppState.shared.swipeEnabled = true
+        }
+        .onDisappear {
+            AppState.shared.swipeEnabled = false
+        }
+        
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
@@ -237,22 +243,11 @@ struct GuidedView: View {
             }
             
             ToolbarItemGroup(placement: .keyboard) {
-//                Spacer()
                 Button {
                     hideKeyboard()
                 } label: {
-                    Text(doneKeyboard)
-                        .fontWeight(.bold)
+                    Image(systemName: "keyboard.chevron.compact.down")
                 }
-//                Button("Cancel") {
-//                    hideKeyboard()
-//                    playersModel.playersNames[0] = ""
-//                    playersModel.playersNames[1] = ""
-//                    playersModel.playersNames[2] = ""
-//                    playersModel.playersNames[3] = ""
-//                    playersModel.playersNames[4] = ""
-//                    playersModel.playersNames[5] = ""
-//                }
             }
             
         }
@@ -282,29 +277,6 @@ extension View {
             }
         }
 }
-
-
-
-
-
-// ADD NEW PLAYER BUTTON
-/*
- if modeSelection.playerButton < 4 {
-     Button {
-             navigationRoot.playerButton += 1
-     } label: {
-         ZStack {
-             Image("PLAYERS")
-             Text(addButton)
-                 .font(Font.custom("Life Savers", size: 28))
-                 .fontWeight(.heavy)
-                 .padding(.horizontal, 10)
-                 .multilineTextAlignment(.center)
-         }
-         .frame(width: 300, height: 75, alignment: .center)
-     }
- }
- */
 
 
 //START GAME

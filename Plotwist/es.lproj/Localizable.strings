@@ -18,6 +18,8 @@
 
 "text5" = "Crea historia con ayuda exclusiva de los dados";
 
+"saved" = "Tus historias";
+
 //STORYSTARTERS
 
 "placeholder" = "Escribe aqui...";
@@ -86,21 +88,19 @@
 
 "saveStory" = "Salvar";
 
-"storySaved" = "Salvado";
+//"storySaved" = "Salvado";
 
 // SETTINGS VIEW
 
-"musicTranslation" = "Musica";
-
-"startersCreation" = "Personaliza frases iniciales";
-
-"language" = "Idioma";
-
-"credits" = "Creditos";
-
-"settings" = "Ajustes";
-
-"saved" = "Historias guardadas";
+//"musicTranslation" = "Musica";
+//
+//"startersCreation" = "Personaliza frases iniciales";
+//
+//"language" = "Idioma";
+//
+//"credits" = "Creditos";
+//
+//"settings" = "Ajustes";
 
 // DICE STORYTELLING
 
@@ -164,7 +164,7 @@
 
 //SINGLE VIEW
 
-"deleteStory" = "Eliminar";
+//"deleteStory" = "Eliminar";
 
 //REUNITED VIEW
 

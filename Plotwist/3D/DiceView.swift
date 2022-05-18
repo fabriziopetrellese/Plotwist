@@ -25,7 +25,7 @@ struct DiceView: View {
                             backAr()
                         } label: {
                             Image(systemName: "arrowshape.turn.up.backward.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -33,7 +33,7 @@ struct DiceView: View {
                             DiceStoryWriting()
                         } label: {
                             Text(button2)
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
                     }
                 }
@@ -47,7 +47,7 @@ struct DiceView: View {
                             backAr()
                         } label: {
                             Image(systemName: "arrowshape.turn.up.backward.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
                     }
                 }

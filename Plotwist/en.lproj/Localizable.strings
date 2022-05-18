@@ -18,6 +18,8 @@
 
 "text5" = "Create a story with only dice";
 
+"saved" = "Your stories";
+
 //STORYSTARTERS
 
 "placeholder" = "Type here...";
@@ -84,23 +86,22 @@
 
 "untitled" = "Story name";
 
-"saveStory" = "Save";
+"saveStory" = "Save story";
 
-"storySaved" = "Saved";
+//"storySaved" = "Saved";
 
 // SETTINGS VIEW
 
-"musicTranslation" = "Music";
+//"musicTranslation" = "Music";
+//
+//"startersCreation" = "Storystarters creation";
+//
+//"language" = "Language";
+//
+//"credits" = "Credits";
+//
+//"settings" = "Settings";
 
-"startersCreation" = "Storystarters creation";
-
-"language" = "Language";
-
-"credits" = "Credits";
-
-"settings" = "Settings";
-
-"saved" = "Your stories";
 
 // DICE STORYTELLING
 
@@ -164,7 +165,7 @@
 
 //SINGLE VIEW
 
-"deleteStory" = "Delete";
+//"deleteStory" = "Delete";
 
 //REUNITED VIEW
 

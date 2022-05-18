@@ -18,6 +18,8 @@
 
 "text5" = "Crea una storia con l'aiuto esclusivo dei dadi";
 
+"saved" = "Le tue storie";
+
 //STORYSTARTERS
 
 "placeholder" = "Scrivi qui";
@@ -84,23 +86,21 @@
 
 "untitled" = "Nome storia";
 
-"saveStory" = "Salva";
+"saveStory" = "Salva storia";
 
-"storySaved" = "Salvata";
+//"storySaved" = "Salvata";
 
 // SETTINGS VIEW
 
-"musicTranslation" = "Musica";
+//"musicTranslation" = "Musica";
 
-"startersCreation" = "Personalizza frasi iniziali";
-
-"language" = "Lingua";
-
-"credits" = "Crediti";
-
-"settings" = "Impostazioni";
-
-"saved" = "Le tue storie";
+//"startersCreation" = "Personalizza frasi iniziali";
+//
+//"language" = "Lingua";
+//
+//"credits" = "Crediti";
+//
+//"settings" = "Impostazioni";
 
 // DICE STORYTELLING
 
@@ -164,7 +164,7 @@
 
 //SINGLE VIEW
 
-"deleteStory" = "Elimina";
+//"deleteStory" = "Elimina";
 
 //REUNITED VIEW
 

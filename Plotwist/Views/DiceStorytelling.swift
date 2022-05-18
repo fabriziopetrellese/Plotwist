@@ -32,7 +32,6 @@ struct DiceStorytelling: View {
         }
         .background(
             Image("Background")
-                .position(x: 0.483 * UIScreen.main.bounds.width, y: 0.498 * UIScreen.main.bounds.height)
                 .ignoresSafeArea()
         )
         .blur(radius: alertClass.showingAlert ? 9 : 0)

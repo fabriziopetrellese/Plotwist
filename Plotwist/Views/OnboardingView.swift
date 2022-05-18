@@ -39,6 +39,8 @@ struct OnboardingView: View {
         }
         .background(
             Image("BACK")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
         )
     }
@@ -66,6 +68,7 @@ struct ZeroPageView: View {
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
                 .padding(.top)
+                .padding(.horizontal)
             
             Image("diceOnb1")
                 .padding(.leading, 190)

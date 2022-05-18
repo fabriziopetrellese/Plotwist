@@ -10,20 +10,16 @@ import SwiftUI
 struct ListenButton: View {
     let label: LocalizedStringKey
     let icon: String
-    let shouldShowOmino: Bool
     
     var body: some View {
         ZStack {
-            if shouldShowOmino {
-                Image("faceButton")
-                    .padding(.bottom, 88)
-            }
-            
             Image("rectButton")
+                .resizable()
+                .frame(width: 230, height: 73)
             
             HStack {
                 Text(label)
-                    .font(Font.custom("Life Savers", size: 31))
+                    .font(Font.custom("Life Savers", size: 27.5))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
                 
@@ -33,17 +29,11 @@ struct ListenButton: View {
                     .resizable()
                     .scaledToFit()
                     .foregroundColor(.black)
-                    .frame(width: 30, height: 30)
-
+                    .frame(width: 27, height: 27)
             }
-            .padding(.horizontal, 26)
-            
-            if shouldShowOmino {
-                Image("handsButton")
-                    .padding(.bottom, 72)
-            }
+            .padding(.horizontal, 34)
         }
-        .frame(width: 218, height: 68)
+        .frame(width: 250, height: 68)
     }
 }
 
@@ -51,8 +41,7 @@ struct ListenButton: View {
 struct ListenButton_Previews: PreviewProvider {
     static var previews: some View {
         ListenButton(label: "Listen",
-                     icon: "playpause.fill",
-                     shouldShowOmino: true)
+                     icon: "playpause.fill")
     }
 }
 
