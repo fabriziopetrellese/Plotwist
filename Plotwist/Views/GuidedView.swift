@@ -26,7 +26,6 @@ struct GuidedView: View {
     let doneKeyboard: LocalizedStringKey = "doneKeyboard"
 //    let addButton: LocalizedStringKey = "addButton"
     
-    
     var body: some View {
         VStack {
             Text(title1)
