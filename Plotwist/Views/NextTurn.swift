@@ -50,7 +50,7 @@ struct NextTurn: View {
                     Storystarters()
                 }
                 if navigationRoot.mode2 == true {
-                    DiceStorytelling()
+                    DiceCategories()
                 }
             } label: {
                 ZStack {

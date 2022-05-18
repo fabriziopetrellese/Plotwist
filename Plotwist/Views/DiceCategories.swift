@@ -10,6 +10,8 @@ import SwiftUI
 struct DiceCategories: View {
     @Environment(\.dismiss) var back
     
+    @EnvironmentObject var navigationRoot: NavigationRoot
+    
     let diceCategories: LocalizedStringKey = "diceCategories"
     
     var body: some View {
@@ -45,12 +47,15 @@ struct DiceCategories: View {
         
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    back()
-                } label: {
-                    Image(systemName: "arrowshape.turn.up.backward.fill")
-                        .foregroundColor(.black)
+                if (navigationRoot.mode1) {
+                    Button {
+                        back()
+                    } label: {
+                        Image(systemName: "arrowshape.turn.up.backward.fill")
+                            .foregroundColor(.black)
+                    }
                 }
+
                 
             }
             
@@ -63,5 +68,6 @@ struct DiceCategories_Previews: PreviewProvider {
         DiceCategories()
 //            .environment(\.locale, .init(identifier: "it"))
             .environmentObject(CategoriesModel())
+            .environmentObject(NavigationRoot())
     }
 }
