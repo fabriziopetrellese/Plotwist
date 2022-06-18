@@ -17,6 +17,7 @@ struct SiriView: View {
     
     @State var storyTitle: String = ""
     @State var isSaved: Bool = false
+    @State var story: CompleteStory?
     
     let untitled: LocalizedStringKey = "untitled"
     let finalTitle: LocalizedStringKey = "finalTitle"
@@ -141,14 +142,20 @@ struct SiriView: View {
                     isSaved.toggle()
                     if isSaved {
                         if (storyTitle != "" && storyTitle != " ") {
-                            DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
+                            story = DataController.shared.saveStory(storia: storiesModel.fullStory,
+                                                            titolo: storyTitle)
 //                        isSaved = true
                         } else {
-                            DataController.shared.saveStory(storia: storiesModel.fullStory,
+                            story = DataController.shared.saveStory(storia: storiesModel.fullStory,
                                                             titolo: String(format: NSLocalizedString("untitled", comment: "")))
 //                        isSaved = true
                         }
                     } else {
+                        if let story = story {
+                            DataController.shared.deleteStory(completeStory: story)
+                        } else {
+                            return
+                        }
                     }
                 } label: {
                     if isSaved {
