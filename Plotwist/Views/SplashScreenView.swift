@@ -20,7 +20,7 @@ struct SplashScreenView: View {
                     .frame(width: 200, height: 200)
                     .padding(30)
                     .scaleEffect(scale)
-                    .animation(.linear(duration: 0.85).delay(0.95), value: scale)
+                    .animation(.linear(duration: 0.55).delay(0.65), value: scale)
             }
             .onAppear(perform: {
                 scale += 9
