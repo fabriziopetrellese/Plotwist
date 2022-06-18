@@ -22,7 +22,7 @@ struct PlotwistApp: App {
                 })
                 .overlay(SplashScreenView()
                             .opacity(splashOpacity)
-                            .animation(Animation.easeOut.delay(1.1), value: moveIcon)
+                            .animation(Animation.easeOut.delay(0.8), value: moveIcon)
                 )
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }

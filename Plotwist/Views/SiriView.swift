@@ -78,39 +78,39 @@ struct SiriView: View {
             .ignoresSafeArea(.keyboard)
             .padding(.top)
             
-            Button {
-                if (storyTitle != "" && storyTitle != " ") {
-                    DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
-                    isSaved = true
-                } else {
-                    DataController.shared.saveStory(storia: storiesModel.fullStory,
-                                                    titolo: String(format: NSLocalizedString("untitled", comment: "")))
-                    isSaved = true
-                }
-            } label: {
-                ZStack {
-                    Image("rectButton")
-                        .resizable()
-                        .frame(width: 230, height: 73)
-                    
-                    HStack {
-                        Text(saveStory)
-                            .font(Font.custom("Life Savers", size: 27))
-                            .fontWeight(.heavy)
-                            .foregroundColor(.black)
-                        
-                        Spacer()
-                        
-                        Image(systemName: "square.and.arrow.down.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .foregroundColor(.black)
-                            .frame(width: 26, height: 26)
-                    }
-                    .padding(.horizontal, 31)
-                }
-                .frame(width: 250, height: 68)
-            }
+//            Button {
+//                if (storyTitle != "" && storyTitle != " ") {
+//                    DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
+//                    isSaved = true
+//                } else {
+//                    DataController.shared.saveStory(storia: storiesModel.fullStory,
+//                                                    titolo: String(format: NSLocalizedString("untitled", comment: "")))
+//                    isSaved = true
+//                }
+//            } label: {
+//                ZStack {
+//                    Image("rectButton")
+//                        .resizable()
+//                        .frame(width: 230, height: 73)
+//
+//                    HStack {
+//                        Text(saveStory)
+//                            .font(Font.custom("Life Savers", size: 27))
+//                            .fontWeight(.heavy)
+//                            .foregroundColor(.black)
+//
+//                        Spacer()
+//
+//                        Image(systemName: "square.and.arrow.down.fill")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .foregroundColor(.black)
+//                            .frame(width: 26, height: 26)
+//                    }
+//                    .padding(.horizontal, 31)
+//                }
+//                .frame(width: 250, height: 68)
+//            }
             
             Button {
                 alertClass.showingAlert = true
@@ -136,31 +136,30 @@ struct SiriView: View {
         .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .toolbar{
-//            ToolbarItem(placement: .navigationBarTrailing) {
-//                if (isSaved == false) {
-//                    Button {
-//
-//                        if (storyTitle != "" && storyTitle != " ") {
-//                            DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
-//                            isSaved = true
-//                        } else {
-//                            DataController.shared.saveStory(storia: storiesModel.fullStory,
-//                                                            titolo: String(format: NSLocalizedString("untitled", comment: "")))
-//                            isSaved = true
-//                        }
-//
-//                    } label: {
-//                        Text(saveStory)
-//                            .foregroundColor(.black)
-//                            .fontWeight(.heavy)
-//                    }
-//
-//                } else {
-//                    Text(storySaved)
-//                        .foregroundColor(.gray)
-//                        .fontWeight(.heavy)
-//                }
-//            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    isSaved.toggle()
+                    if isSaved {
+                        if (storyTitle != "" && storyTitle != " ") {
+                            DataController.shared.saveStory(storia: storiesModel.fullStory, titolo: storyTitle)
+//                        isSaved = true
+                        } else {
+                            DataController.shared.saveStory(storia: storiesModel.fullStory,
+                                                            titolo: String(format: NSLocalizedString("untitled", comment: "")))
+//                        isSaved = true
+                        }
+                    } else {
+                    }
+                } label: {
+                    if isSaved {
+                        Image(systemName: "bookmark.fill")
+                            .font(Font.title3.weight(.heavy))
+                    } else {
+                        Image(systemName: "bookmark")
+                            .font(Font.title3.weight(.heavy))
+                    }
+                }
+            }
             
             ToolbarItem(placement: .keyboard) {
                 Button {
@@ -177,12 +176,12 @@ struct SiriView: View {
     }
 }
 
-struct SiriView_Previews: PreviewProvider {
-    static var previews: some View {
-        SiriView()
-            .environmentObject(StoriesModel())
-            .environmentObject(AlertClass())
-//            .environment(\.locale, .init(identifier: "it"))
-    }
-}
+//struct SiriView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SiriView()
+//            .environmentObject(StoriesModel())
+//            .environmentObject(AlertClass())
+////            .environment(\.locale, .init(identifier: "it"))
+//    }
+//}
 
